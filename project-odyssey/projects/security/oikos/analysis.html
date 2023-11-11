@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--  Project Odyssey By Jubeen Shah  -->
+<!--  Last Published: Wed Jun 10 2020 14:16:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5ecd106c3b6aba0e72368fba" data-wf-site="5ebb15d7d3e3c0f73dbdc91c" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Okios&#x27; Apple Watch Analysis</title>
+  <meta content="A brief on what results were found while studying the privacy implication of smart wearable devices." name="description">
+  <meta content="Okios&#x27; Apple Watch Analysis" property="og:title">
+  <meta content="A brief on what results were found while studying the privacy implication of smart wearable devices." property="og:description">
+  <meta content="Okios&#x27; Apple Watch Analysis" property="twitter:title">
+  <meta content="A brief on what results were found while studying the privacy implication of smart wearable devices." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/project-odyssey-b2aedc.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://use.typekit.net/fxz6uvb.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="https://project-odyssey.s3.us-east-2.amazonaws.com/914719ebf2dd787ecceb7cd70964218d.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="https://project-odyssey.s3.us-east-2.amazonaws.com/876fab8172f70d0be2a82c006e856b53.jpg" rel="apple-touch-icon">
+  <!--  Global site tag (gtag.js) - Google Analytics  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-167957177-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-167957177-1');
+</script>
+  <link href="../../../custom-js/odyssey.css" rel="stylesheet" type="text/css">
+</head>
+<body class="general-page disable-select">
+  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar navbar-2 w-nav">
+    <div class="container-3 w-container"><a href="../../../index.html" class="w-nav-brand"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg" width="40" alt="banner icon for Jubeen Shah" class="banner"></a>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="../../../index.html" class="nav-link w-nav-link">Home</a>
+        <div data-hover="1" data-delay="0" class="w-dropdown">
+          <div class="nav-link w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>Projects</div>
+          </div>
+          <nav class="nav-list-dropdown w-dropdown-list"><a href="../../../projects/security.html" class="nav-list-dropdown-item w-dropdown-link">Security</a><a href="../../../projects/devops.html" class="nav-list-dropdown-item w-dropdown-link">DevOps</a><a href="../../../projects/iot.html" class="nav-list-dropdown-item bottom-item w-dropdown-link">Internet of Things</a></nav>
+        </div><a href="mailto:jnshah2@ncsu.edu" class="nav-link w-nav-link">Contact</a><a href="../../../privacy.html" class="nav-link w-nav-link">Privacy</a></nav>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="generic-page-section">
+    <div class="generic-bread-crumb"><a href="../../../index.html" class="breadcrumb-link left">Home</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../projects.html" class="breadcrumb-link other">Projects</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../projects/security.html" class="breadcrumb-link other">Security</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../projects/security/oikos.html" class="breadcrumb-link other">Oikos</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../projects/security/oikos/design.html" class="breadcrumb-link other">Apple Analysis</a></div>
+    <div class="flex-box-general-100vh generic-project-page">
+      <div class="generic-content-div-block left-content-div-block">
+        <div class="projects-generic-header-div">
+          <h2 class="projects-generic-side-header">Content</h2>
+        </div>
+        <div class="table-of-contents-div"><a href="#Data" class="generic-project-sidebar-list-item-all-items">Data</a><a href="#awareness" class="generic-project-sidebar-list-item-all-items">Awareness</a><a href="#Correlation-Matrices" class="generic-project-sidebar-list-item-all-items">Correlation Matrices</a><a href="#westins-index" class="generic-project-sidebar-list-item-all-items">Westin&#x27;s Index (Custom)</a></div>
+      </div>
+      <div class="generic-project-content-div">
+        <div class="generic-project-flex-box">
+          <div class="generic-project-header-div">
+            <h1 class="generic-project-heading-one security">Apple Analysis</h1>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="Data" class="generic-project-heading-two security">Data</h2>
+            <div class="generic-project-paragraph-div">
+              <p class="generic-project-paragraph-element project-content">The majority of the responses were for Apple Watch; around 30 people responded for this part of the survey. There were a total of five questions that were designed to gauge the privacy awareness level amongst the participants. The questions were linked directly to Apple’s privacy policy. A few topics that the questions coveredFigure 1: Survey Design Flowchartrevolved around the topic of permanent deletion of data, reset of digital fingerprint, limiting ad-tracking, and Apple profiling users based on the data they collect.<br><br>For the question “Do you think you can ask Apple to delete the data collected from you permanently?” about 26% of the par- ticipants thought they could whereas Apple provides easy steps to delete all the data that was collected from the devices. This in- formation though explicitly mentioned in the Privacy Policy, is never shown during the initial setup of the Apple Watch, or for that matter, any Apple product. If the users had been aware of this information, they could decide for themselves how to control the data.<br><br>For the question “Do you think Apple provides a way to limit ad- tracking for Apple Watch?” around 40% of the participants thought they could. We hypothesize the increase in awareness for this ques- tion because Apple gives this option in the Privacy settings of the Watch, iPhone, and other Apple products. Participants are more likely to find information that they have easy access to, rather than the information they have to search for like the previous question.<br><br>For the question “Do you think you can reset your digital fin- gerprint generated for your Apple Watch?” roughly 40% of the participants answered in the affirmative. The number is similar to the previous question as the two options are on the same page, so we hypothesize that the people answered in the positive for the previous question are the same people who answered this question correctly.<br><br>Finally, we asked two questions that asked about the participants’ perspective on whether Apple shares the user’s data for marketing purposes or uses the data to profile the users. Around 80% of the participants answered in the positive. According to the privacy policy, Apple doesn’t. We hypothesize this high positive response is because of the general norm that companies usually follow about data sharing practices. We say the general norm because 60% of the participants out of the 60% had not taken the privacy course with us.</p>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="awareness" class="generic-project-heading-two security">Awareness amongst particpants</h2>
+            <div class="generic-project-paragraph-div">
+              <div class="generic-project-image-wide-div-block center"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/83db24e9ec3a336b2b124a2f0ce4321c.png" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/a68063f2fc3965799368ed0481ef3048.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/92b28e4455fccb6fae077e3f4177d765.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/9209902244d98b6ee86f10108cf9f022.png 1080w, https://project-odyssey.s3.us-east-2.amazonaws.com/c47ba7364fed7a44078a936940697349.png 1600w, https://project-odyssey.s3.us-east-2.amazonaws.com/ce91a6c277794c004cd395979ee262ce.png 2000w, https://project-odyssey.s3.us-east-2.amazonaws.com/83db24e9ec3a336b2b124a2f0ce4321c.png 2400w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 50vw, (max-width: 991px) 66vw, 50vw" alt="" class="generic-project-image-element limit-size-75"></div>
+              <p class="generic-project-paragraph-element project-content">Amongst our participants 50% already owned an Apple watch. So we first focus on the remainder of the 50% participants. At the beginning of the study, we hypothesized that knowing with an increase in user awareness, people might change their perspective about buying a product. According to our survey, our hypothesis was correct. Around 73% of the participants changed their perspec- tive from not buying to buying. Whereas the remaining 27% did not change their perspective. Of the people who already owned an Apple watch, 60% participants stated that they did not change their perspective, whereas 40% participants stated that they changed their opinion about owning an Apple Watch. From the data available, we cannot make any conclusive statement as to what they would be doing with their apple watch. Around 90% of the partici- pants thought the information provided in the survey was useful,and that they would better use this information to protect themselves in the future.</p>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="Correlation-Matrices" class="generic-project-heading-two security">Correlation Matrices</h2>
+            <div class="generic-project-paragraph-div">
+              <div class="generic-project-image-wide-div-block center"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/8a30bdf662f6ac9ae6c8fbd125a31e0d.png" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/a38d1bbf976c4169c06c8e3625fef92f.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/a9b31705b25fcec54b7dd8a617f0a5a8.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/8a30bdf662f6ac9ae6c8fbd125a31e0d.png 1000w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 50vw, (max-width: 991px) 66vw, 50vw" alt="" class="generic-project-image-element limit-size-75"></div>
+              <p class="generic-project-paragraph-element project-content">In Figure above, we see a correlation matrix we see that for the questions for which we had the least user awareness, are the questions for which we see a higher correlation between that question and the reason for the change in perspective. The questions that are highlighted are the questions for profiling users and apple sharing users’ data for marketing purposes. We see a little to no correlation for the question which involved limiting ad tracking and resetting digital fingerprint, though there is some correlation, we hypothesize that is because almost 60% of the users cumulatively were aware of that feature, or thought that it was possible. Although correlation is not causation in all cases, the data, in this case, does tip the scale in the other direction.<br><br>In Figure below , we see a similar trend, as in the previous one. The categories for Call-logs, Photos, and Videos have a slightly positive correlation because the majority of the participants thought those data-points are collected. In contrast, according to the privacy policy, Apple does not collect this information. So the absence of it is taken as a positive aspect leading to change in the perspective of the participants from not buying an Apple watch to buying it. For both Location and Voice Recordings, only 50% of the people thought that information is collected. Hence we see the slight negative correlation, which could be because as people who care more about their privacy would change their opinion on seeing that Voice recordings and Location information are being collected. However, this is negated by the fact that Apple claims it does not share this information with third parties. Hence we see the overall increase in the change of opinion, which stems from the awareness of the fact. We see a positive correlation for the fact that Health and Fitness data is collected, which could be because people assume that since it is health tracking device, it is justified that Apple collects this data. Moreover, it is later made aware to the users that the Health Data is not shared with Apple until explicitly shared with Apple via either the Health App or the Research App.</p>
+              <div class="generic-project-image-wide-div-block center"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/d40f00859c9a9a6f931e7447e175474e.png" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/8c00b28b7c18f8e58e8c18c8c5b16067.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/5e599e224e4fa197aa945ed5919af0e4.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/d40f00859c9a9a6f931e7447e175474e.png 1000w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 50vw, (max-width: 991px) 66vw, 50vw" alt="" class="generic-project-image-element limit-size-75"></div>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="westins-index" class="generic-project-heading-two security">Westin&#x27;s Privacy Index</h2>
+            <div class="generic-project-paragraph-div">
+              <p class="generic-project-paragraph-element project-content">We also carried out another survey that gauged people into different categories, according to Westin’s index. While deciding which questions to ask in the survey, we wanted to revolve around the theme of the Westin’s survey and thus asked questions that had a”Linear-Scale” in which people could answer. Moreover, having read the Apple’s privacy policy, we had noticed that many businesses do not provide a way to delete the data collected, so we wanted to gather user sentiment on that aspect as well. We also wanted to understand whether different users have a different outlook towards sharing data with health care institutions that use health data for health studies and advertisers that use the data for digital marketing.<br><br>15 people replied to the survey. 60% of which do not own a fitness tracker. 60% of the participants that own a fitness tracker were concerned that the fitness trackers track locations, and the data can be harnessed for targeted advertisements. 40% of the people who don’t own a fitness tracker suggest that they don’t find it justifiable for the businesses to store health data.<br><br>80% of the people are concerned that businesses don’t provide a way to delete user’s data permanently. And 85% of the participants are uncomfortable sharing their data with advertisers, but 60% are comfortable sharing with health institutions for health data studies.<br><br>From the data that was collected approximately 40% were fundamentalist, 33% were pragmatists and 27% of the participants were unconcerned. We believe the number of unconcerned participants is relatively low because of the age of the participants, which was relatively young.</p>
+              <div class="generic-project-image-wide-div-block center"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/f25538788fb9e1a463a12d176bd78efb.png" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/abb0d69680ada680815d0aaf6577f795.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/c8944b75cd8c34487d9183605f59f4d3.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/364ff4321af8f60121eb8bb0375bc683.png 1080w, https://project-odyssey.s3.us-east-2.amazonaws.com/985b4296e0453414d2e3c51fc4e75ba4.png 1600w, https://project-odyssey.s3.us-east-2.amazonaws.com/d397375b88d9f782846eea42ed5cb579.png 2000w, https://project-odyssey.s3.us-east-2.amazonaws.com/f25538788fb9e1a463a12d176bd78efb.png 2400w" sizes="(max-width: 479px) 91vw, (max-width: 767px) 50vw, (max-width: 991px) 66vw, 50vw" alt="" class="generic-project-image-element limit-size-75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="generic-content-div-block">
+        <div class="projects-generic-header-div">
+          <h2 class="projects-generic-side-header right-end-project-individual">Related Pages</h2>
+        </div>
+        <div class="table-of-contents-div"><a href="../../../projects/security/oikos.html" class="generic-project-sidebar-list-item-all-items right-end">Summary</a><a href="../../../projects/security/oikos/design.html" class="generic-project-sidebar-list-item-all-items right-end">Study Design</a><a href="../../../projects/security/oikos/analysis.html" aria-current="page" class="generic-project-sidebar-list-item-all-items right-end w--current">Analysis</a><a href="../../../projects/security/oikos/conclusion.html" class="generic-project-sidebar-list-item-all-items right-end">Conclusion</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-pane">
+    <div class="navigation-butttons-div-block">
+      <div data-w-id="63fafb59-c44d-f11b-09c9-4c46ee60502c" class="previous-animation-lottie">
+        <div data-w-id="63fafb59-c44d-f11b-09c9-4c46ee60502d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ebb15d7d3e3c0f73dbdc91c/5ec9b0d123eec5baa7194c66_previous.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.2" data-duration="0" data-ix2-initial-state="30" class="previous-animation"></div><a href="../../../projects/security/oikos/design.html" class="project-buttons">study design</a></div>
+      <div data-w-id="63fafb59-c44d-f11b-09c9-4c46ee605030" class="next-animation-lottie"><a href="../../../projects/security/oikos/conclusion.html" class="project-buttons">conclusion</a>
+        <div data-w-id="63fafb59-c44d-f11b-09c9-4c46ee605033" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ebb15d7d3e3c0f73dbdc91c/5ec9b318518a6eb2eed68cef_next-button.json" data-loop="1" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2" data-duration="0" data-ix2-initial-state="30" class="next-animation"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="footer div-block-24">
+      <div class="section-2 section--footer">
+        <div class="footer__inner-container">
+          <div class="footer__title">Home</div><a href="../../../index.html" class="footer__links">About</a><a href="mailto:jnshah2@ncsu.edu" class="footer__links">Contact</a><a href="../../../privacy.html" class="footer__links">Privacy</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Education</div><a href="../../../education/formal.html" class="footer__links">Formal</a><a href="../../../education/certifications.html" class="footer__links">Certification</a><a href="../../../education/pursuing.html" class="footer__links">Pursuing</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Projects</div><a href="../../../projects/security.html" class="footer__links">Security</a><a href="../../../projects/devops.html" class="footer__links">DevOps</a><a href="../../../projects/iot.html" class="footer__links">Internet of Things</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Resources</div><a href="https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf" target="_blank" class="footer__links">Resumé</a></div>
+        <div id="w-node-bcd1e5970ea1-e5970e8a" class="footer__inner-container footer__inner-container--cmf"><a href="../../../index.html" target="_blank" class="js-banner-link w-inline-block"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg" alt="banner icon for Jubeen Shah" class="footer__image lazyload"></a>
+          <div class="footer__links non-link">Passionately curious about technology</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-text">Project Odyssey - © All rights reserved. 2020 Jubeen Shah</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ebb15d7d3e3c0f73dbdc91c" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="../../../js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--  Project Odyssey By Jubeen Shah  -->
+<!--  Last Published: Wed Jun 10 2020 14:16:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5ecd106c3b6aba6940368f90" data-wf-site="5ebb15d7d3e3c0f73dbdc91c" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cosmos: Intrusion Sensor</title>
+  <meta content="Cosmos: Intrusion Sensor is a simple but effective device that has been designed to detect and report suspicious movements in and around the place of installation. The idea behind the method is that it would be installed at all major and minor entry points and once armed, any unusual activity would be reported to the user via a notification on the device that has been configured with the OpenHAB server. The user can get this notification anywhere in the world, as long as the user is connected to the internet." name="description">
+  <meta content="Cosmos: Intrusion Sensor" property="og:title">
+  <meta content="Cosmos: Intrusion Sensor is a simple but effective device that has been designed to detect and report suspicious movements in and around the place of installation. The idea behind the method is that it would be installed at all major and minor entry points and once armed, any unusual activity would be reported to the user via a notification on the device that has been configured with the OpenHAB server. The user can get this notification anywhere in the world, as long as the user is connected to the internet." property="og:description">
+  <meta content="Cosmos: Intrusion Sensor" property="twitter:title">
+  <meta content="Cosmos: Intrusion Sensor is a simple but effective device that has been designed to detect and report suspicious movements in and around the place of installation. The idea behind the method is that it would be installed at all major and minor entry points and once armed, any unusual activity would be reported to the user via a notification on the device that has been configured with the OpenHAB server. The user can get this notification anywhere in the world, as long as the user is connected to the internet." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../../../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../../../css/project-odyssey-b2aedc.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://use.typekit.net/fxz6uvb.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="https://project-odyssey.s3.us-east-2.amazonaws.com/914719ebf2dd787ecceb7cd70964218d.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="https://project-odyssey.s3.us-east-2.amazonaws.com/876fab8172f70d0be2a82c006e856b53.jpg" rel="apple-touch-icon">
+  <!--  Global site tag (gtag.js) - Google Analytics  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-167957177-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-167957177-1');
+</script>
+  <link href="../../../../custom-js/odyssey.css" rel="stylesheet" type="text/css">
+</head>
+<body class="general-page disable-select">
+  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar navbar-2 w-nav">
+    <div class="container-3 w-container"><a href="../../../../index.html" class="w-nav-brand"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg" width="40" alt="banner icon for Jubeen Shah" class="banner"></a>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="../../../../index.html" class="nav-link w-nav-link">Home</a>
+        <div data-hover="1" data-delay="0" class="w-dropdown">
+          <div class="nav-link w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>Projects</div>
+          </div>
+          <nav class="nav-list-dropdown w-dropdown-list"><a href="../../../../projects/security.html" class="nav-list-dropdown-item w-dropdown-link">Security</a><a href="../../../../projects/devops.html" class="nav-list-dropdown-item w-dropdown-link">DevOps</a><a href="../../../../projects/iot.html" class="nav-list-dropdown-item bottom-item w-dropdown-link">Internet of Things</a></nav>
+        </div><a href="mailto:jnshah2@ncsu.edu" class="nav-link w-nav-link">Contact</a><a href="../../../../privacy.html" class="nav-link w-nav-link">Privacy</a></nav>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="generic-page-section">
+    <div class="generic-bread-crumb"><a href="../../../../index.html" class="breadcrumb-link left">Home</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../../projects.html" class="breadcrumb-link other">Projects</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../../projects/iot.html" class="breadcrumb-link other">IoT</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../../projects/iot/cosmos.html" class="breadcrumb-link other">Cosmos</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../../projects/iot/cosmos/modules.html" class="breadcrumb-link other">Modules</a>
+      <h5 class="breadcrumb-seperator">/</h5><a href="../../../../projects/iot/cosmos/modules/intrusion-sensor.html" aria-current="page" class="breadcrumb-link other w--current">Intrusion Sensor</a></div>
+    <div class="flex-box-general-100vh generic-project-page">
+      <div class="generic-content-div-block left-content-div-block-indv-project">
+        <div class="projects-generic-header-div">
+          <h2 class="projects-generic-side-header">Content</h2>
+        </div>
+        <div class="table-of-contents-div"><a href="#intrusion-sensor" class="generic-project-sidebar-list-item-all-items">Intrusion Sensor</a><a href="#demo" class="generic-project-sidebar-list-item-all-items">Demo Video</a><a href="#block-diagram" class="generic-project-sidebar-list-item-all-items">Block Diagram</a><a href="#sw-req" class="generic-project-sidebar-list-item-all-items">Software Requirements</a><a href="#uploading-code" class="generic-project-sidebar-list-item-all-items">Uploading Code</a><a href="#schematic" class="generic-project-sidebar-list-item-all-items sub-item">Schematic</a><a href="#uploading" class="generic-project-sidebar-list-item-all-items sub-item">Uploading</a><a href="#challenges" class="generic-project-sidebar-list-item-all-items">Challenges</a><a href="#solutions" class="generic-project-sidebar-list-item-all-items sub-item">Solutions</a><a href="#final-product" class="generic-project-sidebar-list-item-all-items">Disassembled Product</a></div>
+      </div>
+      <div class="generic-project-content-div">
+        <div class="generic-project-flex-box devops">
+          <div class="generic-project-header-div cosmos">
+            <h1 id="intrusion-sensor" class="generic-project-heading-one iot non-padding">Intrusion Sensor</h1>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="demo" class="generic-project-heading-two iot">Demo Video</h2>
+            <div style="padding-top:56.17021276595745%" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWF3h1Y8hbUs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWF3h1Y8hbUs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWF3h1Y8hbUs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="block-diagram" class="generic-project-heading-two iot">Functional Block Diagram</h2>
+            <div class="generic-project-heading-two-div-block">
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">The following diagram is the basic functional block diagram of the Cosmos: Intrusion Sensor device. The device comprises of four main components the ESP8266-12E wifi module, 5v power supply for the device, and 5v to 3.3v Regulator. The intrusion sensor when triggered communicates the values with the centralized controller, which then relays the corresponding message to the devices configured on receiving the notification.</p>
+                <div class="generic-project-image-wide-div-block center-align"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/8b15154ef8757bcc834f152e8d28d0ee.png" alt="Cosmos - Adding things to Cosmos" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/ede66be160274aa26fbf54ae6d17f742.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/20833a143a495ef9859ec86ee71f71b8.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/8b15154ef8757bcc834f152e8d28d0ee.png 1593w" sizes="(max-width: 479px) 83vw, (max-width: 767px) 71vw, (max-width: 991px) 65vw, 49vw" class="generic-project-image-element limit-size-75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="sw-req" class="generic-project-heading-two iot">Software Requirements</h2>
+            <div class="generic-project-heading-two-div-block">
+              <h3 id="smart-lock" class="generic-project-heading-two iot">EAGLE</h3>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">EAGLE, which stands for Easily Applicable Graphical Layout Editor is a scriptable Electronic Design Automation (EDA) software application with schematic capture, printed circuit board (PCB) layout, auto-router and computer-aided manufacturing (CAM) features. This particular software seemed the best for the project for schematic and PCB design since it has an inbuilt schematic editor for circuit diagrams. EAGLE has been used because it not only gives an easy to use interface but also has several open source libraries available for our purpose. These libraries include that for the ESP8266, the LM1117 5v to 3.3v Regulator and in future for other components and parts that may be required. After finalizing the Gerber file layout to be used for printing the PCB via an online PCB manufacturer PCBPOWER.</p>
+              </div>
+            </div>
+            <div class="generic-project-heading-two-div-block">
+              <h3 id="smart-lock" class="generic-project-heading-two iot">MQTT.fx</h3>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">MQTT which stands for MQ Telemetry Transport is a lightweight publish/subscribe, straightforward messaging protocol. This protocol is specially designed for constrained devices and low-bandwidth with high latency and unreliable network. So, the design principles are to minimise network bandwidth, and device resource requirements whilst also attempting to ascertain the reliability and some level of acknowledgment of delivery. As per our research, MQTT is by far the most competitive solution out there for a machine to machine (M2M) or Internet of Things (IoT) application. COSMOS revolves around the core idea of having a single interface with multiple sensor nodes and utility devices connected to it. It was found necessary to find a protocol that sits over the standard TCP/IP protocol to standardize the solution, while at the same time account for the unreliable networks and provide message transport with low- latency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h2 id="uploading-code" class="generic-project-heading-two iot">Uploading Code to ESP8266</h2>
+            <div class="generic-project-heading-two-div-block">
+              <h3 id="schematic" class="generic-project-heading-two iot">Schematic</h3>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">The ESP8266 12E has the below schematic which consists of 9 GPIO pins for input and output of data values from and to the sensors. It has a Tx pin for transmission of data values and Rx pin for Receiving the data values. The VCC pin is for voltage input, which must be 3.3 volts. It should be noted that any voltage above 3.3 volts increases the risk of burning down the chip. The ESP8266 also has the limitation of working with just 2.4 GHz of network, any 5 GHz connection would not work.</p>
+                <div class="generic-project-image-wide-div-block"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/7ec3b48d382d91bbbbd7d6f7d7a2819c.png" alt="Cosmos - Adding things to Cosmos" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/190dfc8bd0ffdae956dd8deffb1b1831.png 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/c996c09e3dcbe9a9d5cf6f9cc0bf9f40.png 800w, https://project-odyssey.s3.us-east-2.amazonaws.com/bc115ddc3a56c4a66795c981c106c0ae.png 1080w, https://project-odyssey.s3.us-east-2.amazonaws.com/7ec3b48d382d91bbbbd7d6f7d7a2819c.png 2500w" sizes="(max-width: 479px) 83vw, (max-width: 767px) 95vw, (max-width: 3846px) 65vw, 2500px" class="generic-project-image-element"></div>
+              </div>
+              <ul role="list" class="generic-project-list">
+                <li class="generic-project-list-items">SV1 — 4 pin Female Header</li>
+                <li class="generic-project-list-items sub-item">Pin 1 — GND</li>
+                <li class="generic-project-list-items sub-item">Pin 2 — VCC (5 volts)</li>
+                <li class="generic-project-list-items sub-item">Pin 3 — RX</li>
+                <li class="generic-project-list-items sub-item">Pin 4 — TX</li>
+                <li class="generic-project-list-items">SV1 — 4 pin Female Header</li>
+                <li class="generic-project-list-items sub-item">Pin 1 + Pin 2 : Run Mode</li>
+                <li class="generic-project-list-items sub-item">Pin 2 + Pin 3 : Programmable Mode</li>
+                <li class="generic-project-list-items sub-item">Pin 1 — CH_PD and GPIO2</li>
+                <li class="generic-project-list-items">U1 — ESP8266-12E<br></li>
+                <li class="generic-project-list-items">IC1 — LM1117T Voltage Regulator<br></li>
+                <li class="generic-project-list-items sub-item">In — 5 volts</li>
+                <li class="generic-project-list-items sub-item">Out — 3 volts<br></li>
+                <li class="generic-project-list-items">X2-1/2 — Power Supply Module (5 volts)<br></li>
+                <li class="generic-project-list-items">X1-1/2 — Magnetic Sensor<br></li>
+              </ul>
+            </div>
+            <div class="generic-project-heading-two-div-block">
+              <h3 id="uploading" class="generic-project-heading-two iot">Uploading</h3>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">Referring back to figure above, connections for the Rx and Tx of the Arduino board to the Tx and Rx of the ESP8266 via the pins 4 and 3 of the SV1 female header are made, and is seen in figure 30. Connections to the pin 1 to the GND of the Arduino and pin 2 to the VCC (+5v) of the Arduino. Once the connections are made, and the next step is to select the tools command in the Arduino IDE and the different configuration as per Table 3, shown below</p>
+              </div>
+              <ul role="list" class="generic-project-list">
+                <li class="generic-project-list-items">Board: Generic ESP8266 Module</li>
+                <li class="generic-project-list-items sub-item">Description: Board in use<br></li>
+                <li class="generic-project-list-items">Flash Frequency: 40 MHZ</li>
+                <li class="generic-project-list-items sub-item">Description: Affects the Wifi and BLE functionality</li>
+                <li class="generic-project-list-items">CPU Frequency: 80 MHz<br></li>
+                <li class="generic-project-list-items sub-item">Description: Default value, but can be overridden<br></li>
+                <li class="generic-project-list-items">Flash Size: 512K (64K SPIFFS)<br></li>
+                <li class="generic-project-list-items sub-item">Description: SPI Flash Filing System</li>
+                <li class="generic-project-list-items">Upload Speed: 9600 br / 57600 br / 115200 br<br></li>
+                <li class="generic-project-list-items sub-item">Description: The baud rate at which the upload takes place.</li>
+                <li class="generic-project-list-items">Port: (Depends on the OS)<br></li>
+                <li class="generic-project-list-items sub-item">Description: Needed to configure the ESP8266 via the Arduino UNO</li>
+              </ul>
+            </div>
+            <div class="generic-project-heading-two-div-block">
+              <h2 id="challenges" class="generic-project-heading-two iot">Challenges Encountered</h2>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">One of the most common problem encountered while uploading the code to ESP8266 12-E is the espcomm_uploaded_mem failed. Several reasons were identified after carrying out the tests in multiple iterations</p>
+              </div>
+              <ul role="list" class="generic-project-list">
+                <li class="generic-project-list-items">Upload Speed much higher than what ESP8266 can handle</li>
+                <li class="generic-project-list-items">The port is non-operational</li>
+                <li class="generic-project-list-items">Not enough power is being supplied to the module<br></li>
+                <li class="generic-project-list-items">The ESP8266 is not booted into programmable mode Tx and Rx pins are interchanged<br></li>
+              </ul>
+            </div>
+            <div class="generic-project-heading-two-div-block">
+              <h3 id="solutions" class="generic-project-heading-two iot">Possible Solutions</h3>
+              <div class="generic-project-paragraph-div">
+                <p class="generic-project-paragraph-element project-content">Following one or more of the following solutions should help resolve the problem.</p>
+              </div>
+              <ul role="list" class="generic-project-list">
+                <li class="generic-project-list-items">Choose a lower serial speed selection, preferably, 9600. In the tests, the upload took significantly more time around 5-7 minutes if the serial speed selection was 9600 however at the same time the success rate was around 80-90% that the code got uploaded.</li>
+                <li class="generic-project-list-items">Make sure that the port drivers are installed and operational based on your operating system. With macOS, the steps were particularly tedious since the CH430 drivers aren’t readily available.</li>
+                <li class="generic-project-list-items">Add additional power to the ESP8266. We did this by adding another 5v power source in serial with the additional input while programming it. We first tried the 3.3 v power output from the Arduino, and when that didn’t work added another 5v on top of that.<br></li>
+                <li class="generic-project-list-items">The GPIO 0 pin from the ESP8266 has to be grounded just before power is being supplied to it, ensuring that the ESP8266 boots into a programmable mode. If the ESP8266 is not in the programmable mode, the upload tends to fail.<br></li>
+                <li class="generic-project-list-items">Finally, it is a crucial point, to not mix up the Tx and Rx pins on the Arduino and the ESP8266.<br></li>
+              </ul>
+            </div>
+          </div>
+          <div class="generic-project-heading-two-div-block">
+            <h3 id="final-product" class="generic-project-heading-two iot">Disassembled Product</h3>
+            <div class="generic-project-image-wide-div-block center-align"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/ed2701c3965915332f173e56a35ac6f2.jpg" alt="Cosmos: Fire Sensor Flow Chart" width="393.5" srcset="https://project-odyssey.s3.us-east-2.amazonaws.com/b49f40f14d67a101f271dc2261aa232d.jpeg 500w, https://project-odyssey.s3.us-east-2.amazonaws.com/ed2701c3965915332f173e56a35ac6f2.jpg 787w" sizes="(max-width: 479px) 62vw, (max-width: 767px) 71vw, (max-width: 991px) 49vw, 33vw" class="generic-project-image-element limit-size-50"></div>
+          </div>
+        </div>
+      </div>
+      <div class="generic-content-div-block right-content-div-block-indv-proj">
+        <div class="projects-generic-header-div">
+          <h2 class="projects-generic-side-header right-end-project-individual">Related Pages</h2>
+        </div>
+        <div class="table-of-contents-div"><a href="../../../../projects/iot/cosmos.html" class="generic-project-sidebar-list-item-all-items right-end">Summary</a><a href="../../../../projects/iot/cosmos/project-details.html" class="generic-project-sidebar-list-item-all-items right-end">Project Details</a><a href="../../../../projects/iot/cosmos/automation-server.html" class="generic-project-sidebar-list-item-all-items right-end">Automation Server</a><a href="../../../../projects/iot/cosmos/openhab.html" class="generic-project-sidebar-list-item-all-items right-end">OpenHAB</a><a href="../../../../projects/iot/cosmos/modules.html" class="generic-project-sidebar-list-item-all-items right-end">Modules  Details</a><a href="../../../../projects/iot/cosmos/modules/intrusion-sensor.html" aria-current="page" class="generic-project-sidebar-list-item-all-items right-end sub-item-right w--current">Intrusion Sensor</a><a href="../../../../projects/iot/cosmos/modules/fire-sensor.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Fire Sensor</a><a href="../../../../projects/iot/cosmos/modules/weather-station.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Weather Station</a><a href="../../../../projects/iot/cosmos/modules/ambient-station.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Ambient Station</a><a href="../../../../projects/iot/cosmos/modules/smart-leds.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Smart LEDs</a><a href="../../../../projects/iot/cosmos/modules/connected-switches.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Smart Switch</a><a href="../../../../projects/iot/cosmos/modules/smart-lock.html" class="generic-project-sidebar-list-item-all-items right-end sub-item-right">Smart Lock</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-pane">
+    <div class="navigation-butttons-div-block">
+      <div data-w-id="418fd3b3-6871-3423-e2a3-6a51e57a5fad" class="previous-animation-lottie">
+        <div data-w-id="418fd3b3-6871-3423-e2a3-6a51e57a5fae" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ebb15d7d3e3c0f73dbdc91c/5ec9b0d123eec5baa7194c66_previous.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.2" data-duration="0" data-ix2-initial-state="30" class="previous-animation"></div><a href="../../../../projects/iot/cosmos/modules.html" class="project-buttons">modules</a></div>
+      <div data-w-id="418fd3b3-6871-3423-e2a3-6a51e57a5fb1" class="next-animation-lottie"><a href="../../../../projects/iot/cosmos/modules/fire-sensor.html" class="project-buttons">fire sensor</a>
+        <div data-w-id="418fd3b3-6871-3423-e2a3-6a51e57a5fb4" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ebb15d7d3e3c0f73dbdc91c/5ec9b318518a6eb2eed68cef_next-button.json" data-loop="1" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2" data-duration="0" data-ix2-initial-state="30" class="next-animation"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="footer div-block-24">
+      <div class="section-2 section--footer">
+        <div class="footer__inner-container">
+          <div class="footer__title">Home</div><a href="../../../../index.html" class="footer__links">About</a><a href="mailto:jnshah2@ncsu.edu" class="footer__links">Contact</a><a href="../../../../privacy.html" class="footer__links">Privacy</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Education</div><a href="../../../../education/formal.html" class="footer__links">Formal</a><a href="../../../../education/certifications.html" class="footer__links">Certification</a><a href="../../../../education/pursuing.html" class="footer__links">Pursuing</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Projects</div><a href="../../../../projects/security.html" class="footer__links">Security</a><a href="../../../../projects/devops.html" class="footer__links">DevOps</a><a href="../../../../projects/iot.html" class="footer__links">Internet of Things</a></div>
+        <div class="footer__inner-container">
+          <div class="footer__title">Resources</div><a href="https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf" target="_blank" class="footer__links">Resumé</a></div>
+        <div id="w-node-bcd1e5970ea1-e5970e8a" class="footer__inner-container footer__inner-container--cmf"><a href="../../../../index.html" target="_blank" class="js-banner-link w-inline-block"><img src="https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg" alt="banner icon for Jubeen Shah" class="footer__image lazyload"></a>
+          <div class="footer__links non-link">Passionately curious about technology</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-text">Project Odyssey - © All rights reserved. 2020 Jubeen Shah</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ebb15d7d3e3c0f73dbdc91c" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="../../../../js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
