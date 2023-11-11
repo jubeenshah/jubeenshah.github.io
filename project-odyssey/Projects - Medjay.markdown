@@ -1,48 +1,18 @@
- Project Medjay by Jubeen              
+## Medjay
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.markdown)
+This project covers the security vulnerability testing that was performed on the OpenMRS - an open source healthcare system using static and dynamic analysis tools. The project was divided into three stages to understand the different aspects of security testing of an open source application, and contribute patches to it.
 
-[Home](../../index.markdown)
-
-Projects
-
-[Security](../../projects/security.markdown)[DevOps](../../projects/devops.markdown)[Internet of Things](../../projects/iot.markdown)
-
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
-
-[Home](../../index.markdown)
-
-##### /
-
-[Projects](../../projects.markdown)
-
-##### /
-
-[Security](../../projects/security.markdown)
-
-##### /
-
-[Medjay](../../projects/security/medjay.markdown)
-
-Content
--------
 
 [Abstract](#abstract)[Tools and Technologies](#tools-and-tech)[Milestones](#milestones)[Test Planning & Exec](#test-planning)[Fuzz Testing](#fuzz-testing)[Interactive Testing](#iast)[Penetration Testing](#penetration-testing)[Why the name?](#milestones)
-
-Project Medjay
-==============
 
 Abstract
 --------
 
 This project focusses on securing OpenMRS — a Java-based open source project to develop software to support the delivery of health care in developing countries. The project is divided into four parts, including, but not limited to - static & dynamic analysis, fuzzing, dependency checking, test coverage, and penetration testing. The project's main goal was to identify vulnerabilities in OpenMRS system using different techniques and implement fixes.
 
-Tools & Technologies
---------------------
-
 Several popular proprietary and open source tools such as Fortify, Defensics, Seeker, ZAP, Snyk, and Coverity were used to identify vulnerabilities in the OpenMRS system, adhering to the OWASP Application Security Verification Standard 4.0
 
-![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/1fbbed5da943087c6d3e06129231928c.png)
+![1fbbed5da943087c6d3e06129231928c.png (1207×624) (project-odyssey.s3.us-east-2.amazonaws.com)](https://project-odyssey.s3.us-east-2.amazonaws.com/1fbbed5da943087c6d3e06129231928c.png)
 
 Milestones
 ----------
@@ -83,32 +53,3 @@ Why Medjay?
 -----------
 
 While deciding the name, I wanted to focus on security and highlight its significance in ancient times. Medjay was a demonym used in various ways throughout ancient Egyptian history. The most prominent use was to describe an elite paramilitary police force during the initial times and later just policing in general. Since this project is about protecting assets and learning to defend against malicious activities, the term Medjay was found to be most fitting.
-
-Related Pages
--------------
-
-[Milestone 1](#)[Milestone 2](#)[Milestone 3](#)[Milestone 4](#)
-
-[projects](../../projects.markdown)
-
-Home
-
-[About](../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
-
-Education
-
-[Formal](../../education/formal.markdown)[Certification](../../education/certifications.markdown)[Pursuing](../../education/pursuing.markdown)
-
-Projects
-
-[Security](../../projects/security.markdown)[DevOps](../../projects/devops.markdown)[Internet of Things](../../projects/iot.markdown)
-
-Resources
-
-[Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
-
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.markdown)
-
-Passionately curious about technology
-
-Project Odyssey - © All rights reserved. 2020 Jubeen Shah

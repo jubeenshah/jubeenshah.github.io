@@ -1,32 +1,32 @@
- Harappa's Elements of IoT             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
+ Harappa's Elements of IoT              
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
-[Home](../../../index.html)
+[Home](../../../index.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
-[Home](../../../index.html)
-
-##### /
-
-[Projects](../../../projects.html)
+[Home](../../../index.markdown)
 
 ##### /
 
-[IoT](../../../projects/iot.html)
+[Projects](../../../projects.markdown)
 
 ##### /
 
-[Harappa](../../../projects/iot/harappa.html)
+[IoT](../../../projects/iot.markdown)
 
 ##### /
 
-[Elements of IoT](../../../projects/iot/harappa/project-details.html)
+[Harappa](../../../projects/iot/harappa.markdown)
+
+##### /
+
+[Elements of IoT](../../../projects/iot/harappa/project-details.markdown)
 
 Content
 -------
@@ -146,29 +146,29 @@ This subsections outlines the type of data that would be collected in the automa
 Related Pages
 -------------
 
-[Summary](../../../projects/iot/harappa.html)[Project Details](../../../projects/iot/harappa/project-details.html)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.html)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot-system-2.html)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.html)[Analytics & Computing](../../../projects/iot/harappa/analytics.html)[Conclusion](../../../projects/iot/harappa/conclusion.html)
+[Summary](../../../projects/iot/harappa.markdown)[Project Details](../../../projects/iot/harappa/project-details.markdown)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.markdown)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot-system-2.markdown)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.markdown)[Analytics & Computing](../../../projects/iot/harappa/analytics.markdown)[Conclusion](../../../projects/iot/harappa/conclusion.markdown)
 
-[project details](../../../projects/iot/harappa/project-details.html)
+[project details](../../../projects/iot/harappa/project-details.markdown)
 
-[elements of iot (contd.)](../../../projects/iot/harappa/elements-of-iot-system-2.html)
+[elements of iot (contd.)](../../../projects/iot/harappa/elements-of-iot-system-2.markdown)
 
 Home
 
-[About](../../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 Education
 
-[Formal](../../../education/formal.html)[Certification](../../../education/certifications.html)[Pursuing](../../../education/pursuing.html)
+[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
 Passionately curious about technology
 

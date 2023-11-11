@@ -1,28 +1,28 @@
- Odyssey's Design Tasks        try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1');
+ Odyssey's Design Tasks        
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
-[Home](../../../index.html)
+[Home](../../../index.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
-[Home](../../../index.html)
-
-##### /
-
-[Projects](../../../projects.html)
+[Home](../../../index.markdown)
 
 ##### /
 
-[Devops](../../../projects/devops.html)
+[Projects](../../../projects.markdown)
 
 ##### /
 
-[Odyssey](../../../projects/devops/odyssey.html)
+[Devops](../../../projects/devops.markdown)
+
+##### /
+
+[Odyssey](../../../projects/devops/odyssey.markdown)
 
 ##### /
 
@@ -112,29 +112,29 @@ Using animations I wanted to give certain life to the website, which would other
 Related Pages
 -------------
 
-[Summary](../../../projects/devops/odyssey.html)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
+[Summary](../../../projects/devops/odyssey.markdown)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
 
-[summary](../../../projects/devops/odyssey.html)
+[summary](../../../projects/devops/odyssey.markdown)
 
-[Development](../../../projects.html)
+[Development](../../../projects.markdown)
 
 Home
 
-[About](../../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 Education
 
-[Formal](../../../education/formal.html)[Certification](../../../education/certifications.html)[Pursuing](../../../education/pursuing.html)
+[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
 Passionately curious about technology
 

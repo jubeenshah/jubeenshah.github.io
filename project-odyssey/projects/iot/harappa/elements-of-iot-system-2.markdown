@@ -1,32 +1,32 @@
- Harappa's Elements of IoT System (Contd.)             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
+ Harappa's Elements of IoT System (Contd.)              
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
-[Home](../../../index.html)
+[Home](../../../index.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
-[Home](../../../index.html)
-
-##### /
-
-[Projects](../../../projects.html)
+[Home](../../../index.markdown)
 
 ##### /
 
-[IoT](../../../projects/iot.html)
+[Projects](../../../projects.markdown)
 
 ##### /
 
-[Harappa](../../../projects/iot/harappa.html)
+[IoT](../../../projects/iot.markdown)
 
 ##### /
 
-[Elements of IoT (contd.)](../../../projects/iot/harappa/elements-of-iot-system-2.html)
+[Harappa](../../../projects/iot/harappa.markdown)
+
+##### /
+
+[Elements of IoT (contd.)](../../../projects/iot/harappa/elements-of-iot-system-2.markdown)
 
 Content
 -------
@@ -67,7 +67,7 @@ As required by BR 7, BR 9, and BR 15 the following list of actuators are identif
 Community of Things
 -------------------
 
-This subsection outlines an arbitrary collection of things, as seen in the [things](../../../projects/iot/harappa/elements-of-iot.html) section, which are useful from a management perspective. There are several communities of things that are possible with the project, however, we limit ourselves to four.
+This subsection outlines an arbitrary collection of things, as seen in the [things](../../../projects/iot/harappa/elements-of-iot.markdown) section, which are useful from a management perspective. There are several communities of things that are possible with the project, however, we limit ourselves to four.
 
 *   Community of rooms: This would be a collection of the rooms in the house, with sub-communities defined for different types of rooms such as the living room, bathroom, and study room.
 *   Community of plants: This would be a collection of the different plants that would be identified in the house of the user.
@@ -98,7 +98,7 @@ This subsection outlines the communication. Between Heterogeneous sets of commun
 Conversations
 -------------
 
-This subsection outlines the different types of conversations that are possible between the sets and subsets of things, people, and data as discussed on the [previous](../../../projects/iot/harappa/elements-of-iot.html) page. A few of the many conversations possible are listed below.
+This subsection outlines the different types of conversations that are possible between the sets and subsets of things, people, and data as discussed on the [previous](../../../projects/iot/harappa/elements-of-iot.markdown) page. A few of the many conversations possible are listed below.
 
 *   Things to Data: Rooms would be monitored for different data points including temperature, humidity, air pressure, the light intensity which would be collected by different sensors in the room. For example,, when the temperature sensor records some value from the room it would generate data that would then be sent to the AWS environment for further processing or storage.
 *   Thing to Thing: The mobile device is used to manage the states of the devices in the environment. For example, when the mobile device is used by the user of the system to manage the state of switches in the environment, the user would toggle the switch on the mobile device via the application which would then be sent to the AWS environment for processing. This would then trigger a Lambda function which would then cause the switch in the house of the user to change states.
@@ -117,29 +117,29 @@ Enabling Technologies
 Related Pages
 -------------
 
-[Summary](../../../projects/iot/harappa.html)[Project Details](../../../projects/iot/harappa/project-details.html)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.html)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot.html)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.html)[Analytics & Computing](../../../projects/iot/harappa/analytics.html)[Conclusion](../../../projects/iot/harappa/conclusion.html)
+[Summary](../../../projects/iot/harappa.markdown)[Project Details](../../../projects/iot/harappa/project-details.markdown)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.markdown)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot.markdown)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.markdown)[Analytics & Computing](../../../projects/iot/harappa/analytics.markdown)[Conclusion](../../../projects/iot/harappa/conclusion.markdown)
 
-[elements of iot (1)](../../../projects/iot/harappa/elements-of-iot.html)
+[elements of iot (1)](../../../projects/iot/harappa/elements-of-iot.markdown)
 
-[Iot-a architecture](../../../projects/iot/harappa/iot-a.html)
+[Iot-a architecture](../../../projects/iot/harappa/iot-a.markdown)
 
 Home
 
-[About](../../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 Education
 
-[Formal](../../../education/formal.html)[Certification](../../../education/certifications.html)[Pursuing](../../../education/pursuing.html)
+[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
 Passionately curious about technology
 

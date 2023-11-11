@@ -1,3 +1,8 @@
+## Oikos
+
+In this project, privacy implications of smart wearable devices was studied. The primary goal of this project was to identify what are the privacy concerns of users, how they perceived data collection, and what is their level of awareness with regards to the data usage and privacy policies of smart wearable devices.
+
+
  Project Oikos by Jubeen              
 
 [![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.markdown)

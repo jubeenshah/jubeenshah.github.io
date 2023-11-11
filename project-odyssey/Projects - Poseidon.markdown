@@ -1,0 +1,3 @@
+## Poseidon
+
+This project covers the build, test, and deployment of pre-developed projects (NodeJS and Java) into a cloud environment using configuration management tools, and build tools. Measures were taken to make the project resilient to node failures. As part of the final milestone, monitoring and analysis component was developed and integrated using to monitor different metrics from each node.

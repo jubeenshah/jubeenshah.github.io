@@ -1,32 +1,32 @@
  Harappa's IoT-A Architecture             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
-[Home](../../../index.html)
+[Home](../../../index.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
-[Home](../../../index.html)
-
-##### /
-
-[Projects](../../../projects.html)
+[Home](../../../index.markdown)
 
 ##### /
 
-[IoT](../../../projects/iot.html)
+[Projects](../../../projects.markdown)
 
 ##### /
 
-[Harappa](../../../projects/iot/harappa.html)
+[IoT](../../../projects/iot.markdown)
 
 ##### /
 
-[IoT-A Architecture](../../../projects/iot/harappa/iot-a.html)
+[Harappa](../../../projects/iot/harappa.markdown)
+
+##### /
+
+[IoT-A Architecture](../../../projects/iot/harappa/iot-a.markdown)
 
 Content
 -------
@@ -41,7 +41,7 @@ Domain Model
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/ad5f82e879a9c5d6b5b442eb37e50551.svg)
 
-In this model, we outline the physical entities and the users of the that are colored in yellow. We also show the Virtual entities that comprise of the cloud services such as the compute, network, and storage (Turquise Color). Each of the physical entities — Lights, Room, Switch, Soil, and Door have the associated sensors and actuators (Blue Color) that are responsible for monitoring the state of the respective physical entity and also responsible for managing the state of the devices in the environment using the actuators — relays, valve etc. Finally, we use two types of identification mechanisms — RFID and Barcode. This was done primarily to allow for both Users and administrators to register new devices using the steps described on a [previous](../../../projects/iot/harappa/elements-of-iot.html) page.  
+In this model, we outline the physical entities and the users of the that are colored in yellow. We also show the Virtual entities that comprise of the cloud services such as the compute, network, and storage (Turquise Color). Each of the physical entities — Lights, Room, Switch, Soil, and Door have the associated sensors and actuators (Blue Color) that are responsible for monitoring the state of the respective physical entity and also responsible for managing the state of the devices in the environment using the actuators — relays, valve etc. Finally, we use two types of identification mechanisms — RFID and Barcode. This was done primarily to allow for both Users and administrators to register new devices using the steps described on a [previous](../../../projects/iot/harappa/elements-of-iot.markdown) page.  
 ‍  
 Taking an example of one of the physical entity to describe the model — Switch. For this physical entity, the RFID Tags, and the barcode would be used to identify the thing for registration purposes. The fault sensor would be used to monitor the status of the smart switches to keep into account whether the device is operating or not. Also, this physical entity has an associated actuator, that is, the relay that would act on the switch to which it is connected.   
 ‍  
@@ -61,29 +61,29 @@ Finally, each of the devices also has the associated functions that can call and
 Related Pages
 -------------
 
-[Summary](../../../projects/iot/harappa.html)[Project Details](../../../projects/iot/harappa/project-details.html)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.html)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot.html)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.html)[Analytics & Computing](../../../projects/iot/harappa/analytics.html)[Conclusion](../../../projects/iot/harappa/conclusion.html)
+[Summary](../../../projects/iot/harappa.markdown)[Project Details](../../../projects/iot/harappa/project-details.markdown)[Elements of IoT (1)](../../../projects/iot/harappa/elements-of-iot.markdown)[Elements of IoT (2)](../../../projects/iot/harappa/elements-of-iot.markdown)[IoT-A Architecture](../../../projects/iot/harappa/iot-a.markdown)[Analytics & Computing](../../../projects/iot/harappa/analytics.markdown)[Conclusion](../../../projects/iot/harappa/conclusion.markdown)
 
-[elements of iot (2)](../../../projects/iot/harappa/elements-of-iot-system-2.html)
+[elements of iot (2)](../../../projects/iot/harappa/elements-of-iot-system-2.markdown)
 
-[Analytics & computing](../../../projects/iot/harappa/analytics.html)
+[Analytics & computing](../../../projects/iot/harappa/analytics.markdown)
 
 Home
 
-[About](../../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 Education
 
-[Formal](../../../education/formal.html)[Certification](../../../education/certifications.html)[Pursuing](../../../education/pursuing.html)
+[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
 Passionately curious about technology
 

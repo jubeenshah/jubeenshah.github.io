@@ -1,4 +1,4 @@
- Jubeen Shah       try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
+ Jubeen Shah        
 
 [![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](#)
 
@@ -83,11 +83,11 @@ projects
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/9e27bf0382944aa66e5e702bc04bfb2b.png)
 
-I was introduced to DevOps through a course at NC State University back in 2019. since then, I've worked on a few projects that try to incorporate the power of continuous delivery pipeline into a seamless process of build, test, and deployment. in fact, I update this very website (project [odyssey](projects/devops/odyssey.html)) regularly using DevOps.  
+I was introduced to DevOps through a course at NC State University back in 2019. since then, I've worked on a few projects that try to incorporate the power of continuous delivery pipeline into a seamless process of build, test, and deployment. in fact, I update this very website (project [odyssey](./projects/devops/odyssey.markdown)) regularly using DevOps.  
   
 I'm continually working on improving my skills and learning new ones to integrate DevOps with other domains (like security).
 
-[see projects](projects/devops.html)
+[see projects](./projects/devops.markdown)
 
 ![background abstract art for devops section created in illustrator by Jubeen](https://project-odyssey.s3.us-east-2.amazonaws.com/7abaf6ecc40238c3064cac1fb23b6546.svg)
 
@@ -99,7 +99,7 @@ I'm continually working on improving my skills and learning new ones to integrat
 
 Security and Privacy have always been very close topics to me. I started my journey with security in 2016 with a semester at Ben Gurion University of the Negev, Israel. I achieved my masters in computer science at NC State University with a security specialization and will be joining LexisNexis as a security engineer in july. I am also working towards nourishing my skills in the privacy domain.
 
-[see projects](projects/security.html)
+[see projects](./projects/security.markdown)
 
 ### Internet of Things
 
@@ -107,9 +107,9 @@ Security and Privacy have always been very close topics to me. I started my jour
 
 ![Fire sensor prototype image from IoT Project named Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/ae21b8dc4ac25e36b0dfe0cb901fe0d4.jpg)
 
-IoT holds a special place in my heart because of its potential to make the world a better place, and because I've worked on projects ([cosmos](projects/iot/cosmos.html)) that have taught me a lot. Not only in terms of skills but also in terms of capabilities. My long-term goal is to blend my skills in security, privacy, and DevOps with IoT to help build a better, secure, and private world.
+IoT holds a special place in my heart because of its potential to make the world a better place, and because I've worked on projects ([cosmos](./projects/iot/cosmos.markdown)) that have taught me a lot. Not only in terms of skills but also in terms of capabilities. My long-term goal is to blend my skills in security, privacy, and DevOps with IoT to help build a better, secure, and private world.
 
-[see projects](projects/iot.html)
+[see projects](./projects/iot.markdown)
 
 work
 ====
@@ -158,7 +158,7 @@ Just Dial Limited
 education
 =========
 
-[](education/formal.html)
+[](./education/formal.markdown)
 
 Formal
 ------
@@ -175,7 +175,7 @@ nmims university
 **bachelors -** information technology
 --------------------------------------
 
-[](education/certifications.html)
+[](./education/certifications.markdown)
 
 certs
 -----
@@ -193,7 +193,7 @@ certified core user
 certified power user
 ------------------------------------------
 
-[](education/pursuing.html)
+[](./education/pursuing.markdown)
 
 pursuing
 --------
@@ -249,21 +249,21 @@ Oops! Something went wrong while submitting the form.
 
 Home
 
-[About](index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](privacy.html)
+[About](index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](privacy.markdown)
 
 Education
 
-[Formal](education/formal.html)[Certification](education/certifications.html)[Pursuing](education/pursuing.html)
+[Formal](./education/formal.markdown)[Certification](./education/certifications.markdown)[Pursuing](./education/pursuing.markdown)
 
 Projects
 
-[Security](projects/security.html)[DevOps](projects/devops.html)[Internet of Things](projects/iot.html)
+[Security](./projects/security.markdown)[DevOps](./projects/devops.markdown)[Internet of Things](./projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](index.markdown)
 
 Passionately curious about technology
 

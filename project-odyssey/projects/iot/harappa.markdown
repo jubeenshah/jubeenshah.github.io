@@ -1,28 +1,28 @@
- Project Harappa by Jubeen             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
+ Project Harappa by Jubeen              
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.markdown)
 
-[Home](../../index.html)
+[Home](../../index.markdown)
 
 Projects
 
-[Security](../../projects/security.html)[DevOps](../../projects/devops.html)[Internet of Things](../../projects/iot.html)
+[Security](../../projects/security.markdown)[DevOps](../../projects/devops.markdown)[Internet of Things](../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
 
-[Home](../../index.html)
-
-##### /
-
-[Projects](../../projects.html)
+[Home](../../index.markdown)
 
 ##### /
 
-[Internet of Things](../../projects/iot.html)
+[Projects](../../projects.markdown)
 
 ##### /
 
-[Harappa](../../projects/iot/harappa.html)
+[Internet of Things](../../projects/iot.markdown)
+
+##### /
+
+[Harappa](../../projects/iot/harappa.markdown)
 
 Content
 -------
@@ -60,31 +60,31 @@ For the name for the project, I wanted to choose something that has historical r
 Related Pages
 -------------
 
-[Summary](../../projects/iot/harappa.html)[Project Details](../../projects/iot/harappa/project-details.html)[Elements of IoT (1)](../../projects/iot/harappa/elements-of-iot.html)[Elements of IoT (2)](../../projects/iot/harappa/elements-of-iot-system-2.html)[IoT-A Architecture](../../projects/iot/harappa/iot-a.html)[Analytics & Computing](../../projects/iot/harappa/analytics.html)[Conclusion](../../projects/iot/harappa/conclusion.html)
+[Summary](../../projects/iot/harappa.markdown)[Project Details](../../projects/iot/harappa/project-details.markdown)[Elements of IoT (1)](../../projects/iot/harappa/elements-of-iot.markdown)[Elements of IoT (2)](../../projects/iot/harappa/elements-of-iot-system-2.markdown)[IoT-A Architecture](../../projects/iot/harappa/iot-a.markdown)[Analytics & Computing](../../projects/iot/harappa/analytics.markdown)[Conclusion](../../projects/iot/harappa/conclusion.markdown)
 
-[projects](../../projects.html)
+[projects](../../projects.markdown)
 
 [view report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Harappa/52A3EF1A5E031436D4C60715469F3DD5.pdf)
 
-[project details](../../projects/iot/harappa/project-details.html)
+[project details](../../projects/iot/harappa/project-details.markdown)
 
 Home
 
-[About](../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.html)
+[About](../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
 
 Education
 
-[Formal](../../education/formal.html)[Certification](../../education/certifications.html)[Pursuing](../../education/pursuing.html)
+[Formal](../../education/formal.markdown)[Certification](../../education/certifications.markdown)[Pursuing](../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../projects/security.html)[DevOps](../../projects/devops.html)[Internet of Things](../../projects/iot.html)
+[Security](../../projects/security.markdown)[DevOps](../../projects/devops.markdown)[Internet of Things](../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.markdown)
 
 Passionately curious about technology
 

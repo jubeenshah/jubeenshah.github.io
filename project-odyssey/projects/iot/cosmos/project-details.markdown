@@ -1,32 +1,32 @@
- Cosmos' project details             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
+ Cosmos' project details              
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
-[Home](../../../index.html)
+[Home](../../../index.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
-[Home](../../../index.html)
-
-##### /
-
-[Projects](../../../projects.html)
+[Home](../../../index.markdown)
 
 ##### /
 
-[IoT](../../../projects/iot.html)
+[Projects](../../../projects.markdown)
 
 ##### /
 
-[Cosmos](../../../projects/iot/cosmos.html)
+[IoT](../../../projects/iot.markdown)
 
 ##### /
 
-[Project Details](../../../projects/iot/cosmos/project-details.html)
+[Cosmos](../../../projects/iot/cosmos.markdown)
+
+##### /
+
+[Project Details](../../../projects/iot/cosmos/project-details.markdown)
 
 Content
 -------
@@ -60,29 +60,29 @@ The figure above describes a system consisting of four necessary components whic
 Related Pages
 -------------
 
-[Summary](../../../projects/iot/cosmos.html)[Cosmos Project Details](../../../projects/iot/cosmos/project-details.html)[Automation Server](../../../projects/iot/cosmos/automation-server.html)[OpenHAB](../../../projects/iot/cosmos/openhab.html)[Modules  Details](../../../projects/iot/cosmos/modules.html)
+[Summary](../../../projects/iot/cosmos.markdown)[Cosmos Project Details](../../../projects/iot/cosmos/project-details.markdown)[Automation Server](../../../projects/iot/cosmos/automation-server.markdown)[OpenHAB](../../../projects/iot/cosmos/openhab.markdown)[Modules  Details](../../../projects/iot/cosmos/modules.markdown)
 
-[cosmos summary](../../../projects/iot/cosmos.html)
+[cosmos summary](../../../projects/iot/cosmos.markdown)
 
-[automation server](../../../projects/iot/cosmos/automation-server.html)
+[automation server](../../../projects/iot/cosmos/automation-server.markdown)
 
 Home
 
-[About](../../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.html)
+[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 Education
 
-[Formal](../../../education/formal.html)[Certification](../../../education/certifications.html)[Pursuing](../../../education/pursuing.html)
+[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
 
 Projects
 
-[Security](../../../projects/security.html)[DevOps](../../../projects/devops.html)[Internet of Things](../../../projects/iot.html)
+[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
 
 Resources
 
 [Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
 
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.html)
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
 
 Passionately curious about technology
 
