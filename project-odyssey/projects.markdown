@@ -12,7 +12,6 @@ Projects
 
 [Home](index.markdown)
 
-##### /
 
 [Projects](projects.markdown)
 

@@ -11,25 +11,10 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../../privacy.markdown)
 
 [Home](../../../../index.markdown)
-
-##### /
-
 [Projects](../../../../projects.markdown)
-
-##### /
-
 [IoT](../../../../projects/iot.markdown)
-
-##### /
-
 [Cosmos](../../../../projects/iot/cosmos.markdown)
-
-##### /
-
 [Modules](../../../../projects/iot/cosmos/modules.markdown)
-
-##### /
-
 [Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)
 
 Content

@@ -11,13 +11,7 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../privacy.markdown)
 
 [Home](../index.markdown)
-
-##### /
-
 [Education](#)
-
-##### /
-
 [Formal](../education/formal.markdown)
 
 ![north-carolina-state-university-logo](https://project-odyssey.s3.us-east-2.amazonaws.com/5f4c26895751265dea2b6f25dfcdc7ff.jpg)

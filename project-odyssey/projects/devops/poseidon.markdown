@@ -11,17 +11,8 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
 
 [Home](../../index.markdown)
-
-##### /
-
 [Projects](../../projects.markdown)
-
-##### /
-
 [Devops](../../projects/devops.markdown)
-
-##### /
-
 [Poseidon](../../projects/devops/poseidon.markdown)
 
 Content

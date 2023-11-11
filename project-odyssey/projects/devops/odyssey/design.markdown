@@ -11,21 +11,9 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 [Home](../../../index.markdown)
-
-##### /
-
 [Projects](../../../projects.markdown)
-
-##### /
-
 [Devops](../../../projects/devops.markdown)
-
-##### /
-
 [Odyssey](../../../projects/devops/odyssey.markdown)
-
-##### /
-
 [Design Task](../../../projects/devops/odyssey/design.html)
 
 Content
@@ -57,42 +45,6 @@ I also wanted to give subconscious clues to associate colors with the different 
   
 Below are listed all of the colors that have been used as Background and Foreground colors for the project. Eventually, I want to give the project a Dark and Light mode toggle, which would appeal to different demographics with different color preference. Also, I want to utilize the 'prefers-color-scheme' functionality to automatically set the color theme according to the users device preferences on colors.  
 
-#### Background Colors
-
-##### #171F24
-
-##### #373737
-
-##### #212121
-
-##### #18242B
-
-##### #616161
-
-##### #15232b
-
-##### #424242
-
-##### #111111
-
-#### Foreground Colors
-
-##### #CF6679
-
-##### #3700B3
-
-##### #f6ee8c
-
-##### #BB8CF6
-
-##### #03DAC5
-
-##### #FFFFFF
-
-##### #9980ff
-
-##### #84C9FB
-
 ### Design Illustrations
 
 For the design illustrations on the website, I wanted to design illustrations that relate to the topics under considerations. It gives me not only the opportunity to learn new skills, but also the freedom to seperate the design into multiple layers and use them to give a parallax effect while scrolling.
@@ -118,24 +70,3 @@ Related Pages
 
 [Development](../../../projects.markdown)
 
-Home
-
-[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
-
-Education
-
-[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
-
-Projects
-
-[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
-
-Resources
-
-[Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
-
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
-
-Passionately curious about technology
-
-Project Odyssey - © All rights reserved. 2020 Jubeen Shah

@@ -114,9 +114,6 @@ How can you contact me about this policy
 If you have questions or comments about this policy, you may contact me, Jubeen Shah, by email at jnshah2 {a.t sign} ncsu {d.o.t}  
 
 [Home](index.markdown)
-
-##### /
-
 [Privacy Notice](privacy.markdown)
 
 Home

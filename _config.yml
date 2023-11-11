@@ -53,12 +53,6 @@ exclude:
  - vendor/ruby/
 
 collections:
-  education:
-    output: true
-    permalink: /education/:path
-  projects:
-    output: true
-    permalink: /projects/:path
   project-odyssey:
     output: true
     permalink: /project-odyssey/:path

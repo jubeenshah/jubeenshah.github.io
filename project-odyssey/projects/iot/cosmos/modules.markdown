@@ -11,21 +11,9 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
 
 [Home](../../../index.markdown)
-
-##### /
-
 [Projects](../../../projects.markdown)
-
-##### /
-
 [Internet of Things](../../../projects/iot.markdown)
-
-##### /
-
 [Cosmos](../../../projects/iot/cosmos.markdown)
-
-##### /
-
 [Modules](../../../projects/iot/cosmos/modules.markdown)
 
 Content
@@ -114,24 +102,3 @@ Related Pages
 
 [intrusion sensor](../../../projects/iot/cosmos/modules/intrusion-sensor.html)
 
-Home
-
-[About](../../../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../../privacy.markdown)
-
-Education
-
-[Formal](../../../education/formal.markdown)[Certification](../../../education/certifications.markdown)[Pursuing](../../../education/pursuing.markdown)
-
-Projects
-
-[Security](../../../projects/security.markdown)[DevOps](../../../projects/devops.markdown)[Internet of Things](../../../projects/iot.markdown)
-
-Resources
-
-[Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
-
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../../index.markdown)
-
-Passionately curious about technology
-
-Project Odyssey - © All rights reserved. 2020 Jubeen Shah

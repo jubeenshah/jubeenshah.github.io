@@ -11,17 +11,8 @@ Projects
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.markdown)
 
 [Home](../../index.markdown)
-
-##### /
-
 [Projects](../../projects.markdown)
-
-##### /
-
 [Internet of Things](../../projects/iot.markdown)
-
-##### /
-
 [Harappa](../../projects/iot/harappa.markdown)
 
 Content
