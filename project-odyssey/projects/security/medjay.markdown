@@ -1,18 +1,48 @@
-## Medjay
+ Project Medjay by Jubeen             try{Typekit.load();}catch(e){} !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);    window.dataLayer = window.dataLayer || \[\]; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-167957177-1'); 
 
-This project covers the security vulnerability testing that was performed on the OpenMRS - an open source healthcare system using static and dynamic analysis tools. The project was divided into three stages to understand the different aspects of security testing of an open source application, and contribute patches to it.
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.html)
 
+[Home](../../index.html)
+
+Projects
+
+[Security](../../projects/security.html)[DevOps](../../projects/devops.html)[Internet of Things](../../projects/iot.html)
+
+[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.html)
+
+[Home](../../index.html)
+
+##### /
+
+[Projects](../../projects.html)
+
+##### /
+
+[Security](../../projects/security.html)
+
+##### /
+
+[Medjay](../../projects/security/medjay.html)
+
+Content
+-------
 
 [Abstract](#abstract)[Tools and Technologies](#tools-and-tech)[Milestones](#milestones)[Test Planning & Exec](#test-planning)[Fuzz Testing](#fuzz-testing)[Interactive Testing](#iast)[Penetration Testing](#penetration-testing)[Why the name?](#milestones)
+
+Project Medjay
+==============
 
 Abstract
 --------
 
 This project focusses on securing OpenMRS — a Java-based open source project to develop software to support the delivery of health care in developing countries. The project is divided into four parts, including, but not limited to - static & dynamic analysis, fuzzing, dependency checking, test coverage, and penetration testing. The project's main goal was to identify vulnerabilities in OpenMRS system using different techniques and implement fixes.
 
+Tools & Technologies
+--------------------
+
 Several popular proprietary and open source tools such as Fortify, Defensics, Seeker, ZAP, Snyk, and Coverity were used to identify vulnerabilities in the OpenMRS system, adhering to the OWASP Application Security Verification Standard 4.0
 
-![1fbbed5da943087c6d3e06129231928c.png (1207×624) (project-odyssey.s3.us-east-2.amazonaws.com)](https://project-odyssey.s3.us-east-2.amazonaws.com/1fbbed5da943087c6d3e06129231928c.png)
+![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/1fbbed5da943087c6d3e06129231928c.png)
 
 Milestones
 ----------
@@ -53,3 +83,32 @@ Why Medjay?
 -----------
 
 While deciding the name, I wanted to focus on security and highlight its significance in ancient times. Medjay was a demonym used in various ways throughout ancient Egyptian history. The most prominent use was to describe an elite paramilitary police force during the initial times and later just policing in general. Since this project is about protecting assets and learning to defend against malicious activities, the term Medjay was found to be most fitting.
+
+Related Pages
+-------------
+
+[Milestone 1](#)[Milestone 2](#)[Milestone 3](#)[Milestone 4](#)
+
+[projects](../../projects.html)
+
+Home
+
+[About](../../index.html)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../privacy.html)
+
+Education
+
+[Formal](../../education/formal.html)[Certification](../../education/certifications.html)[Pursuing](../../education/pursuing.html)
+
+Projects
+
+[Security](../../projects/security.html)[DevOps](../../projects/devops.html)[Internet of Things](../../projects/iot.html)
+
+Resources
+
+[Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
+
+[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../../index.html)
+
+Passionately curious about technology
+
+Project Odyssey - © All rights reserved. 2020 Jubeen Shah
