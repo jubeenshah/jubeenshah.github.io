@@ -1,4 +1,4 @@
- Jubeen's Certifications              
+Jubeen's Certifications              
 
 [![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../index.markdown)
 
@@ -36,8 +36,6 @@ certified core user
 
 ![north-carolina-state-university-logo](https://project-odyssey.s3.us-east-2.amazonaws.com/fb349c5e1b64c80b91084bcf6c2ee79e.jpg)
 
-splunk
-------
 
 certified power user
 --------------------
@@ -45,25 +43,3 @@ certified power user
 [View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/Splunk/C8500F4B3A8ED2A12E27A3A530FFC852.pdf)
 
 [home](javascript:history.back();)
-
-Home
-
-[About](../index.markdown)[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../privacy.markdown)
-
-Education
-
-[Formal](../education/formal.markdown)[Certification](../education/certifications.markdown)[Pursuing](../education/pursuing.markdown)
-
-Projects
-
-[Security](../projects/security.markdown)[DevOps](../projects/devops.markdown)[Internet of Things](../projects/iot.markdown)
-
-Resources
-
-[Resumé](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Resume/JubeenShah-Resume.pdf)
-
-[![banner icon for Jubeen Shah](https://project-odyssey.s3.us-east-2.amazonaws.com/d130db536435d20d7579fafb511ca245.svg)](../index.markdown)
-
-Passionately curious about technology
-
-Project Odyssey - © All rights reserved. 2020 Jubeen Shah
