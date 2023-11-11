@@ -1,0 +1,55 @@
+## Medjay
+
+This project covers the security vulnerability testing that was performed on the OpenMRS - an open source healthcare system using static and dynamic analysis tools. The project was divided into three stages to understand the different aspects of security testing of an open source application, and contribute patches to it.
+
+
+[Abstract](#abstract)[Tools and Technologies](#tools-and-tech)[Milestones](#milestones)[Test Planning & Exec](#test-planning)[Fuzz Testing](#fuzz-testing)[Interactive Testing](#iast)[Penetration Testing](#penetration-testing)[Why the name?](#milestones)
+
+Abstract
+--------
+
+This project focusses on securing OpenMRS — a Java-based open source project to develop software to support the delivery of health care in developing countries. The project is divided into four parts, including, but not limited to - static & dynamic analysis, fuzzing, dependency checking, test coverage, and penetration testing. The project's main goal was to identify vulnerabilities in OpenMRS system using different techniques and implement fixes.
+
+Several popular proprietary and open source tools such as Fortify, Defensics, Seeker, ZAP, Snyk, and Coverity were used to identify vulnerabilities in the OpenMRS system, adhering to the OWASP Application Security Verification Standard 4.0
+
+![1fbbed5da943087c6d3e06129231928c.png (1207×624) (project-odyssey.s3.us-east-2.amazonaws.com)](https://project-odyssey.s3.us-east-2.amazonaws.com/1fbbed5da943087c6d3e06129231928c.png)
+
+Milestones
+----------
+
+### Milestone 1 - Security Test Planning & Execution
+
+*   Familiarized myself with black box testing, and writing repeatable test cases for verification of vulnerabilities
+*   Carried out static analysis with Fortify and Coverity helped understand common security mistakes, and helped develop a sense, and a need for secure coding practice
+*   Mapped vulnerabilities found, to OWASP ASVS 4.0  
+    
+*   Maintained an average of finding one vulnerability per hour, for 24 hours worth of testing, combining both manual testing, and static analysis  
+    
+
+### Milestone 2 - Fuzz Testing
+
+*   Performed Fuzz testing on OpenMRS using ZAP and Defensics to find vulnerabilities of the following types, including but not limited to, Injection, Buffer Overflow, XSS, and SQL Injection.
+*   Also created a report for finding vulnerable dependencies using OWASP Dependency Check, RedHat Victims, Snyk, and Github's Checker and compared the tools to find the best suit for the requirements
+*   Maintained an average of finding one vulnerability per three hour, for 24 hours worth of testing, combining both ZAP, and Defensics analysis.  
+    
+
+### Milestone 3 - Interactive Testing & Test Coverage
+
+*   Performed Interactive Security Testing using seeker to and vulnerabilities in OpenMRS
+*   Identified several logging related security vulnerabilities in OpenMRS
+*   Maintained an average of finding two vulnerabilities per hour, for ten hours worth of testing  
+    
+*   Calculated test coverage, as a result of all the vulnerabilities found through the three milestones.  
+    
+
+### Milestone 3 - Penetration Testing
+
+*   Carried out Penetration Testing in OpenMRS
+*   Identified several (15) additional security vulnerabilities in OpenMRS in three hours worth of penetration testing.
+*   Proposed and Implemented security fixes for few vulnerabilities found in the application  
+    
+
+Why Medjay?
+-----------
+
+While deciding the name, I wanted to focus on security and highlight its significance in ancient times. Medjay was a demonym used in various ways throughout ancient Egyptian history. The most prominent use was to describe an elite paramilitary police force during the initial times and later just policing in general. Since this project is about protecting assets and learning to defend against malicious activities, the term Medjay was found to be most fitting.
