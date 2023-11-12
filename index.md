@@ -15,7 +15,7 @@ Cybersecurity professional with 3 yrs of experience in EDR, cloud, and app secur
 
 Looking for a mentor to help me. So if you can help, please do! :) [Link](/_posts/2023-11-12-looking-for-mentor.md)
 
-Have a look around. Feel free to send any feedback my way. It is becoming a weekend project rather than "one and done". 
+Have a look around. Feel free to send any feedback my way. It is becoming a weekend project rather than "one and done". Sharing some of my previous projects, blogs, certifications and other things over the years.  
 
 You can reach me through my [LinkedIn](https://www.linkedin.com/in/jubeen-shah/), at this point.
 
