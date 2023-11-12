@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Modules"
 categories: ["projects", "iot"]
 ---  

@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Harappa - Analytics & Computing"
 categories: ["projects", "iot"]
 ---             

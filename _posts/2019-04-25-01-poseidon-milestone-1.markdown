@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Poseidon: Milestone 1 - Configuration Management & Build)"
 categories: ["projects","devops"]
 ---   

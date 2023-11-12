@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Medjay"
 categories: ["projects","security", "Offensive Security"]
 ---

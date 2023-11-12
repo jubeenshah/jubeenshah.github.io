@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Oikos: Privacy implications of Smart Weareable Devices (Capstone Project)"
 categories: ["projects","security", "privacy"]
 ---

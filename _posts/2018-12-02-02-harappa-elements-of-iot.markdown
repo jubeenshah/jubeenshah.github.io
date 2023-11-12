@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Harappa - Elements of IoT"
 categories: ["projects", "iot"]
 ---                       

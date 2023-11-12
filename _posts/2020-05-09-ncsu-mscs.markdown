@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: education
 categories: ["education","formal"]
 title: "Graduated: NCSU MSCS - Cyber Security Specialization"
 summary: "School, Jr. College, College, University"

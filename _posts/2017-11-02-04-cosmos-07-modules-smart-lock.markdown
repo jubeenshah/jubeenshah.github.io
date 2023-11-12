@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Smart Lock"
 categories: ["projects", "iot"]
 ---  

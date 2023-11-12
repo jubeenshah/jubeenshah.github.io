@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: OpenHab Configuration"
 categories: ["projects", "iot"]
 ---  

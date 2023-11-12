@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Automation Server"
 categories: ["projects", "iot"]
 ---   

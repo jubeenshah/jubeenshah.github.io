@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Oikos: Final Words"
 categories: ["projects","security", "privacy"]
 ---            

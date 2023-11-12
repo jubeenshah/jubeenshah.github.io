@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Connected Switch"
 categories: ["projects", "iot"]
 ---  

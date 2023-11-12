@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Ambient Station"
 categories: ["projects", "iot"]
 ---  

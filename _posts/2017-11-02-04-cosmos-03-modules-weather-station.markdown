@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Weather Station"
 categories: ["projects", "iot"]
 ---  

@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Harappa - Project Details"
 categories: ["projects", "iot"]
 ---                       

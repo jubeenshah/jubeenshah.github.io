@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Smart LEDs"
 categories: ["projects", "iot"]
 --- 

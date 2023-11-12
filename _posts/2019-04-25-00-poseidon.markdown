@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Poseidon: Building the pipelines (Capstone Project)"
 categories: ["projects","devops"]
 ---           

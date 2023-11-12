@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Fire Sensor"
 categories: ["projects", "iot"]
 ---             

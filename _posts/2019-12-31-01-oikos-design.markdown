@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Oikos: Study Design"
 categories: ["projects","security", "privacy"]
 ---            

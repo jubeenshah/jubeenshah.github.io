@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Harappa - Architecting the correct way (Capstone Project)"
 categories: ["projects", "iot"]
 ---          

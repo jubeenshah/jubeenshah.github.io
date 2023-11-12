@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: education
 categories: ["education","formal"]
 title: "Graduated: MPSTME - Bachelors in IT"
 summary: "School, Jr. College, College, University"

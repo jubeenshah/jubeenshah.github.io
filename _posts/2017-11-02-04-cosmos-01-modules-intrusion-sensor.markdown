@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Intrusion Sensor"
 categories: ["projects", "iot"]
 ---  
