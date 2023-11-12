@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Oikos"
+title: "Odyssey: Trying to tell a story"
 categories: ["projects","devops"]
 ---
 

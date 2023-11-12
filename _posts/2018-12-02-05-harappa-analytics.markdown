@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Harappa - Analytics & Computing"
+title: "Harappa: Analytics & Computing"
 categories: ["projects", "iot"]
 ---             
 

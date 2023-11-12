@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Medjay"
-categories: ["projects","security", "Offensive Security"]
+title: "Medjay: Defending offensively (Capstone Project)"
+categories: ["projects","security"]
 ---
             
 

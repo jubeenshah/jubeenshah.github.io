@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Odyssey: trying to tell a story"
+title: "Odyssey: Initial Design"
 categories: ["projects","devops"]
 ---          
 

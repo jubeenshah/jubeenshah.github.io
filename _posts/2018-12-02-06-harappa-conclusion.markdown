@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Harappa - Final Words"
+title: "Harappa: Final Words"
 categories: ["projects", "iot"]
 ---             
 
