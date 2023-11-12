@@ -1,5 +1,5 @@
 ---
-title: "Oikos"
+title: "Oikos: Analysis and Interpretations"
 categories: ["projects","security", "privacy"]
 ---            
 
@@ -62,9 +62,9 @@ From the data that was collected approximately 40% were fundamentalist, 33% were
 Related Pages
 -------------
 
-[Summary](../../../../_posts/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-oikos-03-conclusion.markdown)
+[Summary](../../../../_posts/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
 
 [study design](../../../projects/security/oikos/design.html)
 
-[conclusion](2019-12-31-oikos-03-conclusion.markdown)
+[conclusion](2019-12-31-03-oikos-conclusion.markdown)
 

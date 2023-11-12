@@ -1,7 +1,7 @@
 ---
 layout: posts
 categories: ["education","professional"]
-title: "Formal Education"
+title: "Certification from HBS Online - Credential of Readiness (CORe) "
 summary: "School, Jr. College, College, University"
 ---
 

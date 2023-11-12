@@ -1,7 +1,7 @@
 ---
 layout: page
 categories: ["education","certificates"]
-title: "Certifications"
+title: "Certified as AWS Solutions Architect"
 summary: "Any Vendor/Original Equipment Mafucaturer pertaining Certifications"
 ---
 

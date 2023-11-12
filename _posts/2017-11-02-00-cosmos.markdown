@@ -3,23 +3,15 @@ layout: project
 title: "Cosmos: A ubiquitous automation solution"
 categories: ["projects", "iot"]
 ---     
-[Home](../../project-odyssey/index.markdown)
-
-Projects
-
-[Security](../../projects/01-security.markdown)[DevOps](../../projects/02-devops.markdown)[Internet of Things](../../projects/03-iot.markdown)
-
-[Contact](mailto:jnshah2@ncsu.edu)[Privacy](../../project-odyssey/privacy.markdown)
-
-[Home](../../project-odyssey/index.markdown)
-[Projects](../../project-odyssey/projects.markdown)
-[Internet of Things](../../projects/03-iot.markdown)
-[Cosmos](2017-11-02-cosmos.markdown)
 
 Content
 -------
 
-[Abstract](#abstract)[Video Pitch](#video-pitch)[Why the Name?](#cosmos-name)[Tools & Technologies](#tools-and-technology)[Key Learning](#key-learning)
+* [Abstract](#abstract)
+* [Video Pitch](#video-pitch)
+* [Why the Name?](#cosmos-name)
+* [Tools & Technologies](#tools-and-technology)
+* [Key Learning](#key-learning)
 
 Cosmos
 ======

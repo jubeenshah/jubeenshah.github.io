@@ -83,7 +83,7 @@ Cosmos: Smart Lock is the final module, that was developed by me in the project.
 Related Pages
 -------------
 
-[Summary](../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules.markdown)
+[Summary](../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
 
 [Openhab configuration](2017-11-02-cosmos-03-openhab.markdown)
 

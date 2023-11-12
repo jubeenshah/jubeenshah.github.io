@@ -127,9 +127,9 @@ This subsections outlines the type of data that would be collected in the automa
 Related Pages
 -------------
 
-[Summary](2018-12-02-harappa.markdown)[Project Details](2018-12-02-harappa-01-project-details.markdown)[Elements of IoT (1)](2018-12-02-harappa-02-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-harappa-03-elements-of-iot-system.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
+[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-harappa-03-elements-of-iot-system.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
 
-[project details](2018-12-02-harappa-01-project-details.markdown)
+[project details](2018-12-02-01-harappa-project-details.markdown)
 
 [elements of iot (contd.)](2018-12-02-harappa-03-elements-of-iot-system.markdown)
 

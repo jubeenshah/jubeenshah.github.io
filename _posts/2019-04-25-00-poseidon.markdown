@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oikos"
+title: "Poseidon: Building the pipelines (Capstone Project)"
 categories: ["projects","devops"]
 ---           
 

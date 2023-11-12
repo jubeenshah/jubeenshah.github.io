@@ -52,9 +52,9 @@ Using animations I wanted to give certain life to the website, which would other
 Related Pages
 -------------
 
-[Summary](2020-06-06-odyssey.markdown)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
+[Summary](2020-06-06-00-odyssey.markdown)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
 
-[summary](2020-06-06-odyssey.markdown)
+[summary](2020-06-06-00-odyssey.markdown)
 
 [Development](../../../projects.markdown)
 

@@ -1,5 +1,5 @@
 ---
-title: "Oikos"
+title: "Oikos: Study Design"
 categories: ["projects","security", "privacy"]
 ---            
 
@@ -26,7 +26,7 @@ In total, we received 51 responses, including the people who reviewed multiple c
 Related Pages
 -------------
 
-[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-oikos-03-conclusion.markdown)
+[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
 
 [projects](../../../projects.markdown)
 

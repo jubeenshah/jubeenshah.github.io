@@ -1,7 +1,7 @@
 ---
 layout: page
 categories: ["education","certificates"]
-title: "Certifications"
+title: "Certified as Splunk Core User"
 summary: "Any Vendor/Original Equipment Mafucaturer pertaining Certifications"
 ---
 

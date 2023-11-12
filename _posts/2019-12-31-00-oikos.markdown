@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oikos"
+title: "Oikos: Privacy implications of Smart Weareable Devices (Capstone Project)"
 categories: ["projects","security", "privacy"]
 ---
 
@@ -35,7 +35,7 @@ Like with other projects, I wanted to give the project a historical flavor. Oiko
 Related Pages
 -------------
 
-[Summary](2019-12-31-oikos.markdown)[Study Design](../../projects/security/oikos/design.html)[Analysis](../../projects/security/oikos/analysis.html)[Conclusion](../project-odyssey/projects/security/oikos/conclusion.markdown)
+[Summary](2019-12-31-00-oikos.markdown)[Study Design](../../projects/security/oikos/design.html)[Analysis](../../projects/security/oikos/analysis.html)[Conclusion](../project-odyssey/projects/security/oikos/conclusion.markdown)
 
 [projects](../project-odyssey/projects.markdown)
 

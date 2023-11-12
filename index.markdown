@@ -93,43 +93,6 @@ Just Dial Limited
 *   Worked with deep learning technologies with respect to image classification and implementation.
 *   Primary role was to develop an image classification model and implementation of an intuitive user interface.
 
-education
-=========
-
-[](./education/formal.markdown)
-
-Formal
-------
-
-North Carolina State University
--------------------------------
-
-**masters -** computer science
-------------------------------
-
-nmims university
-----------------
-
-**bachelors -** information technology
---------------------------------------
-
-[](./education/certifications.markdown)
-
-certs
------
-
-amazon web services
--------------------
-
-certified solutions architect
------------------------------
-
-splunk
-------
-
-certified core user  
-certified power user
-------------------------------------------
 
 [](./education/pursuing.markdown)
 

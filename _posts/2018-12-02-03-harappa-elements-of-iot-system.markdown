@@ -1,5 +1,5 @@
 ---
-title: "Harappa - Elements of IoT System (Contd.) "
+title: "Harappa - Elements of IoT System (Contd.)"
 categories: ["projects", "iot"]
 ---              
 
@@ -47,7 +47,7 @@ As required by BR 7, BR 9, and BR 15 the following list of actuators are identif
 Community of Things
 -------------------
 
-This subsection outlines an arbitrary collection of things, as seen in the [things](2018-12-02-harappa-02-elements-of-iot.markdown) section, which are useful from a management perspective. There are several communities of things that are possible with the project, however, we limit ourselves to four.
+This subsection outlines an arbitrary collection of things, as seen in the [things](2018-12-02-02-harappa-elements-of-iot.markdown) section, which are useful from a management perspective. There are several communities of things that are possible with the project, however, we limit ourselves to four.
 
 *   Community of rooms: This would be a collection of the rooms in the house, with sub-communities defined for different types of rooms such as the living room, bathroom, and study room.
 *   Community of plants: This would be a collection of the different plants that would be identified in the house of the user.
@@ -78,7 +78,7 @@ This subsection outlines the communication. Between Heterogeneous sets of commun
 Conversations
 -------------
 
-This subsection outlines the different types of conversations that are possible between the sets and subsets of things, people, and data as discussed on the [previous](2018-12-02-harappa-02-elements-of-iot.markdown) page. A few of the many conversations possible are listed below.
+This subsection outlines the different types of conversations that are possible between the sets and subsets of things, people, and data as discussed on the [previous](2018-12-02-02-harappa-elements-of-iot.markdown) page. A few of the many conversations possible are listed below.
 
 *   Things to Data: Rooms would be monitored for different data points including temperature, humidity, air pressure, the light intensity which would be collected by different sensors in the room. For example,, when the temperature sensor records some value from the room it would generate data that would then be sent to the AWS environment for further processing or storage.
 *   Thing to Thing: The mobile device is used to manage the states of the devices in the environment. For example, when the mobile device is used by the user of the system to manage the state of switches in the environment, the user would toggle the switch on the mobile device via the application which would then be sent to the AWS environment for processing. This would then trigger a Lambda function which would then cause the switch in the house of the user to change states.
@@ -97,9 +97,9 @@ Enabling Technologies
 Related Pages
 -------------
 
-[Summary](2018-12-02-harappa.markdown)[Project Details](2018-12-02-harappa-01-project-details.markdown)[Elements of IoT (1)](2018-12-02-harappa-02-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-harappa-02-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
+[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-02-harappa-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
 
-[elements of iot (1)](2018-12-02-harappa-02-elements-of-iot.markdown)
+[elements of iot (1)](2018-12-02-02-harappa-elements-of-iot.markdown)
 
 [Iot-a architecture](2018-12-02-harappa-04-iot-a.markdown)
 

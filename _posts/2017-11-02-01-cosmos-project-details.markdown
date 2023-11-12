@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Cosmos: Project Details"
 categories: ["projects", "iot"]
 ---     
@@ -35,12 +36,11 @@ The figure above describes a system consisting of four necessary components whic
 Related Pages
 -------------
 
-[Summary](../2017-11-02cosmos.markdown)
-[Cosmos Project Details](2017-11-02-cosmos-01-project-details.markdown)
-[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)
-[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)
-[Modules  Details](2017-11-02-cosmos-04-modules.markdown)
-
-[cosmos summary](../2017-11-02cosmos.markdown)
+1. [Summary](../2017-11-02-cosmos.markdown)
+2. [Cosmos Project Details](2017-11-02-cosmos-01-project-details.markdown)
+3. [Automation Server](2017-11-02-cosmos-02-automation-server.markdown)
+4. [OpenHAB](2017-11-02-cosmos-03-openhab.markdown)
+5. [Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
+7. [cosmos summary](../2017-11-02cosmos.markdown)
 
 

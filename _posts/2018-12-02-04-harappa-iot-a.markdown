@@ -17,7 +17,7 @@ Domain Model
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/ad5f82e879a9c5d6b5b442eb37e50551.svg)
 
-In this model, we outline the physical entities and the users of the that are colored in yellow. We also show the Virtual entities that comprise of the cloud services such as the compute, network, and storage (Turquise Color). Each of the physical entities — Lights, Room, Switch, Soil, and Door have the associated sensors and actuators (Blue Color) that are responsible for monitoring the state of the respective physical entity and also responsible for managing the state of the devices in the environment using the actuators — relays, valve etc. Finally, we use two types of identification mechanisms — RFID and Barcode. This was done primarily to allow for both Users and administrators to register new devices using the steps described on a [previous](2018-12-02-harappa-02-elements-of-iot.markdown) page.  
+In this model, we outline the physical entities and the users of the that are colored in yellow. We also show the Virtual entities that comprise of the cloud services such as the compute, network, and storage (Turquise Color). Each of the physical entities — Lights, Room, Switch, Soil, and Door have the associated sensors and actuators (Blue Color) that are responsible for monitoring the state of the respective physical entity and also responsible for managing the state of the devices in the environment using the actuators — relays, valve etc. Finally, we use two types of identification mechanisms — RFID and Barcode. This was done primarily to allow for both Users and administrators to register new devices using the steps described on a [previous](2018-12-02-02-harappa-elements-of-iot.markdown) page.  
 ‍  
 Taking an example of one of the physical entity to describe the model — Switch. For this physical entity, the RFID Tags, and the barcode would be used to identify the thing for registration purposes. The fault sensor would be used to monitor the status of the smart switches to keep into account whether the device is operating or not. Also, this physical entity has an associated actuator, that is, the relay that would act on the switch to which it is connected.   
 ‍  
@@ -37,7 +37,7 @@ Finally, each of the devices also has the associated functions that can call and
 Related Pages
 -------------
 
-[Summary](2018-12-02-harappa.markdown)[Project Details](2018-12-02-harappa-01-project-details.markdown)[Elements of IoT (1)](2018-12-02-harappa-02-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-harappa-02-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
+[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-02-harappa-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
 
 [elements of iot (2)](2018-12-02-harappa-03-elements-of-iot-system.markdown)
 

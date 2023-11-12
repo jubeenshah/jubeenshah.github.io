@@ -1,5 +1,5 @@
 ---
-title: "Oikos"
+title: "Oikos: Final Words"
 categories: ["projects","security", "privacy"]
 ---            
         
@@ -26,7 +26,7 @@ We have also added all the data and analysis code into a Github repository which
 Related Pages
 -------------
 
-[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-oikos-03-conclusion.markdown)
+[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
 
 [Apple analysis](../../../projects/security/oikos/analysis.html)
 

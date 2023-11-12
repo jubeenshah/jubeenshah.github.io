@@ -1,5 +1,5 @@
 ---
-title: "Harappa - Architecting the correct way"
+title: "Harappa - Architecting the correct way (Capstone Project)"
 categories: ["projects", "iot"]
 ---          
  
@@ -41,9 +41,9 @@ For the name for the project, I wanted to choose something that has historical r
 Related Pages
 -------------
 
-* [Summary](2018-12-02-harappa.markdown)
-* [Project Details](2018-12-02-harappa-01-project-details.markdown)
-* [Elements of IoT (1)](2018-12-02-harappa-02-elements-of-iot.markdown)
+* [Summary](2018-12-02-00-harappa.markdown)
+* [Project Details](2018-12-02-01-harappa-project-details.markdown)
+* [Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)
 * [Elements of IoT (2)](2018-12-02-harappa-03-elements-of-iot-system.markdown)
 * [IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)
 * [Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)
@@ -53,5 +53,5 @@ Related Pages
 
 [view report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Harappa/52A3EF1A5E031436D4C60715469F3DD5.pdf)
 
-[project details](2018-12-02-harappa-01-project-details.markdown)
+[project details](2018-12-02-01-harappa-project-details.markdown)
 
