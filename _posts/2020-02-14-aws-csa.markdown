@@ -1,0 +1,17 @@
+---
+layout: page
+categories: ["education","certificates"]
+title: "Certifications"
+summary: "Any Vendor/Original Equipment Mafucaturer pertaining Certifications"
+---
+
+amazon web services
+-------------------
+
+certified solutions architect associate
+---------------------------------------
+
+[View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/AWS/DA8E67A0070225123C28DC6177D8D347.pdf)
+
+![north-carolina-state-university-logo](https://project-odyssey.s3.us-east-2.amazonaws.com/fb349c5e1b64c80b91084bcf6c2ee79e.jpg)
+

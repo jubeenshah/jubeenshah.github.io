@@ -1,0 +1,22 @@
+---
+layout: posts
+categories: ["education","formal"]
+title: "Formal Education"
+summary: "School, Jr. College, College, University"
+---
+
+![ben-gurion-university-logo](https://project-odyssey.s3.us-east-2.amazonaws.com/3b9fbd40918845f4cd525f234abff14c.jpg)
+
+ben gurion university of the Negev
+----------------------------------
+
+summer abroad cyber security and machine learning
+-------------------------------------------------
+
+*   2016
+*   Final Grade: 92%
+*   #2 in class
+*   Notable Project: [Cyber Breaches In Smart Toilets](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/BGU/DFF9278A5C75BEDAA80BA97B8AA815AA.pdf)
+
+[View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/BGU/4F4D6752C0C75670E89E24AEAD586A11.pdf)
+

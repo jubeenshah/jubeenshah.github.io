@@ -6,7 +6,7 @@
 
 Projects
 
-[Security](./projects/security.markdown)[DevOps](./projects/devops.markdown)[Internet of Things](./projects/iot.markdown)
+[Security](./projects/2023-11-11-security.markdown)[DevOps](./projects/2020-06-06-devops.markdown)[Internet of Things](./projects/2017-11-02-iot.markdown)
 
 [Contact](mailto:jnshah2@ncsu.edu)[Privacy](privacy.markdown)
 
@@ -126,7 +126,7 @@ Education
 
 Projects
 
-[Security](./projects/security.markdown)[DevOps](./projects/devops.markdown)[Internet of Things](./projects/iot.markdown)
+[Security](../_posts/2023-11-11-security.markdown)[DevOps](../_posts/2020-06-06-devops.markdown)[Internet of Things](../_posts/2017-11-02-iot.markdown)
 
 Resources
 

@@ -52,7 +52,7 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
 
-collections:
-  project-odyssey:
-    output: true
-    permalink: /project-odyssey/:path
+feed:
+ categories:
+  - projects
+  - education
