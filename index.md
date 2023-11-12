@@ -11,9 +11,9 @@ About
 
 Cybersecurity professional with 3 yrs of experience in EDR, cloud, and app security. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
 
-[#tryingharder](/_posts/2023-02-17-offsec-osda.md) each day. 
+[#tryingharder](/_posts/2023-02-17-offsec-osda.html) each day. 
 
-Looking for a mentor to help me. So if you can help, please do! :) [Link](/_posts/2023-11-12-looking-for-mentor.md)
+Looking for a mentor to help me. So if you can help, please do! :) [Link](/_posts/2023-11-12-looking-for-mentor.html)
 
 Have a look around. Feel free to send any feedback my way. It is becoming a weekend project rather than "one and done". Sharing some of my previous projects, blogs, certifications and other things over the years.  
 
@@ -43,7 +43,8 @@ I'm continually working on improving my skills and learning new ones to integrat
 ### Internet of Things
 
 
-IoT holds a special place in my heart because of its potential to make the world a better place, and because I've worked on projects ([cosmos](./projects/iot/2017-11-02cosmos.markdown)) that have taught me a lot. Not only in terms of skills but also in terms of capabilities. My long-term goal is to blend my skills in security, privacy, and DevOps with IoT to help build a better, secure, and private world.
+IoT holds a special place in my heart because of its potential to make the world a better place, and because I've worked on projects ([cosmos](./_posts/2017-11-02-00-cosmos.html)) that have taught me a lot. Not only in terms of skills but also in terms of capabilities. My long-term goal is to blend my skills in security, privacy, and DevOps with IoT to help build a better, secure, and private world.
 
 [see projects](./projects/03-iot.html)
 
+You'll see a list of posts below. It should at least be presentable. Some links might not work. But hoping to get those fixed soon. 
