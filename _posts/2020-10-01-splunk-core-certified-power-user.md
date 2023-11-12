@@ -1,13 +1,12 @@
 ---
-layout: page
+layout: education
 categories: ["education","certificates"]
 title: "Certified as Splunk Power User"
-summary: "Any Vendor/Original Equipment Mafucaturer pertaining Certifications"
+summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 
 
 certified power user
 --------------------
 
-[View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/Splunk/C8500F4B3A8ED2A12E27A3A530FFC852.pdf)
-
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6622612873577320449" height="448" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>

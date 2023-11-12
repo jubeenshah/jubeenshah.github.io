@@ -2,10 +2,10 @@
 layout: education
 categories: ["education","certificates"]
 title: "Certified as Splunk Core User"
-summary: "Any Vendor/Original Equipment Mafucaturer pertaining Certifications"
+summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 
-certified core user
+splunk certified core user
 -------------------
 
-[View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/Splunk/EF072DD9F450528B28C950B567E54400.pdf)
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6597493910925295616" height="undefined" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>

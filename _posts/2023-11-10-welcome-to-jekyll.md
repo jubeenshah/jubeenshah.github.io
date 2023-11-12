@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Odyssey: Some lessons learned"
 date:   2023-11-10 20:35:30 -0500
 categories: jekyll update
 ---
