@@ -4,6 +4,11 @@ title: "Internet of things"
 categories: ["iot"]
 ---
 
+
+IoT holds a special place in my heart because of its potential to make the world a better place, and because I've worked on projects ([cosmos](./_posts/2017-11-02-00-cosmos.html)) that have taught me a lot. Not only in terms of skills but also in terms of capabilities. My long-term goal is to blend my skills in security, privacy, and DevOps with IoT to help build a better, secure, and private world.
+
+You'll see a list of posts below. It should at least be presentable. Some links might not work. But hoping to get those fixed soon. 
+
 Cosmos
 ------
 
