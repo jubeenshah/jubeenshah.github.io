@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Cosmos: Project Details"
+title: "Cosmos: Project Details 🗃️"
 categories: ["projects", "iot"]
 ---     
 Content

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Poseidon: Milestone 2 - Test & Analysis"
+title: "Poseidon: Milestone 2 - Test & Analysis 🗃️"
 categories: ["projects","devops"]
 ---   
 

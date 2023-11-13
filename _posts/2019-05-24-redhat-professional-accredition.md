@@ -1,7 +1,7 @@
 ---
 layout: education
 categories: ["education","certificates"]
-title: "Red hat Accredited professional"
+title: "Red hat Accredited professional 🧑‍💼"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 

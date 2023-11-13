@@ -1,7 +1,7 @@
 ---
 layout: education
 categories: ["education","certificates"]
-title: "Certified as Offensive Security Defense Analyst"
+title: "Certified as Offensive Security Defense Analyst 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 

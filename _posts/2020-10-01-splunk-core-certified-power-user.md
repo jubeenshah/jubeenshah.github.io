@@ -1,7 +1,7 @@
 ---
 layout: education
 categories: ["education","certificates"]
-title: "Certified as Splunk Power User"
+title: "Certified as Splunk Power User 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 
