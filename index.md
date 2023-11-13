@@ -4,14 +4,11 @@
 
 layout: home
 ---
-      
 
-About
-=====
 
-Cybersecurity professional with 3 yrs of experience in EDR, cloud, and app security. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
+I am Cybersecurity professional with 3 yrs of experience in EDR, cloud, and app security. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
 
-[#tryingharder](/education/certificates/2023/02/17/offsec-osda.html) each day. 
+[#tryingharder](/education/certificates/2023/02/17/offsec-osda.html) each day to be a little more thoughtful, and a little more vigilant, while finding a balance and helping out. 
 
 Looking for a mentor to help me. So if you can help, please do! :) [Link](/personal/blog/2023/11/12/looking-for-mentor.html)
 
