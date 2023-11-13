@@ -4,6 +4,10 @@ title: "DevOps"
 categories: ["DevOps"]
 ---
 
+I was introduced to DevOps through a course at NC State University back in 2019. since then, I've worked on a few projects that try to incorporate the power of continuous delivery pipeline into a seamless process of build, test, and deployment. 
+  
+I'm continually working on improving my skills and learning new ones to integrate DevOps with other domains (like security).
+
 Poseidon
 --------
 
