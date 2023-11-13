@@ -1,7 +1,7 @@
 ---
 layout: education
 categories: ["education","certificates"]
-title: "Splunk Fundamentals"
+title: "Splunk Fundamentals 🧑‍💼"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 
