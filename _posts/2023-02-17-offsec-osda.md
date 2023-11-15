@@ -4,8 +4,6 @@ categories: ["education","certificates"]
 title: "Certified as Offensive Security Defense Analyst 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
-
-
 Offensive Security Defense Analyst
 --------------------
 
