@@ -17,3 +17,5 @@ bachelors information technology
 *   Cumulative GPA: 3.58
 *   #3 in class
 *   Notable Project:  [Cosmos](/projects/iot/2017/11/02/cosmos.html)
+
+[View Certificate](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Certificates/NMIMS/BA6FC0FD13536F153775BE2B855DC935.jpeg)
