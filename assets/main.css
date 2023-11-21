@@ -123,14 +123,15 @@ blockquote > :last-child {
  */
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef;
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #D0F4F7; /* Light teal background for contrast */
+    color: #102A43; /* Dark blue text for readability */
 }
 
 code {
-  padding: 1px 5px;
+    padding: 1px 5px;
 }
 
 pre {
