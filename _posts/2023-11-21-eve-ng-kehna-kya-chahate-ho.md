@@ -3,7 +3,6 @@ layout: post
 categories:
   - blog
   - security
-  - networking
 title: EVE-NG - Kehna Kya chahate ho?
 ---
 ## It is hard

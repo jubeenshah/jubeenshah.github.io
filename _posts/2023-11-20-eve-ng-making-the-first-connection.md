@@ -3,7 +3,6 @@ layout: post
 categories:
   - blog
   - security
-  - networking
 title: Emulated Virtual Environment (next, new) generation
 ---
 ## Making the first connection
