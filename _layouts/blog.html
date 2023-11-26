@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+   
+
+
+<html lang="en">
+<head>
+
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}">Previous Post: {{ page.previous.title }}</a>
+    {% endif %}
+    {{ content }}
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}">Next Post: {{ page.next.title }}</a>
+    {% endif %}
+</body>
+</html>

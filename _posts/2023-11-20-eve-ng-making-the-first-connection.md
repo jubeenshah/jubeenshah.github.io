@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 categories:
   - blog
   - security
