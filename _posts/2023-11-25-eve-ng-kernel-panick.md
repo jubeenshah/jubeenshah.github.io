@@ -112,7 +112,7 @@ Anywho, lets install python and ansible.
 
 ![](/assets/images/KP-03.png)
 
-at least we're to a point where we have a [package manager]([Getting Started | asdf (asdf-vm.com)](https://asdf-vm.com/guide/getting-started.html)). 
+at least we're to a point where we have a [package manager](https://asdf-vm.com/guide/getting-started.html). 
 
 ![](/assets/images/KP-04.png)
 
@@ -158,4 +158,4 @@ Interestingly enough we can explore [2. Quickstart guide — Suricata 8.0.0-dev 
 
 Something did give out of all the digging we did. We added a few more modules. I was at least able to ping all the routers from all the routers. which is amazing. Both Kali and ansible are able to at least reach the internet but there's a firewall there, and in between the data centers. 
 
-I wish i could just say that, and be done with it... but... *way down we [go](https://www.youtube.com/watch?v=0-7IHOXkiV8). 
+I wish i could just say that, and be done with it... but... *way down we [go](https://www.youtube.com/watch?v=0-7IHOXkiV8)*. 
