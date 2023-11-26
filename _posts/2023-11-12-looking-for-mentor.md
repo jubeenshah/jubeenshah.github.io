@@ -1,7 +1,9 @@
 ---
-layout: post
-categories: ["personal", "blog"]
-title: "Hey there, got a minute?"
+layout: blog
+categories:
+  - personal
+  - blog
+title: Hey there, got a minute?
 ---
 
 Hey Wanderer,
