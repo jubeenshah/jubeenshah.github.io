@@ -4,16 +4,17 @@ title: "Cosmos: Ambient Station"
 categories: ["projects", "iot"]
 ---  
 
-Content
--------
+## Content
 
-[Ambient Station](#ambient-station)[Block Diagram](#block-diagram)[Technical Overview](#overview)[Flowchart](#flowchart)[Sensors](#sensors)[BH1750](#bh1750)[ML8511](#ml8511)[FC-28](#fc28)[Alternative Solutions](#alternative-solutions)[Using Programming](#programming-modification)[Using Diode](#using-diode)[Using demultiplexer](#using-demultiplexer)[Final Product](#final-product)
+- [Functional Block Diagram](#functional-block-diagram)
+- [Technical Overview](#technical-overview)
+- [Sensors Used](#sensors-used)
+- [Alternative Solutions](#alternative-solutions)
+- [Final Product](#final-product)
 
-Ambient Station
-===============
 
-Functional Block Diagram
-------------------------
+## Functional Block Diagram
+
 
 The figure below shows the functional block diagram of the Cosmos: Ambient Station. It makes use of the ESP8266-12E Wemos D1 chip to communicate with the centralized controller. The sensors which are a part of the Ambient station are connected directly to the ESP8266-12E WiFi chip, as shown in the block diagram. The additional component in this module is the IC 4051 multiplexer/demultiplexer, which is needed since both ML8511 and the FC-28 sensor have analog outputs, whereas the ESP8266 has only one ADC.  
   
@@ -23,8 +24,8 @@ Once the relevant information is relayed, this information would be available to
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/d730cc6fb7225ba3cf26d92311940b1d.png)
 
-Technical Overview
-------------------
+## Technical Overview
+
 
 ### Flowchart
 
@@ -32,8 +33,8 @@ The Cosmos: Ambient Station (CAS) initially boots up and repeatedly tries to con
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/2ca4f3a1f0ab2da06ffcffcdb25f2215.png)
 
-Sensors
--------
+## Sensors Used
+
 
 ### BH1750
 
@@ -47,8 +48,8 @@ The ML8511 UV sensor according to the data sheet is suitable for measuring UV in
 
 The FC-28 soil moisture sensor is designed to detect the moisture of soil water around the sensor
 
-Alternative Solutions
----------------------
+## Alternative Solutions
+
 
 One limitation of the ESP8266 MCU is that, there is only one onboard ADC available for use. As it has been stated several times in the chapter, the ML8511 and FC-28 Sensors have analog outputs, using them with one ESP8266 was not possible. This section briefly covers the three alternatives that were tried to overcome this hindrance. The alternatives are as follows:
 
@@ -78,15 +79,23 @@ After studying more about multiplexing and demultiplexing of signals, the IC 405
 
 The advantage of using IC 4051 was, that no reverse current was observed in the circuit, and moreover since there is a single Vcc pin for the IC, no significant voltage drop was experienced. The only precaution that needed to be taken was to set appropriate delay between selecting the pins to connect to the COMMON pin and reading the analog values.
 
-### Final Product
+## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/4be67ea6e02a7d4a7974c46dcf21307b.jpg)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)[Intrusion Sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)[Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)[Weather Station](../../../../projects/iot/cosmos/modules/weather-station.html)[Ambient Station](../../../../projects/iot/cosmos/modules/ambient-station.html)[Smart LEDs](../../../../projects/iot/cosmos/modules/smart-leds.html)[Smart Switch](../../../../projects/iot/cosmos/modules/connected-switches.html)[Smart Lock](../../../../projects/iot/cosmos/modules/smart-lock.html)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[weather station](../../../../projects/iot/cosmos/modules/weather-station.html)
 
-[smart leds](../../../../projects/iot/cosmos/modules/smart-leds.html)
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)

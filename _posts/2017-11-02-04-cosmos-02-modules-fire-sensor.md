@@ -4,19 +4,19 @@ title: "Cosmos: Fire Sensor"
 categories: ["projects", "iot"]
 ---             
 
-Content
--------
+## Content
 
-[Fire Sensor](#fire-sensor)[Demo Video](#demo)[Block Diagram](#block-diagram)[Technical Overview](#overview)[Flowchart](#fc)[Final Product](#final-product)
+- [Demo Video](#demo-video)
+- [Functional Block Diagram](#functional-block-diagram)
+- [Technical Overview](#technical-overview)
+- [Final Product](#final-product)
 
-Fire Sensor
-===========
+## Demo Video
 
-Demo Video
-----------
+[Watch Video](https://www.youtube.com/watch?v=X6MoLWzC-9w)
 
-Functional Block Diagram
-------------------------
+## Functional Block Diagram
+
 
 The figure below gives the basic overview of the functional block diagram of Cosmos: Fire Sensor. The device contains four separate major components — ESP8266 12E wifi module, the 5V power supply module, the 5V to the 3.3V regulator, and the PC 817 Optocoupler. The assumption that we’ve made with the use of the fire alarms is that the compatible ones are the hard-wired fire-alarms with a feature called interconnect. With the use of this interconnect feature when one of the fire alarms goes off, all the others connected to it going off too.  
   
@@ -26,8 +26,8 @@ This controller then broadcasts this information to all the connected devices vi
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/657e22cc9952152003398c6698d7b0b4.png)
 
-Technical Overview
-------------------
+## Technical Overview
+
 
 ### Flowchart
 
@@ -35,16 +35,24 @@ The figure below is the flowchart diagram of how the system would function. Once
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/8d5bf8814ff2a1a1a39d40f8ca7a280e.png)
 
-### Final Product
+## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/ae21b8dc4ac25e36b0dfe0cb901fe0d4.jpg)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)[Intrusion Sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)[Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)[Weather Station](../../../../projects/iot/cosmos/modules/weather-station.html)[Ambient Station](../../../../projects/iot/cosmos/modules/ambient-station.html)[Smart LEDs](../../../../projects/iot/cosmos/modules/smart-leds.html)[Smart Switch](../../../../projects/iot/cosmos/modules/connected-switches.html)[Smart Lock](../../../../projects/iot/cosmos/modules/smart-lock.html)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[intrusion sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)
 
-[weather station](../../../../projects/iot/cosmos/modules/weather-station.html)
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
 

@@ -4,18 +4,15 @@ title: "Cosmos: Automation Server"
 categories: ["projects", "iot"]
 ---   
 
-Content
--------
+## Content
 
-[Automation Server](#)
+- [Hardware Requirements](#hardware-requirements)
+- [Storage Requirements](#setting-up-the-micro-sd-card-for-the-server)
+- [MQTT  Requirements](#testing-the-mqtt-server)
 
-[Hardware Requirements](#hardware-requirements)[Storage Requirements](#storage-requirements)[MQTT  Requirements](#mqtt-requirements)
 
-Automation Server
-=================
+## Setting up the automation server
 
-Setting up the automation server
---------------------------------
 
 ### Hardware Requirements
 
@@ -33,12 +30,12 @@ To test out whether the MQTT server is online or not, software — MQTT.fx can b
   
 Once that is done, we need to do one final step, and that is to change the broker URL in the RPi3 to “broker.url=tcp://\`IP\`:1883”.Once complete, only the final installation of the RPi3 physically in the network remains.
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
 
-[Project details](2017-11-02-cosmos-01-project-details.markdown)
-
-[OpenHab configuration](2017-11-02-cosmos-03-openhab.markdown)
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
 

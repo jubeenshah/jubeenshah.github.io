@@ -4,16 +4,18 @@ title: "Cosmos: OpenHab Configuration"
 categories: ["projects", "iot"]
 ---  
 
-Content
--------
+## Content
 
-[Openhab Configuration](#Openhab-configuration)[Things](#things)[Sitemaps](#sitemaps)
 
-OpenHAB
-=======
+- [Openhab Configuration](#openhab-configuration)
+- [Things](#things)
+- [Sitemaps](#sitemaps)
 
-OpenHAB Configuration
----------------------
+## OpenHAB
+
+
+### OpenHAB Configuration
+
 
 OpenHAB (Open Home Automation Bus) is the central entity to an automation environment in which it is set up. All the functionalities and properties of the connected endpoints in the environment are available to the end-user for configuration. These configurations primarily comprise of the user interface, setting up the ‘if-this-then-that’ rule engine, and other parts. OpenHAB is an open platform installed and configured by the end-user, that would run solitarily from any other online services. As a user, this gives them full control over all the aspects of their smart environment in which the platform is installed.
 
@@ -29,12 +31,12 @@ Things are connected to openHAB through bindings. An example of bindings that Co
 
 Sitemaps are concerned with the visual representation of the Items and things as is visible to the user on the web-browser or the mobile application. Several elementTypes can be defined for the sitemaps, which would then be mapped to the .items and .things file for further details and configuration so that when an action is performed on the UI end of the application, the corresponding steps are taken/performed at the backend to implement the necessary measures. Please note that the icons and the relevant labels will not match, since they’re defined in the \`.items\` file. Sitemap defines what entities would be present in the UI, and how they’re grouped. However, the backend connection with the actual things is made by the .items file. Several elementType definitions are available, ranging from images to media, to slider and switches.
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
 
-[automation server](2017-11-02-cosmos-02-automation-server.markdown)
-
-[modules sumary](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
 
