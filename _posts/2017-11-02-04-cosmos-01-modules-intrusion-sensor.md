@@ -3,26 +3,28 @@ layout: project
 title: "Cosmos: Intrusion Sensor"
 categories: ["projects", "iot"]
 ---  
-Content
--------
 
-[Intrusion Sensor](#intrusion-sensor)[Demo Video](#demo)[Block Diagram](#block-diagram)[Software Requirements](#sw-req)[Uploading Code](#uploading-code)[Schematic](#schematic)[Uploading](#uploading)[Challenges](#challenges)[Solutions](#solutions)[Disassembled Product](#final-product)
+## Content
 
-Intrusion Sensor
-================
+- [Software Requirements](#software-requirements)
+- [Uploading Code to ESP8266](#uploading-code-to-esp8266)
+- [Challenges Encountered](#challenges-encountered)
+- [Disassembled Product](#disassembled-product)
 
-Demo Video
-----------
 
-Functional Block Diagram
-------------------------
+### Demo Video
+
+[Watch Viedo](https://www.youtube.com/watch?v=wHc4LXepfSE)
+
+## Functional Block Diagram
+
 
 The following diagram is the basic functional block diagram of the Cosmos: Intrusion Sensor device. The device comprises of four main components the ESP8266-12E wifi module, 5v power supply for the device, and 5v to 3.3v Regulator. The intrusion sensor when triggered communicates the values with the centralized controller, which then relays the corresponding message to the devices configured on receiving the notification.
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/8b15154ef8757bcc834f152e8d28d0ee.png)
 
-Software Requirements
----------------------
+## Software Requirements
+
 
 ### EAGLE
 
@@ -32,8 +34,8 @@ EAGLE, which stands for Easily Applicable Graphical Layout Editor is a scriptabl
 
 MQTT which stands for MQ Telemetry Transport is a lightweight publish/subscribe, straightforward messaging protocol. This protocol is specially designed for constrained devices and low-bandwidth with high latency and unreliable network. So, the design principles are to minimise network bandwidth, and device resource requirements whilst also attempting to ascertain the reliability and some level of acknowledgment of delivery. As per our research, MQTT is by far the most competitive solution out there for a machine to machine (M2M) or Internet of Things (IoT) application. COSMOS revolves around the core idea of having a single interface with multiple sensor nodes and utility devices connected to it. It was found necessary to find a protocol that sits over the standard TCP/IP protocol to standardize the solution, while at the same time account for the unreliable networks and provide message transport with low- latency.
 
-Uploading Code to ESP8266
--------------------------
+## Uploading Code to ESP8266
+
 
 ### Schematic
 
@@ -50,15 +52,11 @@ The ESP8266 12E has the below schematic which consists of 9 GPIO pins for input 
 *   Pin 1 + Pin 2 : Run Mode
 *   Pin 2 + Pin 3 : Programmable Mode
 *   Pin 1 — CH\_PD and GPIO2
-*   U1 — ESP8266-12E  
-    
-*   IC1 — LM1117T Voltage Regulator  
-    
+*   U1 — ESP8266-12E
+*   IC1 — LM1117T Voltage Regulator
 *   In — 5 volts
-*   Out — 3 volts  
-    
-*   X2-1/2 — Power Supply Module (5 volts)  
-    
+*   Out — 3 volts
+*   X2-1/2 — Power Supply Module (5 volts)
 *   X1-1/2 — Magnetic Sensor  
     
 
@@ -85,10 +83,9 @@ Referring back to figure above, connections for the Rx and Tx of the Arduino boa
     
 *   Description: Needed to configure the ESP8266 via the Arduino UNO
 
-Challenges Encountered
-----------------------
+## Challenges Encountered
 
-One of the most common problem encountered while uploading the code to ESP8266 12-E is the espcomm\_uploaded\_mem failed. Several reasons were identified after carrying out the tests in multiple iterations
+One of the most common problem encountered while uploading the code to ESP8266 12-E is the `espcomm\_uploaded\_mem failed`. Several reasons were identified after carrying out the tests in multiple iterations
 
 *   Upload Speed much higher than what ESP8266 can handle
 *   The port is non-operational
@@ -110,16 +107,24 @@ Following one or more of the following solutions should help resolve the problem
 *   Finally, it is a crucial point, to not mix up the Tx and Rx pins on the Arduino and the ESP8266.  
     
 
-### Disassembled Product
+## Disassembled Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/ed2701c3965915332f173e56a35ac6f2.jpg)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)[Intrusion Sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)[Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)[Weather Station](../../../../projects/iot/cosmos/modules/weather-station.html)[Ambient Station](../../../../projects/iot/cosmos/modules/ambient-station.html)[Smart LEDs](../../../../projects/iot/cosmos/modules/smart-leds.html)[Smart Switch](../../../../projects/iot/cosmos/modules/connected-switches.html)[Smart Lock](../../../../projects/iot/cosmos/modules/smart-lock.html)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[modules](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
 
-[fire sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
 

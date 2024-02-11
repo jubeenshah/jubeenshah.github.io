@@ -4,19 +4,21 @@ title: "Cosmos: Weather Station"
 categories: ["projects", "iot"]
 ---  
 
-Content
--------
+## Content
 
-[Weather Station](#weather-station)[Demo Video](#demo)[Block Diagram](#block-diagram)[Technical Overview](#overview)[Flowchart](#fc)[Sensors](#sensors)[DHT22](#dht22)[BMP180](#bmp180)[MQ2](#mq2)[Visualization](#visualization)[InfluxDB](#influxdb)[Grafana](#grafana)[Final Product](#final-product)
+- [Demo Video](#demo-video)
+- [Functional Block Diagram](#functional-block-diagram)
+- [Technical Overview](#technical-overview)
+- [Sensors Used](#sensors-used)
+- [Visualization and Dashboards](#visualization-and-dashboards)
+- [Final Product](#final-product)
 
-Weather Station
-===============
+## Demo Video
 
-Demo Video
-----------
+[Watch Video](https://www.youtube.com/watch?v=ixRpzv12PUg)
 
-Functional Block Diagram
-------------------------
+## Functional Block Diagram
+
 
 The figure below shows the functional block diagram of the COSMOS: Weather Station. It makes use of the ESP8266-12E Wemos D1 chip to communicate with the centralized controller. The sensors which are a part of the weather station are connected directly to the ESP8266-12E WiFi chip, as shown in the block diagram.  
   
@@ -26,8 +28,8 @@ Once the relevant information is relayed, this information would be available to
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/1be51b3ef2c03b7bcf4fa2e12adfbf3c.png)
 
-Technical Overview
-------------------
+## Technical Overview
+
 
 ### Flowchart
 
@@ -35,8 +37,8 @@ The COSMOS: Weather Station (CWS) initially boots up and repeatedly tries to con
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/713486f7867d523aa49c181bf1552921.png)
 
-Sensors
--------
+## Sensors Used
+
 
 ### DHT22
 
@@ -50,8 +52,8 @@ The BMP180 is a high precision digital pressure sensor with an I2C interface for
 
 MQ2 gas-sensor makes use of SnO2, which has lower conductivity in clean air. When different gasses are present in the higher concentration, the conductivity of the sensor increases. This electrical conductivity can be mapped to the output signal of the gas concentration. MQ2 Gas sensor has high sensitivity to LPG, Propane and hydrogen, and also other combustible steam.
 
-Visualization
--------------
+## Visualization and Dashboards
+
 
 The idea to establish a graphical dashboard and a persistent storage database came from the roots of trying to integrate Artificial Intelligence into the project. Though the AI integration itself would be a part of much later improvisation into the project, this phase of setting up the database constructs a baseline environment for the same. This section wouldn’t go into the details of setting up the database, however it is meant to give an overview on what has been accomplished.
 
@@ -67,16 +69,23 @@ Once InfluxDB is installed and configured, a database instance was created, with
 
 Grafana is another open source software for time series analytics. With Grafana, Cosmos has gained capabilities for visualization, alerting, notifications and annotations. Like InfluxDB, Grafana can either be installed on the broker, a separate docker image, or separate device but on the same network. Once the Grafana and InfluxDB are connected through modifications in the configuration files, the only step that remains is to connect the Cosmos MQTT broker with the two.
 
-### Final Product
+## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/e88a9106bd1d1b7593e122c622d4e65c.jpg)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)[Intrusion Sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)[Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)[Weather Station](../../../../projects/iot/cosmos/modules/weather-station.html)[Ambient Station](../../../../projects/iot/cosmos/modules/ambient-station.html)[Smart LEDs](../../../../projects/iot/cosmos/modules/smart-leds.html)[Smart Switch](../../../../projects/iot/cosmos/modules/connected-switches.html)[Smart Lock](../../../../projects/iot/cosmos/modules/smart-lock.html)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[fire sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)
 
-[ambient station](../../../../projects/iot/cosmos/modules/ambient-station.html)
-
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)

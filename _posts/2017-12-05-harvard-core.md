@@ -6,13 +6,7 @@ summary: "School, Jr. College, College, University"
 ---
 
 
-![Harvard-business-school-logo](https://project-odyssey.s3.us-east-2.amazonaws.com/a2a496e58f6857407b11ea963a7df734.jpg)
-
-Harvard business school online
-------------------------------
-
-core certification business analytics, financial accounting, and economics
---------------------------------------------------------------------------
+HBX CORe (Credential of Readiness) is a 150 hour certificate program on the fundamentals of business from Harvard Business School. CORe is comprised of three courses - Business Analytics, Economics for Managers, and Financial Accounting – developed by leading Harvard Business School faculty and delivered in an active learning environment based on the HBS signature case-based learning model.
 
 *   2017
 *   Final Grade: Pass

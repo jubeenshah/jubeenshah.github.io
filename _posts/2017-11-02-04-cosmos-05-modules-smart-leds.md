@@ -4,23 +4,23 @@ title: "Cosmos: Smart LEDs"
 categories: ["projects", "iot"]
 --- 
 
-Content
--------
+## Content
 
-[Smart LEDs](#smart-leds)[Block Diagram](#block-diagram)[Technical Overview](#overview)[Flowchart](#flowchart)[Final Product](#final-product)
 
-Smart LEDs
-==========
+- [Functional Block Diagram](#functional-block-diagram)
+- [Technical Overview](#technical-overview)
+- [Final Product](#final-product)
 
-Functional Block Diagram
-------------------------
+
+## Functional Block Diagram
+
 
 The figure below**,** shows the functional block diagram of the Cosmos: Smart LEDs. It makes use of the ESP8266-12E WiFi chip to communicate with the centralized controller. The obstacle in this module that had to be overcome, was to deal with the 12 volt input requirement of the LEDs and the 3.3V requirement of the ESP8266. In contrast to the LM1117; LM2596 was used to satisfy both the requirements. The TIP-122 transistor is used for amplification of current from the ESP8266 to allow for translation of the digitally encoded values of the red, blue and green signals into an amplified version that can be recognised by the RGB LED strip. It simultaneously also works as a switch, when only one of the colours in the strip are to be made visible.
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/04ea0103e039d21e76dedd2284138be7.png)
 
-Technical Overview
-------------------
+## Technical Overview
+
 
 ### Flowchart
 
@@ -32,16 +32,23 @@ Please note that, since the database is already in place, and all state changes 
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/3b66589bb2dc050cc92c40e0ff676c16.png)
 
-### Final Product
+## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/a2b3dccf338884f1b3d37275b2bc2dc0.jpg)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)[Intrusion Sensor](../../../../projects/iot/cosmos/modules/intrusion-sensor.html)[Fire Sensor](../../../../projects/iot/cosmos/modules/fire-sensor.html)[Weather Station](../../../../projects/iot/cosmos/modules/weather-station.html)[Ambient Station](../../../../projects/iot/cosmos/modules/ambient-station.html)[Smart LEDs](../../../../projects/iot/cosmos/modules/smart-leds.html)[Smart Switch](../../../../projects/iot/cosmos/modules/connected-switches.html)[Smart Lock](../../../../projects/iot/cosmos/modules/smart-lock.html)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[ambient station](../../../../projects/iot/cosmos/modules/ambient-station.html)
 
-[connected switch](../../../../projects/iot/cosmos/modules/connected-switches.html)
-
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)

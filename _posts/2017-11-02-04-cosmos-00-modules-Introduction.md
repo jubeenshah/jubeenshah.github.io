@@ -4,18 +4,25 @@ title: "Cosmos: Modules"
 categories: ["projects", "iot"]
 ---  
 
-Content
--------
+## Content
 
-[Modules Summary](#modules-summary)[Intrusion Sensor](#intrusion-sensor)[Fire Sensor](#fire-sensor)[Weather Station](#weather-station)[Ambient Station](#ambient-station)[Smart LEDs](#smart-leds)[Connected Switch](#connected-switch)[Smart Lock](#smart-lock)
 
-Cosmos - Modules
-================
+- [Modules Summary](#modules-summary)
+- [Intrusion Sensor](#intrusion-sensor)
+- [Fire Sensor](#fire-sensor)
+- [Weather Station](#weather-station)
+- [Ambient Station](#ambient-station)
+- [Smart LEDs](#smart-leds)
+- [Connected Switch](#connected-switch)
+- [Smart Lock](#smart-lock)
 
-Modules Summary
----------------
+## Cosmos - Modules
 
-The following seven modules out of the eleven were developed by me.
+
+## Modules Summary
+
+
+The following seven modules out of the eleven were developed by me, you can read the [whole report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf) for the group's effort. 
 
 1.  Intrusion Sensor
 2.  Fire Sensor
@@ -31,7 +38,7 @@ Cosmos: Intrusion Sensor is a simple but effective device that has been designed
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/ed2701c3965915332f173e56a35ac6f2.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/intrusion-sensor.html)
+[Read More](04-cosmos-01-modules-intrusion-sensor.html)
 
 ### Fire Sensor
 
@@ -39,7 +46,7 @@ Cosmos: Fire Sensor is a device which augments and makes the already set up fire
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/ae21b8dc4ac25e36b0dfe0cb901fe0d4.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/fire-sensor.html)
+[Read More](04-cosmos-02-modules-fire-sensor.html)
 
 ### Weather Station
 
@@ -47,7 +54,7 @@ Cosmos: Weather Station. This module integrates three sensors — Temperature & 
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/e88a9106bd1d1b7593e122c622d4e65c.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/weather-station.html)
+[Read More](04-cosmos-03-modules-weather-station.html)
 
 ### Ambient Station
 
@@ -55,7 +62,7 @@ Cosmos: Ambient Station is a device that complements the previous module. It pro
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/4be67ea6e02a7d4a7974c46dcf21307b.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/ambient-station.html)
+[Read More](04-cosmos-04-modules-ambient-station.html)
 
 ### Smart LEDs
 
@@ -63,7 +70,7 @@ Cosmos: Smart LEDs is a multipurpose device which manages the state of standard 
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/a2b3dccf338884f1b3d37275b2bc2dc0.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/smart-leds.html)
+[Read More](04-cosmos-05-modules-smart-leds.html)
 
 ### Connected Switch
 
@@ -71,7 +78,7 @@ Cosmos: Connected Switch is a module that ties together several modules that hav
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/6e2f522020f46a07cb072ce2dfcccc2c.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/connected-switches.html)
+[Read More](04-cosmos-06-modules-connected-switches.html)
 
 ### Smart Lock
 
@@ -79,14 +86,21 @@ Cosmos: Smart Lock is the final module, that was developed by me in the project.
 
 ![Cosmos - Adding things to Cosmos](https://project-odyssey.s3.us-east-2.amazonaws.com/5ba105fb70e59ef0000711660a08f5fe.jpg)
 
-[Read More](../../../projects/iot/cosmos/modules/smart-lock.html)
+[Read More](04-cosmos-07-modules-smart-lock.html)
 
-Related Pages
--------------
+## Related Pages
 
-[Summary](../2017-11-02cosmos.markdown)[Project Details](2017-11-02-cosmos-01-project-details.markdown)[Automation Server](2017-11-02-cosmos-02-automation-server.markdown)[OpenHAB](2017-11-02-cosmos-03-openhab.markdown)[Modules  Details](2017-11-02-cosmos-04-modules-00-Introduction.markdown)
+- [Cosmos Project Details](01-cosmos-project-details.html)
+- [Automation Server](02-cosmos-automation-server.html)
+- [OpenHAB](03-cosmos-openhab.html)
+- [Modules & Details](04-cosmos-00-modules-introduction.html)
+    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
+    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
+    - [Weather Station](04-cosmos-03-modules-weather-station.html)
+    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
+    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
+    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
+    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
 
-[Openhab configuration](2017-11-02-cosmos-03-openhab.markdown)
 
-[intrusion sensor](../../../projects/iot/cosmos/modules/intrusion-sensor.html)
-
+[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
