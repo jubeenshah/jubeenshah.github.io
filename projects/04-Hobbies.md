@@ -15,16 +15,16 @@ I've not written much about movies, until recently. But Hopping that when the ti
 
 Since, this site was never really in the picture, when I wrote about the movies and how they made me feel, Here's a small list of movies that i've written something about, or just thought about while writing this page. 
 
-1. [A Beautiful Mind](/hobby/2014/01/01/A-Beautiful-Mind.html)
-2. [The Pianist](/hobby/2023/04/22/the-pianist.html)
-3. [Dead Poets Society](/hobby/2023/03/05/dead-poets-society.html)
-4. Memories of a Murder
-5. Gulal
-6. Black Swan
-7. Into the Wild
-8. One Piece
-9. Lost
-10. Inside - Bo burnham
+* [A Beautiful Mind](/hobby/2014/01/01/A-Beautiful-Mind.html)
+* [The Pianist](/hobby/2023/04/22/the-pianist.html)
+* [Dead Poets Society](/hobby/2023/03/05/dead-poets-society.html)
+* Memories of a Murder
+* Gulal
+* Black Swan
+* Into the Wild
+* One Piece
+* Lost
+* Inside - Bo burnham
 
 [IMDB Ratings](https://www.imdb.com/user/ur152526920/ratings)
 
@@ -50,9 +50,9 @@ https://music.apple.com/profile/jubeenshah
 
 You've got to experience everything, and one easy way from your couch is to play some good games. 
 
-1. [Ghost of Tsushima](https://youtu.be/d3DVKPytWig?si=GGeunq5FeXB3mngM&t=24)
-2. [Red Dead Redemption 2](https://youtu.be/ebZISyvVrnU?si=8-3gsVD-FKEJl7bp&t=224)
-3. Last of Us 1 & 2
+* [Ghost of Tsushima](https://youtu.be/d3DVKPytWig?si=GGeunq5FeXB3mngM&t=24)
+* [Red Dead Redemption 2](https://youtu.be/ebZISyvVrnU?si=8-3gsVD-FKEJl7bp&t=224)
+* Last of Us 1 & 2
 
 I've not written much about games, but I've played a lot of them. It's an experience that I've not been able to put into words, but I'm sure I will be able to do that someday. Assassin's creed, Prince of Persia, Call of Duty, and many more. I like role-playing games, and games that have a good story.
 
@@ -62,26 +62,27 @@ Thousand words, and a thousand worlds. A book is a journey, and a journey is a b
 
 ### Perspective
 
-- Sapiens
-- The Content Trap
-- Blue Ocean Strategy
-- Designing Your Life
-- Blnk
-- Atomic Habits
-- The 7 Habits of Highly Effective People
-- Mind Platter
-- Case Interview Secrets
-- 21 Lessons
-- what we owe the future
-- The Bitcoin Standard 
+* Sapiens
+* The Content Trap
+* Blue Ocean Strategy
+* Designing Your Life
+* Blnk
+* Atomic Habits
+* The 7 Habits of Highly Effective People
+* Mind Platter
+* Case Interview Secrets
+* 21 Lessons
+* what we owe the future
+* The Bitcoin Standard 
 
 ### People
-- If Truth Be Told - A Monk's Memoir
-- Steve Jobs
-- An Unquite Mind
-- Evolution of a Dictator: Adolf Hitler
-- Lance Armstrong
-- Zealot
-- Elon Musk
-- Alibaba
+
+* If Truth Be Told - A Monk's Memoir
+* Steve Jobs
+* An Unquite Mind
+* Evolution of a Dictator: Adolf Hitler
+* Lance Armstrong
+* Zealot
+* Elon Musk
+* Alibaba
 
