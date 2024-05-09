@@ -6,20 +6,19 @@ summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 ---
 
 
-I woke up to some good news today morning. I got my email confirmation that I passed my Web Attacks with Kali Linux - Certification Exam. Last 3 mornings, I've been waking up and checking my emails, as one of the first things I do after I wake up. With half-eye open and half-eye shut while opening the mailbox and hoping to find an email from OffSec.
+I woke up to some good news this morning. I got my email confirmation that I passed my Web Attacks with Kali Linux - Certification Exam. For the last 3 mornings, I've been waking up and checking my emails as one of the first things I do after I wake up. I had my half-eye open and half-eye shut while opening the mailbox, hoping to find an email from OffSec.
 
 > Dear Jubeen, we are happy to inform you that you...
 
-That's it. That is all I needed to read. I do the due diligence, and read the email carefully. But I have my OSWA certificate, and honestly this one has been a doozy. 
-
+That's it. That is all I needed to read. I do the due diligence and read the email carefully. But I have my OSWA certificate; honestly, this one has been a doozy. 
 
 ![OSWA Badge](/assets//images/68cc14fd-d6b4-472b-b1d5-baec6efe6008.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Since I started going down the OffSec part in Mid-2021, it has been a rollercoaster of a ride. Every day, I feel a little more stupid. 
+It has been a rollercoaster since I started going down the OffSec part in Mid-2021. Every day, I feel a little more stupid. 
 
-As far as this Certification goes, I gave my first attempt in August, 2022, and got the email on 30th of August, 2022 that I failed. SO i decided to change gears, and go for [OSDA](/education/certificates/2023/02/17/offsec-osda.html) instead. 
+Regarding this Certification, I made my first attempt in August 2022 and got an email on the 30th of August 2022 that I failed. I decided to change gears and go for [OSDA](/education/certificates/2023/02/17/offsec-osda.html) instead. 
 
-So a good part of last year, with work, and since I don't really have a life yet, outside of work... I try to piece together pieces that I was missing for this certification, trying on/off with the OSCP material, looking to see if that widened my horizon and get me thinking a little more, about how I could tackle the OSWA Exam. I started to dig more into the details for the everything. Since, I think more than what the certification expected as in-scope for exam, the part that I had to realize was to dig a deep hole of searching. Digging as far as the RFCs or internet archives or commit history on why a project shaped up the way it did. (Some times, not always.. as that is a skill I'm yet to perfect). 
+So, I spent a good part of last year at work. Since I don't really have a life outside of work yet, I try to piece together pieces that I was missing for this Certification, trying on/off with the OSCP material, looking to see if that widened my horizon and got me thinking a little more, about how I could tackle the OSWA Exam. I started to dig deeper into the details of everything. Since I felt more than what the Certification expected as in-scope for the exam, the part that I had to realize was to dig a deep hole in searching. Dig as far as the RFCs or internet archives or commit history on why a project shaped it the way it did. (Sometimes, not always.. as that is a skill I'm yet to perfect). 
 
 > Little Alice fell
 <br>
