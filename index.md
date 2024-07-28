@@ -6,7 +6,7 @@ layout: home
 ---
 
 
-I am Cybersecurity professional with 3 yrs of experience in EDR, cloud, and app security. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
+I am Cybersecurity professional with 4 yrs of experience in EDR, cloud, and application security. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
 
 [#tryingharder](/education/certificates/2023/02/17/offsec-osda.html) each day to be a little more thoughtful, and a little more vigilant, while finding a balance and helping out. 
 
