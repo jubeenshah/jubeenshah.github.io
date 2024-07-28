@@ -23,6 +23,8 @@ Did you have a look at [cosmos?](/projects/iot/2017/11/02/00-cosmos.html), it wa
 
 | Years | Education                                                                                      |
 | ----- | ---------------------------------------------------------------------------------------------- |
+| 2024 | Offensice Security Web Asessor [offsec](/education/certificates/2024/05/08/offsec-oswa.html) certified |
+| 2023 | Offensive Security Defense Analyst [offsec](/education/certificates/2023/02/17/offsec-osda.html) certified |
 | 2020  | Graduated suma cum laude from [NCSU](/education/formal/2020/05/09/ncsu-mscs.html)              |
 | 2018  | Graduated 3rd from [MPSTME](/education/formal/2018/08/17/mpstme-btech-it.html)                 |
 | 2017  | HBS Online [CORe](/education/professional/2017/12/05/harvard-core.html) certified              |

@@ -9,19 +9,51 @@ layout: post
 <head>
 
     <title>{{ page.title }}</title>
+    <style>
+        /* Special highlight for disclaimer */
+        .disclaimer {
+            background-color: #ffeb3b; /* Light yellow background */
+            color: #000; /* Black text */
+            padding: 15px;
+            border-left: 4px solid #f44336; /* Red left border */
+            margin: 15px 0;
+            font-style: italic;
+            border-radius: 4px; /* Optional: rounded corners */
+        }
+
+            .disclaimer a {
+                color: #d32f2f; /* Red color for links in the disclaimer */
+                text-decoration: underline;
+            }
+
+                .disclaimer a:visited {
+                    color: #b71c1c; /* Darker red for visited links */
+                }
+
+                .disclaimer a:hover {
+                    text-decoration: none;
+                    color: #c62828; /* Slightly different red on hover */
+                }
+    </style>
 </head>
 <body>
     {% if page.previous.url %}
     <a href="{{ page.previous.url | relative_url }}">Previous Post: {{ page.previous.title }}</a>
     {% endif %}
-    
+
+    <p class="disclaimer">
+        By reading this blog post, you acknowledge and agree to the <a href="/disclaimer">General Terms and Conditions of Blogging</a> set forth by the Author. These Terms and Conditions govern all content provided by the Author and form an integral part of every blog post. Please review the Terms and Conditions to understand your rights and responsibilities as a Reader. By continuing to engage with this content, you confirm your acceptance of these Terms and Conditions, including the limitations of liability and jurisdictional provisions. If you have not read or do not agree with these Terms and Conditions, please refrain from using this blog.
+    </p>
+
     <div style="margin: 15px 0;">
         {{ content }}
     </div>
-    
-    
+
+
     {% if page.next.url %}
     <a href="{{ page.next.url | relative_url }}">Next Post: {{ page.next.title }}</a>
     {% endif %}
+
+
 </body>
 </html>
