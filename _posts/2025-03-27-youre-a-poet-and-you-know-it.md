@@ -91,6 +91,7 @@ When you're free from the noise of the outside world, you risk becoming a slave 
 Which is worse? Is one brand of "control" more straightforward to break free from? The older we get, the more these questions merge into one big swirl of contradictory truths.
 
 > The absence of neither is the strange balance and imbalance we all pursue.
+
 ## The World That Challenges Me
 
 > And I started to think.
