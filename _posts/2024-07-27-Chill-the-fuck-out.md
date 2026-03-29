@@ -1,8 +1,10 @@
 ---
-layout: blog
-categories:
-  - blog
+layout: post-terminal
 title: Chill the fuck out!
+category: writing
+subcategory: personal
+nsfw: true
+spanning: [reflection]
 ---
 
 I know there's a circular dilemma to this one. You can't read the blog without reading the disclaimer, and you probably won't read the disclaimer without reading this blog. Author *likey*, this paradox. 

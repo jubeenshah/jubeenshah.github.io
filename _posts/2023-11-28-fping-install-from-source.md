@@ -1,9 +1,9 @@
 ---
-layout: blog
-categories:
-  - blog
-  - security
+layout: post-terminal
 title: fping install from source
+category: security
+subcategory: networking
+spanning: [tutorial]
 ---
 ## What is `fping`
 

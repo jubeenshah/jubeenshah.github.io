@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Automation Server"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---   
 
 ## Content
@@ -29,13 +31,3 @@ Once the software is downloaded, the onscreen instructions were helpful enough t
 To test out whether the MQTT server is online or not, software — MQTT.fx can be used. This software will be needed in the future to test out other devices before physically installing them. We only need to change the MQTT broker address to the IP address of the Raspberry Pi and make sure that the port is 1883, which is the port for MQ Telemetry Transport (MQTT).  
   
 Once that is done, we need to do one final step, and that is to change the broker URL in the RPi3 to “broker.url=tcp://\`IP\`:1883”.Once complete, only the final installation of the RPi3 physically in the network remains.
-
-## Related Pages
-
-- [Cosmos Project Details](01-cosmos-project-details.html)
-- [Automation Server](02-cosmos-automation-server.html)
-- [OpenHAB](03-cosmos-openhab.html)
-- [Modules & Details](04-cosmos-00-modules-introduction.html)
-
-[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
-

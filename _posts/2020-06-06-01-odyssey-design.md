@@ -1,14 +1,21 @@
 ---
-layout: project
+layout: post-terminal
 title: "Odyssey: Initial Design"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---          
 
 
 Content
 -------
 
-[Design Considerations](#)[Color Scheme](#)[Illustrations](#)[Animations](#)[Fonts](#)[Design Inspirations](#)
+- [Design Considerations](#)
+- [Color Scheme](#)
+- [Illustrations](#)
+- [Animations](#)
+- [Fonts](#)
+- [Design Inspirations](#)
 
 Design Tasks
 ============
@@ -49,13 +56,3 @@ There are a few more animations that are available like the one on the 'under co
 Other animations are much more subtle, like the 'next/previous page' button animation (that can be found on this page before the footer), and the 'scroll down' animation that can be found on the home page.
 
 Using animations I wanted to give certain life to the website, which would otherwise not have been possible
-
-Related Pages
--------------
-
-[Summary](2020-06-06-00-odyssey.markdown)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
-
-[summary](2020-06-06-00-odyssey.markdown)
-
-[Development](../../../projects.markdown)
-

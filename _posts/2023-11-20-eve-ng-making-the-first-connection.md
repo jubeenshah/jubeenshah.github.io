@@ -1,9 +1,10 @@
 ---
-layout: blog
-categories:
-  - blog
-  - security
+layout: post-terminal
 title: Emulated Virtual Environment (next, new) generation
+category: security
+subcategory: networking
+nsfw: true
+spanning: [tutorial, series]
 ---
 ## Making the first connection
 

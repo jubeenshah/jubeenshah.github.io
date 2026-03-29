@@ -1,9 +1,9 @@
 ---
-layout: blog
-categories:
-  - blog
-  - security
+layout: post-terminal
 title: Navigating Cybersecurity Challenges with Structured Problem-Solving and Adaptation
+category: security
+subcategory: appsec
+spanning: [opinion]
 ---
 
 ![Navigating Cybersecurity Challenges](/assets/images/AdobeStock_722654028.jpeg)

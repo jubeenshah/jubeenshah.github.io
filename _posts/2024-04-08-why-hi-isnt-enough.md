@@ -1,8 +1,10 @@
 ---
-layout: blog
-categories:
-  - blog
+layout: post-terminal
 title: Please don't just say "Hi". Send a purposeful message
+category: career
+subcategory: mentorship
+nsfw: true
+spanning: [opinion]
 ---
 
 This might more of a personal note that I want to shout out to people, than anything else. 
@@ -38,7 +40,6 @@ Do your subjective **best**, and try and find an answer, and showcase what you h
 _Don't give answers to questions from an LLM_
 
 If you're in the wonderful position of being considered to contribute to an article, please don't use an LLM to answer the questions a human being is being asked. it defeats the purpose, puts a dent at your reputation, and overall (at least for me), only helps you lose out respect from fellow mates. If you are cheating, cheat better. If anything, you might be inclined towards hacking the system, which in turn opens up different doors.   
-
 
 
 **Reach out with a purpose.**

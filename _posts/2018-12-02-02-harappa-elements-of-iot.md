@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: Elements of IoT"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---                       
 
 
@@ -124,13 +126,3 @@ This subsections outlines the type of data that would be collected in the automa
 *   Status of fire alarm  
     
 *   Red, Blue, Green values form the Ambient lights
-
-Related Pages
--------------
-
-[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-harappa-03-elements-of-iot-system.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
-
-[project details](2018-12-02-01-harappa-project-details.markdown)
-
-[elements of iot (contd.)](2018-12-02-harappa-03-elements-of-iot-system.markdown)
-

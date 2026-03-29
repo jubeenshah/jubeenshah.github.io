@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Oikos: Final Words"
-categories: ["projects","security", "privacy"]
+category: projects
+subcategory: privacy
+spanning: [series]
 ---            
         
 
@@ -23,13 +25,3 @@ Github Repo
 We have also added all the data and analysis code into a Github repository which also includes other data sources that we may have reference but not specifically mentioned or used in the final analysis.  
   
 [https://github.com/jubeenshah/ProjectOkios](https://github.com/jubeenshah/ProjectOkios)
-
-Related Pages
--------------
-
-[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
-
-[Apple analysis](../../../projects/security/oikos/analysis.html)
-
-[projects](../../../projects.markdown)
-

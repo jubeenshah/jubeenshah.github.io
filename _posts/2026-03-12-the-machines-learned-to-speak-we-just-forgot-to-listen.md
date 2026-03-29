@@ -1,8 +1,10 @@
 ---
-layout: blog
-categories:
-  - blog
+layout: post-terminal
 title: The Machines Learned to Speak. And We Forgot How to Listen.
+category: writing
+subcategory: society
+nsfw: true
+spanning: [opinion, open-source]
 ---
 
 ## The Machines Learned to Speak. And We Forgot How to Listen.

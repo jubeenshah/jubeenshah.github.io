@@ -1,8 +1,9 @@
 ---
-layout: blog
-categories:
-  - blog
+layout: post-terminal
 title: the dalailama dilemma
+category: writing
+subcategory: personal
+spanning: [reflection, opinion]
 ---
 
 ## The Dalai Lama Dilemma: Balancing Online Safety with a Chill Mindset

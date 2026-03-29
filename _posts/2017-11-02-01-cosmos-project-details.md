@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Project Details 🗃️"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---     
 
 ## Content
@@ -29,14 +31,3 @@ The figure above describes a system consisting of four necessary components whic
 *   **Utility Devices**: These are primarily any device in the house that can be automated like connected locks, smart LED strip, connected switches.
 *   **Server**: The server used is a Raspberry Pi 3 with a heat sink installed, since the server would be running 24/7, additionally a fan would help keep the processor from overheating. After considering several open platforms for the Automation Server, such as Home Assistant, Calaos, OpenMotics, and OpenHAB. Finally, OpenHAB was selected.
 *   **User Interfaces**: These are the different mediums through which the smart devices can be managed or monitored. The system can be accessed through an external interface from any part of the world, as long as it is connected to the internet. Additionally, voice-controlled devices such as Amazon’s Alexa, or Apple HomePod, or the already available Siri on the iPhone, can be used to control the devices.
-
-## Related Pages
-
-- [Cosmos Project Details](01-cosmos-project-details.html)
-- [Automation Server](02-cosmos-automation-server.html)
-- [OpenHAB](03-cosmos-openhab.html)
-- [Modules & Details](04-cosmos-00-modules-introduction.html)
-
-[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
-
-

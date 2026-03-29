@@ -219,22 +219,32 @@ table td {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #84c9fb;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 3px solid #03dac5;
+  border-bottom: 1px solid #333;
   min-height: 55.95px;
   position: relative;
 }
 
 .site-title {
-  font-size: 26px;
-  font-weight: 300;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
   line-height: 54px;
-  letter-spacing: -1px;
+  letter-spacing: 0;
   margin-bottom: 0;
   float: left;
 }
 .site-title, .site-title:visited {
-  color: #84c9fb;
+  color: #03dac5;
+}
+
+.page-link {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace !important;
+  font-size: 0.8125rem !important;
+  color: #828282 !important;
+}
+.page-link:hover {
+  color: #03dac5 !important;
 }
 
 .site-nav {
@@ -259,8 +269,8 @@ table td {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #fdfdfd;
-    border: 1px solid #e8e8e8;
+    background-color: #171f24;
+    border: 1px solid #333;
     border-radius: 5px;
     text-align: right;
   }
@@ -303,16 +313,68 @@ table td {
 }
 
 /**
- * Site footer
+ * Site footer — terminal style
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0;
+  border-top: 1px solid #333;
+  padding: 1.5em 0;
+}
+
+.footer-terminal {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.8125rem;
+}
+
+.footer-cmd {
+  margin-bottom: 0.2em;
+}
+
+.footer-cmd-uptime {
+  margin-top: 1em;
+}
+
+.footer-cmd-exit {
+  margin-top: 1em;
+}
+
+.footer-prompt {
+  color: #03dac5;
+  font-weight: bold;
+}
+
+.footer-cmd-text {
+  color: #828282;
+  margin-left: 0.25em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5em;
+  padding: 0.2em 0;
+}
+
+.footer-links a {
+  color: #84c9fb;
+  text-decoration: none;
+  font-size: 0.8125rem;
+}
+
+.footer-links a:hover {
+  color: #03dac5;
+  text-decoration: underline;
+}
+
+.footer-links a:visited {
+  color: #84c9fb;
+}
+
+.footer-uptime {
+  color: #555;
+  padding: 0.2em 0;
 }
 
 .footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px;
+  display: none;
 }
 
 .contact-list,

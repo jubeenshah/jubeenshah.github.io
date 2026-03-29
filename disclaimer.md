@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-terminal
 title: Disclaimer
 permalink: /disclaimer/
 ---
@@ -32,7 +32,7 @@ What follows is this blog's Terms and Conditions (hereinafter "the Terms," or "t
 
 Read on. Play along. Be cool about it.
 
-If you need additional context before proceeding: [Chill the fuck out!](/blog/2024/07/27/Chill-the-fuck-out.html)
+If you need additional context before proceeding: [Chill the fuck out!](/writing/2024/07/27/Chill-the-fuck-out.html)
 
 ---
 

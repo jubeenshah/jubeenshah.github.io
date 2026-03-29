@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Poseidon: Milestone 3 - Deployment ✅"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---   
 
 
@@ -54,13 +56,3 @@ This was a particular interesting milestone in terms of what we learnt. There we
     
 *   Finally, we settled with Prometheus and Grafana, collected the necessary configuration files and deployed it Kubernetes. Which worked like a charm.  
     
-
-Related Pages
--------------
-
-[Summary](2019-04-25-poseidon.markdown)[Milestone 1](../../../projects/devops/poseidon/milestone-1.html)[Milestone 2](../../../projects/devops/poseidon/milestone-2.html)[Milestone 3](../../../projects/devops/poseidon/milestone-3.html)
-
-[Milestone 2](../../../projects/devops/poseidon/milestone-2.html)
-
-[projects](../../../projects.markdown)
-

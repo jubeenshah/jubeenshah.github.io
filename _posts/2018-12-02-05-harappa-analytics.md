@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: Analytics & Computing"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---             
 
 
@@ -74,13 +76,3 @@ Here, we describe the two sets of computation that would take place in the proje
 While choosing the cloud service that would be optimal for the project we had a look at several Service Level Agreements of AWS IoT Core, Google Cloud IoT Core, Azure IoT Hub to make an informed decision. While considering the server downtimes, each of the cloud services provided an equal amount of credit refunds for similar percentage of downtime, the only difference was the maximum credit, which was offered by Google at 50% for less than 99% uptime.   
   
 We were attracted at the wide range of the services offered by AWS’ environment as compared to that provided by Google and Azure. Also, the pricing for IoT Core services4 was very competitive and was found to be more cost effective than the other two.
-
-Related Pages
--------------
-
-[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-02-harappa-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
-
-[iot-a architecture](2018-12-02-harappa-04-iot-a.markdown)
-
-[conclusion](2018-12-02-harappa-06-conclusion.markdown)
-

@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Weather Station"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---  
 
 ## Content
@@ -72,20 +74,3 @@ Grafana is another open source software for time series analytics. With Grafana,
 ## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/e88a9106bd1d1b7593e122c622d4e65c.jpg)
-
-## Related Pages
-
-- [Cosmos Project Details](01-cosmos-project-details.html)
-- [Automation Server](02-cosmos-automation-server.html)
-- [OpenHAB](03-cosmos-openhab.html)
-- [Modules & Details](04-cosmos-00-modules-introduction.html)
-    - [Intrusion Sensor](04-cosmos-01-modules-intrusion-sensor.html)
-    - [Fire Sensor](04-cosmos-02-modules-fire-sensor.html)
-    - [Weather Station](04-cosmos-03-modules-weather-station.html)
-    - [Ambient Station](04-cosmos-04-modules-ambient-station.html)
-    - [Smart LEDs](04-cosmos-05-modules-smart-leds.html)
-    - [Connected Switch](04-cosmos-06-modules-connected-switches.html)
-    - [Smart Lock](04-cosmos-07-modules-smart-lock.html)
-
-
-[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)

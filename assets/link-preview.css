@@ -1,0 +1,135 @@
+/* Link Preview Popup */
+/* Category colors for popup */
+.link-preview.cat-writing   { --lp-color: #CF6679; }
+.link-preview.cat-security  { --lp-color: #03dac5; }
+.link-preview.cat-projects  { --lp-color: #9980FF; }
+.link-preview.cat-certs     { --lp-color: #FFB74D; }
+.link-preview.cat-career    { --lp-color: #84c9fb; }
+.link-preview.cat-page      { --lp-color: #03dac5; }
+
+.link-preview {
+  --lp-color: #03dac5;
+  position: absolute;
+  z-index: 1000;
+  background: #1e272e;
+  border: 1px solid #333;
+  border-top: 2px solid var(--lp-color);
+  padding: 0.8em 1em;
+  max-width: 380px;
+  min-width: 260px;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  pointer-events: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  animation: lpFadeIn 0.15s ease;
+}
+
+@keyframes lpFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.lp-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4em;
+}
+
+.lp-path {
+  color: var(--lp-color);
+}
+
+.lp-actions {
+  display: flex;
+  gap: 0.4em;
+  align-items: center;
+}
+
+.lp-open,
+.lp-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.15s ease;
+  vertical-align: middle;
+}
+
+.lp-open {
+  font-size: 0.6875rem;
+  position: relative;
+  top: 0.1em;
+}
+
+.lp-close {
+  font-size: 0.8125rem;
+}
+
+.lp-open,
+.lp-open:visited,
+.lp-open:link {
+  color: #555 !important;
+  text-decoration: none !important;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+}
+
+.lp-open:hover {
+  color: #84c9fb !important;
+}
+
+.lp-close {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+}
+
+.lp-close:hover {
+  color: #CF6679;
+}
+
+.lp-meta {
+  color: #828282;
+  margin-bottom: 0.6em;
+  white-space: pre;
+}
+
+.lp-perms {
+  color: var(--lp-color);
+}
+
+.lp-nsfw {
+  color: #CF6679;
+}
+
+.lp-owner {
+  color: #828282;
+}
+
+.lp-size {
+  color: #84c9fb;
+}
+
+.lp-date {
+  color: #828282;
+}
+
+.lp-excerpt {
+  color: #aaa;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 0.5em;
+  line-height: 1.6;
+}
+
+/* Hide on mobile — hover doesn't work well on touch */
+@media screen and (max-width: 600px) {
+  .link-preview {
+    display: none !important;
+  }
+}

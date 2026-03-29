@@ -1,8 +1,10 @@
 ---
-layout: education
-categories: ["education","certificates"]
+layout: post-terminal
 title: "Splunk Fundamentals 🧑‍💼"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
+category: certs
+subcategory: splunk
+spanning: []
 ---
 
 

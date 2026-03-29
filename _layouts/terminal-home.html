@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/terminal.css' | relative_url }}">
+  {%- feed_meta -%}
+</head>
+<body>
+  {%- include header.html -%}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      <!-- Terminal Animation -->
+      <div id="terminal" class="terminal">
+        <div id="terminal-output" class="terminal-output"></div>
+        <span id="terminal-cursor" class="terminal-cursor">█</span>
+      </div>
+
+      <!-- NSFW toggle + Layer 1: Top-Level Categories (hidden until animation completes) -->
+      <div id="tag-bar" class="tag-bar" style="display:none;">
+        <div class="filter-row">
+          <div class="tag-filters" id="layer1">
+            <button class="tag-btn layer1-btn active" data-tag="all" data-layer="1">all</button>
+            <button class="tag-btn layer1-btn" data-tag="writing" data-layer="1">writing</button>
+            <button class="tag-btn layer1-btn" data-tag="security" data-layer="1">security</button>
+            <button class="tag-btn layer1-btn" data-tag="projects" data-layer="1">projects</button>
+            <button class="tag-btn layer1-btn" data-tag="certs" data-layer="1">certs</button>
+            <button class="tag-btn layer1-btn" data-tag="career" data-layer="1">career</button>
+          </div>
+          <label class="nsfw-toggle" title="toggle nsfw content">
+            <input type="checkbox" id="nsfw-toggle" checked>
+            <span class="nsfw-label">nsfw</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Layer 2: Sub-Categories (hidden until L1 selected) -->
+      <div id="subcategory-bar" class="subcategory-bar" style="display:none;">
+        <div class="sub-filters" id="layer2"></div>
+      </div>
+
+      <!-- Layer 3: Spanning tags (hidden until L1 selected) -->
+      <div id="spanning-bar" class="spanning-bar" style="display:none;">
+        <div class="spanning-filters" id="layer3"></div>
+      </div>
+
+      <!-- Post Listing (hidden until animation completes) -->
+      <div id="post-list" class="post-list-terminal" style="display:none;">
+        {%- for post in site.posts -%}
+        <a href="{{ post.url | relative_url }}" class="post-entry"
+           data-category="{{ post.category }}"
+           data-subcategory="{{ post.subcategory }}"
+           data-spanning="{{ post.spanning | join: ',' | downcase | strip }}"
+           data-nsfw="{{ post.nsfw | default: false }}">
+          <span class="post-perms{% if post.nsfw %} post-perms-nsfw{% endif %}">{% if post.nsfw %}-rwsr--r--{% else %}-rw-r--r--{% endif %}</span>
+          <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <span class="post-name">{{ post.title | slugify }}.md</span>
+        </a>
+        {%- endfor -%}
+      </div>
+
+      <!-- Post count footer -->
+      <div id="post-count" class="post-count" style="display:none;">
+        <span class="terminal-prompt">you@jubeen.sh:~$</span>
+        <span class="terminal-dimmed">wc -l</span>
+        <span id="count-display" class="terminal-output-text"></span>
+      </div>
+
+    </div>
+  </main>
+  {%- include footer.html -%}
+  <script src="{{ '/assets/terminal.js' | relative_url }}"></script>
+</body>
+</html>

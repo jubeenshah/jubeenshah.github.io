@@ -1,13 +1,14 @@
 ---
-layout: blog
-categories:
-  - blog
-  - security
+layout: post-terminal
 title: EVE-NG - Kehna Kya chahate ho?
+category: security
+subcategory: networking
+nsfw: true
+spanning: [tutorial, series]
 ---
 ## It is hard
 
-I'm imagining this as a 40 year project. Where I add assets to the labs, as I find more use-cases for it.  If [Cosmos](/projects/iot/2017/11/02/00-cosmos.html) was any indication, I can definitely build automation around my home. And if [Oikos](/projects/security/2019/12/31/00-oikos.htm) was any indication then I care about my privacy. 
+I'm imagining this as a 40 year project. Where I add assets to the labs, as I find more use-cases for it.  If [Cosmos](/projects/2017/11/02/00-cosmos.html) was any indication, I can definitely build automation around my home. And if [Oikos](/projects/2019/12/31/00-oikos.html) was any indication then I care about my privacy. 
 
 But if i can do it for my house, I can also do my uncle's house. and maybe for even for some of my friends. But whatever comes along the way. I need to be prudent, and thoughtful of the judgement calls I make. From the supply chain of the parts I use, to the networking, programming, monitoring, and then the slew of *customer* wants.
 

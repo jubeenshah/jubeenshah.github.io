@@ -1,7 +1,9 @@
 ---
-layout: blog
-categories: hobby
-title: "A Beautiful Mind and the Shared themes of Cinematic Artistry" 
+layout: post-terminal
+title: "A Beautiful Mind and the Shared themes of Cinematic Artistry"
+category: writing
+subcategory: film
+spanning: [opinion, reflection]
 ---
 
 This movie was released in 2001, but If i remember correctly, it was about in 2011-2014 that i would've watched it. I used to be very interested in movies like this when I was younger. I still am... just to say how much I have changed over the years. But over the years I've watched a lot of movies... So i've grown to link them up and look at how they're the same rather than how they're different.
@@ -20,7 +22,7 @@ Movies like "A Beautiful Mind" and Memento depict protagonists grappling with th
 
 The exploration of reality versus illusion is also a poignant theme in Darren Aronofsky's Black Swan. Natalie Portman's character battles not just her physical limits but also her psychological stability, reminiscent of Nash's struggle in "A Beautiful Mind." In both films, the protagonists' internal conflicts are externalized through the visual and narrative elements, blurring the lines between reality and perception. Maybe, very similar to how we perceive the world around us. _What does matter? What doesn't? What is real? What isn't?_
 
-Human resilience in the face of adversity, a theme powerfully depicted in "A Beautiful Mind," is also reflected in films like [The Pianist](/hobby/2023/04/22/the-pianist.html). Adrien Brody's character's survival and resilience amid the horrors of the Holocaust echo the determination John Nash shows in managing his schizophrenia. Similarly, the Dead Poets' Society conveys this theme through its young characters challenging the restrictive norms of their boarding school.
+Human resilience in the face of adversity, a theme powerfully depicted in "A Beautiful Mind," is also reflected in films like [The Pianist](/writing/2023/04/22/the-pianist.html). Adrien Brody's character's survival and resilience amid the horrors of the Holocaust echo the determination John Nash shows in managing his schizophrenia. Similarly, the Dead Poets' Society conveys this theme through its young characters challenging the restrictive norms of their boarding school.
 
 The power of love, as seen in Nash's relationship with Alicia in "A Beautiful Mind," is also beautifully depicted in Call Me By Your Name. Despite the distinct narrative contexts, these films emphasize love's transformative potential, encapsulating its joy, heartbreak, and influence on personal growth. 
 

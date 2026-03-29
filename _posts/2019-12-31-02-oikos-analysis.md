@@ -1,7 +1,9 @@
 ---
-layout: project
+layout: post-terminal
 title: "Oikos: Analysis and Interpretations"
-categories: ["projects","security", "privacy"]
+category: projects
+subcategory: privacy
+spanning: [series]
 ---            
 
 
@@ -59,13 +61,3 @@ We also carried out another survey that gauged people into different categories,
 From the data that was collected approximately 40% were fundamentalist, 33% were pragmatists and 27% of the participants were unconcerned. We believe the number of unconcerned participants is relatively low because of the age of the participants, which was relatively young.
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/f25538788fb9e1a463a12d176bd78efb.png)
-
-Related Pages
--------------
-
-[Summary](../../../../_posts/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
-
-[study design](../../../projects/security/oikos/design.html)
-
-[conclusion](2019-12-31-03-oikos-conclusion.markdown)
-

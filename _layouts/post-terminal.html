@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+{%- comment -%} Category-specific text easter eggs {%- endcomment -%}
+{%- assign cat = page.category | default: "writing" -%}
+
+{%- case cat -%}
+  {%- when "writing" -%}
+    {%- assign ls_flags = "ls -la" -%}
+    {%- assign cat_flags = "cat" -%}
+    {%- assign disclaimer_text = "general terms and conditions of blogging" -%}
+  {%- when "security" -%}
+    {%- assign ls_flags = "ls -la --classify" -%}
+    {%- assign cat_flags = "cat -n" -%}
+    {%- assign disclaimer_text = "rules of engagement" -%}
+  {%- when "projects" -%}
+    {%- assign ls_flags = "ls -la --group-directories-first" -%}
+    {%- assign cat_flags = "cat -b" -%}
+    {%- assign disclaimer_text = "build specifications" -%}
+  {%- when "certs" -%}
+    {%- assign ls_flags = "ls -la --author" -%}
+    {%- assign cat_flags = "cat -v" -%}
+    {%- assign disclaimer_text = "terms of certification" -%}
+  {%- when "career" -%}
+    {%- assign ls_flags = "ls -la --sort=time" -%}
+    {%- assign cat_flags = "cat -s" -%}
+    {%- assign disclaimer_text = "professional disclaimer" -%}
+  {%- else -%}
+    {%- assign ls_flags = "ls -la" -%}
+    {%- assign cat_flags = "cat" -%}
+    {%- assign disclaimer_text = "general terms and conditions of blogging" -%}
+{%- endcase -%}
+
+<article class="post h-entry terminal-post cat-{{ cat }}" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <nav class="tp-nav tp-nav-top">
+    {%- if page.previous.url -%}
+    <a href="{{ page.previous.url | relative_url }}" class="tp-nav-link" title="{{ page.previous.title }}">!prev</a>
+    {%- endif -%}
+    <a href="/" class="tp-nav-link tp-nav-home">cd ~/</a>
+    {%- if page.next.url -%}
+    <a href="{{ page.next.url | relative_url }}" class="tp-nav-link" title="{{ page.next.title }}">!next</a>
+    {%- endif -%}
+  </nav>
+
+  <header class="tp-header">
+    <div class="tp-banner">
+      <span class="tp-banner-notice">NOTICE:</span> You are accessing jubeen.sh as guest. All content governed by author's <a href="/disclaimer/">{{ disclaimer_text }}</a>. Proceed with good faith.
+    </div>
+
+    <div id="tp-ls-row" class="tp-cmd" style="display:none;">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
+      <span class="t-cmd-text" id="tp-ls-cmd">{{ ls_flags }}</span>
+      {%- for tag in page.spanning -%}
+      <span class="tp-span tp-span-anim" style="display:none;">#{{ tag }}</span>
+      {%- endfor -%}
+    </div>
+    <pre id="tp-ls-output" class="tp-ls-output" style="display:none;">{% if page.nsfw %}<span class="file-perms file-perms-nsfw">-rwsr--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group file-group-nsfw">stderr</span>{% else %}<span class="file-perms">-rw-r--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group">staff</span>{% endif %}  <span class="file-size">{{ content | number_of_words | divided_by: 200 | plus: 1 }} min</span>  <span class="file-date"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time></span>  <span class="file-name" itemprop="name headline">{{ page.title | slugify }}.md</span></pre>
+
+    <div id="tp-cat-row" class="tp-cmd" style="display:none;">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
+      <span class="t-cmd-text" id="tp-cat-cmd">{{ cat_flags }} {{ page.title | slugify }}.md</span>
+    </div>
+  </header>
+
+  <div class="tp-outer" id="tp-outer" style="display:none;">
+    {%- unless cat == "certs" -%}
+    <aside class="tp-toc" id="writing-toc">
+      <div class="toc-header">// toc</div>
+      <nav class="toc-nav" id="toc-nav"></nav>
+    </aside>
+    {%- endunless -%}
+    <div class="tp-body">
+      <div class="tp-content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+    </div>
+  </div>
+
+  {%- comment -%} Auto-generate related pages from same category+subcategory {%- endcomment -%}
+  {%- assign related = site.posts | where: "category", page.category | where: "subcategory", page.subcategory -%}
+  {%- if related.size > 1 -%}
+  <div class="tp-related" id="tp-related" style="display:none;">
+    <div class="tp-related-header">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
+      <span class="t-cmd-text">ls *.md | ./filter.sh --context={{ page.title | slugify }}</span>
+    </div>
+    <ul class="tp-related-list">
+      {%- for post in related -%}
+      <li class="tp-related-item{% if post.url == page.url %} tp-related-current{% endif %}">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+
+  <nav class="tp-nav" id="tp-nav" style="display:none;">
+    {%- if page.previous.url -%}
+    <a href="{{ page.previous.url | relative_url }}" class="tp-nav-link" title="{{ page.previous.title }}">!prev</a>
+    {%- endif -%}
+    <a href="/" class="tp-nav-link tp-nav-home">cd ~/</a>
+    {%- if page.next.url -%}
+    <a href="{{ page.next.url | relative_url }}" class="tp-nav-link" title="{{ page.next.title }}">!next</a>
+    {%- endif -%}
+  </nav>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<link rel="stylesheet" href="{{ '/assets/post-terminal.css' | relative_url }}">
+<script src="{{ '/assets/post-terminal.js' | relative_url }}"></script>
