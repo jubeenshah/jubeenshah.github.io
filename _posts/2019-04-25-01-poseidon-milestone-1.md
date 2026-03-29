@@ -42,9 +42,9 @@ We also faced difficulties while implementing GitHooks because we were not able 
 Related Pages
 -------------
 
-[Summary](2019-04-25-poseidon.markdown)[Milestone 1](../../../projects/devops/poseidon/milestone-1.html)[Milestone 2](../../../projects/devops/poseidon/milestone-2.html)[Milestone 3](../../../projects/devops/poseidon/milestone-3.html)
+[Summary](/projects/2019/04/25/00-poseidon.html)[Milestone 1](/projects/2019/04/25/milestone-1.html)[Milestone 2](/projects/2019/04/25/milestone-2.html)[Milestone 3](/projects/2019/04/25/milestone-3.html)
 
-[projects](2019-04-25-poseidon.markdown)
+[projects](/projects/2019/04/25/00-poseidon.html)
 
-[milestone 2](../../../projects/devops/poseidon/milestone-2.html)
+[milestone 2](/projects/2019/04/25/milestone-2.html)
 

@@ -48,9 +48,9 @@ Once the hundred builds are built, and all the files collected we wrote an analy
 Related Pages
 -------------
 
-[Summary](2019-04-25-poseidon.markdown)[Milestone 1](../../../projects/devops/poseidon/milestone-1.html)[Milestone 2](../../../projects/devops/poseidon/milestone-2.html)[Milestone 3](../../../projects/devops/poseidon/milestone-3.html)
+[Summary](/projects/2019/04/25/00-poseidon.html)[Milestone 1](/projects/2019/04/25/milestone-1.html)[Milestone 2](/projects/2019/04/25/milestone-2.html)[Milestone 3](/projects/2019/04/25/milestone-3.html)
 
-[Milestone 1](../../../projects/devops/poseidon/milestone-1.html)
+[Milestone 1](/projects/2019/04/25/milestone-1.html)
 
-[milestone 3](../../../projects/devops/poseidon/milestone-3.html)
+[milestone 3](/projects/2019/04/25/milestone-3.html)
 

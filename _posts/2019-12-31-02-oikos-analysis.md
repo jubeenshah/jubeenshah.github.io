@@ -65,9 +65,9 @@ From the data that was collected approximately 40% were fundamentalist, 33% were
 Related Pages
 -------------
 
-[Summary](../../../../_posts/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
+[Summary](/projects/2019/12/31/00-oikos.html)[Study Design](/projects/2019/12/31/01-oikos-design.html)[Analysis](/projects/2019/12/31/02-oikos-analysis.html)[Conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
 
-[study design](../../../projects/security/oikos/design.html)
+[study design](/projects/2019/12/31/01-oikos-design.html)
 
-[conclusion](2019-12-31-03-oikos-conclusion.markdown)
+[conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
 

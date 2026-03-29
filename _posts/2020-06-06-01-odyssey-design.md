@@ -55,9 +55,9 @@ Using animations I wanted to give certain life to the website, which would other
 Related Pages
 -------------
 
-[Summary](2020-06-06-00-odyssey.markdown)[Design](../../../projects/devops/odyssey/design.html)[Development](../../../construction-page.html)[Infrastructure](../../../construction-page.html)[Security](../../../construction-page.html)
+[Summary](/projects/2020/06/06/00-odyssey.html)[Design](/projects/2020/06/06/design.html)[Development](#)[Infrastructure](#)[Security](#)
 
-[summary](2020-06-06-00-odyssey.markdown)
+[summary](/projects/2020/06/06/00-odyssey.html)
 
-[Development](../../../projects.markdown)
+[Development](/)
 

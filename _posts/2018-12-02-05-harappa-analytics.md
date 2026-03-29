@@ -80,9 +80,9 @@ We were attracted at the wide range of the services offered by AWS’ environmen
 Related Pages
 -------------
 
-[Summary](2018-12-02-00-harappa.markdown)[Project Details](2018-12-02-01-harappa-project-details.markdown)[Elements of IoT (1)](2018-12-02-02-harappa-elements-of-iot.markdown)[Elements of IoT (2)](2018-12-02-02-harappa-elements-of-iot.markdown)[IoT-A Architecture](2018-12-02-harappa-04-iot-a.markdown)[Analytics & Computing](2018-12-02-harappa-05-analytics.markdown)[Conclusion](2018-12-02-harappa-06-conclusion.markdown)
+[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
 
-[iot-a architecture](2018-12-02-harappa-04-iot-a.markdown)
+[iot-a architecture](/projects/2018/12/02/04-harappa-iot-a.html)
 
-[conclusion](2018-12-02-harappa-06-conclusion.markdown)
+[conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
 

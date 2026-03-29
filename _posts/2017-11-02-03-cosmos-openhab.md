@@ -35,10 +35,10 @@ Sitemaps are concerned with the visual representation of the Items and things as
 
 ## Related Pages
 
-- [Cosmos Project Details](01-cosmos-project-details.html)
-- [Automation Server](02-cosmos-automation-server.html)
-- [OpenHAB](03-cosmos-openhab.html)
-- [Modules & Details](04-cosmos-00-modules-introduction.html)
+- [Cosmos Project Details](/projects/2017/11/02/01-cosmos-project-details.html)
+- [Automation Server](/projects/2017/11/02/02-cosmos-automation-server.html)
+- [OpenHAB](/projects/2017/11/02/03-cosmos-openhab.html)
+- [Modules & Details](/projects/2017/11/02/04-cosmos-00-modules-Introduction.html)
 
 [view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
 

@@ -29,9 +29,9 @@ We have also added all the data and analysis code into a Github repository which
 Related Pages
 -------------
 
-[Summary](../../../projects/security/2019-12-31-oikos.markdown)[Study Design](../../../projects/security/oikos/design.html)[Analysis](../../../projects/security/oikos/analysis.html)[Conclusion](2019-12-31-03-oikos-conclusion.markdown)
+[Summary](/projects/2019/12/31/00-oikos.html)[Study Design](/projects/2019/12/31/01-oikos-design.html)[Analysis](/projects/2019/12/31/02-oikos-analysis.html)[Conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
 
-[Apple analysis](../../../projects/security/oikos/analysis.html)
+[Apple analysis](/projects/2019/12/31/02-oikos-analysis.html)
 
-[projects](../../../projects.markdown)
+[projects](/)
 
