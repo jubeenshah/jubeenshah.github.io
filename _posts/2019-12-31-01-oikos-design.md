@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Oikos: Study Design"
 category: projects
 subcategory: privacy

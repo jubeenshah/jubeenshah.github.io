@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post-terminal
 title: "The Pianist: A Haunting Depiction of the Holocaust's Impact on One Man's Life"
 category: writing
 subcategory: film

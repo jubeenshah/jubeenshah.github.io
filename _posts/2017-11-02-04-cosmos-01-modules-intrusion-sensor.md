@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Intrusion Sensor"
 category: projects
 subcategory: iot

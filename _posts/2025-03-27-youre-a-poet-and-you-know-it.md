@@ -1,13 +1,10 @@
 ---
-layout: blog
-  - blog
+layout: post-terminal
 title: You're a poet, and you know it
 category: writing
 subcategory: personal
 spanning: [reflection]
 ---
-
-# You're a poet, and you know it. 
 
 We live between worlds—sometimes literally, sometimes metaphorically. Some of us grew up wearing uniforms, our daily routines policed by rigorous discipline. Others sailed through childhood in T-shirts and sneakers with nearly limitless freedom. As we mature, we realize these polar opposite upbringings share one thing: contradiction. Where there is total control, there is also rebellion. Where there is supposed absolute freedom, there is often hidden oppression or exploitation. We teeter on these paradoxes every day.
 

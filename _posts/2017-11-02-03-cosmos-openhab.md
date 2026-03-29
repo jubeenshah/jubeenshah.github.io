@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: OpenHab Configuration"
 category: projects
 subcategory: iot

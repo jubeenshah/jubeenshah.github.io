@@ -1,7 +1,5 @@
 ---
-layout: education
-  - education
-  - certificates
+layout: post-terminal
 title: Certified as Redhat Engineer 🧑‍🎓
 summary: Any Vendor/Original Equipment Manufacturer pertaining Certifications
 category: certs

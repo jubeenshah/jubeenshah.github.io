@@ -1,7 +1,5 @@
 ---
-layout: blog
-  - blog
-  - security
+layout: post-terminal
 title: EVE-NG - Way down we go!
 category: security
 subcategory: networking

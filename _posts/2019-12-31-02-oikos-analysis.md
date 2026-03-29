@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Oikos: Analysis and Interpretations"
 category: projects
 subcategory: privacy

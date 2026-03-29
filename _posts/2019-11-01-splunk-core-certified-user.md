@@ -1,5 +1,5 @@
 ---
-layout: education
+layout: post-terminal
 title: "Certified as Splunk Core User 🧑‍💼"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 category: certs

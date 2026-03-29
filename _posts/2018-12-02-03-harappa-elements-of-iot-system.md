@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: Elements of IoT System (Contd.)"
 category: projects
 subcategory: iot

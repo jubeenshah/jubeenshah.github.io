@@ -1,5 +1,5 @@
 ---
-layout: education
+layout: post-terminal
 title: "Certified as Offensive Security Defense Analyst 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 category: certs

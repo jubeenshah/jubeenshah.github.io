@@ -1,7 +1,5 @@
 ---
-layout: blog
-  - personal
-  - blog
+layout: post-terminal
 title: Hey there, got a minute?
 category: career
 subcategory: mentorship

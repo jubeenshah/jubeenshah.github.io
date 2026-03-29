@@ -4,6 +4,16 @@ body {
   color: #FFF;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tp-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
 /* Terminal Container */
 .terminal {
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
@@ -261,6 +271,10 @@ body {
 .post-perms {
   color: #9980FF;
   flex-shrink: 0;
+}
+
+.post-perms-nsfw {
+  color: #CF6679;
 }
 
 .post-date {

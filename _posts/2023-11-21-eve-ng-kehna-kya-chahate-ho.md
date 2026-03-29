@@ -1,7 +1,5 @@
 ---
-layout: blog
-  - blog
-  - security
+layout: post-terminal
 title: EVE-NG - Kehna Kya chahate ho?
 category: security
 subcategory: networking

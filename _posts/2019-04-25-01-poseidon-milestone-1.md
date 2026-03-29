@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Poseidon: Milestone 1 - Configuration Management & Build) ⚙️"
 category: projects
 subcategory: devops

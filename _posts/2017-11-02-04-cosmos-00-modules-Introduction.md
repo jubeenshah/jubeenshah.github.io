@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Modules"
 category: projects
 subcategory: iot

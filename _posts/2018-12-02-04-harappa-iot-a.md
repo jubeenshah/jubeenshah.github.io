@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: IoT-A Architecture"
 category: projects
 subcategory: iot

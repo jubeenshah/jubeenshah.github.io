@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Poseidon: Milestone 3 - Deployment ✅"
 category: projects
 subcategory: devops

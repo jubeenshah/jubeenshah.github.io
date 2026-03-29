@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Connected Switch"
 category: projects
 subcategory: iot

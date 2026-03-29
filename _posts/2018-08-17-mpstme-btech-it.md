@@ -1,5 +1,5 @@
 ---
-layout: education
+layout: post-terminal
 title: "Graduated: MPSTME - Bachelors in IT 🎆"
 summary: "School, Jr. College, College, University"
 category: certs

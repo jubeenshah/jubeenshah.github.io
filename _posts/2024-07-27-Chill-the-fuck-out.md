@@ -1,6 +1,5 @@
 ---
-layout: blog
-  - blog
+layout: post-terminal
 title: Chill the fuck out!
 category: writing
 subcategory: personal

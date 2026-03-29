@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Smart Lock"
 category: projects
 subcategory: iot

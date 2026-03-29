@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Odyssey: Initial Design"
 category: projects
 subcategory: devops

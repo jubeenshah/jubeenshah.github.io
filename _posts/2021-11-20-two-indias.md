@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-terminal
 title: "Two Indias"
 category: writing
 subcategory: society

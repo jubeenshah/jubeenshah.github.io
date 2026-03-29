@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: Analytics & Computing"
 category: projects
 subcategory: iot

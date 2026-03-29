@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post-terminal
 title: "A Beautiful Mind and the Shared themes of Cinematic Artistry"
 category: writing
 subcategory: film

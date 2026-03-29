@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Cosmos: Fire Sensor"
 category: projects
 subcategory: iot

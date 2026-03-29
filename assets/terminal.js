@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
     { type: 'done' }
   ];
 
-  const CHAR_DELAY = 20;
-  const COMMAND_PAUSE = 200;
+  const CHAR_DELAY = 35;
+  const COMMAND_PAUSE = 300;
 
   function typeText(text, className, callback) {
     var i = 0;
@@ -125,11 +125,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function showContent() {
     tagBar.style.display = 'block';
+    tagBar.classList.add('tp-fade-in');
 
     setTimeout(function () {
       postList.style.display = 'block';
+      postList.classList.add('tp-fade-in');
       updateCount();
-      postCount.style.display = 'block';
+      setTimeout(function () {
+        postCount.style.display = 'block';
+        postCount.classList.add('tp-fade-in');
+      }, 150);
     }, 200);
   }
 

@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Harappa: Final Words"
 category: projects
 subcategory: iot

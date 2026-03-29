@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post-terminal
 title: "Oikos: Final Words"
 category: projects
 subcategory: privacy
