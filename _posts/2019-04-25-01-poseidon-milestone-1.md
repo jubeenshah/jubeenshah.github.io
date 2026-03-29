@@ -38,13 +38,3 @@ Report
 We faced the following set of difficulties while configuring the jenkins server. Starting off with the project was challenging, as we couldn't find clear requirements for checkbox.io and itrust. This became clear, once some attention was paid to the actual implementation of the different applications. Once we understood the dependencies and initial setup requirements, it was fairly straightforward implementation for both of the applications. What we noticed is that, though the initial configuration of the jenkins server, that is, the setup and configuration of Jenkins itself, along with other dependencies were not very difficult and we were done with a mjority of the project well before the deadline, we were stuck with simple tasks such as -- the mocha and pm2 test cases, which took us sometime to understand and then implement.  
   
 We also faced difficulties while implementing GitHooks because we were not able to clearly understand the requirement itself. Though it was clearly mentioned that the push to the local bare repository were itrust and checkbox while implementing we thought it was _this_ repository that we needed to make the push to, which would then trigger the build for the two applications. Once the placement of the git hooks was understood, we were confused as to the placement of the post-receive hook itself. We first thought, that the git hooks were to be placed in the itrust, and checkbox repositroy itself, but which was not the case.
-
-Related Pages
--------------
-
-[Summary](/projects/2019/04/25/00-poseidon.html)[Milestone 1](/projects/2019/04/25/milestone-1.html)[Milestone 2](/projects/2019/04/25/milestone-2.html)[Milestone 3](/projects/2019/04/25/milestone-3.html)
-
-[projects](/projects/2019/04/25/00-poseidon.html)
-
-[milestone 2](/projects/2019/04/25/milestone-2.html)
-

@@ -56,13 +56,3 @@ This was a particular interesting milestone in terms of what we learnt. There we
     
 *   Finally, we settled with Prometheus and Grafana, collected the necessary configuration files and deployed it Kubernetes. Which worked like a charm.  
     
-
-Related Pages
--------------
-
-[Summary](/projects/2019/04/25/00-poseidon.html)[Milestone 1](/projects/2019/04/25/milestone-1.html)[Milestone 2](/projects/2019/04/25/milestone-2.html)[Milestone 3](/projects/2019/04/25/milestone-3.html)
-
-[Milestone 2](/projects/2019/04/25/milestone-2.html)
-
-[projects](/)
-

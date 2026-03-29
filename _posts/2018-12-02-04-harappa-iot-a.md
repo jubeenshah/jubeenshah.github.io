@@ -36,13 +36,3 @@ In this model, we describe the associated information generated and monitored by
 For each of the entity, we associate the attributes they would be responsible. For example, Irrigation System has the attributes for measuring the water/moisture level in the soil, and the irrigation system status. Which would have the corresponding metadata about when the measurement was taken, and when was the last update made to the database. The battery status information would help identify if the administrator needs to be informed about any faults with the system or to the User about whether they need to replace the batteries of the device.   
 ‍  
 Finally, each of the devices also has the associated functions that can call and perform. Taking the same example fo the irrigation system, we have to turn valve On and Off functions which would be responsible for reacting to the soil moisture thresholds as received from the AWS environment. 
-
-Related Pages
--------------
-
-[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-
-[elements of iot (2)](/projects/2018/12/02/03-harappa-elements-of-iot-system.html)
-
-[Analytics & computing](/projects/2018/12/02/05-harappa-analytics.html)
-

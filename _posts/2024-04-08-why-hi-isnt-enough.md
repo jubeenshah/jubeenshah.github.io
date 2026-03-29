@@ -42,7 +42,6 @@ _Don't give answers to questions from an LLM_
 If you're in the wonderful position of being considered to contribute to an article, please don't use an LLM to answer the questions a human being is being asked. it defeats the purpose, puts a dent at your reputation, and overall (at least for me), only helps you lose out respect from fellow mates. If you are cheating, cheat better. If anything, you might be inclined towards hacking the system, which in turn opens up different doors.   
 
 
-
 **Reach out with a purpose.**
 
 Better messages, please! please be verbose. give as much information you can, summarizing (for the audience it is intended) what have you tried. That could mean 

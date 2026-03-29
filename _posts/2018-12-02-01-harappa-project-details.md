@@ -70,13 +70,3 @@ In order to meet the business requirements discussed above, the system must meet
 *   TR-6.1: Obtain information plant in the environment using the Amazon Recognition service.
 *   TR-6.2: Obtain the water requirement for the plant under consideration using a lambda functiontrigger from a DynamoDB.
 *   TR-6.3: Trigger AWS Lambda functions to take necessary actions to turn ON/OFF the irrigationsystem based on the soil moisture reading from the plant under consideration.
-
-Related Pages
--------------
-
-[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/03-harappa-elements-of-iot-system.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-
-[summary](/)
-
-[elements of iot](/projects/2018/12/02/02-harappa-elements-of-iot.html)
-

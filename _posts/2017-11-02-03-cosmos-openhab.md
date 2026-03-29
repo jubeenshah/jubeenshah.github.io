@@ -32,13 +32,3 @@ Things are connected to openHAB through bindings. An example of bindings that Co
 ### Sitemaps
 
 Sitemaps are concerned with the visual representation of the Items and things as is visible to the user on the web-browser or the mobile application. Several elementTypes can be defined for the sitemaps, which would then be mapped to the .items and .things file for further details and configuration so that when an action is performed on the UI end of the application, the corresponding steps are taken/performed at the backend to implement the necessary measures. Please note that the icons and the relevant labels will not match, since they’re defined in the \`.items\` file. Sitemap defines what entities would be present in the UI, and how they’re grouped. However, the backend connection with the actual things is made by the .items file. Several elementType definitions are available, ranging from images to media, to slider and switches.
-
-## Related Pages
-
-- [Cosmos Project Details](/projects/2017/11/02/01-cosmos-project-details.html)
-- [Automation Server](/projects/2017/11/02/02-cosmos-automation-server.html)
-- [OpenHAB](/projects/2017/11/02/03-cosmos-openhab.html)
-- [Modules & Details](/projects/2017/11/02/04-cosmos-00-modules-Introduction.html)
-
-[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)
-

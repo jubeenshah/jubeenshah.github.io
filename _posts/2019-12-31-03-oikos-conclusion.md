@@ -25,13 +25,3 @@ Github Repo
 We have also added all the data and analysis code into a Github repository which also includes other data sources that we may have reference but not specifically mentioned or used in the final analysis.  
   
 [https://github.com/jubeenshah/ProjectOkios](https://github.com/jubeenshah/ProjectOkios)
-
-Related Pages
--------------
-
-[Summary](/projects/2019/12/31/00-oikos.html)[Study Design](/projects/2019/12/31/01-oikos-design.html)[Analysis](/projects/2019/12/31/02-oikos-analysis.html)[Conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
-
-[Apple analysis](/projects/2019/12/31/02-oikos-analysis.html)
-
-[projects](/)
-

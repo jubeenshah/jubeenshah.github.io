@@ -76,13 +76,3 @@ Here, we describe the two sets of computation that would take place in the proje
 While choosing the cloud service that would be optimal for the project we had a look at several Service Level Agreements of AWS IoT Core, Google Cloud IoT Core, Azure IoT Hub to make an informed decision. While considering the server downtimes, each of the cloud services provided an equal amount of credit refunds for similar percentage of downtime, the only difference was the maximum credit, which was offered by Google at 50% for less than 99% uptime.   
   
 We were attracted at the wide range of the services offered by AWS’ environment as compared to that provided by Google and Azure. Also, the pricing for IoT Core services4 was very competitive and was found to be more cost effective than the other two.
-
-Related Pages
--------------
-
-[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-
-[iot-a architecture](/projects/2018/12/02/04-harappa-iot-a.html)
-
-[conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-

@@ -126,13 +126,3 @@ This subsections outlines the type of data that would be collected in the automa
 *   Status of fire alarm  
     
 *   Red, Blue, Green values form the Ambient lights
-
-Related Pages
--------------
-
-[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/03-harappa-elements-of-iot-system.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-
-[project details](/projects/2018/12/02/01-harappa-project-details.html)
-
-[elements of iot (contd.)](/projects/2018/12/02/03-harappa-elements-of-iot-system.html)
-

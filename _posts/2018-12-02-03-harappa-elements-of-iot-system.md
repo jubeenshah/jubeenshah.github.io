@@ -96,13 +96,3 @@ Enabling Technologies
 ---------------------
 
 *   Visualization: Visualization of data would be an enabling technology in the project, as it would give the user a glimpse of all the information that the system is trying to accumulate with all the sensors in the smart home environment. The visualization mainly can comprise a time series display of the readings from the sensors. Open source tools such as influxDB (Time Series Database) and Grafana (Open source Visualization tool) and Amazons QuickSight.
-
-Related Pages
--------------
-
-[Summary](/projects/2018/12/02/00-harappa.html)[Project Details](/projects/2018/12/02/01-harappa-project-details.html)[Elements of IoT (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[Elements of IoT (2)](/projects/2018/12/02/02-harappa-elements-of-iot.html)[IoT-A Architecture](/projects/2018/12/02/04-harappa-iot-a.html)[Analytics & Computing](/projects/2018/12/02/05-harappa-analytics.html)[Conclusion](/projects/2018/12/02/06-harappa-conclusion.html)
-
-[elements of iot (1)](/projects/2018/12/02/02-harappa-elements-of-iot.html)
-
-[Iot-a architecture](/projects/2018/12/02/04-harappa-iot-a.html)
-

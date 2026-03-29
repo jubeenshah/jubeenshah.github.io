@@ -74,20 +74,3 @@ Grafana is another open source software for time series analytics. With Grafana,
 ## Final Product
 
 ![Cosmos: Fire Sensor Flow Chart](https://project-odyssey.s3.us-east-2.amazonaws.com/e88a9106bd1d1b7593e122c622d4e65c.jpg)
-
-## Related Pages
-
-- [Cosmos Project Details](/projects/2017/11/02/01-cosmos-project-details.html)
-- [Automation Server](/projects/2017/11/02/02-cosmos-automation-server.html)
-- [OpenHAB](/projects/2017/11/02/03-cosmos-openhab.html)
-- [Modules & Details](/projects/2017/11/02/04-cosmos-00-modules-Introduction.html)
-    - [Intrusion Sensor](/projects/2017/11/02/04-cosmos-01-modules-intrusion-sensor.html)
-    - [Fire Sensor](/projects/2017/11/02/04-cosmos-02-modules-fire-sensor.html)
-    - [Weather Station](/projects/2017/11/02/04-cosmos-03-modules-weather-station.html)
-    - [Ambient Station](/projects/2017/11/02/04-cosmos-04-modules-ambient-station.html)
-    - [Smart LEDs](/projects/2017/11/02/04-cosmos-05-modules-smart-leds.html)
-    - [Connected Switch](/projects/2017/11/02/04-cosmos-06-modules-connected-switches.html)
-    - [Smart Lock](/projects/2017/11/02/04-cosmos-07-modules-smart-lock.html)
-
-
-[view entire report](https://project-odyssey.s3.us-east-2.amazonaws.com/Odyssey-Resources/Projects/Cosmos/D3C319827A97C2D9EB8A5FBDC80A76D4.pdf)

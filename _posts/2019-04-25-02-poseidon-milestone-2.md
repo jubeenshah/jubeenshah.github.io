@@ -44,13 +44,3 @@ Once the hundred builds are built, and all the files collected we wrote an analy
 *   The testDiaryEntryInvalid test failed the most number of times, because it checked if the values set for different parameters like fats,proteins, carbohydrates, etc were ever negative. Since we induced a fuzzing operation that changed the signs of operations from ">"/">=" with "
 *   The next maximum numbers of failed error cases was with testInvalidCodes and testCodeAPI which accoring to us has a similar explaination as the previous point. Since the testInvalidCodes check for values within a specific range, the alteration of the operations from ">"/">=" with "
 *   Next test we try to analyse is the testPatientAPI test, where patient information is tested, again a similar explaination like the previous point. The interesting observation that we had was the alteration of lastName.length() > 30 to lastName.length() < 30 led to an infinite loop.
-
-Related Pages
--------------
-
-[Summary](/projects/2019/04/25/00-poseidon.html)[Milestone 1](/projects/2019/04/25/milestone-1.html)[Milestone 2](/projects/2019/04/25/milestone-2.html)[Milestone 3](/projects/2019/04/25/milestone-3.html)
-
-[Milestone 1](/projects/2019/04/25/milestone-1.html)
-
-[milestone 3](/projects/2019/04/25/milestone-3.html)
-

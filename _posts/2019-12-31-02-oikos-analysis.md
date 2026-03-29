@@ -61,13 +61,3 @@ We also carried out another survey that gauged people into different categories,
 From the data that was collected approximately 40% were fundamentalist, 33% were pragmatists and 27% of the participants were unconcerned. We believe the number of unconcerned participants is relatively low because of the age of the participants, which was relatively young.
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/f25538788fb9e1a463a12d176bd78efb.png)
-
-Related Pages
--------------
-
-[Summary](/projects/2019/12/31/00-oikos.html)[Study Design](/projects/2019/12/31/01-oikos-design.html)[Analysis](/projects/2019/12/31/02-oikos-analysis.html)[Conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
-
-[study design](/projects/2019/12/31/01-oikos-design.html)
-
-[conclusion](/projects/2019/12/31/03-oikos-conclusion.html)
-
