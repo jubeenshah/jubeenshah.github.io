@@ -1,0 +1,205 @@
+/* Force dark background — overrides Minima's default #fdfdfd */
+body {
+  background-color: #171f24 !important;
+  color: #FFF;
+}
+
+/* Terminal Container */
+.terminal {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 20px 0;
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Cursor */
+.terminal-cursor {
+  color: #03dac5;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Prompt */
+.terminal-prompt {
+  color: #03dac5;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.terminal-command {
+  color: #FFF;
+}
+
+.terminal-response {
+  color: #828282;
+}
+
+.terminal-dimmed {
+  color: #828282;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+}
+
+.terminal-output-text {
+  color: #828282;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+}
+
+/* Tag Bar */
+.tag-bar {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+  padding: 4px 0 10px 0;
+}
+
+.tag-filters {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-btn {
+  background: transparent;
+  border: 1px solid #424242;
+  color: #828282;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 13px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Category colors */
+.tag-btn[data-tag="all"]        { border-color: #555; color: #aaa; }
+.tag-btn[data-tag="security"]   { border-color: #03dac5; color: #03dac5; }
+.tag-btn[data-tag="blog"]       { border-color: #84c9fb; color: #84c9fb; }
+.tag-btn[data-tag="personal"]   { border-color: #CF6679; color: #CF6679; }
+.tag-btn[data-tag="projects"]   { border-color: #9980FF; color: #9980FF; }
+.tag-btn[data-tag="education"]  { border-color: #FFB74D; color: #FFB74D; }
+.tag-btn[data-tag="hobby"]      { border-color: #81C784; color: #81C784; }
+.tag-btn[data-tag="certificates"] { border-color: #FFB74D; color: #FFB74D; }
+.tag-btn[data-tag="formal"]     { border-color: #FFB74D; color: #FFB74D; }
+.tag-btn[data-tag="professional"] { border-color: #FFB74D; color: #FFB74D; }
+.tag-btn[data-tag="iot"]        { border-color: #9980FF; color: #9980FF; }
+.tag-btn[data-tag="devops"]     { border-color: #9980FF; color: #9980FF; }
+.tag-btn[data-tag="privacy"]    { border-color: #03dac5; color: #03dac5; }
+
+.tag-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tag-btn.active {
+  color: #171f24 !important;
+}
+.tag-btn[data-tag="all"].active        { background: #aaa; border-color: #aaa; }
+.tag-btn[data-tag="security"].active   { background: #03dac5; border-color: #03dac5; }
+.tag-btn[data-tag="blog"].active       { background: #84c9fb; border-color: #84c9fb; }
+.tag-btn[data-tag="personal"].active   { background: #CF6679; border-color: #CF6679; }
+.tag-btn[data-tag="projects"].active   { background: #9980FF; border-color: #9980FF; }
+.tag-btn[data-tag="education"].active  { background: #FFB74D; border-color: #FFB74D; }
+.tag-btn[data-tag="hobby"].active      { background: #81C784; border-color: #81C784; }
+.tag-btn[data-tag="certificates"].active { background: #FFB74D; border-color: #FFB74D; }
+.tag-btn[data-tag="formal"].active     { background: #FFB74D; border-color: #FFB74D; }
+.tag-btn[data-tag="professional"].active { background: #FFB74D; border-color: #FFB74D; }
+.tag-btn[data-tag="iot"].active        { background: #9980FF; border-color: #9980FF; }
+.tag-btn[data-tag="devops"].active     { background: #9980FF; border-color: #9980FF; }
+.tag-btn[data-tag="privacy"].active    { background: #03dac5; border-color: #03dac5; }
+
+/* Post Listing */
+.post-list-terminal {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.post-entry {
+  display: flex;
+  gap: 16px;
+  padding: 6px 0;
+  color: #FFF;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.post-entry:visited {
+  color: #FFF;
+}
+
+.post-entry:hover {
+  text-decoration: none;
+}
+
+.post-entry:hover .post-name {
+  color: #03dac5;
+}
+
+.post-entry.hidden {
+  display: none;
+}
+
+.post-perms {
+  color: #9980FF;
+  flex-shrink: 0;
+}
+
+.post-date {
+  color: #84c9fb;
+  flex-shrink: 0;
+}
+
+.post-name {
+  color: #FFF;
+  transition: color 0.15s ease;
+}
+
+/* ls output */
+.ls-output {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+  padding: 2px 0 4px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.ls-binary {
+  color: #03dac5;
+  font-weight: bold;
+}
+
+.ls-dimmed {
+  color: #828282;
+}
+
+/* Post Count */
+.post-count {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .terminal, .tag-bar, .post-list-terminal, .post-count {
+    font-size: 13px;
+  }
+
+  .post-perms {
+    display: none;
+  }
+
+  .tag-btn {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}

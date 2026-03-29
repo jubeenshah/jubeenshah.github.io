@@ -1,15 +1,3 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: terminal-home
 ---
-
-
-I am Cybersecurity professional with 5 yrs of experience in Application Security, Cloud Security, Security Operations, and EDR. Skilled in strategic implementation, policy development, and threat and vulnerability management. Passionate about innovation, problem-solving, and continuous learning. Aiming to leverage my diverse skill set for impactful tech solutions. 
-
-[#tryingharder](/education/certificates/2023/02/17/offsec-osda.html) each day to be a little more thoughtful, and a little more vigilant, while finding a balance and helping out. 
-
-Have a look around. Feel free to send any feedback my way.Sharing some of my previous projects, blogs, certifications and other things over the years.  
-
-You can reach me through my [LinkedIn](https://www.linkedin.com/in/jubeen-shah/), at this point.

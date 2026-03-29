@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/terminal.css' | relative_url }}">
+  {%- feed_meta -%}
+</head>
+<body>
+  {%- include header.html -%}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      <!-- Terminal Animation -->
+      <div id="terminal" class="terminal">
+        <div id="terminal-output" class="terminal-output"></div>
+        <span id="terminal-cursor" class="terminal-cursor">█</span>
+      </div>
+
+      <!-- Tag Filters (hidden until animation completes) -->
+      <div id="tag-bar" class="tag-bar" style="display:none;">
+        <div class="tag-filters">
+          <button class="tag-btn active" data-tag="all">all</button>
+          {%- assign all_categories = "" | split: "" -%}
+          {%- for post in site.posts -%}
+            {%- for cat in post.categories -%}
+              {%- unless all_categories contains cat -%}
+                {%- assign all_categories = all_categories | push: cat -%}
+              {%- endunless -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign sorted_categories = all_categories | sort -%}
+          {%- for cat in sorted_categories -%}
+          <button class="tag-btn" data-tag="{{ cat }}">{{ cat }}</button>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <!-- Post Listing (hidden until animation completes) -->
+      <div id="post-list" class="post-list-terminal" style="display:none;">
+        {%- for post in site.posts -%}
+        <a href="{{ post.url | relative_url }}" class="post-entry" data-categories="{{ post.categories | join: ' ' }}">
+          <span class="post-perms">-rw-r--r--</span>
+          <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <span class="post-name">{{ post.title | slugify }}.md</span>
+        </a>
+        {%- endfor -%}
+      </div>
+
+      <!-- Post count footer -->
+      <div id="post-count" class="post-count" style="display:none;">
+        <span class="terminal-prompt">you@jubeen.sh:~$</span>
+        <span class="terminal-dimmed">wc -l</span>
+        <span id="count-display" class="terminal-output-text"></span>
+      </div>
+
+    </div>
+  </main>
+  {%- include footer.html -%}
+  <script src="{{ '/assets/terminal.js' | relative_url }}"></script>
+</body>
+</html>
