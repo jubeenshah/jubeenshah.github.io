@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-terminal
 title: About
 permalink: /about/
 ---
@@ -34,17 +34,5 @@ Also, know my way around [splunk](/education/certificates/11/01/splunk-core-cert
 
 ## the site
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-If you did not realize, some of the site is broken. I've got [stories](https://github.com/jubeenshah/jubeenshah.github.io/projects/1) out there for me to keep updating this. Trying to organize myself a little. 
-
-[jekyll-organization]: https://github.com/jekyll
+custom terminal theme built on top of [jekyll](https://jekyllrb.com/). hosted on [github pages](https://github.com/jubeenshah/jubeenshah.github.io). a work in progress, always.
 

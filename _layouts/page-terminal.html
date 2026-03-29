@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post terminal-page">
+
+  <header class="tp-header">
+    <div class="tp-cmd">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
+      <span class="t-cmd-text">cat {{ page.title | downcase }}.md</span>
+    </div>
+  </header>
+
+  <div class="tp-page-content">
+    {{ content }}
+  </div>
+
+</article>
+
+<link rel="stylesheet" href="{{ '/assets/post-terminal.css' | relative_url }}">
