@@ -1,9 +1,11 @@
 ---
 layout: blog
-categories:
   - personal
   - blog
 title: Hey there, got a minute?
+category: career
+subcategory: mentorship
+spanning: [reflection]
 ---
 
 Hey Wanderer,

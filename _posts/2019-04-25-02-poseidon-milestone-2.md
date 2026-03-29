@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Poseidon: Milestone 2 - Test & Analysis 🗃️"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---   
 
 Content

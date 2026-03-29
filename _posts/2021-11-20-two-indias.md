@@ -1,7 +1,9 @@
 ---
 layout: post
-categories: ["personal","blog"]
 title: "Two Indias"
+category: writing
+subcategory: society
+spanning: [opinion]
 ---
 
 “This is a gigantic joke, which just isn’t funny.”

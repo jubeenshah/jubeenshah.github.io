@@ -1,7 +1,9 @@
 ---
 layout: post
-categories: ["personal","blog"]
 title: "That's Okay!"
+category: writing
+subcategory: personal
+spanning: [reflection]
 ---
 
 ![Alice](/assets/images/alice.jpg)

@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Poseidon: Milestone 1 - Configuration Management & Build) ⚙️"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---   
 
 Content

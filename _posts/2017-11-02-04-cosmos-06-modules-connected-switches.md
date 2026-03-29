@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Cosmos: Connected Switch"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---  
 
 

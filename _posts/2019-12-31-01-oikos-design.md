@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Oikos: Study Design"
-categories: ["projects","security", "privacy"]
+category: projects
+subcategory: privacy
+spanning: [series]
 ---            
 
 Content

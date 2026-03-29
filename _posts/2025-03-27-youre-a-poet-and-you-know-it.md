@@ -1,8 +1,10 @@
 ---
 layout: blog
-categories:
   - blog
 title: You're a poet, and you know it
+category: writing
+subcategory: personal
+spanning: [reflection]
 ---
 
 # You're a poet, and you know it. 

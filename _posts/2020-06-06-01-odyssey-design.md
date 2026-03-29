@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Odyssey: Initial Design"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---          
 
 

@@ -1,8 +1,11 @@
 ---
 layout: blog
-categories:
   - blog
 title: Get some shit done
+category: career
+subcategory: productivity
+nsfw: true
+spanning: [opinion]
 ---
 
 Look, I’ve Gotta Stop Doing Every Damn Thing Myself

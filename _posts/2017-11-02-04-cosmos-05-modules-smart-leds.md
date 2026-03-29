@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Cosmos: Smart LEDs"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 --- 
 
 ## Content

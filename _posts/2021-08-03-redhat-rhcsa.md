@@ -1,8 +1,10 @@
 ---
 layout: education
-categories: ["education","certificates"]
 title: "Certified as Redhat System Administrator 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
+category: certs
+subcategory: redhat
+spanning: []
 ---
 
 

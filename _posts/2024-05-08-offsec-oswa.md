@@ -1,8 +1,11 @@
 ---
 layout: education
-categories: ["education","certificates"]
 title: "Certified as OffSec Web Assessor (OSWA) 🧑‍🎓"
 summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
+category: certs
+subcategory: offsec
+nsfw: true
+spanning: []
 ---
 
 

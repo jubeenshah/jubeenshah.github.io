@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Cosmos: Weather Station"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---  
 
 ## Content

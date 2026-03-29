@@ -1,7 +1,9 @@
 ---
 layout: blog
-categories: hobby
-title: "A Beautiful Mind and the Shared themes of Cinematic Artistry" 
+title: "A Beautiful Mind and the Shared themes of Cinematic Artistry"
+category: writing
+subcategory: film
+spanning: [opinion, reflection]
 ---
 
 This movie was released in 2001, but If i remember correctly, it was about in 2011-2014 that i would've watched it. I used to be very interested in movies like this when I was younger. I still am... just to say how much I have changed over the years. But over the years I've watched a lot of movies... So i've grown to link them up and look at how they're the same rather than how they're different.

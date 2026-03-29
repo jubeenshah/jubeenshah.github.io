@@ -1,9 +1,12 @@
 ---
 layout: blog
-categories:
   - blog
   - security
 title: EVE-NG - Kehna Kya chahate ho?
+category: security
+subcategory: networking
+nsfw: true
+spanning: [tutorial, series]
 ---
 ## It is hard
 

@@ -1,9 +1,12 @@
 ---
 layout: blog
-categories:
   - blog
   - security
 title: Once Upon a time...
+category: writing
+subcategory: society
+nsfw: true
+spanning: [opinion, open-source]
 ---
 
 

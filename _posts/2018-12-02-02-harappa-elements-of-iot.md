@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Harappa: Elements of IoT"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---                       
 
 

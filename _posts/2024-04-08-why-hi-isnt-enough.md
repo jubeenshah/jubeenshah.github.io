@@ -1,8 +1,11 @@
 ---
 layout: blog
-categories:
   - blog
 title: Please don't just say "Hi". Send a purposeful message
+category: career
+subcategory: mentorship
+nsfw: true
+spanning: [opinion]
 ---
 
 This might more of a personal note that I want to shout out to people, than anything else. 

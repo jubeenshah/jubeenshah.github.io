@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Oikos: Analysis and Interpretations"
-categories: ["projects","security", "privacy"]
+category: projects
+subcategory: privacy
+spanning: [series]
 ---            
 
 

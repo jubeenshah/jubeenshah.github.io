@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Poseidon: Milestone 3 - Deployment ✅"
-categories: ["projects","devops"]
+category: projects
+subcategory: devops
+spanning: [series, open-source]
 ---   
 
 

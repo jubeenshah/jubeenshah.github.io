@@ -1,9 +1,11 @@
 ---
 layout: blog
-categories:
   - blog
   - security
 title: Reset password for Virtual Machine in EVE-NG (Linux)
+category: security
+subcategory: networking
+spanning: [tutorial, series]
 ---
 
 What happens when you forget the password for your virtual machine in EVE-NG? You can't just reset it like you would on a physical machine. Here's how you can reset the password for a virtual machine in EVE-NG.

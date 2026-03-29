@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Cosmos: Intrusion Sensor"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---  
 
 ## Content

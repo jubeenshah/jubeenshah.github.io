@@ -1,7 +1,9 @@
 ---
 layout: blog
-categories: hobby
-title: "The Essence of Carpe Diem - A Reflection on Dead Poets Society" 
+title: "The Essence of Carpe Diem - A Reflection on Dead Poets Society"
+category: writing
+subcategory: film
+spanning: [opinion, reflection]
 ---
 
 ## Introduction

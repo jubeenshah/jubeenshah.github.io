@@ -1,7 +1,9 @@
 ---
 layout: project
 title: "Harappa: Final Words"
-categories: ["projects", "iot"]
+category: projects
+subcategory: iot
+spanning: [series]
 ---             
 
 Content
