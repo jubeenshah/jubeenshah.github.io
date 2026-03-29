@@ -16,7 +16,7 @@ Dead Poets' Society, directed by Peter Weir and written by Tom Schulman, is a co
 
 One of the primary themes of Dead Poets Society is non-conformity, which is embodied in the character of Mr. Keating. As a new teacher at Welton Academy, he challenges the traditional teaching methods and urges his students to think for themselves. He introduces them to the Dead Poets Society, a secret club of passionate young poets that previously existed at the school. The students' participation in the society symbolizes their rebellion against the strict rules and expectations of the academy.
 
-The film demonstrates the importance of non-conformity, as it allows individuals to explore their own thoughts, ideas, and desires. It emphasizes the necessity of embracing one's uniqueness in a world that often demands conformity. The protagonists in other films, such as Good Will Hunting and [A Beautiful Mind](/hobby/2014/01/01/A-Beautiful-Mind.html), also defy expectations in their respective stories, showcasing the potential of individuals when they embrace their true selves.
+The film demonstrates the importance of non-conformity, as it allows individuals to explore their own thoughts, ideas, and desires. It emphasizes the necessity of embracing one's uniqueness in a world that often demands conformity. The protagonists in other films, such as Good Will Hunting and [A Beautiful Mind](/writing/2014/01/01/A-Beautiful-Mind.html), also defy expectations in their respective stories, showcasing the potential of individuals when they embrace their true selves.
 
 ## Self-Discovery
 
