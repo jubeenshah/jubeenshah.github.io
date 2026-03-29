@@ -15,16 +15,22 @@ document.addEventListener('DOMContentLoaded', function () {
   popup.style.display = 'none';
   document.body.appendChild(popup);
 
-  function showPopup(e, data) {
+  function showPopup(e, href, data) {
     var readMin = Math.max(1, Math.ceil(data.words / 200));
     var perms = data.nsfw ? '-rwsr--r--' : '-rw-r--r--';
     var group = data.nsfw ? 'stderr' : 'staff';
     var permsClass = data.nsfw ? 'lp-perms lp-nsfw' : 'lp-perms';
     var groupClass = data.nsfw ? 'lp-nsfw' : '';
 
+    popup.className = 'link-preview cat-' + data.category;
+
     popup.innerHTML =
-      '<div class="lp-header">' +
-        '<span class="lp-path">~/' + data.category + '/' + data.subcategory + '/</span>' +
+      '<div class="lp-toolbar">' +
+        '<span class="lp-path">~/' + (data.category === 'page' ? data.title.toLowerCase() : data.category + '/' + (data.subcategory ? data.subcategory + '/' : '')) + '</span>' +
+        '<span class="lp-actions">' +
+          '<a href="' + href + '" target="_blank" class="lp-open" title="open in new tab">↗</a>' +
+          '<button class="lp-close" title="close">×</button>' +
+        '</span>' +
       '</div>' +
       '<div class="lp-meta">' +
         '<span class="' + permsClass + '">' + perms + '</span>  ' +
@@ -42,20 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     popup.style.display = 'block';
 
-    // Calculate position — prefer below the link
     var popupRect = popup.getBoundingClientRect();
     var top = rect.bottom + scrollY + 8;
     var left = rect.left + scrollX;
 
-    // Keep within viewport
     if (left + popupRect.width > window.innerWidth + scrollX - 20) {
       left = window.innerWidth + scrollX - popupRect.width - 20;
     }
     if (left < scrollX + 10) {
       left = scrollX + 10;
     }
-
-    // If below would go off screen, show above
     if (top + popupRect.height > window.innerHeight + scrollY - 20) {
       top = rect.top + scrollY - popupRect.height - 8;
     }
@@ -78,6 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
     hidePopup();
   });
 
+  // Close button — event delegation on popup
+  popup.addEventListener('click', function (e) {
+    if (e.target.classList.contains('lp-close')) {
+      e.stopPropagation();
+      clearTimeout(hideTimeout);
+      popup.style.display = 'none';
+    }
+  });
+
   // Listen for hover on all internal links
   document.addEventListener('mouseover', function (e) {
     if (!postData) return;
@@ -85,12 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var link = e.target.closest('a');
     if (!link) return;
 
+    // Don't trigger on links inside the popup itself
+    if (popup.contains(link)) return;
+
     var href = link.getAttribute('href');
     if (!href || href.startsWith('http') || href.startsWith('#')) return;
 
     // Normalize relative URLs to absolute
     if (!href.startsWith('/')) {
-      // Resolve relative to current page path
       var base = window.location.pathname;
       var dir = base.substring(0, base.lastIndexOf('/') + 1);
       href = dir + href;
@@ -103,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (postData[href]) {
       clearTimeout(hideTimeout);
-      showPopup(e, postData[href]);
+      showPopup(e, href, postData[href]);
     }
   });
 

@@ -45,6 +45,10 @@ layout: default
   </nav>
 
   <header class="tp-header">
+    <div class="tp-banner">
+      <span class="tp-banner-notice">NOTICE:</span> You are accessing jubeen.sh as guest. All content governed by author's <a href="/disclaimer/">{{ disclaimer_text }}</a>. Proceed with good faith.
+    </div>
+
     <div id="tp-ls-row" class="tp-cmd" style="display:none;">
       <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
       <span class="t-cmd-text" id="tp-ls-cmd">{{ ls_flags }}</span>
@@ -57,10 +61,6 @@ layout: default
     <div id="tp-cat-row" class="tp-cmd" style="display:none;">
       <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
       <span class="t-cmd-text" id="tp-cat-cmd">{{ cat_flags }} {{ page.title | slugify }}.md</span>
-    </div>
-
-    <div id="tp-disclaimer" class="tp-disclaimer" style="display:none;">
-      <span class="disclaimer-icon">!</span> governed by the author's <a href="/disclaimer/">{{ disclaimer_text }}</a>
     </div>
   </header>
 
@@ -75,8 +75,27 @@ layout: default
       <div class="tp-content e-content" itemprop="articleBody">
         {{ content }}
       </div>
+
     </div>
   </div>
+
+  {%- comment -%} Auto-generate related pages from same category+subcategory {%- endcomment -%}
+  {%- assign related = site.posts | where: "category", page.category | where: "subcategory", page.subcategory -%}
+  {%- if related.size > 1 -%}
+  <div class="tp-related" id="tp-related" style="display:none;">
+    <div class="tp-related-header">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
+      <span class="t-cmd-text">ls *.md | ./filter.sh --context={{ page.title | slugify }}</span>
+    </div>
+    <ul class="tp-related-list">
+      {%- for post in related -%}
+      <li class="tp-related-item{% if post.url == page.url %} tp-related-current{% endif %}">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
 
   <nav class="tp-nav" id="tp-nav" style="display:none;">
     {%- if page.previous.url -%}

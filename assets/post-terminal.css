@@ -7,6 +7,37 @@
 .cat-certs     { --cat-color: #FFB74D; --cat-bg: rgba(255, 183, 77, 0.03); }
 .cat-career    { --cat-color: #84c9fb; --cat-bg: rgba(132, 201, 251, 0.03); }
 
+/* ===== SSH Banner ===== */
+.tp-banner {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.75rem;
+  color: #828282;
+  border: 1px solid #333;
+  border-left: 3px solid #FFB74D;
+  padding: 0.5em 0.8em;
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+.tp-banner-notice {
+  color: #FFB74D;
+  font-weight: bold;
+}
+
+.tp-banner a {
+  color: #84c9fb;
+  text-decoration: underline;
+  text-decoration-color: #84c9fb44;
+}
+
+.tp-banner a:hover {
+  text-decoration-color: #84c9fb;
+}
+
+.tp-banner a:visited {
+  color: #6a9fcb;
+}
+
 /* ===== Header ===== */
 .tp-header {
   margin-bottom: 1em;
@@ -468,6 +499,59 @@
 .tp-page-content img {
   border-radius: 4px;
   margin: 1.6em 0;
+}
+
+/* ===== Related Pages (auto-generated) ===== */
+.tp-related {
+  margin-top: 2.5em;
+  padding-top: 1.2em;
+  border-top: 1px solid #333;
+}
+
+.tp-related-header {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.875rem;
+  margin-bottom: 0.6em;
+}
+
+.tp-related-list {
+  list-style: none;
+  margin-left: 0;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.8125rem;
+}
+
+.tp-related-item {
+  margin-bottom: 0.3em;
+}
+
+.tp-related-item::before {
+  content: '-rw-r--r--  ';
+  color: #555;
+}
+
+.tp-related-item a {
+  color: #84c9fb;
+  text-decoration: none;
+}
+
+.tp-related-item a:hover {
+  color: var(--cat-color);
+  text-decoration: underline;
+}
+
+.tp-related-item a:visited {
+  color: #6a9fcb;
+}
+
+.tp-related-current a {
+  color: var(--cat-color);
+  font-weight: bold;
+}
+
+.tp-related-current::before {
+  content: '-rw-r--r--* ';
+  color: var(--cat-color);
 }
 
 /* ===== Fade-in animation ===== */

@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var lsOutput = document.getElementById('tp-ls-output');
   var catRow = document.getElementById('tp-cat-row');
   var catCmd = document.getElementById('tp-cat-cmd');
-  var disclaimer = document.getElementById('tp-disclaimer');
   var outer = document.getElementById('tp-outer');
   var nav = document.getElementById('tp-nav');
+  var related = document.getElementById('tp-related');
   var content = document.querySelector('.tp-content');
   var spanTags = document.querySelectorAll('.tp-span-anim');
 
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (lsOutput) lsOutput.style.display = '';
     if (catRow) catRow.style.display = '';
     if (catCmd) catCmd.textContent = catText;
-    if (disclaimer) disclaimer.style.display = '';
     if (outer) outer.style.display = '';
     if (nav) nav.style.display = '';
+    if (related) related.style.display = '';
     spanTags.forEach(function (s) { s.style.display = ''; });
   }
 
@@ -66,10 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
           typeInto(catCmd, catText, function () {
             setTimeout(function () {
               // Reveal content with staggered fade
-              if (disclaimer) {
-                disclaimer.style.display = '';
-                disclaimer.classList.add('tp-fade-in');
-              }
               setTimeout(function () {
                 if (outer) {
                   outer.style.display = '';
@@ -77,11 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }, 150);
               setTimeout(function () {
+                if (related) {
+                  related.style.display = '';
+                  related.classList.add('tp-fade-in');
+                }
+              }, 300);
+              setTimeout(function () {
                 if (nav) {
                   nav.style.display = '';
                   nav.classList.add('tp-fade-in');
                 }
-              }, 300);
+              }, 450);
             }, CMD_PAUSE);
           });
         }, CMD_PAUSE);
