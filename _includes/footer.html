@@ -1,0 +1,34 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper footer-terminal">
+    <div class="footer-cmd">
+      <span class="footer-prompt">you@jubeen.sh:~$</span>
+      <span class="footer-cmd-text">echo $CONTACT</span>
+    </div>
+    <div class="footer-links">
+      {%- if site.github_username -%}
+      <a href="https://github.com/{{ site.github_username }}">github/{{ site.github_username }}</a>
+      {%- endif -%}
+      {%- if site.linkedin_username -%}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">linkedin/{{ site.linkedin_username }}</a>
+      {%- endif -%}
+      {%- if site.twitter_username -%}
+      <a href="https://twitter.com/{{ site.twitter_username }}">x/{{ site.twitter_username }}</a>
+      {%- endif -%}
+    </div>
+
+    <div class="footer-cmd footer-cmd-uptime">
+      <span class="footer-prompt">you@jubeen.sh:~$</span>
+      <span class="footer-cmd-text">uptime</span>
+    </div>
+    <div class="footer-uptime">
+      running since 2014 · jekyll · github pages
+    </div>
+
+    <div class="footer-cmd footer-cmd-exit">
+      <span class="footer-prompt">you@jubeen.sh:~$</span>
+      <span class="footer-cmd-text">exit</span>
+    </div>
+  </div>
+</footer>
