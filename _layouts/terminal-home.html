@@ -20,29 +20,42 @@
         <span id="terminal-cursor" class="terminal-cursor">█</span>
       </div>
 
-      <!-- Tag Filters (hidden until animation completes) -->
+      <!-- NSFW toggle + Layer 1: Top-Level Categories (hidden until animation completes) -->
       <div id="tag-bar" class="tag-bar" style="display:none;">
-        <div class="tag-filters">
-          <button class="tag-btn active" data-tag="all">all</button>
-          {%- assign all_categories = "" | split: "" -%}
-          {%- for post in site.posts -%}
-            {%- for cat in post.categories -%}
-              {%- unless all_categories contains cat -%}
-                {%- assign all_categories = all_categories | push: cat -%}
-              {%- endunless -%}
-            {%- endfor -%}
-          {%- endfor -%}
-          {%- assign sorted_categories = all_categories | sort -%}
-          {%- for cat in sorted_categories -%}
-          <button class="tag-btn" data-tag="{{ cat }}">{{ cat }}</button>
-          {%- endfor -%}
+        <div class="filter-row">
+          <div class="tag-filters" id="layer1">
+            <button class="tag-btn layer1-btn active" data-tag="all" data-layer="1">all</button>
+            <button class="tag-btn layer1-btn" data-tag="writing" data-layer="1">writing</button>
+            <button class="tag-btn layer1-btn" data-tag="security" data-layer="1">security</button>
+            <button class="tag-btn layer1-btn" data-tag="projects" data-layer="1">projects</button>
+            <button class="tag-btn layer1-btn" data-tag="certs" data-layer="1">certs</button>
+            <button class="tag-btn layer1-btn" data-tag="career" data-layer="1">career</button>
+          </div>
+          <label class="nsfw-toggle" title="toggle nsfw content">
+            <input type="checkbox" id="nsfw-toggle" checked>
+            <span class="nsfw-label">nsfw</span>
+          </label>
         </div>
+      </div>
+
+      <!-- Layer 2: Sub-Categories (hidden until L1 selected) -->
+      <div id="subcategory-bar" class="subcategory-bar" style="display:none;">
+        <div class="sub-filters" id="layer2"></div>
+      </div>
+
+      <!-- Layer 3: Spanning tags (hidden until L1 selected) -->
+      <div id="spanning-bar" class="spanning-bar" style="display:none;">
+        <div class="spanning-filters" id="layer3"></div>
       </div>
 
       <!-- Post Listing (hidden until animation completes) -->
       <div id="post-list" class="post-list-terminal" style="display:none;">
         {%- for post in site.posts -%}
-        <a href="{{ post.url | relative_url }}" class="post-entry" data-categories="{{ post.categories | join: ' ' }}">
+        <a href="{{ post.url | relative_url }}" class="post-entry"
+           data-category="{{ post.category }}"
+           data-subcategory="{{ post.subcategory }}"
+           data-spanning="{{ post.spanning | join: ',' | downcase | strip }}"
+           data-nsfw="{{ post.nsfw | default: false }}">
           <span class="post-perms">-rw-r--r--</span>
           <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
           <span class="post-name">{{ post.title | slugify }}.md</span>

@@ -62,11 +62,72 @@ body {
   padding: 4px 0 10px 0;
 }
 
-.tag-filters {
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   margin-top: 12px;
+}
+
+.tag-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+/* NSFW Toggle */
+.nsfw-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nsfw-toggle input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 32px;
+  height: 16px;
+  background: #CF6679;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nsfw-toggle input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #171f24;
+  border-radius: 50%;
+  top: 2px;
+  left: 16px;
+  transition: left 0.2s ease;
+}
+
+.nsfw-toggle input[type="checkbox"]:not(:checked) {
+  background: #424242;
+}
+
+.nsfw-toggle input[type="checkbox"]:not(:checked)::after {
+  left: 2px;
+}
+
+.nsfw-label {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 11px;
+  color: #CF6679;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.nsfw-toggle input[type="checkbox"]:not(:checked) ~ .nsfw-label {
+  color: #555;
 }
 
 .tag-btn {
@@ -80,20 +141,13 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Category colors */
+/* Layer 1: Top-level category colors */
 .tag-btn[data-tag="all"]        { border-color: #555; color: #aaa; }
+.tag-btn[data-tag="writing"]    { border-color: #CF6679; color: #CF6679; }
 .tag-btn[data-tag="security"]   { border-color: #03dac5; color: #03dac5; }
-.tag-btn[data-tag="blog"]       { border-color: #84c9fb; color: #84c9fb; }
-.tag-btn[data-tag="personal"]   { border-color: #CF6679; color: #CF6679; }
 .tag-btn[data-tag="projects"]   { border-color: #9980FF; color: #9980FF; }
-.tag-btn[data-tag="education"]  { border-color: #FFB74D; color: #FFB74D; }
-.tag-btn[data-tag="hobby"]      { border-color: #81C784; color: #81C784; }
-.tag-btn[data-tag="certificates"] { border-color: #FFB74D; color: #FFB74D; }
-.tag-btn[data-tag="formal"]     { border-color: #FFB74D; color: #FFB74D; }
-.tag-btn[data-tag="professional"] { border-color: #FFB74D; color: #FFB74D; }
-.tag-btn[data-tag="iot"]        { border-color: #9980FF; color: #9980FF; }
-.tag-btn[data-tag="devops"]     { border-color: #9980FF; color: #9980FF; }
-.tag-btn[data-tag="privacy"]    { border-color: #03dac5; color: #03dac5; }
+.tag-btn[data-tag="certs"]      { border-color: #FFB74D; color: #FFB74D; }
+.tag-btn[data-tag="career"]     { border-color: #84c9fb; color: #84c9fb; }
 
 .tag-btn:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -103,18 +157,74 @@ body {
   color: #171f24 !important;
 }
 .tag-btn[data-tag="all"].active        { background: #aaa; border-color: #aaa; }
+.tag-btn[data-tag="writing"].active    { background: #CF6679; border-color: #CF6679; }
 .tag-btn[data-tag="security"].active   { background: #03dac5; border-color: #03dac5; }
-.tag-btn[data-tag="blog"].active       { background: #84c9fb; border-color: #84c9fb; }
-.tag-btn[data-tag="personal"].active   { background: #CF6679; border-color: #CF6679; }
 .tag-btn[data-tag="projects"].active   { background: #9980FF; border-color: #9980FF; }
-.tag-btn[data-tag="education"].active  { background: #FFB74D; border-color: #FFB74D; }
-.tag-btn[data-tag="hobby"].active      { background: #81C784; border-color: #81C784; }
-.tag-btn[data-tag="certificates"].active { background: #FFB74D; border-color: #FFB74D; }
-.tag-btn[data-tag="formal"].active     { background: #FFB74D; border-color: #FFB74D; }
-.tag-btn[data-tag="professional"].active { background: #FFB74D; border-color: #FFB74D; }
-.tag-btn[data-tag="iot"].active        { background: #9980FF; border-color: #9980FF; }
-.tag-btn[data-tag="devops"].active     { background: #9980FF; border-color: #9980FF; }
-.tag-btn[data-tag="privacy"].active    { background: #03dac5; border-color: #03dac5; }
+.tag-btn[data-tag="certs"].active      { background: #FFB74D; border-color: #FFB74D; }
+.tag-btn[data-tag="career"].active     { background: #84c9fb; border-color: #84c9fb; }
+
+/* Layer 2: Sub-categories */
+.subcategory-bar {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 14px;
+  padding: 0 0 6px 0;
+}
+
+.sub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-left: 16px;
+  border-left: 2px solid #424242;
+}
+
+.sub-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: #666;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 12px;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sub-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Layer 3: Spanning tags */
+.spanning-bar {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 14px;
+  padding: 4px 0 10px 0;
+}
+
+.spanning-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.span-btn {
+  background: transparent;
+  border: none;
+  color: #555;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 12px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.span-btn:hover {
+  color: #81C784;
+}
+
+.span-btn.active {
+  color: #81C784;
+  border-bottom: 1px solid #81C784;
+}
 
 /* Post Listing */
 .post-list-terminal {
