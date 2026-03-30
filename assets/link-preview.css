@@ -127,6 +127,91 @@
   line-height: 1.6;
 }
 
+/* === Citation Preview === */
+.lp-cite {
+  --lp-color: #FFB74D;
+  border-top-color: #FFB74D;
+}
+
+.lp-cite-label {
+  color: #FFB74D;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lp-cite-authors {
+  color: #03dac5;
+  margin-bottom: 0.3em;
+}
+
+.lp-cite-title {
+  color: #FFF;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  line-height: 1.4;
+}
+
+.lp-cite-title-link,
+.lp-cite-title-link:visited {
+  color: #FFF !important;
+  text-decoration: underline !important;
+  text-decoration-color: #ffffff33 !important;
+}
+
+.lp-cite-title-link:hover {
+  text-decoration-color: #FFF !important;
+}
+
+.lp-cite-venue {
+  color: #828282;
+  font-style: italic;
+  margin-bottom: 0.4em;
+}
+
+.lp-cite-abstract {
+  color: #aaa;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 0.4em;
+  margin-top: 0.3em;
+  line-height: 1.5;
+}
+
+.lp-loading {
+  color: #555;
+  font-style: italic;
+}
+
+/* === Wikipedia Preview === */
+.lp-wiki {
+  --lp-color: #aaa;
+  border-top-color: #aaa;
+}
+
+.lp-wiki .lp-cite-label {
+  color: #aaa;
+}
+
+.lp-wiki-content {
+  display: flex;
+  gap: 0.8em;
+  align-items: flex-start;
+}
+
+.lp-wiki-thumb {
+  width: 60px;
+  height: auto;
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 0.2em;
+}
+
+.lp-wiki-text {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Hide on mobile — hover doesn't work well on touch */
 @media screen and (max-width: 600px) {
   .link-preview {
