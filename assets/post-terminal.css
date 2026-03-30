@@ -301,16 +301,16 @@
   margin: 2em 0;
 }
 
-/* ===== TOC ===== */
+/* ===== TOC — positioned in the left margin ===== */
+.terminal-post {
+  position: relative;
+}
+
 .tp-toc {
-  position: sticky;
-  top: 5rem;
-  align-self: flex-start;
-  width: 16em;
-  flex-shrink: 0;
-  max-height: calc(100vh - 8rem);
-  overflow-y: auto;
-  order: 2;
+  position: absolute;
+  left: -16em;
+  top: auto;
+  width: 14em;
 }
 
 .toc-header {
@@ -570,9 +570,6 @@
     display: none;
   }
 
-  .tp-outer {
-    display: block;
-  }
 
   .tp-content {
     font-size: 0.875rem;

@@ -64,13 +64,14 @@ layout: default
     </div>
   </header>
 
+  {%- unless cat == "certs" -%}
+  <aside class="tp-toc" id="writing-toc" style="display:none;">
+    <div class="toc-header">// toc</div>
+    <nav class="toc-nav" id="toc-nav"></nav>
+  </aside>
+  {%- endunless -%}
+
   <div class="tp-outer" id="tp-outer" style="display:none;">
-    {%- unless cat == "certs" -%}
-    <aside class="tp-toc" id="writing-toc">
-      <div class="toc-header">// toc</div>
-      <nav class="toc-nav" id="toc-nav"></nav>
-    </aside>
-    {%- endunless -%}
     <div class="tp-body">
       <div class="tp-content e-content" itemprop="articleBody">
         {{ content }}

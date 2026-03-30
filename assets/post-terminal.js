@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var lsOutput = document.getElementById('tp-ls-output');
   var catRow = document.getElementById('tp-cat-row');
   var catCmd = document.getElementById('tp-cat-cmd');
+  var toc = document.getElementById('writing-toc');
   var outer = document.getElementById('tp-outer');
   var nav = document.getElementById('tp-nav');
   var related = document.getElementById('tp-related');
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (catRow) catRow.style.display = '';
     if (catCmd) catCmd.textContent = catText;
     if (outer) outer.style.display = '';
+    if (toc) toc.style.display = '';
     if (nav) nav.style.display = '';
     if (related) related.style.display = '';
     spanTags.forEach(function (s) { s.style.display = ''; });
@@ -65,7 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
           typeInto(catCmd, catText, function () {
             setTimeout(function () {
-              // Reveal content with staggered fade
+              // Reveal TOC + content with staggered fade
+              if (toc) {
+                toc.style.display = '';
+                toc.classList.add('tp-fade-in');
+              }
               setTimeout(function () {
                 if (outer) {
                   outer.style.display = '';
