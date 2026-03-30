@@ -313,6 +313,53 @@
   width: 14em;
 }
 
+/* ===== Progress indicator — fixed in left margin ===== */
+.tp-progress {
+  position: fixed;
+  left: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.tp-progress.visible {
+  opacity: 1;
+}
+
+.tp-progress-bar {
+  width: 2px;
+  height: 8em;
+  background: #2a2a2a;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tp-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--cat-color, #03dac5);
+  transition: height 0.1s ease;
+}
+
+.tp-progress-heading {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.625rem;
+  color: #555;
+  max-width: calc(30vw - 3em);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .toc-header {
   font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
   font-size: 0.6875rem;
@@ -554,6 +601,49 @@
   color: var(--cat-color);
 }
 
+/* ===== Marginalia — right margin notes ===== */
+.tp-marginalia {
+  position: absolute;
+  right: -18em;
+  top: 0;
+  width: 16em;
+  pointer-events: none;
+}
+
+.tp-margin-note {
+  position: absolute;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.625rem;
+  line-height: 1.5;
+  color: #555;
+  border-left: 1px solid #333;
+  padding-left: 0.8em;
+  max-width: 16em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
+}
+
+.tp-margin-note.visible {
+  opacity: 1;
+}
+
+.tp-margin-note-key {
+  color: var(--cat-color, #FFB74D);
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.tp-margin-note-text {
+  color: #666;
+}
+
+.tp-margin-note-title {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.2em;
+}
+
 /* ===== Fade-in animation ===== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
@@ -567,6 +657,14 @@
 /* ===== Responsive ===== */
 @media screen and (max-width: 600px) {
   .tp-toc {
+    display: none;
+  }
+
+  .tp-progress {
+    display: none;
+  }
+
+  .tp-marginalia {
     display: none;
   }
 

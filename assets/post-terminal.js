@@ -158,6 +158,164 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  window.addEventListener('scroll', updateActiveToc);
-  updateActiveToc();
+  // === Progress indicator ===
+  var progressEl = document.getElementById('tp-progress');
+  var progressFill = document.getElementById('tp-progress-fill');
+  var progressHeading = document.getElementById('tp-progress-heading');
+  var tocEl = document.getElementById('writing-toc');
+
+  function updateScrollIndicators() {
+    var scrollPos = window.scrollY + 100;
+    var active = null;
+    var activeText = '';
+
+    // Update active TOC link + find current heading
+    headings.forEach(function (heading) {
+      if (heading === content.querySelector('h2:first-child')) return;
+      if (heading.offsetTop <= scrollPos) {
+        active = heading.id;
+        activeText = heading.textContent;
+      }
+    });
+
+    tocLinks.forEach(function (link) {
+      if (link.getAttribute('href') === '#' + active) {
+        link.classList.add('toc-active');
+      } else {
+        link.classList.remove('toc-active');
+      }
+    });
+
+    // Update progress bar
+    if (progressEl && progressFill && progressHeading) {
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = docHeight > 0 ? Math.min(100, (window.scrollY / docHeight) * 100) : 0;
+      progressFill.style.height = progress + '%';
+      progressHeading.textContent = activeText;
+
+      // Show progress indicator only after TOC scrolls out of view
+      if (tocEl) {
+        var tocBottom = tocEl.getBoundingClientRect().bottom;
+        if (tocBottom < 0) {
+          progressEl.classList.add('visible');
+        } else {
+          progressEl.classList.remove('visible');
+        }
+      } else {
+        // No TOC (e.g. certs) — show after scrolling past header
+        if (window.scrollY > 300) {
+          progressEl.classList.add('visible');
+        } else {
+          progressEl.classList.remove('visible');
+        }
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollIndicators);
+  updateScrollIndicators();
+
+  // === Marginalia — right margin citation notes ===
+  var marginalia = document.getElementById('tp-marginalia');
+  if (!marginalia) return;
+
+  var refData = null;
+  var marginNotes = [];
+
+  fetch('/references.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      refData = data;
+      buildMarginNotes();
+    })
+    .catch(function () {});
+
+  function buildMarginNotes() {
+    if (!refData || !content) return;
+
+    // Find all citation links in the content
+    var citeLinks = content.querySelectorAll('a[href^="#"]');
+    var seen = {};
+
+    citeLinks.forEach(function (link) {
+      var key = link.getAttribute('href').substring(1);
+
+      // Try to find matching ref
+      var ref = refData[key];
+      if (!ref) {
+        // Try fuzzy match
+        for (var k in refData) {
+          if (key.indexOf(k) !== -1 || k.indexOf(key) !== -1) {
+            ref = refData[k];
+            key = k;
+            break;
+          }
+        }
+      }
+
+      if (!ref) return;
+      if (!ref.note && !ref.abstract) return;
+      if (seen[key]) return;
+      seen[key] = true;
+
+      var noteText = ref.note || ref.abstract;
+      if (noteText.length > 150) {
+        noteText = noteText.substring(0, 150) + '...';
+      }
+
+      var noteEl = document.createElement('div');
+      noteEl.className = 'tp-margin-note';
+      noteEl.innerHTML =
+        '<div class="tp-margin-note-key">' + ref.authors.split(',')[0].split(' and ')[0] + ' ' + ref.year + '</div>' +
+        '<div class="tp-margin-note-title">' + ref.title.substring(0, 60) + (ref.title.length > 60 ? '...' : '') + '</div>' +
+        '<div class="tp-margin-note-text">' + noteText + '</div>';
+
+      marginalia.appendChild(noteEl);
+
+      marginNotes.push({
+        el: noteEl,
+        link: link
+      });
+    });
+
+    positionMarginNotes();
+    window.addEventListener('scroll', updateMarginVisibility);
+    window.addEventListener('resize', positionMarginNotes);
+  }
+
+  function positionMarginNotes() {
+    var articleRect = content.getBoundingClientRect();
+    var articleTop = content.offsetTop;
+
+    marginNotes.forEach(function (note) {
+      var linkRect = note.link.getBoundingClientRect();
+      var linkTop = note.link.offsetTop;
+
+      // Position relative to the article container
+      var parent = note.link.offsetParent;
+      var top = 0;
+      var el = note.link;
+      while (el && el !== document.body) {
+        top += el.offsetTop;
+        el = el.offsetParent;
+      }
+
+      note.el.style.top = (top - marginalia.offsetTop) + 'px';
+    });
+  }
+
+  function updateMarginVisibility() {
+    var viewTop = window.scrollY;
+    var viewBottom = viewTop + window.innerHeight;
+
+    marginNotes.forEach(function (note) {
+      var noteTop = note.el.getBoundingClientRect().top + window.scrollY;
+
+      if (noteTop > viewTop - 100 && noteTop < viewBottom + 100) {
+        note.el.classList.add('visible');
+      } else {
+        note.el.classList.remove('visible');
+      }
+    });
+  }
 });
