@@ -303,12 +303,16 @@ table td { border: 1px solid var(--border-table); }
   position: absolute;
   right: 0;
   top: 100%;
-  margin-top: 0.3em;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  padding-top: 0.3em;
   z-index: 200;
   min-width: max-content;
 }
+
+.theme-dropdown-inner {
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
 .theme-switcher:hover .theme-dropdown { display: block; }
 
 .theme-option {
