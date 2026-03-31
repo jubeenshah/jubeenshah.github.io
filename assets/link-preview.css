@@ -1,18 +1,18 @@
 /* Link Preview Popup */
 /* Category colors for popup */
-.link-preview.cat-writing   { --lp-color: #CF6679; }
-.link-preview.cat-security  { --lp-color: #03dac5; }
-.link-preview.cat-projects  { --lp-color: #9980FF; }
-.link-preview.cat-certs     { --lp-color: #FFB74D; }
-.link-preview.cat-career    { --lp-color: #84c9fb; }
-.link-preview.cat-page      { --lp-color: #03dac5; }
+.link-preview.cat-writing   { --lp-color: var(--cat-writing, #CF6679); }
+.link-preview.cat-security  { --lp-color: var(--cat-security, #03dac5); }
+.link-preview.cat-projects  { --lp-color: var(--cat-projects, #9980FF); }
+.link-preview.cat-certs     { --lp-color: var(--cat-certs, #FFB74D); }
+.link-preview.cat-career    { --lp-color: var(--cat-career, #84c9fb); }
+.link-preview.cat-page      { --lp-color: var(--accent, #03dac5); }
 
 .link-preview {
-  --lp-color: #03dac5;
+  --lp-color: var(--accent, #03dac5);
   position: absolute;
   z-index: 1000;
-  background: #1e272e;
-  border: 1px solid #333;
+  background: var(--bg, #1e272e);
+  border: 1px solid var(--border, #333);
   border-top: 2px solid var(--lp-color);
   padding: 0.8em 1em;
   max-width: 380px;
@@ -73,13 +73,13 @@
 .lp-open,
 .lp-open:visited,
 .lp-open:link {
-  color: #555 !important;
+  color: var(--text-faint, #555) !important;
   text-decoration: none !important;
   font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
 }
 
 .lp-open:hover {
-  color: #84c9fb !important;
+  color: var(--link, #84c9fb) !important;
 }
 
 .lp-close {
@@ -91,11 +91,11 @@
 }
 
 .lp-close:hover {
-  color: #CF6679;
+  color: var(--nsfw, #CF6679);
 }
 
 .lp-meta {
-  color: #828282;
+  color: var(--text-dim, #828282);
   margin-bottom: 0.6em;
   white-space: pre;
 }
@@ -105,36 +105,36 @@
 }
 
 .lp-nsfw {
-  color: #CF6679;
+  color: var(--nsfw, #CF6679);
 }
 
 .lp-owner {
-  color: #828282;
+  color: var(--text-dim, #828282);
 }
 
 .lp-size {
-  color: #84c9fb;
+  color: var(--link, #84c9fb);
 }
 
 .lp-date {
-  color: #828282;
+  color: var(--text-dim, #828282);
 }
 
 .lp-excerpt {
-  color: #aaa;
-  border-top: 1px solid #2a2a2a;
+  color: var(--text-dim, #aaa);
+  border-top: 1px solid var(--border, #2a2a2a);
   padding-top: 0.5em;
   line-height: 1.6;
 }
 
 /* === Citation Preview === */
 .lp-cite {
-  --lp-color: #FFB74D;
-  border-top-color: #FFB74D;
+  --lp-color: var(--warning, #FFB74D);
+  border-top-color: var(--warning, #FFB74D);
 }
 
 .lp-cite-label {
-  color: #FFB74D;
+  color: var(--warning, #FFB74D);
   font-weight: bold;
   font-size: 0.6875rem;
   text-transform: uppercase;
@@ -142,12 +142,12 @@
 }
 
 .lp-cite-authors {
-  color: #03dac5;
+  color: var(--accent, #03dac5);
   margin-bottom: 0.3em;
 }
 
 .lp-cite-title {
-  color: #FFF;
+  color: var(--text, #FFF);
   font-weight: bold;
   margin-bottom: 0.3em;
   line-height: 1.4;
@@ -155,24 +155,24 @@
 
 .lp-cite-title-link,
 .lp-cite-title-link:visited {
-  color: #FFF !important;
+  color: var(--text, #FFF) !important;
   text-decoration: underline !important;
   text-decoration-color: #ffffff33 !important;
 }
 
 .lp-cite-title-link:hover {
-  text-decoration-color: #FFF !important;
+  text-decoration-color: var(--text, #FFF) !important;
 }
 
 .lp-cite-venue {
-  color: #828282;
+  color: var(--text-dim, #828282);
   font-style: italic;
   margin-bottom: 0.4em;
 }
 
 .lp-cite-abstract {
-  color: #aaa;
-  border-top: 1px solid #2a2a2a;
+  color: var(--text-dim, #aaa);
+  border-top: 1px solid var(--border, #2a2a2a);
   padding-top: 0.4em;
   margin-top: 0.3em;
   line-height: 1.5;
@@ -185,12 +185,12 @@
 
 /* === Wikipedia Preview === */
 .lp-wiki {
-  --lp-color: #aaa;
-  border-top-color: #aaa;
+  --lp-color: var(--text-dim, #aaa);
+  border-top-color: var(--text-dim, #aaa);
 }
 
 .lp-wiki .lp-cite-label {
-  color: #aaa;
+  color: var(--text-dim, #aaa);
 }
 
 .lp-wiki-content {
@@ -214,28 +214,28 @@
 
 /* === Footnote Preview === */
 .lp-footnote {
-  --lp-color: #9980FF;
-  border-top-color: #9980FF;
+  --lp-color: var(--perms, #9980FF);
+  border-top-color: var(--perms, #9980FF);
 }
 
 .lp-fn-label {
-  color: #9980FF;
+  color: var(--perms, #9980FF);
   font-weight: bold;
   font-size: 0.75rem;
 }
 
 .lp-fn-content {
-  color: #ccc;
+  color: var(--text-body, #ccc);
   line-height: 1.6;
 }
 
 .lp-fn-content p {
   margin: 0.3em 0;
-  color: #ccc;
+  color: var(--text-body, #ccc);
 }
 
 .lp-fn-content a {
-  color: #84c9fb;
+  color: var(--link, #84c9fb);
 }
 
 /* Hide on mobile — hover doesn't work well on touch */

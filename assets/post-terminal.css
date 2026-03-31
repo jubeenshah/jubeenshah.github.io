@@ -1,11 +1,11 @@
 /* Post Terminal Layout — one layout, category colors as easter eggs */
 
 /* ===== Category color variables via class ===== */
-.cat-writing   { --cat-color: var(--nsfw); --cat-bg: rgba(207, 102, 121, 0.03); }
-.cat-security  { --cat-color: var(--accent); --cat-bg: rgba(3, 218, 197, 0.03); }
-.cat-projects  { --cat-color: var(--perms); --cat-bg: rgba(153, 128, 255, 0.03); }
-.cat-certs     { --cat-color: var(--warning); --cat-bg: rgba(255, 183, 77, 0.03); }
-.cat-career    { --cat-color: var(--link); --cat-bg: rgba(132, 201, 251, 0.03); }
+.cat-writing   { --cat-color: var(--cat-writing); --cat-bg: rgba(207, 102, 121, 0.03); }
+.cat-security  { --cat-color: var(--cat-security); --cat-bg: rgba(3, 218, 197, 0.03); }
+.cat-projects  { --cat-color: var(--cat-projects); --cat-bg: rgba(153, 128, 255, 0.03); }
+.cat-certs     { --cat-color: var(--cat-certs); --cat-bg: rgba(255, 183, 77, 0.03); }
+.cat-career    { --cat-color: var(--cat-career); --cat-bg: rgba(132, 201, 251, 0.03); }
 
 /* ===== SSH Banner ===== */
 .tp-banner {

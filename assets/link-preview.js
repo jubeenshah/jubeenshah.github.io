@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function showPostPopup(e, href, data) {
     var readMin = Math.max(1, Math.ceil(data.words / 200));
     var perms = data.nsfw ? '-rwsr--r--' : '-rw-r--r--';
-    var group = data.nsfw ? 'stderr' : 'staff';
+    var group = data.nsfw ? 'stderr' : 'human';
     var permsClass = data.nsfw ? 'lp-perms lp-nsfw' : 'lp-perms';
     var groupClass = data.nsfw ? 'lp-nsfw' : '';
 

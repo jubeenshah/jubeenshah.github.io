@@ -100,7 +100,7 @@ body {
   -webkit-appearance: none;
   width: 32px;
   height: 16px;
-  background: #CF6679;
+  background: var(--nsfw);
   border-radius: 8px;
   position: relative;
   cursor: pointer;
@@ -112,7 +112,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #171f24;
+  background: var(--bg);
   border-radius: 50%;
   top: 2px;
   left: 16px;
@@ -120,7 +120,7 @@ body {
 }
 
 .nsfw-toggle input[type="checkbox"]:not(:checked) {
-  background: #424242;
+  background: var(--border);
 }
 
 .nsfw-toggle input[type="checkbox"]:not(:checked)::after {
@@ -142,7 +142,7 @@ body {
 
 .tag-btn {
   background: transparent;
-  border: 1px solid #424242;
+  border: 1px solid var(--border, #424242);
   color: var(--text-dim);
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 13px;
@@ -152,12 +152,12 @@ body {
 }
 
 /* Layer 1: Top-level category colors */
-.tag-btn[data-tag="all"]        { border-color: #555; color: #aaa; }
-.tag-btn[data-tag="writing"]    { border-color: var(--nsfw); color: var(--nsfw); }
-.tag-btn[data-tag="security"]   { border-color: var(--accent); color: var(--accent); }
-.tag-btn[data-tag="projects"]   { border-color: var(--perms); color: var(--perms); }
-.tag-btn[data-tag="certs"]      { border-color: var(--warning); color: var(--warning); }
-.tag-btn[data-tag="career"]     { border-color: var(--link); color: var(--link); }
+.tag-btn[data-tag="all"]        { border-color: var(--text-faint); color: var(--text-dim); }
+.tag-btn[data-tag="writing"]    { border-color: var(--cat-writing); color: var(--cat-writing); }
+.tag-btn[data-tag="security"]   { border-color: var(--cat-security); color: var(--cat-security); }
+.tag-btn[data-tag="projects"]   { border-color: var(--cat-projects); color: var(--cat-projects); }
+.tag-btn[data-tag="certs"]      { border-color: var(--cat-certs); color: var(--cat-certs); }
+.tag-btn[data-tag="career"]     { border-color: var(--cat-career); color: var(--cat-career); }
 
 .tag-btn:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -166,12 +166,12 @@ body {
 .tag-btn.active {
   color: var(--bg) !important;
 }
-.tag-btn[data-tag="all"].active        { background: #aaa; border-color: #aaa; }
-.tag-btn[data-tag="writing"].active    { background: var(--cat-writing); border-color: var(--nsfw); }
-.tag-btn[data-tag="security"].active   { background: var(--cat-security); border-color: var(--accent); }
-.tag-btn[data-tag="projects"].active   { background: var(--cat-projects); border-color: var(--perms); }
+.tag-btn[data-tag="all"].active        { background: #aaa; border-color: var(--text-dim); }
+.tag-btn[data-tag="writing"].active    { background: var(--cat-writing); border-color: var(--cat-writing); }
+.tag-btn[data-tag="security"].active   { background: var(--cat-security); border-color: var(--cat-security); }
+.tag-btn[data-tag="projects"].active   { background: var(--cat-projects); border-color: var(--cat-projects); }
 .tag-btn[data-tag="certs"].active      { background: var(--warning); border-color: var(--warning); }
-.tag-btn[data-tag="career"].active     { background: var(--cat-career); border-color: var(--link); }
+.tag-btn[data-tag="career"].active     { background: var(--cat-career); border-color: var(--cat-career); }
 
 /* Layer 2: Sub-categories */
 .subcategory-bar {
