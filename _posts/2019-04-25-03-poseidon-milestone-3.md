@@ -6,15 +6,6 @@ subcategory: devops
 spanning: [series, open-source]
 ---   
 
-
-Content
--------
-
-* [Deployment](#deployment)
-* [Video Summary](#video-summary)
-* [Report](#report)
-
- 
 Milestone 3
 ===========
 

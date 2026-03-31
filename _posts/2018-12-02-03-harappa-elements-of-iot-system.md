@@ -6,15 +6,6 @@ subcategory: iot
 spanning: [series]
 ---              
 
-Content
--------
-
-* [Sensors](#sensors)
-* [Actuators](#actuators)
-* [Community of Things](#community-of-things)
-* [Federation of communities](#federation-of-communities)
-* [Conversations](#conversations)
-* [Enabling technologies](#enabling-technologies)
 
 Elements of IoT (Contd.)
 ========================

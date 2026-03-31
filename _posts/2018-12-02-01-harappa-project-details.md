@@ -6,11 +6,6 @@ subcategory: iot
 spanning: [series]
 ---                       
 
-Content
--------
-
-* [Business Requirements](#business-requirements)
-* [Technical Requirements](#technical-requirements)
 
 Project Details
 ===============

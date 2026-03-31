@@ -7,16 +7,6 @@ spanning: [series]
 ---                       
 
 
-Content
--------
-
-* [Things](#things)
-* [People](#people)
-* [Processes](#processes)
-* [Registration](#registration-of-device)
-* [Transfering data](#transfer-of-data)
-* [Data](#data)
-
 Elements of IoT
 ===============
 

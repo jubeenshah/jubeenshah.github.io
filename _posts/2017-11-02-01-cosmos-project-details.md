@@ -6,11 +6,6 @@ subcategory: iot
 spanning: [series]
 ---     
 
-## Content
-
-
-* [Concept & Plan](#concept-and-plan)
-* [System Overview](#system-overview)
 
 ## Concept and Plan
 

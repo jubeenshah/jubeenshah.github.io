@@ -5,18 +5,6 @@ category: projects
 subcategory: iot
 spanning: [series]
 ---  
-
-
-## Content
-
-- [Demo Video](#demo-video)
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Third Party Integration](#third-party-integration)
-    - [Alexa](#alexa)
-    - [Siri](#siri)
-- [Final Product](#final-product)
-
 ## Demo Video
 
 [Watch Video](https://www.youtube.com/shorts/pNeB2d3rCis)

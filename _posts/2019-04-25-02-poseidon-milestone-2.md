@@ -6,12 +6,6 @@ subcategory: devops
 spanning: [series, open-source]
 ---   
 
-Content
--------
-
-* [Test & Analysis](#test-analysis)
-* [Video Summary](#video-summary)
-* [Report](#report)
 
 Milestone 2
 ===========

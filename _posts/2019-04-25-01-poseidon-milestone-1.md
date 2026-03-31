@@ -6,12 +6,6 @@ subcategory: devops
 spanning: [series, open-source]
 ---   
 
-Content
--------
-
-* [CM & Build](#cm-build)
-* [Video Summary](#video-summary)
-* [Report](#report)
 
 Milestone 1
 ===========

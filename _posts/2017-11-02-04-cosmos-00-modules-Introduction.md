@@ -5,19 +5,6 @@ category: projects
 subcategory: iot
 spanning: [series]
 ---  
-
-## Content
-
-
-- [Modules Summary](#modules-summary)
-- [Intrusion Sensor](#intrusion-sensor)
-- [Fire Sensor](#fire-sensor)
-- [Weather Station](#weather-station)
-- [Ambient Station](#ambient-station)
-- [Smart LEDs](#smart-leds)
-- [Connected Switch](#connected-switch)
-- [Smart Lock](#smart-lock)
-
 ## Cosmos - Modules
 
 

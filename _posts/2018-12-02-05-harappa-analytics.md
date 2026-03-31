@@ -7,15 +7,6 @@ spanning: [series]
 ---             
 
 
-Content
--------
-
-* [Monitoring Analytics](#monitoring-analytics)
-* [Predictive Analytics](#predictive-analytics)
-* [Acting Analytics](#acting-analytics)
-* [Analytics Considerations](#analytics-considerations)
-* [Computing](#computing)
-
 Analytics & Computing
 =====================
 

@@ -7,13 +7,6 @@ spanning: [series]
 ---            
 
 
-Content
--------
-
-* [Data](#Data)
-* [Awareness](#awareness)
-* [Correlation Matrices](#Correlation-Matrices)
-* [Westin's Index (Custom)](#westins-index)
 
 Apple Analysis
 ==============

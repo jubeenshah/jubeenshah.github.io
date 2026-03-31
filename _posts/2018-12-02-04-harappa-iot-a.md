@@ -6,11 +6,6 @@ subcategory: iot
 spanning: [series]
 ---                       
 
-Content
--------
-
-* [Domain Model](#domain-model)
-* [Information Model](#information-model)
 
 IoT-A Architecture
 ==================

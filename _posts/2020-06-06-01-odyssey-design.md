@@ -7,16 +7,6 @@ spanning: [series, open-source]
 ---          
 
 
-Content
--------
-
-- [Design Considerations](#)
-- [Color Scheme](#)
-- [Illustrations](#)
-- [Animations](#)
-- [Fonts](#)
-- [Design Inspirations](#)
-
 Design Tasks
 ============
 

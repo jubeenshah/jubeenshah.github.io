@@ -5,15 +5,6 @@ category: projects
 subcategory: iot
 spanning: [series]
 ---  
-
-## Content
-
-- [Software Requirements](#software-requirements)
-- [Uploading Code to ESP8266](#uploading-code-to-esp8266)
-- [Challenges Encountered](#challenges-encountered)
-- [Disassembled Product](#disassembled-product)
-
-
 ### Demo Video
 
 [Watch Viedo](https://www.youtube.com/watch?v=wHc4LXepfSE)

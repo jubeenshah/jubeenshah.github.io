@@ -5,14 +5,6 @@ category: projects
 subcategory: iot
 spanning: [series]
 ---  
-
-## Content
-
-
-- [Openhab Configuration](#openhab-configuration)
-- [Things](#things)
-- [Sitemaps](#sitemaps)
-
 ## OpenHAB
 
 

@@ -5,15 +5,6 @@ category: projects
 subcategory: iot
 spanning: [series]
 --- 
-
-## Content
-
-
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Final Product](#final-product)
-
-
 ## Functional Block Diagram
 
 
