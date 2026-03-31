@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function animate() {
+    // If no animation elements exist (page layout), just show everything
+    if (!lsRow || !lsCmd || !catRow || !catCmd) {
+      showAll();
+      return;
+    }
+
     // Show ls row with prompt visible, but command text empty
     lsRow.style.display = '';
     lsCmd.textContent = '';
