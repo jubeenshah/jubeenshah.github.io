@@ -6,11 +6,9 @@ subcategory: devops
 spanning: [series, open-source]
 ---   
 
-Milestone 3
-===========
+## Milestone 3
 
-Deployment
-----------
+### Deployment
 
 In this milestone, the focus was on deployment, and monitoring analysis using Ansible on AWS servers. The following tasks were performed:
 
@@ -19,11 +17,9 @@ In this milestone, the focus was on deployment, and monitoring analysis using An
 *   Extracted a microservice and deployed sereral instances using Kubernetes
 *   Implementing the monitoring analysis of the project as a special componenet using Prometheus and Grafana
 
-Video Summary
--------------
+### Video Summary
 
-Report
-------
+### Report
 
 This was a particular interesting milestone in terms of what we learnt. There were a lot of challenges while we were doing the project, probably only a subset of which were really very easy to solve. We would walk through some of the challenges faced below.
 

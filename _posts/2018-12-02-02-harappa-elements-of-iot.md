@@ -7,11 +7,9 @@ spanning: [series]
 ---                       
 
 
-Elements of IoT
-===============
+## Elements of IoT
 
-Things
-------
+### Things
 
 This subsection describes the things in the project and their functionality in minor details.
 
@@ -22,8 +20,7 @@ This subsection describes the things in the project and their functionality in m
 *   Switch: The switches would make use of the relays to switch on/off a device. The smart switches would simply make use of multiple relays to switch on/off a device like the irrigation system, the smart switches would be given three triggering mechanisms. The first would be an alert signal from any of the sensors in the environment which would trigger the switch being turned on/off, and the remaining two are discussed in the mobile app.
 *   Mobile Devices: GPS would be used to monitor the location of the user and make predictions about the users' movement. The mobile device would be used to give an overview of all the con- nected things in the environment and also be used to manage and monitor other things in the envi- ronment. One of the ways it can manage other things in the environment would be through manual control of the devices by sending an HTTP signal to the server, which in turn sends an MQTT signal/ command to the ESP8266 to turn on or off certain devices in the environment — Smart Switches or irrigation system. Another set of information that would be transferred between the mobile app and the server would be the Red, Blue, and Green values to be set in the Ambient Lights. Finally, there could also a schedule in terms of how frequently certain devices are to be turned on/off. For exam- ple, the irrigation system might be configured to turn on every day at 9 am, and turn off at 9:30 am. This can be done using the mobile application. Another, functionality that would be a part of the mobile app would be to allow integration with the in-house operating system’s voice assistant — Siri in case of iOS and google assistant in case of Android. For any other operating system, Alexa can be used since, it is an open source assistant provided by Amazon, thus satisfying BR 11.
 
-People
-------
+### People
 
 This subsection outlines the people directly involved in interacting with the project. It also outlines the roles of the people involved. This is not an exhaustive list of the people involved in the project, but the ones that would be directly interacting with the system either to use it on a daily basis (Users), or to solve any problem associated with the devices or services being used a part of the system as whole (AWS Administrator and Local Administrator).
 
@@ -32,8 +29,7 @@ This subsection outlines the people directly involved in interacting with the pr
 *   AWS Administrator: The AWS administrator would be responsible for registration and de-regis- tration of any services that the user subscribes through either manually, or automatically through the use of the mobile application or other devices.  
     
 
-Processes
----------
+### Processes
 
 This section describes in detail few processes that would be a part of the project. It describes the process for registration of a device with the environment under consideration for a particular home. It also provides the series of steps that would be performed whenever there is a need to transfer information between the things in the project and the AWS environment. Finally, we also discuss a few more processes that would be a part of the system but are not described in detail.
 
@@ -86,8 +82,7 @@ This section describes in detail few processes that would be a part of the proje
     
 *   Using the lambda function; the received data can be processed to carry out the required functionalities. 
 
-Data
-----
+### Data
 
 This subsections outlines the type of data that would be collected in the automation environment. 
 

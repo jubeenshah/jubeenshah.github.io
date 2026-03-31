@@ -7,11 +7,9 @@ spanning: [series]
 ---                       
 
 
-Project Details
-===============
+## Project Details
 
-Business Requirements
----------------------
+### Business Requirements
 
 This project should be designed to help the users/owner of the house in the following ways:
 
@@ -33,8 +31,7 @@ This project should be designed to help the users/owner of the house in the foll
 
 As a consequence of helping the user of the Harappa in these ways, we would expect an increase in the productivity of the user for daily chores. We would also expect the users to save up on electricity costs. For this reason, we believe that this type of system could have significant commercial potential.
 
-Technical Requirements
-----------------------
+### Technical Requirements
 
 In order to meet the business requirements discussed above, the system must meet the technical requirements TR 1-6 set out in this section. Even though we focus on these 6 technical requirements there are several more that the system would need as a part of a complete implementation.
 

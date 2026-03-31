@@ -7,11 +7,9 @@ spanning: [series, open-source]
 ---          
 
 
-Design Tasks
-============
+## Design Tasks
 
-Design Considerations
----------------------
+### Design Considerations
 
 In this section of the project, I would be focussing on some of the design considerations that were taken for the project.
 
@@ -19,8 +17,7 @@ In this section of the project, I would be focussing on some of the design consi
 *   Design Illustrations
 *   Animations
 
-Video Summary
--------------
+### Video Summary
 
 ### Color Scheme
 

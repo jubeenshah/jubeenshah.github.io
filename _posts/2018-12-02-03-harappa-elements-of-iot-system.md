@@ -7,11 +7,9 @@ spanning: [series]
 ---              
 
 
-Elements of IoT (Contd.)
-========================
+## Elements of IoT (Contd.)
 
-Sensors
--------
+### Sensors
 
 This subsection lists and describes in some detail the sensors that would be needed as a part of the project. This is not an exhaustive list and more/fewer sensors might be needed as a part of the implementation when considering each house.
 
@@ -27,8 +25,7 @@ This subsection lists and describes in some detail the sensors that would be nee
 *   Camera: The camera would be used to classify the type of plant as required in BR 15. It would make use of the AWS Rekognition service to classify the plant type
 *   Soil Moisture Sensor—FC28: Soil Moisture sensor makes use of conductance between two electrodes, to determine the percentage amount of water in the soil. This sensor makes use of an Analog pinto detect the difference in voltage level, which can then be used to translate into digital data
 
-Actuators
----------
+### Actuators
 
 As required by BR 7, BR 9, and BR 15 the following list of actuators are identified
 
@@ -38,8 +35,7 @@ As required by BR 7, BR 9, and BR 15 the following list of actuators are identif
 *   Temperature Controller: The temperature controller would be a part of the smart thermostat system which would be responsible for setting the temperature of the environment.  
     
 
-Community of Things
--------------------
+### Community of Things
 
 This subsection outlines an arbitrary collection of things, as seen in the [things](/projects/2018/12/02/02-harappa-elements-of-iot.html) section, which are useful from a management perspective. There are several communities of things that are possible with the project, however, we limit ourselves to four.
 
@@ -49,8 +45,7 @@ This subsection outlines an arbitrary collection of things, as seen in the [thin
 *   Community of mobile devices: This would be a collection of the mobile devices being used by the user to manage and monitor the state of the devices in the smart house.  
     
 
-Federation of Communities
--------------------------
+### Federation of Communities
 
 This subsection outlines the communication. Between Heterogeneous sets of communities as discussed above. There are several federations of communities possible in the project, but we limit ourselves to the three that are discussed below.
 
@@ -69,8 +64,7 @@ This subsection outlines the communication. Between Heterogeneous sets of commun
 *   The plants would communicate with the room, which would help identify what plants are available in which room which is described in BR 15.
 *   This information would be necessary to identify which rooms have which plant(s).
 
-Conversations
--------------
+### Conversations
 
 This subsection outlines the different types of conversations that are possible between the sets and subsets of things, people, and data as discussed on the [previous](/projects/2018/12/02/02-harappa-elements-of-iot.html) page. A few of the many conversations possible are listed below.
 
@@ -83,7 +77,6 @@ This subsection outlines the different types of conversations that are possible 
 *   People to Data: People manually changing the status of a particular device in the environment. For example, when the user is using the mobile device to manage the state of a particular device in the environment, the user is also adding data points for the states of the devices that he is managing.  
     
 
-Enabling Technologies
----------------------
+### Enabling Technologies
 
 *   Visualization: Visualization of data would be an enabling technology in the project, as it would give the user a glimpse of all the information that the system is trying to accumulate with all the sensors in the smart home environment. The visualization mainly can comprise a time series display of the readings from the sensors. Open source tools such as influxDB (Time Series Database) and Grafana (Open source Visualization tool) and Amazons QuickSight.

@@ -7,11 +7,9 @@ spanning: [series]
 ---                       
 
 
-IoT-A Architecture
-==================
+## IoT-A Architecture
 
-Domain Model
-------------
+### Domain Model
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/ad5f82e879a9c5d6b5b442eb37e50551.svg)
 
@@ -21,8 +19,7 @@ Taking an example of one of the physical entity to describe the model — Switch
 ‍  
 Similarly, for other devices connected in the system, there are associated sensors and actuators that would help them operate as required in the Business Requirements.
 
-Information Model
------------------
+### Information Model
 
 ![Cosmos: Fire Sensor Functional Block Diagram](https://project-odyssey.s3.us-east-2.amazonaws.com/bb3ccd5881d651448ded1dac904054ac.svg)
 

@@ -8,11 +8,9 @@ spanning: [series]
 
 
 
-Apple Analysis
-==============
+## Apple Analysis
 
-Data
-----
+### Data
 
 The majority of the responses were for Apple Watch; around 30 people responded for this part of the survey. There were a total of five questions that were designed to gauge the privacy awareness level amongst the participants. The questions were linked directly to Apple’s privacy policy. A few topics that the questions coveredFigure 1: Survey Design Flowchartrevolved around the topic of permanent deletion of data, reset of digital fingerprint, limiting ad-tracking, and Apple profiling users based on the data they collect.  
   
@@ -24,15 +22,13 @@ For the question “Do you think you can reset your digital fin- gerprint genera
   
 Finally, we asked two questions that asked about the participants’ perspective on whether Apple shares the user’s data for marketing purposes or uses the data to profile the users. Around 80% of the participants answered in the positive. According to the privacy policy, Apple doesn’t. We hypothesize this high positive response is because of the general norm that companies usually follow about data sharing practices. We say the general norm because 60% of the participants out of the 60% had not taken the privacy course with us.
 
-Awareness amongst particpants
------------------------------
+### Awareness amongst particpants
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/83db24e9ec3a336b2b124a2f0ce4321c.png)
 
 Amongst our participants 50% already owned an Apple watch. So we first focus on the remainder of the 50% participants. At the beginning of the study, we hypothesized that knowing with an increase in user awareness, people might change their perspective about buying a product. According to our survey, our hypothesis was correct. Around 73% of the participants changed their perspec- tive from not buying to buying. Whereas the remaining 27% did not change their perspective. Of the people who already owned an Apple watch, 60% participants stated that they did not change their perspective, whereas 40% participants stated that they changed their opinion about owning an Apple Watch. From the data available, we cannot make any conclusive statement as to what they would be doing with their apple watch. Around 90% of the partici- pants thought the information provided in the survey was useful,and that they would better use this information to protect themselves in the future.
 
-Correlation Matrices
---------------------
+### Correlation Matrices
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/8a30bdf662f6ac9ae6c8fbd125a31e0d.png)
 
@@ -42,8 +38,7 @@ In Figure below , we see a similar trend, as in the previous one. The categories
 
 ![](https://project-odyssey.s3.us-east-2.amazonaws.com/d40f00859c9a9a6f931e7447e175474e.png)
 
-Westin's Privacy Index
-----------------------
+### Westin's Privacy Index
 
 We also carried out another survey that gauged people into different categories, according to Westin’s index. While deciding which questions to ask in the survey, we wanted to revolve around the theme of the Westin’s survey and thus asked questions that had a”Linear-Scale” in which people could answer. Moreover, having read the Apple’s privacy policy, we had noticed that many businesses do not provide a way to delete the data collected, so we wanted to gather user sentiment on that aspect as well. We also wanted to understand whether different users have a different outlook towards sharing data with health care institutions that use health data for health studies and advertisers that use the data for digital marketing.  
   
