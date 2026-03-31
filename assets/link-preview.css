@@ -212,6 +212,32 @@
   min-width: 0;
 }
 
+/* === Footnote Preview === */
+.lp-footnote {
+  --lp-color: #9980FF;
+  border-top-color: #9980FF;
+}
+
+.lp-fn-label {
+  color: #9980FF;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.lp-fn-content {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.lp-fn-content p {
+  margin: 0.3em 0;
+  color: #ccc;
+}
+
+.lp-fn-content a {
+  color: #84c9fb;
+}
+
 /* Hide on mobile — hover doesn't work well on touch */
 @media screen and (max-width: 600px) {
   .link-preview {

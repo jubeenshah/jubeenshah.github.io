@@ -254,11 +254,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (!ref) return;
-      if (!ref.note && !ref.abstract) return;
+      if (!ref.note) return;
       if (seen[key]) return;
       seen[key] = true;
 
-      var noteText = ref.note || ref.abstract;
+      var noteText = ref.note;
       if (noteText.length > 150) {
         noteText = noteText.substring(0, 150) + '...';
       }

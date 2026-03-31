@@ -229,6 +229,29 @@ document.addEventListener('DOMContentLoaded', function () {
     positionPopup(e.target);
   }
 
+  // === Footnote preview popup ===
+  function showFootnotePopup(e, href, fnEl) {
+    popup.className = 'link-preview lp-footnote';
+
+    // Get the footnote content, strip the back-link
+    var content = fnEl.cloneNode(true);
+    var backLinks = content.querySelectorAll('.reversefootnote, a[href^="#fnref"]');
+    backLinks.forEach(function (bl) { bl.remove(); });
+
+    var fnNum = href.replace('#fn:', '');
+
+    popup.innerHTML =
+      '<div class="lp-toolbar">' +
+        '<span class="lp-fn-label">^' + fnNum + '</span>' +
+        '<span class="lp-actions">' +
+          '<button class="lp-close" title="close">×</button>' +
+        '</span>' +
+      '</div>' +
+      '<div class="lp-fn-content">' + content.innerHTML + '</div>';
+
+    positionPopup(e.target);
+  }
+
   // === Hide popup ===
   function hidePopup() {
     hideTimeout = setTimeout(function () {
@@ -263,6 +286,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var href = link.getAttribute('href');
     if (!href) return;
+
+    // === Footnote links ===
+    if (href.startsWith('#fn:') || href.startsWith('#fnref:')) {
+      // Only show popup for footnote references (not back-links)
+      if (href.startsWith('#fn:')) {
+        var fnEl = document.getElementById(href.substring(1));
+        if (fnEl) {
+          clearTimeout(hideTimeout);
+          showFootnotePopup(e, href, fnEl);
+        }
+      }
+      return;
+    }
 
     // === Citation links (# anchors pointing to bibliography entries) ===
     if (href.startsWith('#') && refData) {
