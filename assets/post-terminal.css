@@ -644,6 +644,87 @@
   margin-bottom: 0.2em;
 }
 
+/* ===== Series Navigation ===== */
+.tp-series-badge {
+  color: var(--cat-color);
+  margin-left: 0.5em;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.875rem;
+}
+
+.tp-series-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.tp-series-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin-bottom: 0.3em;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.8125rem;
+}
+
+.tp-series-item::before {
+  content: none;
+}
+
+.tp-series-marker {
+  flex-shrink: 0;
+  width: 1.2em;
+  text-align: center;
+  color: var(--text-faint);
+}
+
+.tp-series-read .tp-series-marker {
+  color: var(--accent);
+}
+
+.tp-series-current .tp-series-marker {
+  color: var(--cat-color);
+  font-weight: bold;
+}
+
+.tp-series-item a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.tp-series-item a:hover {
+  color: var(--cat-color);
+  text-decoration: underline;
+}
+
+.tp-series-item a:visited {
+  color: var(--link-visited);
+}
+
+.tp-series-read a {
+  color: var(--text-dim);
+}
+
+.tp-series-current a {
+  color: var(--cat-color);
+  font-weight: bold;
+}
+
+.tp-series-next {
+  margin-top: 1em;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.875rem;
+}
+
+.tp-series-next-link {
+  color: var(--cat-color) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tp-series-next-link:hover {
+  text-decoration: underline;
+}
+
 /* ===== Fade-in animation ===== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
