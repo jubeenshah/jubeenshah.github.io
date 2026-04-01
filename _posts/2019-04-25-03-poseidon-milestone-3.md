@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Poseidon: Milestone 3 - Deployment ✅"
 category: projects
 subcategory: devops
+series: poseidon
+series_order: 4
 spanning: [series, open-source]
 ---   
 

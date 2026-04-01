@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Cosmos: Weather Station"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 8
 spanning: [series]
 ---  
 ## Demo Video

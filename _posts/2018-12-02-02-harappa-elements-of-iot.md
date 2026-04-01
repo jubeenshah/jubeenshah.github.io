@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Harappa: Elements of IoT"
 category: projects
 subcategory: iot
+series: harappa
+series_order: 3
 spanning: [series]
 ---                       
 

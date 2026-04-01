@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Oikos: Final Words"
 category: projects
 subcategory: privacy
+series: oikos
+series_order: 4
 spanning: [series]
 ---            
         

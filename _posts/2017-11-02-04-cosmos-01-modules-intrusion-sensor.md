@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Cosmos: Intrusion Sensor"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 6
 spanning: [series]
 ---  
 ### Demo Video

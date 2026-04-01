@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Harappa: IoT-A Architecture"
 category: projects
 subcategory: iot
+series: harappa
+series_order: 5
 spanning: [series]
 ---                       
 

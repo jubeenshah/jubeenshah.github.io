@@ -4,6 +4,8 @@ title: Emulated Virtual Environment (next, new) generation
 category: security
 subcategory: networking
 nsfw: true
+series: eve-ng
+series_order: 1
 spanning: [tutorial, series]
 ---
 ## Making the first connection

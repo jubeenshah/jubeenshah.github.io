@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Odyssey: Initial Design"
 category: projects
 subcategory: devops
+series: odyssey
+series_order: 2
 spanning: [series, open-source]
 ---          
 

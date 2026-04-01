@@ -4,6 +4,8 @@ title: EVE-NG - Kehna Kya chahate ho?
 category: security
 subcategory: networking
 nsfw: true
+series: eve-ng
+series_order: 2
 spanning: [tutorial, series]
 ---
 ## It is hard

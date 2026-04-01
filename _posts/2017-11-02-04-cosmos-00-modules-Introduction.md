@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Cosmos: Modules"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 5
 spanning: [series]
 ---  
 ## Cosmos - Modules

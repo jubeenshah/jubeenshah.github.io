@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Oikos: Analysis and Interpretations"
 category: projects
 subcategory: privacy
+series: oikos
+series_order: 3
 spanning: [series]
 ---            
 

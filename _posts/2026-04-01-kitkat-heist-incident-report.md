@@ -9,7 +9,7 @@ spanning:
 
 On March 29, 2026, Nestlé publicly disclosed the exfiltration of 12 metric tons of KitKat product from an in-transit supply chain. Within 48 hours, over 119 organizations issued official statements. Not one contained actionable intelligence. Most offered condolences. Several announced new KitKat-flavored menu items. [One deployed a bidet](https://www.instagram.com/p/DWjiun5jf1K). In the absence of competent incident response from any of the 119[^1] responding parties, this independent investigation was initiated.
 
-## Initial Alert
+## INITIAL ALERT
 
 ```shell
 $ tail -1 /var/log/supply_chain.log

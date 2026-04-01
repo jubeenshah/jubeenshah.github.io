@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Cosmos: Connected Switch"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 11
 spanning: [series]
 ---  
 ## Demo Video

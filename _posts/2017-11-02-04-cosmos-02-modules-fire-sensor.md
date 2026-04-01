@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Cosmos: Fire Sensor"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 7
 spanning: [series]
 ---             
 ## Demo Video

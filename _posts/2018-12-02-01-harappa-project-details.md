@@ -3,6 +3,8 @@ layout: post-terminal
 title: "Harappa: Project Details 🗃️"
 category: projects
 subcategory: iot
+series: harappa
+series_order: 2
 spanning: [series]
 ---                       
 
