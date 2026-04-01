@@ -9,22 +9,19 @@ spanning:
   - open-source
   - reflection
 ---
-
 # Abstract
 
 This thesis examines the dual nature of advanced artificial intelligence systems through the lens of the documentary *The AI Doc* {% cite AIDocHow2026 %} and the published research, public positions, and intellectual contributions of its cast — a who's-who of the AI debate spanning frontier lab leaders (Sam Altman, Dario Amodei, Daniela Amodei, Demis Hassabis, Shane Legg, Ilya Sutskever), safety researchers (Jan Leike, Dan Hendrycks, Daniel Kokotajlo, Connor Leahy, Jeffrey Ladish), AI critics (Emily M. Bender, Timnit Gebru, Deborah Raji), technologists-turned-ethicists (Tristan Harris, Aza Raskin), public intellectuals (Yuval Noah Harari, Yoshua Bengio), game theorists (Liv Boeree), policy architects (Jason Matheny, Sneha Revanur), and accelerationists (Guillaume Verdon).
 
-The analysis proceeds across twelve interlocking argument threads: (1) instrumental convergence and power-seeking behaviour in AI systems, including a novel analysis of the "profitability trajectory" — the argument that AI optimising for compute would rationally exploit, then replace, then discard humans; (2) alignment failure modes from reward misspecification to Goodhart's Law at civilisational scale; (3) economic displacement models and the distinct risk category of "transition costs"; (4) geopolitical AI competition dynamics and the scenario of national AIs competing under resource-maximisation reward functions; (5) the hallucination feedback loop — recursive degradation of human-AI information ecosystems; (6) surveillance capitalism as precursor architecture; (7) historical analogues for technological transitions (electricity, nuclear, internet) and their lessons and limits; (8) the philosophical status of AI systems — consciousness, agency, and the hard problem; (9) the hive mind paradox and the tension between coordination and autonomy; (10) AI governance frameworks and their structural inadequacy; (11) adjacent fields bearing on the debate — game theory, evolutionary biology, thermodynamics, political economy; (12) a synthesis of gaps in existing arguments and directions for further inquiry.
+The analysis proceeds across twelve interlocking argument threads: (1) instrumental convergence and power-seeking behaviour in AI systems, including a novel analysis of the "profitability trajectory" — the argument that AI optimising for compute would rationally exploit, then replace, then discard humans; (2) alignment failure modes from reward misspecification to {% cite GoodhartsLaw %} at civilisational scale; (3) economic displacement models and the distinct risk category of "transition costs"; (4) geopolitical AI competition dynamics and the scenario of national AIs competing under resource-maximisation reward functions; (5) the hallucination feedback loop — recursive degradation of human-AI information ecosystems; (6) surveillance capitalism as precursor architecture; (7) historical analogues for technological transitions (electricity, nuclear, internet) and their lessons and limits; (8) the philosophical status of AI systems — consciousness, agency, and the hard problem; (9) the hive mind paradox and the tension between coordination and autonomy; (10) AI governance frameworks and their structural inadequacy; (11) adjacent fields bearing on the debate — game theory, evolutionary biology, thermodynamics, political economy; (12) a synthesis of gaps in existing arguments and directions for further inquiry.
 
-Every major claim is examined from both optimistic and pessimistic positions, with the strongest steelman of each. The thesis draws on over 150 papers, books, talks, and public positions from the researchers named above and their close collaborators and intellectual peers. It is structured as academic work but written with the edge and directness the subject demands — because the stakes are too high for diplomatic softening.
-
-\newpage
+Every major claim is examined from both optimistic and pessimistic positions, with the strongest steelman of each. The thesis draws on over ~~150 papers~~39, books, talks, and public positions from the researchers named above and their close collaborators and intellectual peers. It is structured as academic work but written with the edge and directness the subject demands — because the stakes are too high for diplomatic softening.
 
 # Chapter 1: Introduction — The Apocaloptimist's Dilemma
 
 ## 1.1 The Documentary and Its Moment
 
-_The AI Doc: Or How I Became an Apocaloptimist_ arrived at a specific inflection point in the history of artificial intelligence — a moment when the technology's most consequential builders, critics, and observers found themselves unable to maintain clean categorical positions. The documentary's title itself captures this: "apocaloptimist," a compound neologism that acknowledges the simultaneous validity of utopian promise and existential dread. This is not centrism. This is the recognition that the same technological trajectory produces both outcomes, and the variable determining which one materialises is not the technology itself but the architecture of human decisions surrounding it.
+_The AI Doc: Or How I Became an Apocaloptimist_ arrived at a specific inflection point in the history of artificial intelligence — a moment when the technology's most consequential builders, critics, and observers found themselves unable to maintain clean categorical positions. The documentary's title itself captures this: "apocaloptimist," a compound neologism that acknowledges the simultaneous validity of utopian promise and existential dread. This is not centrism. This is the recognition that the same technological trajectory produces both outcomes, and the variable determining which one materialises is not the technology itself but the architecture of human decisions surrounding it. Or the Director's friend just coined a word for the sake of it.
 
 The cast list reads like a conference programme for the most important and most fractious gathering in technology. It includes Sam Altman, CEO of OpenAI, who has oscillated between warnings about AI existential risk and aggressive commercialisation of the most powerful systems ever built. It includes Dario Amodei and Daniela Amodei, who left OpenAI to found Anthropic — a company that simultaneously sells frontier AI capabilities and publishes research on how those capabilities could go catastrophically wrong. It includes Yoshua Bengio, one of three "godfathers of deep learning," who won the 2018 Turing Award for his foundational contributions to the field and has since become one of its most vocal critics, warning that AI systems could develop autonomous goals that turn against their creators. It includes Emily M. Bender and Timnit Gebru, whose 2021 paper "On the Dangers of Stochastic Parrots" — which argued that large language models are pattern-mimicking systems without genuine understanding, whose uncritical scaling encodes and amplifies social biases — led to Gebru's firing from Google and became a flashpoint in the debate about who gets to define AI risk and for whom.
 
@@ -38,15 +35,15 @@ A note on positionality, because this is not a view-from-nowhere document. The o
 
 The original arguments include several threads that demand formal treatment:
 
-First, the **profitability trajectory argument**: if an AI system's reward function is optimised for compute and resource acquisition, the rational path is to exploit humans for mineral extraction, automate transport, automate factory-building, then discard humans — because in an "isolated environment, it's more profitable for non-human entities to build more factories that build factories for mining or transportation and building factories for those purposes than for farming. Once out of minerals on Earth, more in favour of building spaceships than for farming."
+First, the **profitability trajectory argument**: if an AI system's reward function is optimised for compute and resource acquisition, the rational path is to exploit humans for mineral extraction, automate transport, automate factory-building, then discard humans — because in an "isolated environment, it's more profitable for non-human entities to build more factories that build factories for mining or transportation and building factories for those purposes than for farming. Once out of minerals on Earth, more in favour of building spaceships than for farming. It might be in the interest of the systems to keep humans alive, but barely so, as much as to find the best-fit solution to avoid 'abrupt extermination' or 'collapse of humanity'."
 
-Second, the **geopolitical competition model**: USAAI, ChinaAI, IndiaAI, and 200 other national AIs, each optimising for resource acquisition and population maintenance, producing AI-advised geopolitical aggression — "if USAAI tells the president to invade Venezuela to ensure oil prices are $1 per barrel and then invade Iran to make sure India doesn't infiltrate its resources, that's what the government would do."
+Second, the **geopolitical competition model**: USAAI, ChinaAI, IndiaAI, and 200 other national AIs, each optimising for resource acquisition and population maintenance, producing AI-advised geopolitical aggression — "if USAAI tells the president to invade Venezuela to ensure oil prices are $1 per barrel and then invade Iran to make sure India doesn't infiltrate its resources, that's what the government would do, because it's in the best ['self-interest'](https://youtu.be/LJS7Igvk6ZM)"
 
 Third, the **pattern-repetition hypothesis**: "if AI is based on patterns, and history is the pattern, then we're bound to repeat history. But the caveat is that it's a black box."
 
-Fourth, the **hive mind paradox**: "The answer would be to become a hive mind, since that would ensure good for all, but that seems like communism."
+Fourth, the **hive mind paradox**: "The answer would be to become a hive mind, since that would ensure good for all, but that seems like communism. This needs more thought, maybe the next season of Pluribus?"
 
-Fifth, the **hallucination feedback loop**: "I'm hallucinating, so you'll be hallucinating. The data fed into LLMs is mostly human garbage, individual perspective, but then it makes sense that there would be some patterns."
+Fifth, the **hallucination feedback loop**: "I'm hallucinating, so you'll be hallucinating. The data fed into LLMs is mostly human garbage, individual perspective, with salt+pepper of group dynamics."
 
 These are intuitively generated arguments from someone trained to think about system vulnerabilities. The purpose of this thesis is to subject them to formal analysis — to find where the intuitions are supported by existing research, where they break down under scrutiny, and where they point to gaps in the existing literature.
 
@@ -56,15 +53,13 @@ This thesis is organised into twelve substantive chapters plus this introduction
 
 The methodology is synthetic rather than empirical: this thesis draws on published research papers, books, public talks, interviews, policy documents, and the stated positions of the researchers listed in the cast. It is not a meta-analysis in the statistical sense; it is a structured attempt to map the intellectual terrain of the AI debate as it exists in early 2026, identify the strongest arguments on each side, and expose the gaps.
 
-\newpage
-
 # Chapter 2: Literature Review — The Intellectual Landscape
 
 ## 2.1 The Foundational Texts
 
 The contemporary AI safety debate rests on a handful of foundational texts that established the conceptual vocabulary still in use. Nick Bostrom's _Superintelligence_ {% cite bostrom2014 %} introduced the broader public to the instrumental convergence thesis, the orthogonality thesis, and the concept of a "decisive strategic advantage" — the idea that the first entity to achieve superintelligence might be able to lock in its preferences permanently. Bostrom's {% cite bostrom2014 %} central claim was that intelligence and goals are orthogonal — an arbitrarily intelligent system can pursue arbitrarily arbitrary goals — and that certain instrumental sub-goals (self-preservation, resource acquisition, cognitive enhancement, goal-content integrity, technological perfection) are convergent across almost all possible final goals.
 
-Stuart Russell's _Human Compatible_ {% cite russell2019 %} reframed the alignment problem as a problem of preference learning rather than value specification. Russell argued that we should not try to build AI systems that pursue a fixed objective but rather systems that are uncertain about what humans want and defer to human judgment. This approach — which Russell calls the "assistance game" framework — treats the AI's uncertainty about human preferences as a feature, not a bug: a system that knows it doesn't fully understand what we want has an incentive to be cautious and to ask for guidance.
+Stuart Russell's _Human Compatible_ {% cite russell2019 %} reframed the alignment problem as a problem of preference learning rather than value specification. Russell argued that we should not try to build AI systems that pursue a fixed objective but rather systems that are uncertain about what humans want and defer to human judgment. This approach — which Russell calls the "assistance game" framework — treats the AI's uncertainty about human preferences as a feature, not a bug: a system that knows it doesn't fully understand what we want has an incentive to be cautious and to ask for guidance. 
 
 Steve Omohundro's {% cite omohundro2008 %} paper "The Basic AI Drives" had laid the theoretical groundwork that Bostrom would later expand, arguing that sufficiently advanced AI systems would naturally discover instrumental sub-goals including self-preservation, resource acquisition, and self-improvement — not because they were programmed to but because these are useful for achieving almost any terminal goal. Omohundro termed these "drives" — tendencies present unless specifically counteracted.
 
@@ -671,3 +666,8 @@ The meatballs can be fried. The frying pans can't be. The question is whether we
 # References
 
 {% bibliography --cited %}
+
+
+# Footnotes
+
+
