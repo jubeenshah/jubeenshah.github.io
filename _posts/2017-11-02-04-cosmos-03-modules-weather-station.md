@@ -3,18 +3,10 @@ layout: post-terminal
 title: "Cosmos: Weather Station"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 8
 spanning: [series]
 ---  
-
-## Content
-
-- [Demo Video](#demo-video)
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Sensors Used](#sensors-used)
-- [Visualization and Dashboards](#visualization-and-dashboards)
-- [Final Product](#final-product)
-
 ## Demo Video
 
 [Watch Video](https://www.youtube.com/watch?v=ixRpzv12PUg)

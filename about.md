@@ -14,7 +14,9 @@ Last couple of years have been difficult. I've been learning a lot more than I c
 
 I like day dreaming, adds some flavour. Otherwise, I like to work hard, or at least I haven't heard anyone complain! But, I have heard good things.
 
-[Read More](/career/2023/11/14/about-me.html)
+I don't like to blog a lot. But I did like [writing](https://www.instagram.com/loveda_lehsun/) at one point and enjoy its creative process. I don't create a lot of beautiful looking work. But when I do, i feel like the work has to be beautiful, and fortunately that takes up a lot of time. Most of it is in Hindi-Urdu. Some of it rhymes. None of it was written for an audience.
+
+While studying for the OSWA, and in general studying for OffSec, i started taking a lot of notes. and that helped me study, and while doing that I also reflected on the world of security and its features and bugs.
 
 Did you have a look at [cosmos?](/projects/2017/11/02/00-cosmos.html), it was a [bachelor](/certs/2018/08/17/mpstme-btech-it.html) project, but i worked on it like it was a company. huh! Some mistakes were made, and some memories let fade. But the learnings...EPIC! A little old. But a good starting point or my latest post.
 
@@ -31,6 +33,8 @@ Did you have a look at [cosmos?](/projects/2017/11/02/00-cosmos.html), it was a 
 | 2016  | BGU Cyber Security and Machine Learning ([ICSML](/certs/2016/07/05/bgu-icsml.html)) |
 
 Also, know my way around [splunk](/certs/2020/10/01/splunk-core-certified-power-user.html), can create interactive dashboards, use it for quick look at the data. With [AWS](/certs/2020/02/14/aws-csa.html), I think I'm comfortable finding things and [understanding](/certs/2021/10/08/redhat-rhce.html) what things should be investigated when things go wrong, but need to get better at IaC.
+
+I've been pretty disorganized, and I've got a lot of variables to blame. But only one constant to say "Job, well done!" I try to be thankful and friendly. But sometimes, I just forget. I'm sorry.
 
 ## the site
 

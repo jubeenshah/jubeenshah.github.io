@@ -56,7 +56,7 @@ layout: default
       <span class="tp-span tp-span-anim" style="display:none;">#{{ tag }}</span>
       {%- endfor -%}
     </div>
-    <pre id="tp-ls-output" class="tp-ls-output" style="display:none;">{% if page.nsfw %}<span class="file-perms file-perms-nsfw">-rwsr--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group file-group-nsfw">stderr</span>{% else %}<span class="file-perms">-rw-r--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group">staff</span>{% endif %}  <span class="file-size">{{ content | number_of_words | divided_by: 200 | plus: 1 }} min</span>  <span class="file-date"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time></span>  <span class="file-name" itemprop="name headline">{{ page.title | slugify }}.md</span></pre>
+    <pre id="tp-ls-output" class="tp-ls-output" style="display:none;">{% if page.nsfw %}<span class="file-perms file-perms-nsfw">-rwsr--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group file-group-nsfw">stderr</span>{% else %}<span class="file-perms">-rw-r--r--</span>  <span class="file-owner">jubeen</span>  <span class="file-group">human</span>{% endif %}  <span class="file-size">{{ content | number_of_words | divided_by: 200 | plus: 1 }} min</span>  <span class="file-date"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time></span>  <span class="file-name" itemprop="name headline">{{ page.title | slugify }}.md</span></pre>
 
     <div id="tp-cat-row" class="tp-cmd" style="display:none;">
       <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
@@ -64,13 +64,23 @@ layout: default
     </div>
   </header>
 
+  {%- unless cat == "certs" -%}
+  <aside class="tp-toc" id="writing-toc" style="display:none;">
+    <div class="toc-header">// toc</div>
+    <nav class="toc-nav" id="toc-nav"></nav>
+  </aside>
+  {%- endunless -%}
+
+  <div class="tp-progress cat-{{ cat }}" id="tp-progress">
+    <div class="tp-progress-bar">
+      <div class="tp-progress-fill" id="tp-progress-fill"></div>
+    </div>
+    <div class="tp-progress-heading" id="tp-progress-heading"></div>
+  </div>
+
+  <div class="tp-marginalia" id="tp-marginalia"></div>
+
   <div class="tp-outer" id="tp-outer" style="display:none;">
-    {%- unless cat == "certs" -%}
-    <aside class="tp-toc" id="writing-toc">
-      <div class="toc-header">// toc</div>
-      <nav class="toc-nav" id="toc-nav"></nav>
-    </aside>
-    {%- endunless -%}
     <div class="tp-body">
       <div class="tp-content e-content" itemprop="articleBody">
         {{ content }}
@@ -79,22 +89,51 @@ layout: default
     </div>
   </div>
 
-  {%- comment -%} Auto-generate related pages from same category+subcategory {%- endcomment -%}
-  {%- assign related = site.posts | where: "category", page.category | where: "subcategory", page.subcategory -%}
-  {%- if related.size > 1 -%}
-  <div class="tp-related" id="tp-related" style="display:none;">
-    <div class="tp-related-header">
-      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
-      <span class="t-cmd-text">ls *.md | ./filter.sh --context={{ page.title | slugify }}</span>
+  {%- comment -%} Series navigation or related pages {%- endcomment -%}
+  {%- if page.series -%}
+    {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+    {%- if series_posts.size > 1 -%}
+    <div class="tp-related" id="tp-related" style="display:none;">
+      <div class="tp-related-header">
+        <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.series }}</span>$</span>
+        <span class="t-cmd-text">ls -1 *.md</span>
+        <span class="tp-series-badge">[{{ page.series_order }}/{{ series_posts.size }}]</span>
+      </div>
+      <ul class="tp-related-list tp-series-list">
+        {%- for post in series_posts -%}
+        <li class="tp-series-item{% if post.url == page.url %} tp-series-current{% elsif post.series_order < page.series_order %} tp-series-read{% endif %}">
+          <span class="tp-series-marker">{% if post.url == page.url %}←{% elsif post.series_order < page.series_order %}✓{% else %} {% endif %}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      {%- assign next_order = page.series_order | plus: 1 -%}
+      {%- assign next_post = series_posts | where: "series_order", next_order | first -%}
+      {%- if next_post -%}
+      <div class="tp-series-next">
+        <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.series }}</span>$</span>
+        <a href="{{ next_post.url | relative_url }}" class="tp-series-next-link">cat {{ next_post.title | slugify }}.md →</a>
+      </div>
+      {%- endif -%}
     </div>
-    <ul class="tp-related-list">
-      {%- for post in related -%}
-      <li class="tp-related-item{% if post.url == page.url %} tp-related-current{% endif %}">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {%- endfor -%}
-    </ul>
-  </div>
+    {%- endif -%}
+  {%- else -%}
+    {%- assign related = site.posts | where: "category", page.category | where: "subcategory", page.subcategory -%}
+    {%- if related.size > 1 -%}
+    <div class="tp-related" id="tp-related" style="display:none;">
+      <div class="tp-related-header">
+        <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/{{ cat }}/{{ page.subcategory }}</span>$</span>
+        <span class="t-cmd-text">ls *.md | ./filter.sh --context={{ page.title | slugify }}</span>
+      </div>
+      <ul class="tp-related-list">
+        {%- for post in related -%}
+        <li class="tp-related-item{% if post.url == page.url %} tp-related-current{% endif %}">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- endif -%}
   {%- endif -%}
 
   <nav class="tp-nav" id="tp-nav" style="display:none;">

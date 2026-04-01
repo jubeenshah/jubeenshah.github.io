@@ -1,7 +1,7 @@
 /* Force dark background — overrides Minima's default #fdfdfd */
 body {
-  background-color: #171f24 !important;
-  color: #FFF;
+  background-color: var(--bg) !important;
+  color: var(--text);
 }
 
 /* Fade-in animation */
@@ -29,7 +29,7 @@ body {
 
 /* Cursor */
 .terminal-cursor {
-  color: #03dac5;
+  color: var(--accent);
   animation: blink 1s step-end infinite;
 }
 
@@ -39,28 +39,28 @@ body {
 
 /* Prompt */
 .terminal-prompt {
-  color: #03dac5;
+  color: var(--accent);
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 15px;
   font-weight: bold;
 }
 
 .terminal-command {
-  color: #FFF;
+  color: var(--text);
 }
 
 .terminal-response {
-  color: #828282;
+  color: var(--text-dim);
 }
 
 .terminal-dimmed {
-  color: #828282;
+  color: var(--text-dim);
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 15px;
 }
 
 .terminal-output-text {
-  color: #828282;
+  color: var(--text-dim);
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 15px;
 }
@@ -100,7 +100,7 @@ body {
   -webkit-appearance: none;
   width: 32px;
   height: 16px;
-  background: #CF6679;
+  background: var(--nsfw);
   border-radius: 8px;
   position: relative;
   cursor: pointer;
@@ -112,7 +112,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #171f24;
+  background: var(--bg);
   border-radius: 50%;
   top: 2px;
   left: 16px;
@@ -120,7 +120,7 @@ body {
 }
 
 .nsfw-toggle input[type="checkbox"]:not(:checked) {
-  background: #424242;
+  background: var(--border);
 }
 
 .nsfw-toggle input[type="checkbox"]:not(:checked)::after {
@@ -130,7 +130,7 @@ body {
 .nsfw-label {
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 11px;
-  color: #CF6679;
+  color: var(--nsfw);
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.2s ease;
@@ -142,8 +142,8 @@ body {
 
 .tag-btn {
   background: transparent;
-  border: 1px solid #424242;
-  color: #828282;
+  border: 1px solid var(--border, #424242);
+  color: var(--text-dim);
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 13px;
   padding: 4px 12px;
@@ -152,26 +152,26 @@ body {
 }
 
 /* Layer 1: Top-level category colors */
-.tag-btn[data-tag="all"]        { border-color: #555; color: #aaa; }
-.tag-btn[data-tag="writing"]    { border-color: #CF6679; color: #CF6679; }
-.tag-btn[data-tag="security"]   { border-color: #03dac5; color: #03dac5; }
-.tag-btn[data-tag="projects"]   { border-color: #9980FF; color: #9980FF; }
-.tag-btn[data-tag="certs"]      { border-color: #FFB74D; color: #FFB74D; }
-.tag-btn[data-tag="career"]     { border-color: #84c9fb; color: #84c9fb; }
+.tag-btn[data-tag="all"]        { border-color: var(--text-faint); color: var(--text-dim); }
+.tag-btn[data-tag="writing"]    { border-color: var(--cat-writing); color: var(--cat-writing); }
+.tag-btn[data-tag="security"]   { border-color: var(--cat-security); color: var(--cat-security); }
+.tag-btn[data-tag="projects"]   { border-color: var(--cat-projects); color: var(--cat-projects); }
+.tag-btn[data-tag="certs"]      { border-color: var(--cat-certs); color: var(--cat-certs); }
+.tag-btn[data-tag="career"]     { border-color: var(--cat-career); color: var(--cat-career); }
 
 .tag-btn:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
 .tag-btn.active {
-  color: #171f24 !important;
+  color: var(--bg) !important;
 }
-.tag-btn[data-tag="all"].active        { background: #aaa; border-color: #aaa; }
-.tag-btn[data-tag="writing"].active    { background: #CF6679; border-color: #CF6679; }
-.tag-btn[data-tag="security"].active   { background: #03dac5; border-color: #03dac5; }
-.tag-btn[data-tag="projects"].active   { background: #9980FF; border-color: #9980FF; }
-.tag-btn[data-tag="certs"].active      { background: #FFB74D; border-color: #FFB74D; }
-.tag-btn[data-tag="career"].active     { background: #84c9fb; border-color: #84c9fb; }
+.tag-btn[data-tag="all"].active        { background: #aaa; border-color: var(--text-dim); }
+.tag-btn[data-tag="writing"].active    { background: var(--cat-writing); border-color: var(--cat-writing); }
+.tag-btn[data-tag="security"].active   { background: var(--cat-security); border-color: var(--cat-security); }
+.tag-btn[data-tag="projects"].active   { background: var(--cat-projects); border-color: var(--cat-projects); }
+.tag-btn[data-tag="certs"].active      { background: var(--warning); border-color: var(--warning); }
+.tag-btn[data-tag="career"].active     { background: var(--cat-career); border-color: var(--cat-career); }
 
 /* Layer 2: Sub-categories */
 .subcategory-bar {
@@ -247,13 +247,13 @@ body {
   display: flex;
   gap: 16px;
   padding: 6px 0;
-  color: #FFF;
+  color: var(--text);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .post-entry:visited {
-  color: #FFF;
+  color: var(--text);
 }
 
 .post-entry:hover {
@@ -261,7 +261,7 @@ body {
 }
 
 .post-entry:hover .post-name {
-  color: #03dac5;
+  color: var(--accent);
 }
 
 .post-entry.hidden {
@@ -269,21 +269,21 @@ body {
 }
 
 .post-perms {
-  color: #9980FF;
+  color: var(--perms);
   flex-shrink: 0;
 }
 
 .post-perms-nsfw {
-  color: #CF6679;
+  color: var(--nsfw);
 }
 
 .post-date {
-  color: #84c9fb;
+  color: var(--link);
   flex-shrink: 0;
 }
 
 .post-name {
-  color: #FFF;
+  color: var(--text);
   transition: color 0.15s ease;
 }
 
@@ -297,12 +297,12 @@ body {
 }
 
 .ls-binary {
-  color: #03dac5;
+  color: var(--accent);
   font-weight: bold;
 }
 
 .ls-dimmed {
-  color: #828282;
+  color: var(--text-dim);
 }
 
 /* Post Count */

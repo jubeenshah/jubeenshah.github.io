@@ -28,12 +28,6 @@ Seems right out of some espionage mission! (Fiction ofcourse)
 ## The long of it
 
 My mind goes everywhere... so we'll go wherever my mind takes me. Feel free to navigate if your mind takes you somewhere you want me to take you.
-
-- [The long of it](#the-long-of-it)
-  - [Supply Chain](#supply-chain)
-  - [Value transfer](#value-transfer)
-  - [Paranoia](#paranoia)
-
 ### Supply Chain
 
 

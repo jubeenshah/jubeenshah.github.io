@@ -3,16 +3,10 @@ layout: post-terminal
 title: "Cosmos: Fire Sensor"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 7
 spanning: [series]
 ---             
-
-## Content
-
-- [Demo Video](#demo-video)
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Final Product](#final-product)
-
 ## Demo Video
 
 [Watch Video](https://www.youtube.com/watch?v=X6MoLWzC-9w)

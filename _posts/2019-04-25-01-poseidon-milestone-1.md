@@ -3,21 +3,15 @@ layout: post-terminal
 title: "Poseidon: Milestone 1 - Configuration Management & Build) ⚙️"
 category: projects
 subcategory: devops
+series: poseidon
+series_order: 2
 spanning: [series, open-source]
 ---   
 
-Content
--------
 
-* [CM & Build](#cm-build)
-* [Video Summary](#video-summary)
-* [Report](#report)
+## Milestone 1
 
-Milestone 1
-===========
-
-Configuration Management & Build
---------------------------------
+### Configuration Management & Build
 
 In this milestone, we have demonstrated the build automation and configuration management using Ansible. The following tasks were performed:
 
@@ -29,11 +23,9 @@ In this milestone, we have demonstrated the build automation and configuration m
 *   Used a combination of mocha/pm2, to create a test script that will start and stop the checkbox.io service on the server
 *   Created a git hook to trigger a build when a push is made to the local bare repository
 
-Video Summary
--------------
+### Video Summary
 
-Report
-------
+### Report
 
 We faced the following set of difficulties while configuring the jenkins server. Starting off with the project was challenging, as we couldn't find clear requirements for checkbox.io and itrust. This became clear, once some attention was paid to the actual implementation of the different applications. Once we understood the dependencies and initial setup requirements, it was fairly straightforward implementation for both of the applications. What we noticed is that, though the initial configuration of the jenkins server, that is, the setup and configuration of Jenkins itself, along with other dependencies were not very difficult and we were done with a mjority of the project well before the deadline, we were stuck with simple tasks such as -- the mocha and pm2 test cases, which took us sometime to understand and then implement.  
   

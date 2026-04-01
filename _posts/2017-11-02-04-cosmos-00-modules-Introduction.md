@@ -3,21 +3,10 @@ layout: post-terminal
 title: "Cosmos: Modules"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 5
 spanning: [series]
 ---  
-
-## Content
-
-
-- [Modules Summary](#modules-summary)
-- [Intrusion Sensor](#intrusion-sensor)
-- [Fire Sensor](#fire-sensor)
-- [Weather Station](#weather-station)
-- [Ambient Station](#ambient-station)
-- [Smart LEDs](#smart-leds)
-- [Connected Switch](#connected-switch)
-- [Smart Lock](#smart-lock)
-
 ## Cosmos - Modules
 
 

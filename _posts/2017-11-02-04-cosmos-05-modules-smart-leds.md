@@ -3,17 +3,10 @@ layout: post-terminal
 title: "Cosmos: Smart LEDs"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 10
 spanning: [series]
 --- 
-
-## Content
-
-
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Final Product](#final-product)
-
-
 ## Functional Block Diagram
 
 

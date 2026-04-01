@@ -3,16 +3,10 @@ layout: post-terminal
 title: "Cosmos: OpenHab Configuration"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 4
 spanning: [series]
 ---  
-
-## Content
-
-
-- [Openhab Configuration](#openhab-configuration)
-- [Things](#things)
-- [Sitemaps](#sitemaps)
-
 ## OpenHAB
 
 

@@ -3,6 +3,8 @@ layout: post-terminal
 title: Reset password for Virtual Machine in EVE-NG (Linux)
 category: security
 subcategory: networking
+series: eve-ng
+series_order: 4
 spanning: [tutorial, series]
 ---
 

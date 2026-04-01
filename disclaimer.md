@@ -4,22 +4,6 @@ title: Disclaimer
 permalink: /disclaimer/
 ---
 
-## Table of Contents
-
-1. [Scope](#scope)
-2. [Disclaimer of Liability](#disclaimer-of-liability)
-3. [Acceptance of Terms](#acceptance-of-terms)
-4. [Non-Liability Clause](#non-liability-clause)
-5. [Indemnification](#indemnification)
-6. [Limitation of Liability](#limitation-of-liability)
-7. [Intellectual Property](#intellectual-property)
-   - [Bot Policy](#bot-policy)
-   - [Data Use Restriction](#data-use-restriction)
-8. [Severability](#severability)
-9. [Conclusion](#conclusion)
-
----
-
 ## A Note Before We Begin
 
 The Author is a cybersecurity professional. The Author has read the case law. The Author knows that this disclaimer — presented as a static page you didn't have to click "I Accept" on — is, strictly speaking, a browsewrap agreement. And the Author knows that *Specht v. Netscape*, *Nguyen v. Barnes & Noble*, and about two decades of increasingly impatient federal judges have collectively established that browsewrap agreements are worth roughly as much as a handshake with someone who has their fingers crossed behind their back.

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post terminal-page">
+<article class="post terminal-page terminal-post cat-security">
 
   <header class="tp-header">
     <div class="tp-cmd">
@@ -10,10 +10,23 @@ layout: default
     </div>
   </header>
 
-  <div class="tp-page-content">
+  <aside class="tp-toc" id="writing-toc">
+    <div class="toc-header">// toc</div>
+    <nav class="toc-nav" id="toc-nav"></nav>
+  </aside>
+
+  <div class="tp-progress cat-security" id="tp-progress">
+    <div class="tp-progress-bar">
+      <div class="tp-progress-fill" id="tp-progress-fill"></div>
+    </div>
+    <div class="tp-progress-heading" id="tp-progress-heading"></div>
+  </div>
+
+  <div class="tp-page-content tp-content">
     {{ content }}
   </div>
 
 </article>
 
 <link rel="stylesheet" href="{{ '/assets/post-terminal.css' | relative_url }}">
+<script src="{{ '/assets/post-terminal.js' | relative_url }}"></script>

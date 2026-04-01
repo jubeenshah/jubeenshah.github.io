@@ -13,9 +13,19 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="/">~/</a>
-        <a class="page-link" href="{{ "/about" | relative_url }}">~/about</a>
-        <a class="page-link" href="{{ "/disclaimer" | relative_url }}">~/disclaimer</a>
+        <a class="page-link" href="/">--home</a>
+        <a class="page-link" href="{{ "/about" | relative_url }}">--about</a>
+        <a class="page-link" href="{{ "/disclaimer" | relative_url }}">--disclaimer</a>
+        <div class="theme-switcher">
+          <button class="go-blind-btn" id="go-blind" title="chmod">--dark</button>
+          <div class="theme-dropdown">
+            <div class="theme-dropdown-inner">
+              <button class="theme-option" data-theme="dark">--dark</button>
+              <button class="theme-option" data-theme="light">--light</button>
+              <button class="theme-option" data-theme="a11y">--colour-blind-chums</button>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </div>

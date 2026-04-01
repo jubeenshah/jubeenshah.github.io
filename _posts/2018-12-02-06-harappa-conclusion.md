@@ -3,19 +3,14 @@ layout: post-terminal
 title: "Harappa: Final Words"
 category: projects
 subcategory: iot
+series: harappa
+series_order: 7
 spanning: [series]
 ---             
 
-Content
--------
+## Conclusion
 
-[Lessons Learned](#)
-
-Conclusion
-==========
-
-Lessons Learned
----------------
+### Lessons Learned
 
 As described on the [Summary](/projects/2018/12/02/00-harappa.html) Page, this Harappa is a precursor to the implementation of a [Cosmos.](/projects/2017/11/02/00-cosmos.html) The lessons that were learned as a part of this project were understanding the architectural implementation of an IoT system. Getting exposed to different architectural methodologies such as the IDA Architecture, or the three-tier model, helped understanding how they would not appropriately describe the IoT system for a developer to get a complete idea for implementation of the system. This understanding was possible, because of the prior implementation was done by the author. However, when carefully studying the architecture, it became more and more apparent that a more detailed architecture such as the IoT-A architecture was needed to standardize the approach to a problem that was being tackled. This shift in the adoption of a standardized architecture helped to understand and take into consideration other aspects of the project such as the business and technical requirements. Also, getting to know about the definitions of the elements of the IoT system helped better understanding the IoT system from the perspective of an architecture and designer.  
   

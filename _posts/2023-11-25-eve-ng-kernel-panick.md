@@ -4,6 +4,8 @@ title: EVE-NG - Way down we go!
 category: security
 subcategory: networking
 nsfw: true
+series: eve-ng
+series_order: 3
 spanning: [tutorial, series]
 ---
 

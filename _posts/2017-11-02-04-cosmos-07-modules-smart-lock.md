@@ -3,15 +3,10 @@ layout: post-terminal
 title: "Cosmos: Smart Lock"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 12
 spanning: [series]
 ---  
-
-## Content
-
-- [Functional Block Diagram](#functional-block-diagram)
-- [Technical Overview](#technical-overview)
-- [Final Product](#final-product)
-
 ## Functional Block Diagram
 
 

@@ -3,17 +3,10 @@ layout: post-terminal
 title: "Cosmos: Intrusion Sensor"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 6
 spanning: [series]
 ---  
-
-## Content
-
-- [Software Requirements](#software-requirements)
-- [Uploading Code to ESP8266](#uploading-code-to-esp8266)
-- [Challenges Encountered](#challenges-encountered)
-- [Disassembled Product](#disassembled-product)
-
-
 ### Demo Video
 
 [Watch Viedo](https://www.youtube.com/watch?v=wHc4LXepfSE)

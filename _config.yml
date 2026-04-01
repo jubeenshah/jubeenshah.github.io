@@ -28,8 +28,19 @@ github_username:  jubeenshah
 linkedin_username: jubeen-shah
 # Build settings
 theme: minima
+future: true
 plugins:
   - jekyll-feed
+  - jekyll-scholar
+
+scholar:
+  style: chicago-author-date
+  locale: en
+  source: ./_bibliography
+  bibliography: references.bib
+  sort_by: author
+  order: ascending
+  query: "@*"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

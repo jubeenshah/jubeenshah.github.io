@@ -3,21 +3,15 @@ layout: post-terminal
 title: "Poseidon: Milestone 2 - Test & Analysis 🗃️"
 category: projects
 subcategory: devops
+series: poseidon
+series_order: 3
 spanning: [series, open-source]
 ---   
 
-Content
--------
 
-* [Test & Analysis](#test-analysis)
-* [Video Summary](#video-summary)
-* [Report](#report)
+## Milestone 2
 
-Milestone 2
-===========
-
-Test & Analysis
----------------
+### Test & Analysis
 
 In this milestone, the focus was on testing and analysis of the source code, and integrating it with the existing pipeline. The following tasks were performed:
 
@@ -28,11 +22,9 @@ In this milestone, the focus was on testing and analysis of the source code, and
 *   For the iTrust build job, extending the build job to support running an existing static analysis tool on the source code, process its results, and report its findings and fail the build minimum testing criteria and analysis criteria.
 *   For checkbox.io, extending the build job to support the custom metrics and fail the build if any of these metrics exceed a given threshold.
 
-Video Summary
--------------
+### Video Summary
 
-Report
-------
+### Report
 
 With Fuzzing, we wanted to the approach to be recreated as and when required, hence we used a pseudo-randomgenerator, with a seed value associated with each of the build. Thus it is easier for anyone, to get the same results in the test cases, and errors. Once the seed value is passed, we generate a probability of whether a line has to be modified, and then there is a probability that is associated with each of the fuzing operations. Once the fuzzing operation is completed, we push the code onto Jenkins Server for a build. Once the build is complete, we copy the test files fromsurefire-reports to a different folder, and then another fuzzing operation is queued up.  
   

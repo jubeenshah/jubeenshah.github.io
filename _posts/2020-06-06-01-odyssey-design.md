@@ -3,25 +3,15 @@ layout: post-terminal
 title: "Odyssey: Initial Design"
 category: projects
 subcategory: devops
+series: odyssey
+series_order: 2
 spanning: [series, open-source]
 ---          
 
 
-Content
--------
+## Design Tasks
 
-- [Design Considerations](#)
-- [Color Scheme](#)
-- [Illustrations](#)
-- [Animations](#)
-- [Fonts](#)
-- [Design Inspirations](#)
-
-Design Tasks
-============
-
-Design Considerations
----------------------
+### Design Considerations
 
 In this section of the project, I would be focussing on some of the design considerations that were taken for the project.
 
@@ -29,8 +19,7 @@ In this section of the project, I would be focussing on some of the design consi
 *   Design Illustrations
 *   Animations
 
-Video Summary
--------------
+### Video Summary
 
 ### Color Scheme
 

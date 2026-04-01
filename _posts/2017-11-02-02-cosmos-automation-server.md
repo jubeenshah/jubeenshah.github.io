@@ -3,16 +3,10 @@ layout: post-terminal
 title: "Cosmos: Automation Server"
 category: projects
 subcategory: iot
+series: cosmos
+series_order: 3
 spanning: [series]
 ---   
-
-## Content
-
-- [Hardware Requirements](#hardware-requirements)
-- [Storage Requirements](#setting-up-the-micro-sd-card-for-the-server)
-- [MQTT  Requirements](#testing-the-mqtt-server)
-
-
 ## Setting up the automation server
 
 

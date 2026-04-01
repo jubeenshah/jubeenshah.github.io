@@ -73,6 +73,43 @@
     </div>
   </main>
   {%- include footer.html -%}
+  <link rel="stylesheet" href="{{ '/assets/link-preview.css' | relative_url }}">
+  <script src="{{ '/assets/link-preview.js' | relative_url }}"></script>
   <script src="{{ '/assets/terminal.js' | relative_url }}"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('go-blind');
+      if (!btn) return;
+
+      var labels = { dark: '--dark', light: '--light', a11y: '--colour-blind-chums' };
+
+      function setTheme(theme) {
+        document.body.classList.remove('light-mode', 'a11y-mode');
+        if (theme === 'light') document.body.classList.add('light-mode');
+        if (theme === 'a11y') document.body.classList.add('a11y-mode');
+        localStorage.setItem('theme', theme);
+        btn.textContent = labels[theme];
+
+        document.querySelectorAll('.theme-option').forEach(function (opt) {
+          opt.classList.toggle('active', opt.getAttribute('data-theme') === theme);
+        });
+      }
+
+      var saved = localStorage.getItem('theme') || 'dark';
+      setTheme(saved);
+
+      btn.addEventListener('click', function () {
+        var current = localStorage.getItem('theme') || 'dark';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+
+      document.querySelectorAll('.theme-option').forEach(function (opt) {
+        opt.addEventListener('click', function (e) {
+          e.stopPropagation();
+          setTheme(opt.getAttribute('data-theme'));
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
