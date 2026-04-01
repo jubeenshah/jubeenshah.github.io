@@ -2,7 +2,7 @@
 layout: post-terminal
 title: "INCIDENT REPORT: KitKat Supply Chain Compromise"
 category: security
-subcategory: offsec
+subcategory: appsec
 spanning:
   - reflection
 ---

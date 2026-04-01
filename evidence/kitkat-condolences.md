@@ -6,7 +6,7 @@ permalink: /evidence/kitkat-condolences/
 
 ## Exhibit A: Brand Incident Responses
 
-- Re: [INCIDENT REPORT: KitKat Supply Chain Compromise](/writing/2026/04/01/kitkat-heist-incident-report.html)
+- Re: [INCIDENT REPORT: KitKat Supply Chain Compromise](/security/2026/04/01/kitkat-heist-incident-report.html)
 - Total unique brand responses cataloged: 119
 - Sources: Instagram, X/Twitter, collected March 29-31, 2026
 
