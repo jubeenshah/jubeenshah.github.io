@@ -3,23 +3,79 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="terminal-404">
+  <pre class="t404-output">
+<span class="t404-prompt">you@jubeen.sh:~$</span> <span class="t404-cmd">cat {{ page.url }}</span>
+<span class="t404-error">cat: {{ page.url }}: No such file or directory</span>
 
-<div class="container">
-  <h1>404</h1>
+<span class="t404-prompt">you@jubeen.sh:~$</span> <span class="t404-cmd">find / -name "{{ page.url }}" 2>/dev/null</span>
+<span class="t404-dimmed">(no results)</span>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<span class="t404-prompt">you@jubeen.sh:~$</span> <span class="t404-cmd">echo $?</span>
+<span class="t404-code">404</span>
+
+<span class="t404-prompt">you@jubeen.sh:~$</span> <span class="t404-cmd">man lost</span>
+<span class="t404-dimmed">No manual entry for lost.
+the file you're looking for doesn't exist here.
+it may have moved, been deleted, or never existed.
+typos happen. so do broken links.</span>
+
+<span class="t404-prompt">you@jubeen.sh:~$</span> <span class="t404-cmd">ls ~/suggestions/</span>
+<a href="/" class="t404-link">cd ~/</a>            <span class="t404-dimmed">go home</span>
+<a href="/about/" class="t404-link">cat about</a>        <span class="t404-dimmed">learn about me</span>
+<a href="/disclaimer/" class="t404-link">cat disclaimer</a>  <span class="t404-dimmed">read the fine print</span>
+  </pre>
 </div>
+
+<style>
+.terminal-404 {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  padding: 2em 0;
+}
+
+.t404-output {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text-body);
+  white-space: pre-wrap;
+}
+
+.t404-prompt {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.t404-cmd {
+  color: var(--text);
+}
+
+.t404-error {
+  color: var(--nsfw);
+}
+
+.t404-code {
+  color: var(--warning);
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+.t404-dimmed {
+  color: var(--text-faint);
+}
+
+.t404-link {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.t404-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.t404-link:visited {
+  color: var(--link);
+}
+</style>
