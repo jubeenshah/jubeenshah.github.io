@@ -1,6 +1,7 @@
 ---
 layout: post-terminal
 title: The Apocaloptimists Thesis
+published: false
 category: writing
 subcategory: academic
 nsfw: false

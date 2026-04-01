@@ -168,10 +168,16 @@ blockquote > :last-child { margin-bottom: 0; }
 /* ===== CODE ===== */
 pre, code {
   font-size: 15px;
-  border: 1px solid var(--code-border);
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background-color: var(--code-bg);
-  color: var(--code-text);
+  background-color: var(--hl-bg);
+  color: var(--hl-text);
+}
+
+code {
+  background-color: transparent;
+  border: none;
+  color: var(--accent);
 }
 code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
@@ -390,41 +396,101 @@ table td { border: 1px solid var(--border-table); }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
-/* ===== SYNTAX HIGHLIGHTING ===== */
-.highlight { background: #fff; }
-.highlighter-rouge .highlight { background: #eef; }
-.highlight .c { color: #998; font-style: italic; }
-.highlight .err { color: #a61717; background-color: #e3d2d2; }
-.highlight .k, .highlight .o { font-weight: bold; }
-.highlight .cm { color: #998; font-style: italic; }
-.highlight .cp { color: #999; font-weight: bold; }
-.highlight .c1 { color: #998; font-style: italic; }
-.highlight .cs { color: #999; font-weight: bold; font-style: italic; }
-.highlight .gd { color: #000; background-color: #fdd; }
-.highlight .gd .x { color: #000; background-color: #faa; }
+/* ===== SYNTAX HIGHLIGHTING (theme-aware) ===== */
+:root {
+  --hl-bg: #171f24;
+  --hl-text: #c9d1d9;
+  --hl-comment: #6b7b8d;
+  --hl-keyword: #ff7b72;
+  --hl-string: #a5d6ff;
+  --hl-number: #79c0ff;
+  --hl-function: #d2a8ff;
+  --hl-variable: #ffa657;
+  --hl-operator: #ff7b72;
+  --hl-class: #7ee787;
+  --hl-error: #f85149;
+  --hl-error-bg: #3d1214;
+  --hl-diff-add: #0d2117;
+  --hl-diff-del: #3d1214;
+}
+
+body.light-mode {
+  --hl-bg: #f4ecd8;
+  --hl-text: #3c3226;
+  --hl-comment: #8a7b6b;
+  --hl-keyword: #8b4513;
+  --hl-string: #2e5f1a;
+  --hl-number: #2e5f8a;
+  --hl-function: #5f4b8b;
+  --hl-variable: #bf6c00;
+  --hl-operator: #8b4513;
+  --hl-class: #1a7a6e;
+  --hl-error: #a03050;
+  --hl-error-bg: #f5e0e0;
+  --hl-diff-add: #e8f0e0;
+  --hl-diff-del: #f5e0e0;
+}
+
+body.a11y-mode {
+  --hl-bg: #1a1a2e;
+  --hl-text: #e8e8e8;
+  --hl-comment: #777;
+  --hl-keyword: #E69F00;
+  --hl-string: #56B4E9;
+  --hl-number: #56B4E9;
+  --hl-function: #CC79A7;
+  --hl-variable: #F0E442;
+  --hl-operator: #E69F00;
+  --hl-class: #56B4E9;
+  --hl-error: #E69F00;
+  --hl-error-bg: #2a2020;
+  --hl-diff-add: #1a2a1a;
+  --hl-diff-del: #2a1a1a;
+}
+
+.highlight { background: var(--hl-bg); color: var(--hl-text); border-left: 2px solid var(--border); border-radius: 0; }
+.highlighter-rouge .highlight { background: var(--hl-bg); }
+
+/* Comments */
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: var(--hl-comment); font-style: italic; }
+.highlight .cp { color: var(--hl-comment); font-weight: bold; }
+
+/* Keywords & operators */
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kp, .highlight .kr, .highlight .o, .highlight .ow { color: var(--hl-keyword); font-weight: bold; }
+.highlight .kt { color: var(--hl-class); font-weight: bold; }
+
+/* Strings */
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1, .highlight .sr, .highlight .ss { color: var(--hl-string); }
+
+/* Numbers */
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: var(--hl-number); }
+
+/* Names & variables */
+.highlight .na, .highlight .no, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: var(--hl-variable); }
+.highlight .nb { color: var(--hl-number); }
+.highlight .nc { color: var(--hl-class); font-weight: bold; }
+.highlight .ne, .highlight .nf { color: var(--hl-function); font-weight: bold; }
+.highlight .ni { color: var(--hl-variable); }
+.highlight .nn { color: var(--hl-text); }
+.highlight .nt { color: var(--hl-keyword); }
+
+/* Errors */
+.highlight .err { color: var(--hl-error); background-color: var(--hl-error-bg); }
+
+/* Diffs */
+.highlight .gd { color: var(--hl-error); background-color: var(--hl-diff-del); }
+.highlight .gi { color: var(--hl-class); background-color: var(--hl-diff-add); }
+.highlight .gd .x { background-color: var(--hl-diff-del); }
+.highlight .gi .x { background-color: var(--hl-diff-add); }
+
+/* Generic */
 .highlight .ge { font-style: italic; }
-.highlight .gr { color: #a00; }
-.highlight .gh { color: #999; }
-.highlight .gi { color: #000; background-color: #dfd; }
-.highlight .gi .x { color: #000; background-color: #afa; }
-.highlight .go { color: #888; }
-.highlight .gp { color: #555; }
 .highlight .gs { font-weight: bold; }
-.highlight .gu { color: #aaa; }
-.highlight .gt { color: #a00; }
-.highlight .kc, .highlight .kd, .highlight .kp, .highlight .kr { font-weight: bold; }
-.highlight .kt { color: #458; font-weight: bold; }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #099; }
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1 { color: #d14; }
-.highlight .na, .highlight .no, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #008080; }
-.highlight .nb { color: #0086B3; }
-.highlight .nc { color: #458; font-weight: bold; }
-.highlight .ni { color: #800080; }
-.highlight .ne, .highlight .nf { color: #900; font-weight: bold; }
-.highlight .nn { color: #555; }
-.highlight .nt { color: #000080; }
-.highlight .ow { font-weight: bold; }
-.highlight .w { color: #bbb; }
-.highlight .sr { color: #009926; }
-.highlight .ss { color: #990073; }
-.highlight .bp { color: #999; }
+.highlight .go { color: var(--hl-comment); }
+.highlight .gp { color: var(--hl-comment); }
+.highlight .gh { color: var(--hl-text); }
+.highlight .gu { color: var(--hl-comment); }
+.highlight .gt { color: var(--hl-error); }
+.highlight .gr { color: var(--hl-error); }
+.highlight .w { color: var(--hl-comment); }
+.highlight .bp { color: var(--hl-comment); }
