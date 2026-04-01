@@ -8,11 +8,6 @@ series_order: 4
 spanning: [series]
 ---            
         
-
-### Content
-
-[Conclusion](#conclusion)[Github Repository](#Github-repo)
-
 ## Conclusion
 
 A limitation of the study was that we never created any Personas for the people who could potentially be part of the survey. The survey could have been more focused. The current study gives some correlation between the variables collected, as shown in section 5.1 on page 4. To provide a stronger correlation between the different variables, additional information would be needed. The additional information would be to map the factors responsible for influencing the decision of the users.  

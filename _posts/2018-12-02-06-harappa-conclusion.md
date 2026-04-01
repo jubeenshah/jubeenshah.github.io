@@ -8,10 +8,6 @@ series_order: 7
 spanning: [series]
 ---             
 
-### Content
-
-[Lessons Learned](#)
-
 ## Conclusion
 
 ### Lessons Learned

@@ -8,11 +8,6 @@ series_order: 2
 spanning: [series]
 ---            
 
-### Content
-
-1. [Approach](#Approach)
-2. [Study Design](#study-design)
-
 ### Approach
 
 For each of the aforementioned categories and their related products, we studied their privacy policies to understand the information collected by the respective devices, at the same time, also realizing if the data collected is in line with the product category. We also looked for possible vulnerabilities in their policies, which might compromise the user’s identity in some scenarios.  
