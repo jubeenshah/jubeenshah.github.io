@@ -238,6 +238,122 @@
   color: var(--link, #84c9fb);
 }
 
+/* Turbo Vision intern-mode preview */
+body.intern-mode .link-preview {
+  z-index: 1000;
+  max-width: 58ch;
+  min-width: 42ch;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--fg-default);
+  font: 16px/1.15 var(--font-body);
+  letter-spacing: 0;
+  animation: none;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+}
+
+body.intern-mode .link-preview:not(.lp-intern) {
+  padding: 1lh 1ch;
+  border: 2px double var(--fg-border);
+  background: var(--bg-window);
+}
+
+body.intern-mode .lp-intern {
+  background: var(--bg-window);
+}
+
+body.intern-mode .lp-tv-line {
+  position: relative;
+  overflow: hidden;
+  height: 1.15em;
+  color: var(--fg-border);
+  white-space: pre;
+}
+
+body.intern-mode .lp-tv-body {
+  display: grid;
+  grid-template-columns: 1ch minmax(0, 1fr) 1ch;
+  color: var(--fg-default);
+}
+
+body.intern-mode .lp-tv-edge {
+  color: var(--fg-border);
+}
+
+body.intern-mode .lp-tv-content {
+  min-width: 0;
+  padding: 0 1ch;
+}
+
+body.intern-mode .lp-path,
+body.intern-mode .lp-perms,
+body.intern-mode .lp-size,
+body.intern-mode .lp-cite-label,
+body.intern-mode .lp-fn-label {
+  color: var(--fg-hotkey);
+}
+
+body.intern-mode .lp-actions {
+  position: absolute;
+  top: 0;
+  right: 1ch;
+  display: flex;
+  gap: 1ch;
+  background: var(--bg-window);
+}
+
+body.intern-mode .lp-open,
+body.intern-mode .lp-open:visited,
+body.intern-mode .lp-open:link,
+body.intern-mode .lp-close {
+  width: auto;
+  height: auto;
+  color: var(--fg-default) !important;
+  font: inherit;
+  text-decoration: none !important;
+}
+
+body.intern-mode .lp-open:hover,
+body.intern-mode .lp-close:hover {
+  background: var(--bg-selected);
+  color: var(--fg-default) !important;
+}
+
+body.intern-mode .lp-meta,
+body.intern-mode .lp-owner,
+body.intern-mode .lp-date,
+body.intern-mode .lp-excerpt,
+body.intern-mode .lp-cite-authors,
+body.intern-mode .lp-cite-venue,
+body.intern-mode .lp-cite-abstract,
+body.intern-mode .lp-fn-content,
+body.intern-mode .lp-fn-content p {
+  color: var(--fg-muted);
+}
+
+body.intern-mode .lp-excerpt,
+body.intern-mode .lp-cite-abstract {
+  margin-top: 1lh;
+  padding-top: 1lh;
+  border-top: 1px solid var(--fg-border);
+}
+
+body.intern-mode .lp-cite-title,
+body.intern-mode .lp-cite-title-link,
+body.intern-mode .lp-cite-title-link:visited {
+  color: var(--fg-hotkey) !important;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+
+body.intern-mode .lp-nsfw {
+  color: #ff5555;
+}
+
 /* Hide on mobile — hover doesn't work well on touch */
 @media screen and (max-width: 600px) {
   .link-preview {

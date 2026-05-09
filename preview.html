@@ -1,0 +1,128 @@
+---
+layout: null
+permalink: /preview.html
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turbo Vision Preview - {{ site.title }}</title>
+  <meta name="description" content="Jubeen Shah in the Turbo Vision intern experience.">
+  <meta property="og:title" content="Jubeen Shah - Intern Experience">
+  <meta property="og:description" content="A Borland Turbo Vision and Norton Commander inspired view of jubeen.sh.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ '/assets/images/og-card-turbo.png' | relative_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jubeen Shah Turbo Vision site preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ '/assets/images/og-card-turbo.png' | relative_url }}">
+  <meta name="twitter:image:alt" content="Jubeen Shah Turbo Vision site preview">
+  <link rel="stylesheet" href="{{ '/assets/turbo-vision.css' | relative_url }}">
+</head>
+<body data-source-url="https://github.com/jubeenshah/jubeenshah.github.io/blob/main/preview.html">
+  <nav class="tv-menu" aria-label="Primary">
+    <a href="/preview.html"><span class="tv-hotkey">P</span>osts</a>
+    <a href="/about/"><span class="tv-hotkey">A</span>bout</a>
+    <a href="/disclaimer/"><span class="tv-hotkey">D</span>isclaimer</a>
+    <a href="/keyboard.html"><span class="tv-hotkey">H</span>elp</a>
+    <div class="tv-menu-dropdown">
+      <button type="button" class="tv-menu-button" aria-haspopup="true" aria-expanded="false"><span class="tv-hotkey">T</span>heme</button>
+      <div class="tv-theme-options" aria-label="Theme options">
+        <button type="button" class="tv-theme-option" data-tv-theme-option="dark">--dark</button>
+        <button type="button" class="tv-theme-option" data-tv-theme-option="light">--light</button>
+        <button type="button" class="tv-theme-option" data-tv-theme-option="a11y">--colour-blind-chums</button>
+        <button type="button" class="tv-theme-option" data-tv-theme-option="intern">--the-intern-experience</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="tv-desktop" aria-label="Turbo Vision preview">
+    <div class="tv-workspace">
+      <div class="tv-window-shell tv-tags-shell">
+        <div class="tv-shadow" aria-hidden="true"></div>
+        <section class="tv-window is-active" id="tv-tags-window" aria-label="Tags panel">
+          <div class="tv-frame-line"><a class="tv-close" href="/">[■]</a>═╡ <span class="tv-window-title">Tags</span> ╞════════════╗</div>
+          <div class="tv-window-body">
+            <span class="tv-edge" aria-hidden="true">║</span>
+            <div class="tv-panel-content">
+              <div class="tv-tag-list" role="listbox" aria-label="Tags">
+                {%- assign all_count = site.posts | size -%}
+                {%- assign writing_count = site.posts | where: "category", "writing" | size -%}
+                {%- assign security_count = site.posts | where: "category", "security" | size -%}
+                {%- assign projects_count = site.posts | where: "category", "projects" | size -%}
+                {%- assign certs_count = site.posts | where: "category", "certs" | size -%}
+                {%- assign career_count = site.posts | where: "category", "career" | size -%}
+                <button class="tv-tag-row" type="button" data-tag="all"><span class="tv-row-prefix">►</span><span>all</span><span class="tv-row-count">{{ all_count }}</span></button>
+                <button class="tv-tag-row" type="button" data-tag="writing"><span class="tv-row-prefix"> </span><span>writing</span><span class="tv-row-count">{{ writing_count }}</span></button>
+                <button class="tv-tag-row" type="button" data-tag="security"><span class="tv-row-prefix"> </span><span>security</span><span class="tv-row-count">{{ security_count }}</span></button>
+                <button class="tv-tag-row" type="button" data-tag="projects"><span class="tv-row-prefix"> </span><span>projects</span><span class="tv-row-count">{{ projects_count }}</span></button>
+                <button class="tv-tag-row" type="button" data-tag="certs"><span class="tv-row-prefix"> </span><span>certs</span><span class="tv-row-count">{{ certs_count }}</span></button>
+                <button class="tv-tag-row" type="button" data-tag="career"><span class="tv-row-prefix"> </span><span>career</span><span class="tv-row-count">{{ career_count }}</span></button>
+              </div>
+            </div>
+            <span class="tv-edge" aria-hidden="true">║</span>
+          </div>
+          <div class="tv-frame-line" aria-hidden="true">╚══════════════════════╝</div>
+        </section>
+      </div>
+
+      <div class="tv-window-shell">
+        <div class="tv-shadow" aria-hidden="true"></div>
+        <section class="tv-window is-active" id="tv-files-window" aria-label="Posts panel">
+          <div class="tv-frame-line"><a class="tv-close" href="/">[■]</a>═╡ <span class="tv-window-title">~/posts</span> ╞════════════════════════════════════════════════════════════════════╗</div>
+          <div class="tv-window-body">
+            <span class="tv-edge" aria-hidden="true">║</span>
+            <div class="tv-panel-content">
+              <div class="tv-search-row">
+                <label for="tv-search">Search</label>
+                <input class="tv-search" id="tv-search" type="search" autocomplete="off" aria-label="Search posts">
+              </div>
+              <div class="tv-file-grid">
+                <div class="tv-file-scroll" id="tv-file-scroll">
+                  <div class="tv-file-list" id="tv-file-list">
+                    {%- for post in site.posts -%}
+                    {%- assign post_slug = post.title | slugify -%}
+                    {%- assign chip = post.category | slice: 0, 3 -%}
+                    {%- if post.category == "security" -%}{%- assign chip = "sec" -%}{%- endif -%}
+                    {%- if post.category == "writing" -%}{%- assign chip = "wri" -%}{%- endif -%}
+                    {%- if post.category == "projects" -%}{%- assign chip = "prj" -%}{%- endif -%}
+                    {%- if post.category == "certs" -%}{%- assign chip = "crt" -%}{%- endif -%}
+                    {%- if post.category == "career" -%}{%- assign chip = "car" -%}{%- endif -%}
+                    <div class="tv-file-row" data-category="{{ post.category }}" data-nsfw="{{ post.nsfw | default: false }}">
+                      <a href="{{ post.url | relative_url }}">
+                        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                        <span class="tv-row-name">{{ post_slug | truncate: 24, "" }}</span>
+                        <span class="tv-chip" data-tag="{{ post.category }}" data-nsfw="{{ post.nsfw | default: false }}">[{{ chip }}]</span>
+                        <span></span>
+                      </a>
+                    </div>
+                    {%- endfor -%}
+                  </div>
+                </div>
+                <div class="tv-scrollbar" id="tv-scrollbar" aria-hidden="true"></div>
+              </div>
+            </div>
+            <span class="tv-edge" aria-hidden="true">║</span>
+          </div>
+          <div class="tv-frame-line" aria-hidden="true">╚══════════════════════════════════════════════════════════════════════════════╝</div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <nav class="tv-status" aria-label="Keyboard shortcuts">
+    <a href="/keyboard.html"><span class="tv-status-key">1</span>Help</a>
+    <a href="/about/"><span class="tv-status-key">2</span>About</a>
+    <a href="https://github.com/jubeenshah/jubeenshah.github.io/blob/main/preview.html" class="hide-mobile"><span class="tv-status-key">3</span>Source</a>
+    <button type="button" class="hide-mobile" data-tv-action="theme"><span class="tv-status-key">4</span>Theme</button>
+    <button type="button" data-tv-action="search"><span class="tv-status-key">5</span>Search</button>
+    <button type="button" class="hide-mobile" data-tv-action="tag"><span class="tv-status-key">7</span>Tag</button>
+    <a href="/disclaimer/"><span class="tv-status-key">10</span>Quit</a>
+  </nav>
+
+  <script src="{{ '/assets/turbo.js' | relative_url }}"></script>
+</body>
+</html>

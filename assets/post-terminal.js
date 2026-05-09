@@ -11,6 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var content = document.querySelector('.tp-content');
   var spanTags = document.querySelectorAll('.tp-span-anim');
 
+  if (localStorage.getItem('theme') === 'intern') {
+    if (lsRow) lsRow.style.display = '';
+    if (lsOutput) lsOutput.style.display = '';
+    if (catRow) catRow.style.display = '';
+    if (toc) toc.style.display = '';
+    if (outer) outer.style.display = '';
+    if (nav) nav.style.display = '';
+    if (related) related.style.display = '';
+    spanTags.forEach(function (s) { s.style.display = ''; });
+    return;
+  }
+
   var CHAR_DELAY = 35;
   var CMD_PAUSE = 300;
 
