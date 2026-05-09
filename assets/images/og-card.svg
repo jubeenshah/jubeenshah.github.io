@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0000aa"/>
+  <rect y="0" width="1200" height="38" fill="#aaaaaa"/>
+  <rect y="592" width="1200" height="38" fill="#aaaaaa"/>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="22" fill="#000000">
+    <text x="28" y="26"><tspan fill="#0000aa">P</tspan>osts</text>
+    <text x="136" y="26"><tspan fill="#0000aa">A</tspan>bout</text>
+    <text x="244" y="26"><tspan fill="#0000aa">D</tspan>isclaimer</text>
+    <text x="432" y="26"><tspan fill="#0000aa">H</tspan>elp</text>
+    <text x="650" y="26">--dark</text>
+    <text x="748" y="26">--light</text>
+    <text x="858" y="26">--colour-blind</text>
+    <text x="1058" y="26" fill="#ffffff">--intern</text>
+  </g>
+
+  <rect x="58" y="86" width="308" height="336" fill="#0000aa" stroke="#55ffff" stroke-width="4"/>
+  <rect x="424" y="86" width="718" height="336" fill="#0000aa" stroke="#55ffff" stroke-width="4"/>
+  <rect x="184" y="73" width="90" height="28" fill="#0000aa"/>
+  <rect x="650" y="73" width="120" height="28" fill="#0000aa"/>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="30">
+    <text x="196" y="99" fill="#ffff55">Tags</text>
+    <text x="664" y="99" fill="#ffff55">~/posts</text>
+  </g>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="28" fill="#ffffff">
+    <rect x="82" y="130" width="238" height="36" fill="#00aaaa"/>
+    <text x="92" y="158" fill="#ffff55">►</text>
+    <text x="126" y="158">all</text>
+    <text x="292" y="158">67</text>
+    <text x="126" y="206">writing</text>
+    <text x="292" y="206">12</text>
+    <text x="126" y="254">security</text>
+    <text x="292" y="254">18</text>
+    <text x="126" y="302">projects</text>
+    <text x="292" y="302">14</text>
+    <text x="126" y="350">certs</text>
+    <text x="292" y="350">11</text>
+  </g>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="26" fill="#ffffff">
+    <rect x="452" y="130" width="642" height="36" fill="#00aaaa"/>
+    <text x="468" y="158">2026-04-01</text>
+    <text x="668" y="158">kitkat-supply-chain</text>
+    <text x="1002" y="158" fill="#ff5555">[sec]</text>
+    <text x="468" y="206">2026-03-12</text>
+    <text x="668" y="206">machines-learned</text>
+    <text x="1002" y="206" fill="#ff55ff">[wri]</text>
+    <text x="468" y="254">2025-03-27</text>
+    <text x="668" y="254">youre-a-poet</text>
+    <text x="1002" y="254" fill="#ff55ff">[wri]</text>
+    <text x="468" y="302">2024-04-06</text>
+    <text x="668" y="302">git-ready</text>
+    <text x="1002" y="302" fill="#ff5555">[sec]</text>
+    <text x="1102" y="210" fill="#aaaaaa">▒</text>
+    <text x="1102" y="258" fill="#ffffff">▓</text>
+    <text x="1102" y="306" fill="#aaaaaa">▒</text>
+  </g>
+
+  <g font-family="Menlo, Consolas, monospace">
+    <text x="70" y="512" font-size="70" fill="#ffff55">Jubeen Shah</text>
+    <text x="76" y="558" font-size="30" fill="#ffffff">jubeenshah.github.io</text>
+  </g>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="23" fill="#000000">
+    <text x="28" y="618"><tspan fill="#ffffff">1</tspan>Help  <tspan fill="#ffffff">2</tspan>About  <tspan fill="#ffffff">3</tspan>Source  <tspan fill="#ffffff">4</tspan>Theme  <tspan fill="#ffffff">5</tspan>Search  <tspan fill="#ffffff">7</tspan>Tag  <tspan fill="#ffffff">10</tspan>Quit</text>
+  </g>
+</svg>

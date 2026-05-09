@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  {%- seo -%}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/terminal.css' | relative_url }}">
   {%- feed_meta -%}
@@ -81,9 +81,20 @@
       var btn = document.getElementById('go-blind');
       if (!btn) return;
 
-      var labels = { dark: '--dark', light: '--light', a11y: '--colour-blind-chums' };
+      var labels = {
+        dark: '--dark',
+        light: '--light',
+        a11y: '--colour-blind-chums',
+        intern: '--the-intern-experience'
+      };
 
       function setTheme(theme) {
+        if (theme === 'intern') {
+          localStorage.setItem('theme', theme);
+          window.location.href = '{{ "/preview.html" | relative_url }}';
+          return;
+        }
+
         document.body.classList.remove('light-mode', 'a11y-mode');
         if (theme === 'light') document.body.classList.add('light-mode');
         if (theme === 'a11y') document.body.classList.add('a11y-mode');
@@ -96,6 +107,10 @@
       }
 
       var saved = localStorage.getItem('theme') || 'dark';
+      if (saved === 'intern') {
+        window.location.href = '{{ "/preview.html" | relative_url }}';
+        return;
+      }
       setTheme(saved);
 
       btn.addEventListener('click', function () {

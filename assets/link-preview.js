@@ -23,6 +23,18 @@ document.addEventListener('DOMContentLoaded', function () {
   popup.style.display = 'none';
   document.body.appendChild(popup);
 
+  function isInternMode() {
+    try {
+      return localStorage.getItem('theme') === 'intern' || document.body.classList.contains('intern-mode');
+    } catch (e) {
+      return document.body.classList.contains('intern-mode');
+    }
+  }
+
+  function previewPath(data) {
+    return '~/' + (data.category === 'page' ? data.title.toLowerCase() : data.category + '/' + (data.subcategory ? data.subcategory + '/' : ''));
+  }
+
   // === Position popup near target ===
   function positionPopup(target) {
     var rect = target.getBoundingClientRect();
@@ -56,12 +68,42 @@ document.addEventListener('DOMContentLoaded', function () {
     var group = data.nsfw ? 'stderr' : 'human';
     var permsClass = data.nsfw ? 'lp-perms lp-nsfw' : 'lp-perms';
     var groupClass = data.nsfw ? 'lp-nsfw' : '';
+    var path = previewPath(data);
 
-    popup.className = 'link-preview cat-' + data.category;
+    popup.className = 'link-preview cat-' + data.category + (isInternMode() ? ' lp-intern' : '');
+
+    if (isInternMode()) {
+      popup.innerHTML =
+        '<div class="lp-tv-line">' +
+          '<span>╔══╡ </span><span class="lp-path">' + path + '</span><span> ╞══════════════════════════════════════════╗</span>' +
+          '<span class="lp-actions">' +
+            '<a href="' + href + '" target="_blank" class="lp-open" title="open in new tab">↗</a>' +
+            '<button class="lp-close" title="close">×</button>' +
+          '</span>' +
+        '</div>' +
+        '<div class="lp-tv-body">' +
+          '<span class="lp-tv-edge">║</span>' +
+          '<div class="lp-tv-content">' +
+            '<div class="lp-meta">' +
+              '<span class="' + permsClass + '">' + perms + '</span>  ' +
+              '<span class="lp-owner">jubeen</span>  ' +
+              '<span class="' + groupClass + '">' + group + '</span>  ' +
+              '<span class="lp-size">' + readMin + ' min</span>  ' +
+              '<span class="lp-date">' + data.date + '</span>' +
+            '</div>' +
+            '<div class="lp-excerpt">' + data.excerpt + '</div>' +
+          '</div>' +
+          '<span class="lp-tv-edge">║</span>' +
+        '</div>' +
+        '<div class="lp-tv-line">╚══════════════════════════════════════════════════════╝</div>';
+
+      positionPopup(e.target);
+      return;
+    }
 
     popup.innerHTML =
       '<div class="lp-toolbar">' +
-        '<span class="lp-path">~/' + (data.category === 'page' ? data.title.toLowerCase() : data.category + '/' + (data.subcategory ? data.subcategory + '/' : '')) + '</span>' +
+        '<span class="lp-path">' + path + '</span>' +
         '<span class="lp-actions">' +
           '<a href="' + href + '" target="_blank" class="lp-open" title="open in new tab">↗</a>' +
           '<button class="lp-close" title="close">×</button>' +
