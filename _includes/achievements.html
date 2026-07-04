@@ -36,6 +36,9 @@
          title="{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %} · click to verify">
         {%- if item.image -%}
         <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy" width="44" height="44">
+        {%- comment -%} hidden text so the badge survives HTML→text extraction
+        (AI fetchers, screen readers); sighted users get the hover title {%- endcomment -%}
+        <span class="ach-sr">{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %}</span>
         {%- else -%}
         <span>{{ item.name }}</span>
         {%- endif -%}
@@ -52,6 +55,7 @@
     <span class="ach-total">{{ ach_total }}</span>
   </div>
   <div class="ach-hint">every badge links to its source — click to verify</div>
+  <span class="ach-sr">machine-readable copy of this list: {{ '/proof.json' | absolute_url }}</span>
   </div>
 
   <div class="ach-status" aria-hidden="true">
@@ -62,3 +66,4 @@
   </div>
 </aside>
 <link rel="stylesheet" href="{{ '/assets/achievements.css' | relative_url }}">
+<link rel="alternate" type="application/json" href="{{ '/proof.json' | relative_url }}" title="verified achievements (JSON)">
