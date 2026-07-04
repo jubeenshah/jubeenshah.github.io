@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Cosmos: Automation Server"
 category: projects
 subcategory: iot
 series: cosmos
 series_order: 3
 spanning: [series]
----   
+---
 ## Setting up the automation server
 
 

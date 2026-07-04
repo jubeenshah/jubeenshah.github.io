@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: Once Upon a time...
 category: writing
 subcategory: society

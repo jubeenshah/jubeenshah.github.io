@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: Get some shit done
 category: career
 subcategory: productivity

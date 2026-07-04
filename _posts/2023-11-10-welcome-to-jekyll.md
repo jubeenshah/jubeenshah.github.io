@@ -1,8 +1,6 @@
 ---
-layout: post-terminal
 title: "Odyssey: Some lessons learned"
 date: 2023-11-10 20:35:30 -0500
-  - jekyll update
 category: career
 subcategory: meta
 spanning: [reflection, open-source]

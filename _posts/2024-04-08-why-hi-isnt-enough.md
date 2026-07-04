@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: Please don't just say "Hi". Send a purposeful message
 category: career
 subcategory: mentorship

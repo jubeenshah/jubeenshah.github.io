@@ -1,0 +1,216 @@
+# Achievement badges rendered on the about page by _includes/achievements.html.
+#
+# Each group:
+#   key:   short name, shown as the proof/<key>/ directory
+#   label: hover label for the group
+#   color: accent colour for the group's chips/border
+#   unit:  what the items are called in the count line (default: badges)
+#
+# Each item:
+#   name:  badge/cert name (shown on hover, and as the chip text when no image)
+#   url:   PUBLIC proof link — the page a visitor lands on to verify
+#   image: optional badge artwork. Remote URL (HTB CDN works) or a local file
+#          under /assets/images/badges/. Omit it and a text chip renders instead.
+#   desc:  optional one-liner shown in the hover tooltip
+#
+# HTB tip: the badge page's og:image is hotlinkable, e.g.
+#   https://academy.hackthebox.com/storage/badges/<slug>.png
+
+- key: offsec
+  label: OffSec certifications
+  color: "#FFB74D"
+  unit: certs
+  items:
+    # TODO(jubeen): swap the post links below for your credentials.offsec.com
+    # proof URLs. One known credential UUID (which cert is it?):
+    #   https://credentials.offsec.com/b8c72cf1-6635-4c20-b874-8dd1edd4c164
+    - name: OSDA
+      desc: OffSec Defense Analyst, 2023
+      url: /certs/2023/02/17/offsec-osda.html
+    - name: OSWA
+      desc: OffSec Web Assessor, 2024
+      url: /certs/2024/05/08/offsec-oswa.html
+
+- key: redhat
+  label: Red Hat certifications
+  color: "#EE0000"
+  unit: certs
+  items:
+    - name: RHCE
+      desc: Red Hat Certified Engineer, 2021
+      url: /certs/2021/10/08/redhat-rhce.html
+    - name: RHCSA
+      desc: Red Hat Certified System Administrator, 2021
+      url: /certs/2021/08/03/redhat-rhcsa.html
+    - name: Accredited Professional
+      desc: Red Hat Accredited Professional, 2019
+      url: /certs/2019/05/24/redhat-professional-accredition.html
+
+- key: aws
+  label: AWS certifications
+  color: "#FF9900"
+  unit: certs
+  items:
+    - name: AWS CSA
+      desc: AWS Certified Solutions Architect, 2020
+      url: /certs/2020/02/14/aws-csa.html
+
+- key: splunk
+  label: Splunk certifications
+  color: "#ED0080"
+  unit: certs
+  items:
+    - name: Power User
+      desc: Splunk Core Certified Power User, 2020
+      url: /certs/2020/10/01/splunk-core-certified-power-user.html
+    - name: Core User
+      desc: Splunk Core Certified User, 2019
+      url: /certs/2019/11/01/splunk-core-certified-user.html
+    - name: Fundamentals
+      desc: Splunk Fundamentals, 2019
+      url: /certs/2019/06/11/splunk-fundamentals.html
+
+- key: academic
+  label: Degrees & academic programs
+  color: "#9980FF"
+  unit: degrees
+  items:
+    - name: MSCS · NCSU
+      desc: MS Computer Science, cyber security specialization — summa cum laude, 2020
+      url: /certs/2020/05/09/ncsu-mscs.html
+    - name: B.Tech IT · MPSTME
+      desc: Bachelors in Information Technology — graduated 3rd, 2018
+      url: /certs/2018/08/17/mpstme-btech-it.html
+    - name: HBS CORe
+      desc: HBS Online Credential of Readiness, 2017
+      url: /certs/2017/12/05/harvard-core.html
+    - name: BGU ICSML
+      desc: Ben-Gurion University — cyber security & machine learning summer program, 2016
+      url: /certs/2016/07/05/bgu-icsml.html
+
+- key: offsec-badges
+  label: OffSec achievement badges
+  color: "#CF6679"
+  items:
+    # TODO(jubeen): add your 6 badges from https://portal.offsec.com/achievements
+    # (portal is behind login — save each badge image to /assets/images/badges/
+    # and link url: to the public share page if one exists, else the portal).
+    []
+
+- key: offsec-pins
+  label: OffSec pins
+  color: "#CF6679"
+  unit: pins
+  items:
+    # TODO(jubeen): add your 8 OffSec pins, same drill as the badges.
+    []
+
+- key: htb
+  label: Hack The Box Academy
+  color: "#9fef00"
+  items:
+    - name: Academician
+      desc: Introduction to Academy module completed
+      url: https://academy.hackthebox.com/achievement/badge/d64c25b3-2b6d-11ef-b18d-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/academician.png
+    - name: Anonymous Access
+      desc: Active Directory LDAP module completed
+      url: https://academy.hackthebox.com/achievement/badge/a161e79f-83f1-11ef-864f-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/anonymous-access.png
+    - name: Crawl, walk, run
+      desc: Windows Fundamentals module completed
+      url: https://academy.hackthebox.com/achievement/badge/dd602f10-89a7-11ef-864f-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/crawl-walk-run.png
+    - name: The guardian of Active Directory
+      desc: Active Directory BloodHound module completed
+      url: https://academy.hackthebox.com/achievement/badge/c8ce4a00-b781-11f0-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/the-guardian-of-active-directory.png
+    - name: Your white belt training begins
+      desc: Introduction to Active Directory module completed
+      url: https://academy.hackthebox.com/achievement/badge/957251e4-3667-11ef-b18d-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/your-white-belt-training-begins.png
+    - name: An apple a day...
+      desc: MacOS Fundamentals module completed
+      url: https://academy.hackthebox.com/achievement/badge/5b3d487d-88ca-11ef-864f-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/an-apple-a-day.png
+    - name: Superior Intelligence
+      desc: Fundamentals of AI module completed
+      url: https://academy.hackthebox.com/achievement/badge/53c69e0a-1aa2-11f1-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/32da68ec9873b8a5c48b0193bfbcf38b/logo.png
+    - name: Synthetic Intelligence
+      desc: Applications of AI in InfoSec module completed
+      url: https://academy.hackthebox.com/achievement/badge/d54394e1-1fee-11f1-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/5f697320187cf69c66114ff7b0c49b90/logo.png
+    - name: Model breaker
+      desc: Introduction to Red Teaming AI module completed
+      url: https://academy.hackthebox.com/achievement/badge/087cece4-2084-11f1-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/7b52e002401857cbb0daeb44dad2b719/logo.png
+    - name: Prompt phantom
+      desc: Prompt Injection Attacks module completed
+      url: https://academy.hackthebox.com/achievement/badge/3b13d7ef-3088-11f1-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/0abcda60891603412bdaf90e82b1c381/logo.png
+    - name: Output Overdrive
+      desc: LLM Output Attacks module completed
+      url: https://academy.hackthebox.com/achievement/badge/6a7398a3-3140-11f1-9254-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/13fad272ca9d954f9019df6da523df7d/logo.png
+    - name: Unwavering User
+      desc: first weekly streak
+      url: https://academy.hackthebox.com/achievement/badge/5e8c774a-2b6c-11ef-b18d-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/7f81e8837d0540d610c5019478c7647a/logo.png
+    - name: Constant Champion
+      desc: 4 weekly streaks in a row
+      url: https://academy.hackthebox.com/achievement/badge/c7533251-3caa-11ef-b18d-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/8644292aaa052ff2971d3541256ee605/logo.png
+    - name: Cyber Rookie 365
+      desc: one year of learning at HTB Academy
+      url: https://academy.hackthebox.com/achievement/badge/3b6d02d7-a333-11ef-864f-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png
+    - name: Binary Duo Explorer
+      desc: two years of learning at HTB Academy
+      url: https://academy.hackthebox.com/achievement/badge/805c3cb4-46a2-11f0-bcfd-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/0d982edba15037e6d52d54eaa7f0209a/logo.png
+
+- key: kc7
+  label: KC7 — the cyber detective game
+  color: "#03dac5"
+  items:
+    - name: 7 Total Days
+      desc: earned May 18, 2026 — played KC7 for 7 total days
+      url: https://kc7cyber.com/badges/earned/60697
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/7_total_days.png
+    - name: Dai Wok Foods
+      desc: earned Nov 02, 2025 — phishing detection, email log analysis, passive DNS
+      url: https://kc7cyber.com/badges/earned/31784
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/daiwokfoods.png
+    - name: Rap Beef
+      desc: earned Oct 27, 2025 — threat detection in a themed scenario
+      url: https://kc7cyber.com/badges/earned/30972
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/new_rap_beef_badge.png
+    - name: Titan Shield
+      desc: earned Nov 06, 2024 — Moonstone Sleet & Crimson Sandstorm investigations
+      url: https://kc7cyber.com/badges/earned/5507
+      image: "https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/Titan%20Shield%20(1).png"
+    - name: HopsNStuff
+      desc: earned Apr 27, 2024 — endpoint analysis, deobfuscating malicious PowerShell
+      url: https://kc7cyber.com/badges/earned/1436
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/hopsnstuff.png
+    - name: Krusty Krab
+      desc: earned Apr 10, 2024 — phishing & exfiltration investigation with KQL
+      url: https://kc7cyber.com/badges/earned/1307
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/krusty.png
+    - name: Envolve Labs
+      desc: earned Apr 02, 2024 — phishing, credential theft & exfiltration with KQL
+      url: https://kc7cyber.com/badges/earned/1033
+      image: https://res.cloudinary.com/dt8l5w5wi/image/upload/v1695782949/td5ndaxes1dfaz2y64we.png
+    - name: Castle & Sand
+      desc: earned Mar 27, 2024 — ransomware lifecycle investigation with KQL
+      url: https://kc7cyber.com/badges/earned/1003
+      image: "https://raw.githubusercontent.com/KC7-Foundation/kc7badges/main/castle%26sand/participant/mini.png"
+    - name: Balloons Over Iowa
+      desc: earned Mar 22, 2024 — C2, exfiltration, Mimikatz & shadow-copy analysis
+      url: https://kc7cyber.com/badges/earned/963
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/balloonsoveriowa.png
+    - name: Valdorian Times
+      desc: earned Mar 16, 2024 — influence-campaign investigation with KQL
+      url: https://kc7cyber.com/badges/earned/914
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/valdoria_election.png

@@ -57,8 +57,9 @@
            data-spanning="{{ post.spanning | join: ',' | downcase | strip }}"
            data-nsfw="{{ post.nsfw | default: false }}">
           <span class="post-perms{% if post.nsfw %} post-perms-nsfw{% endif %}">{% if post.nsfw %}-rwsr--r--{% else %}-rw-r--r--{% endif %}</span>
+          <span class="post-size">{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min</span>
           <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-          <span class="post-name">{{ post.title | slugify }}.md</span>
+          <span class="post-name">"{{ post.title | escape }}.md"</span>
         </a>
         {%- endfor -%}
       </div>

@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Oikos: Study Design"
 category: projects
 subcategory: privacy
 series: oikos
 series_order: 2
 spanning: [series]
----            
+---
 
 ### Approach
 

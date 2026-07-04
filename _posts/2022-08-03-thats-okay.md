@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: "That's Okay!"
 category: writing
 subcategory: personal

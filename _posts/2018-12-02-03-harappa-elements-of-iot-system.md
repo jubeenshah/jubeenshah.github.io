@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Harappa: Elements of IoT System (Contd.)"
 category: projects
 subcategory: iot
 series: harappa
 series_order: 4
 spanning: [series]
----              
+---
 
 
 ## Elements of IoT (Contd.)

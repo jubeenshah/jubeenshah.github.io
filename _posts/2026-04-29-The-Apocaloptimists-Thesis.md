@@ -1,14 +1,10 @@
 ---
-layout: post-terminal
 title: The Apocaloptimists Thesis
 published: false
 category: writing
 subcategory: academic
 nsfw: false
-spanning:
-  - opinion
-  - open-source
-  - reflection
+spanning: [opinion, open-source, reflection]
 ---
 # Abstract
 

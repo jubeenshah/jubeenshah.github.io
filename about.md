@@ -32,6 +32,8 @@ Did you have a look at [cosmos?](/projects/2017/11/02/00-cosmos.html), it was a 
 | 2017  | HBS Online [CORe](/certs/2017/12/05/harvard-core.html) certified              |
 | 2016  | BGU Cyber Security and Machine Learning ([ICSML](/certs/2016/07/05/bgu-icsml.html)) |
 
+{% include achievements.html %}
+
 Also, know my way around [splunk](/certs/2020/10/01/splunk-core-certified-power-user.html), can create interactive dashboards, use it for quick look at the data. With [AWS](/certs/2020/02/14/aws-csa.html), I think I'm comfortable finding things and [understanding](/certs/2021/10/08/redhat-rhce.html) what things should be investigated when things go wrong, but need to get better at IaC.
 
 I've been pretty disorganized, and I've got a lot of variables to blame. But only one constant to say "Job, well done!" I try to be thankful and friendly. But sometimes, I just forget. I'm sorry.

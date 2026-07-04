@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: the dalailama dilemma
 category: writing
 subcategory: personal

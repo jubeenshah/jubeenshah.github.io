@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Harappa: Final Words"
 category: projects
 subcategory: iot
 series: harappa
 series_order: 7
 spanning: [series]
----             
+---
 
 ## Conclusion
 
