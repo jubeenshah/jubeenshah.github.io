@@ -294,6 +294,24 @@
   margin: 1.6em 0;
 }
 
+/* Badge artwork in trophy posts — sources vary wildly in size and shape
+   (HTB squares, Accredible medallions, KC7 assorted), so normalize to one
+   fixed-height block. Tagged in markdown with {: .badge-art}. */
+.tp-content .badge-art {
+  margin: 1.6em 0;
+  text-align: center;
+}
+
+.tp-content .badge-art img {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0;
+  border-radius: 8px;
+}
+
 /* Horizontal rules */
 .tp-content hr {
   border: none;

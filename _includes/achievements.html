@@ -1,11 +1,16 @@
 {%- comment -%}
-  Achievement badge rail — data lives in _data/achievements.yml.
-  Sits in the right margin on wide screens, inline otherwise.
-  Every badge links to its public verification page.
+  Achievement pane — data lives in _data/achievements.yml (sections → groups → items).
+  Rendered as `tree ~/proof/` output; right pane of a terminal split on wide screens.
+  Every badge links to its public verification page. Machine-readable copy: /proof.json.
 {%- endcomment -%}
 {%- assign ach_total = 0 -%}
-{%- for group in site.data.achievements -%}
-  {%- assign ach_total = ach_total | plus: group.items.size -%}
+{%- assign ach_dirs = 0 -%}
+{%- for section in site.data.achievements -%}
+  {%- assign ach_dirs = ach_dirs | plus: 1 -%}
+  {%- for group in section.groups -%}
+    {%- assign ach_dirs = ach_dirs | plus: 1 -%}
+    {%- assign ach_total = ach_total | plus: group.items.size -%}
+  {%- endfor -%}
 {%- endfor -%}
 
 <aside class="ach-rail" id="achievements" aria-label="Verified achievements">
@@ -13,47 +18,49 @@
   <div class="ach-scroll">
   <div class="ach-cmd">
     <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
-    <span class="t-cmd-text">ls ~/proof/</span>
+    <span class="t-cmd-text">tree ~/proof/</span>
   </div>
 
-  {%- for group in site.data.achievements -%}
-  {%- if group.items and group.items.size > 0 %}
-  <div class="ach-group" style="--ach-color: {{ group.color }};" title="{{ group.label }}">
-    <div class="ach-group-head">
-      <span class="ach-dir">proof/{{ group.key }}/</span>
-      {%- assign ach_unit = group.unit | default: "badges" -%}
-      {%- if group.items.size == 1 -%}
-        {%- assign ach_unit_len = ach_unit.size | minus: 1 -%}
-        {%- assign ach_unit = ach_unit | slice: 0, ach_unit_len -%}
-      {%- endif -%}
-      <span class="ach-count">{{ group.items.size }} {{ ach_unit }}</span>
+  {%- for section in site.data.achievements %}
+  <div class="ach-section">
+    <div class="ach-section-head">{{ section.dir }}/</div>
+    {%- for group in section.groups -%}
+    {%- if group.items and group.items.size > 0 %}
+    {%- assign ach_unit = group.unit | default: "badges" -%}
+    {%- if group.items.size == 1 -%}
+      {%- assign ach_unit_len = ach_unit.size | minus: 1 -%}
+      {%- assign ach_unit = ach_unit | slice: 0, ach_unit_len -%}
+    {%- endif -%}
+    <div class="ach-group" style="--ach-color: {{ group.color }};" title="{{ group.label }}">
+      <div class="ach-group-head">
+        <span class="ach-branch">{% if forloop.last %}└──{% else %}├──{% endif %}</span>
+        <span class="ach-dir">{{ group.key }}/</span>
+        <span class="ach-count">{{ group.items.size }} {{ ach_unit }}</span>
+      </div>
+      <div class="ach-grid{% if forloop.last %} ach-grid-last{% endif %}">
+        {%- for item in group.items %}
+        <a class="ach-item{% unless item.image %} ach-chip{% endunless %}"
+           href="{{ item.url | relative_url }}"
+           {% if item.url contains '://' %}target="_blank" rel="noopener"{% endif %}
+           title="{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %} · click to verify">
+          {%- if item.image -%}
+          <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy" width="44" height="44">
+          {%- comment -%} hidden text so the badge survives HTML→text extraction
+          (AI fetchers, screen readers); sighted users get the hover title {%- endcomment -%}
+          <span class="ach-sr">{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %}</span>
+          {%- else -%}
+          <span>{{ item.name }}</span>
+          {%- endif -%}
+        </a>
+        {%- endfor %}
+      </div>
     </div>
-    <div class="ach-grid">
-      {%- for item in group.items %}
-      <a class="ach-item{% unless item.image %} ach-chip{% endunless %}"
-         href="{{ item.url | relative_url }}"
-         {% if item.url contains '://' %}target="_blank" rel="noopener"{% endif %}
-         title="{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %} · click to verify">
-        {%- if item.image -%}
-        <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy" width="44" height="44">
-        {%- comment -%} hidden text so the badge survives HTML→text extraction
-        (AI fetchers, screen readers); sighted users get the hover title {%- endcomment -%}
-        <span class="ach-sr">{{ item.name }}{% if item.desc %} — {{ item.desc }}{% endif %}</span>
-        {%- else -%}
-        <span>{{ item.name }}</span>
-        {%- endif -%}
-      </a>
-      {%- endfor %}
-    </div>
+    {%- endif -%}
+    {%- endfor %}
   </div>
-  {%- endif -%}
   {%- endfor %}
 
-  <div class="ach-foot">
-    <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
-    <span class="t-cmd-text">wc -l</span>
-    <span class="ach-total">{{ ach_total }}</span>
-  </div>
+  <div class="ach-foot">{{ ach_dirs }} directories, {{ ach_total }} files</div>
   <div class="ach-hint">every badge links to its source — click to verify</div>
   <span class="ach-sr">machine-readable copy of this list: {{ '/proof.json' | absolute_url }}</span>
   </div>
