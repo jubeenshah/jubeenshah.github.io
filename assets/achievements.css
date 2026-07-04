@@ -21,17 +21,32 @@
   text-overflow: ellipsis;
 }
 
+.ach-section {
+  margin-bottom: 1.2em;
+}
+
+.ach-section-head {
+  font-size: 0.875rem;
+  color: var(--text);
+  font-weight: bold;
+  margin-bottom: 0.35em;
+}
+
 .ach-group {
-  margin-bottom: 1.1em;
+  margin-bottom: 0.7em;
 }
 
 .ach-group-head {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  gap: 0.6em;
+  gap: 0.5em;
   font-size: 0.875rem;
-  margin-bottom: 0.45em;
+  margin-bottom: 0.35em;
+}
+
+.ach-branch {
+  color: var(--text-faint);
+  flex-shrink: 0;
 }
 
 .ach-dir {
@@ -41,15 +56,22 @@
 .ach-count {
   color: var(--text-dim);
   flex-shrink: 0;
+  margin-left: auto;
 }
 
+/* grids sit under the tree rail: the │ continues past ├── entries */
 .ach-grid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4em;
+  margin-left: 0.55em;
   border-left: 1px solid var(--ach-color, var(--border));
-  padding-left: 0.6em;
+  padding-left: 1em;
+}
+
+.ach-grid-last {
+  border-left-color: transparent;
 }
 
 .ach-item {

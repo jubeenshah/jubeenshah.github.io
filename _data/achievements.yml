@@ -1,114 +1,111 @@
-# Achievement badges rendered on the about page by _includes/achievements.html.
+# Achievements rendered on the about page by _includes/achievements.html
+# as a `tree ~/proof/` listing, and exported at /proof.json.
 #
-# Each group:
-#   key:   short name, shown as the proof/<key>/ directory
-#   label: hover label for the group
-#   color: accent colour for the group's chips/border
-#   unit:  what the items are called in the count line (default: badges)
+# Structure: a list of sections (dir: certs|badges|pins), each with groups.
+# Group: key (shown as <dir>/<key>/), label (hover), color, unit (count noun,
+#        default "badges"), items.
+# Item:  name (chip text / hover), url (PUBLIC proof page — required),
+#        image (optional artwork; omit for a text chip), desc (hover tooltip,
+#        also exposed to text extraction and proof.json).
 #
-# Each item:
-#   name:  badge/cert name (shown on hover, and as the chip text when no image)
-#   url:   PUBLIC proof link — the page a visitor lands on to verify
-#   image: optional badge artwork. Remote URL (HTB CDN works) or a local file
-#          under /assets/images/badges/. Omit it and a text chip renders instead.
-#   desc:  optional one-liner shown in the hover tooltip
-#
-# HTB tip: the badge page's og:image is hotlinkable, e.g.
-#   https://academy.hackthebox.com/storage/badges/<slug>.png
+# Artwork sources that hotlink cleanly:
+#   HTB:       og:image on the achievement page (academy.hackthebox.com/storage/badges/…)
+#   Accredible/OffSec: api.accredible.com/v1/frontend/credential_website_embed_image/badge/<numeric-id>
+#              (numeric id lives in the page's og:image meta, not the share UUID)
+#   KC7:       badge page img (varies: azurefd / cloudinary / github raw)
 
-- key: offsec
-  label: OffSec certifications
-  color: "#FFB74D"
-  unit: certs
-  items:
-    # TODO(jubeen): swap the post links below for your credentials.offsec.com
-    # proof URLs. One known credential UUID (which cert is it?):
-    #   https://credentials.offsec.com/b8c72cf1-6635-4c20-b874-8dd1edd4c164
+- dir: certs
+  groups:
+  - key: offsec
+    label: OffSec certifications
+    color: "#FFB74D"
+    unit: certs
+    items:
     - name: OSDA
-      desc: OffSec Defense Analyst, 2023
-      url: /certs/2023/02/17/offsec-osda.html
+      desc: OffSec Defense Analyst — issued Feb 17, 2023
+      url: https://credentials.offsec.com/9a7f472e-06ea-479a-ade1-1046a7d99d88#acc.D8nT6iXZ
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/68721576
     - name: OSWA
-      desc: OffSec Web Assessor, 2024
-      url: /certs/2024/05/08/offsec-oswa.html
-
-- key: redhat
-  label: Red Hat certifications
-  color: "#EE0000"
-  unit: certs
-  items:
+      desc: OffSec Web Assessor — issued May 4, 2024
+      url: https://credentials.offsec.com/21eb3286-b66c-4682-9639-66522d636c77#acc.dRvGVY1u
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/103288682
+  - key: redhat
+    label: Red Hat certifications
+    color: "#EE0000"
+    unit: certs
+    items:
     - name: RHCE
       desc: Red Hat Certified Engineer, 2021
-      url: /certs/2021/10/08/redhat-rhce.html
+      url: "/certs/2021/10/08/redhat-rhce.html"
     - name: RHCSA
       desc: Red Hat Certified System Administrator, 2021
-      url: /certs/2021/08/03/redhat-rhcsa.html
+      url: "/certs/2021/08/03/redhat-rhcsa.html"
     - name: Accredited Professional
       desc: Red Hat Accredited Professional, 2019
-      url: /certs/2019/05/24/redhat-professional-accredition.html
-
-- key: aws
-  label: AWS certifications
-  color: "#FF9900"
-  unit: certs
-  items:
+      url: "/certs/2019/05/24/redhat-professional-accredition.html"
+  - key: aws
+    label: AWS certifications
+    color: "#FF9900"
+    unit: certs
+    items:
     - name: AWS CSA
       desc: AWS Certified Solutions Architect, 2020
-      url: /certs/2020/02/14/aws-csa.html
-
-- key: splunk
-  label: Splunk certifications
-  color: "#ED0080"
-  unit: certs
-  items:
+      url: "/certs/2020/02/14/aws-csa.html"
+  - key: splunk
+    label: Splunk certifications
+    color: "#ED0080"
+    unit: certs
+    items:
     - name: Power User
       desc: Splunk Core Certified Power User, 2020
-      url: /certs/2020/10/01/splunk-core-certified-power-user.html
+      url: "/certs/2020/10/01/splunk-core-certified-power-user.html"
     - name: Core User
       desc: Splunk Core Certified User, 2019
-      url: /certs/2019/11/01/splunk-core-certified-user.html
+      url: "/certs/2019/11/01/splunk-core-certified-user.html"
     - name: Fundamentals
       desc: Splunk Fundamentals, 2019
-      url: /certs/2019/06/11/splunk-fundamentals.html
-
-- key: academic
-  label: Degrees & academic programs
-  color: "#9980FF"
-  unit: degrees
-  items:
+      url: "/certs/2019/06/11/splunk-fundamentals.html"
+  - key: academic
+    label: Degrees & academic programs
+    color: "#9980FF"
+    unit: degrees
+    items:
     - name: MSCS · NCSU
-      desc: MS Computer Science, cyber security specialization — summa cum laude, 2020
-      url: /certs/2020/05/09/ncsu-mscs.html
+      desc: MS Computer Science, cyber security specialization — summa cum laude,
+        2020
+      url: "/certs/2020/05/09/ncsu-mscs.html"
     - name: B.Tech IT · MPSTME
       desc: Bachelors in Information Technology — graduated 3rd, 2018
-      url: /certs/2018/08/17/mpstme-btech-it.html
+      url: "/certs/2018/08/17/mpstme-btech-it.html"
     - name: HBS CORe
       desc: HBS Online Credential of Readiness, 2017
-      url: /certs/2017/12/05/harvard-core.html
+      url: "/certs/2017/12/05/harvard-core.html"
     - name: BGU ICSML
-      desc: Ben-Gurion University — cyber security & machine learning summer program, 2016
-      url: /certs/2016/07/05/bgu-icsml.html
-
-- key: offsec-badges
-  label: OffSec achievement badges
-  color: "#CF6679"
-  items:
-    # TODO(jubeen): add your 6 badges from https://portal.offsec.com/achievements
-    # (portal is behind login — save each badge image to /assets/images/badges/
-    # and link url: to the public share page if one exists, else the portal).
-    []
-
-- key: offsec-pins
-  label: OffSec pins
-  color: "#CF6679"
-  unit: pins
-  items:
-    # TODO(jubeen): add your 8 OffSec pins, same drill as the badges.
-    []
-
-- key: htb
-  label: Hack The Box Academy
-  color: "#9fef00"
-  items:
+      desc: Ben-Gurion University — cyber security & machine learning summer program,
+        2016
+      url: "/certs/2016/07/05/bgu-icsml.html"
+- dir: badges
+  groups:
+  - key: offsec
+    label: OffSec learning badges
+    color: "#CF6679"
+    items:
+    - name: MITRE ATT&CK · Lateral Movement
+      desc: issued Jul 4, 2026
+      url: https://credentials.offsec.com/5139e029-6f38-4564-94ad-1547605095ef
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230631
+    - name: MITRE ATT&CK · Resource Development
+      desc: issued Jul 4, 2026
+      url: https://credentials.offsec.com/1c82fb35-1438-4592-993c-f6d76df46489
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230797
+    - name: Security Operations Essentials
+      desc: issued Jan 31, 2023
+      url: https://credentials.offsec.com/da6db634-26d5-47eb-aff9-5afcb9381ee5#acc.CxLNn1Gw
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/67172858
+  - key: htb
+    label: Hack The Box Academy
+    color: "#9fef00"
+    items:
     - name: Academician
       desc: Introduction to Academy module completed
       url: https://academy.hackthebox.com/achievement/badge/d64c25b3-2b6d-11ef-b18d-bea50ffe6cb4
@@ -133,6 +130,10 @@
       desc: MacOS Fundamentals module completed
       url: https://academy.hackthebox.com/achievement/badge/5b3d487d-88ca-11ef-864f-bea50ffe6cb4
       image: https://academy.hackthebox.com/storage/badges/an-apple-a-day.png
+    - name: Philomath
+      desc: Learning Process module completed
+      url: https://academy.hackthebox.com/achievement/badge/501249b1-2c41-11ef-b18d-bea50ffe6cb4
+      image: https://academy.hackthebox.com/storage/badges/philomath.png
     - name: Superior Intelligence
       desc: Fundamentals of AI module completed
       url: https://academy.hackthebox.com/achievement/badge/53c69e0a-1aa2-11f1-9254-bea50ffe6cb4
@@ -169,17 +170,17 @@
       desc: two years of learning at HTB Academy
       url: https://academy.hackthebox.com/achievement/badge/805c3cb4-46a2-11f0-bcfd-bea50ffe6cb4
       image: https://academy.hackthebox.com/storage/badges/0d982edba15037e6d52d54eaa7f0209a/logo.png
-
-- key: kc7
-  label: KC7 — the cyber detective game
-  color: "#03dac5"
-  items:
+  - key: kc7
+    label: KC7 — the cyber detective game
+    color: "#03dac5"
+    items:
     - name: 7 Total Days
       desc: earned May 18, 2026 — played KC7 for 7 total days
       url: https://kc7cyber.com/badges/earned/60697
       image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/7_total_days.png
     - name: Dai Wok Foods
-      desc: earned Nov 02, 2025 — phishing detection, email log analysis, passive DNS
+      desc: earned Nov 02, 2025 — phishing detection, email log analysis, passive
+        DNS
       url: https://kc7cyber.com/badges/earned/31784
       image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/daiwokfoods.png
     - name: Rap Beef
@@ -189,7 +190,7 @@
     - name: Titan Shield
       desc: earned Nov 06, 2024 — Moonstone Sleet & Crimson Sandstorm investigations
       url: https://kc7cyber.com/badges/earned/5507
-      image: "https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/Titan%20Shield%20(1).png"
+      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/Titan%20Shield%20(1).png
     - name: HopsNStuff
       desc: earned Apr 27, 2024 — endpoint analysis, deobfuscating malicious PowerShell
       url: https://kc7cyber.com/badges/earned/1436
@@ -205,7 +206,7 @@
     - name: Castle & Sand
       desc: earned Mar 27, 2024 — ransomware lifecycle investigation with KQL
       url: https://kc7cyber.com/badges/earned/1003
-      image: "https://raw.githubusercontent.com/KC7-Foundation/kc7badges/main/castle%26sand/participant/mini.png"
+      image: https://raw.githubusercontent.com/KC7-Foundation/kc7badges/main/castle%26sand/participant/mini.png
     - name: Balloons Over Iowa
       desc: earned Mar 22, 2024 — C2, exfiltration, Mimikatz & shadow-copy analysis
       url: https://kc7cyber.com/badges/earned/963
@@ -214,3 +215,42 @@
       desc: earned Mar 16, 2024 — influence-campaign investigation with KQL
       url: https://kc7cyber.com/badges/earned/914
       image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/valdoria_election.png
+- dir: pins
+  groups:
+  - key: offsec
+    label: OffSec skill-path pins
+    color: "#CF6679"
+    unit: pins
+    items:
+    - name: Enumeration
+      desc: Enumeration Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/101745b0-5537-499f-aac9-490f1b91f3e5
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230623
+    - name: IDOR Attacks
+      desc: IDOR Attacks Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/2e8b31de-d9a3-4009-8e9e-bc40e4af6a4b
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230626
+    - name: Lateral Movement
+      desc: Lateral Movement Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/90254d62-9ee8-4fa8-9f95-e331b0e6e899
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232794
+    - name: XXE Attacks
+      desc: XXE Attacks Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/f4e16228-85d2-4da1-9540-79c717c280f7
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232797
+    - name: Vulnerability Detection
+      desc: Vulnerability Detection Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/e2bbc248-a380-4d06-8527-401c068780ab
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232800
+    - name: User Account Management
+      desc: User Account Management Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/133b8843-54ef-4715-9076-257282baec66
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230621
+    - name: SSRF Attacks
+      desc: SSRF Attacks Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/b8c72cf1-6635-4c20-b874-8dd1edd4c164
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230717
+    - name: AD Penetration Testing
+      desc: Active Directory Penetration Testing Skill Path — issued Jul 4, 2026
+      url: https://credentials.offsec.com/ad055a3f-d1a0-41c2-a59e-d73d0472cc2a
+      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230636
