@@ -2,5 +2,5 @@
 # Override minima's default main.scss
 ---
 
-@import "minima";
-@import "custom";
+@use "minima";
+@use "custom";

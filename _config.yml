@@ -34,6 +34,8 @@ defaults:
 # Build settings
 theme: minima
 future: true
+sass:
+  quiet_deps: true # minima 2.5.2's internals trip Dart Sass deprecations we can't fix
 plugins:
   - jekyll-feed
   - jekyll-scholar
