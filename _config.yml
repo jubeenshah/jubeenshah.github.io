@@ -32,6 +32,10 @@ defaults:
       layout: post-terminal
 
 # Build settings
+# NOTE: GitHub Pages must stay on "GitHub Actions" as the build source
+# (Settings → Pages). The legacy "deploy from a branch" builder runs
+# Jekyll 3.x, which cannot compile the @use rules in assets/main.scss and
+# ships raw Sass as main.css — the whole site renders unstyled.
 theme: minima
 future: true
 sass:
