@@ -180,6 +180,39 @@
   font-weight: bold;
 }
 
+/* The intern (Turbo Vision) theme rebuilds the page inside its own frame —
+   the split-pane geometry (absolute rail, sticky pane, tmux status bar)
+   must not leak into it. Render as a plain inline section instead.
+   body.intern-mode outranks the wide-screen rules below at any width. */
+body.intern-mode .ach-rail {
+  position: static !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 2em 0;
+  padding: 1em 1.2em;
+  border: 1px dashed currentColor;
+  border-radius: 0;
+}
+
+body.intern-mode .ach-pane {
+  position: static;
+  height: auto;
+  display: block;
+}
+
+body.intern-mode .ach-scroll {
+  overflow: visible;
+}
+
+body.intern-mode .ach-status {
+  display: none;
+}
+
+/* the TV theme stamps ↗ after external links — noise on badge tiles */
+body.intern-mode .ach-grid .ach-item::after {
+  content: none;
+}
+
 /* Wide screens: render as the right pane of a vertical terminal split.
    The article (.terminal-post) is the positioning context; the dashed
    divider runs its full height, and the pane content sticks while the
