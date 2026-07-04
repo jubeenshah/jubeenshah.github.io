@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: "The Essence of Carpe Diem - A Reflection on Dead Poets Society"
 category: writing
 subcategory: film

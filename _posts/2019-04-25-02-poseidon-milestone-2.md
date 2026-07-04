@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Poseidon: Milestone 2 - Test & Analysis 🗃️"
 category: projects
 subcategory: devops
 series: poseidon
 series_order: 3
 spanning: [series, open-source]
----   
+---
 
 
 ## Milestone 2

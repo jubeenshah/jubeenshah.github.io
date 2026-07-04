@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Harappa: Analytics & Computing"
 category: projects
 subcategory: iot
 series: harappa
 series_order: 6
 spanning: [series]
----             
+---
 
 
 ## Analytics & Computing

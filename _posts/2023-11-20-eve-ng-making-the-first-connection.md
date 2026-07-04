@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: Emulated Virtual Environment (next, new) generation
 category: security
 subcategory: networking

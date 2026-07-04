@@ -1,7 +1,5 @@
 ---
-layout: post-terminal
 title: "Certification from HBS Online - Credential of Readiness (CORe) 🧑‍🎓"
-summary: "School, Jr. College, College, University"
 category: certs
 subcategory: academic
 spanning: []

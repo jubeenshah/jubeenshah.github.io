@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: You're a poet, and you know it
 category: writing
 subcategory: personal

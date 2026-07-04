@@ -1,5 +1,4 @@
 ---
-layout: post-terminal
 title: The Machines Learned to Speak. And We Forgot How to Listen.
 category: writing
 subcategory: society

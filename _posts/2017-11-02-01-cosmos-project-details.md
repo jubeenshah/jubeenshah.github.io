@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Cosmos: Project Details 🗃️"
 category: projects
 subcategory: iot
 series: cosmos
 series_order: 2
 spanning: [series]
----     
+---
 
 
 ## Concept and Plan

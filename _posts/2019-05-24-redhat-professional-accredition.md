@@ -1,7 +1,5 @@
 ---
-layout: post-terminal
 title: "Red hat Accredited professional 🧑‍💼"
-summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 category: certs
 subcategory: redhat
 spanning: []

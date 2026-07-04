@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Poseidon: Milestone 1 - Configuration Management & Build) ⚙️"
 category: projects
 subcategory: devops
 series: poseidon
 series_order: 2
 spanning: [series, open-source]
----   
+---
 
 
 ## Milestone 1

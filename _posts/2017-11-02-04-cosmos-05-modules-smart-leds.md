@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Cosmos: Smart LEDs"
 category: projects
 subcategory: iot
 series: cosmos
 series_order: 10
 spanning: [series]
---- 
+---
 ## Functional Block Diagram
 
 

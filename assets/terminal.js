@@ -9,14 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const prompt = 'you@jubeen.sh:~$ ';
 
-  // Subcategory map
-  var subcategories = {
-    writing:  ['film', 'personal', 'society'],
-    security: ['networking', 'appsec'],
-    projects: ['iot', 'devops', 'privacy', 'security'],
-    certs:    ['academic', 'offsec', 'redhat', 'splunk', 'aws'],
-    career:   ['productivity', 'mentorship', 'meta']
-  };
+  // Subcategory map — derived from the posts on the page, so the filter
+  // bar can never drift out of sync with the actual content.
+  var subcategories = {};
+  document.querySelectorAll('.post-entry').forEach(function (post) {
+    var cat = post.getAttribute('data-category');
+    var sub = post.getAttribute('data-subcategory');
+    if (!cat || !sub) return;
+    if (!subcategories[cat]) subcategories[cat] = [];
+    if (subcategories[cat].indexOf(sub) === -1) subcategories[cat].push(sub);
+  });
+  Object.keys(subcategories).forEach(function (cat) {
+    subcategories[cat].sort();
+  });
 
   // L1 color map for sub-category inheritance
   var l1Colors = {
@@ -68,8 +73,52 @@ document.addEventListener('DOMContentLoaded', function () {
     { type: 'done' }
   ];
 
+  // Static equivalent of the animated script — used when the animation is
+  // skipped, already seen this session, or the visitor prefers reduced motion.
+  var staticLines = script
+    .filter(function (s) { return s.type === 'command' || s.type === 'response'; })
+    .map(function (s) {
+      return s.type === 'command' ? { prompt: true, cmd: s.text } : { text: s.text };
+    });
+
   const CHAR_DELAY = 35;
   const COMMAND_PAUSE = 300;
+
+  var animationDone = false;
+  var pendingTimer = null;
+  var skipHint = null;
+
+  function renderInstant() {
+    output.innerHTML = '';
+    staticLines.forEach(function (line) {
+      if (line.prompt) {
+        addText(prompt, 'terminal-prompt');
+        addText(line.cmd, 'terminal-command');
+      } else {
+        addText(line.text, 'terminal-response');
+      }
+      newline();
+    });
+  }
+
+  function onSkip() {
+    completeAnimation(true);
+  }
+
+  function completeAnimation(instant) {
+    if (animationDone) return;
+    animationDone = true;
+    clearTimeout(pendingTimer);
+    document.removeEventListener('click', onSkip);
+    document.removeEventListener('keydown', onSkip);
+    if (skipHint) {
+      skipHint.parentNode.removeChild(skipHint);
+      skipHint = null;
+    }
+    if (instant) renderInstant();
+    cursor.style.display = 'none';
+    showContent();
+  }
 
   function typeText(text, className, callback) {
     var i = 0;
@@ -78,10 +127,11 @@ document.addEventListener('DOMContentLoaded', function () {
     output.appendChild(span);
 
     function next() {
+      if (animationDone) return;
       if (i < text.length) {
         span.textContent += text[i];
         i++;
-        setTimeout(next, CHAR_DELAY);
+        pendingTimer = setTimeout(next, CHAR_DELAY);
       } else {
         callback();
       }
@@ -101,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function runScript(steps, index) {
-    if (index >= steps.length) return;
+    if (animationDone || index >= steps.length) return;
 
     var step = steps[index];
 
@@ -109,17 +159,16 @@ document.addEventListener('DOMContentLoaded', function () {
       addText(prompt, 'terminal-prompt');
       typeText(step.text, 'terminal-command', function () {
         newline();
-        setTimeout(function () { runScript(steps, index + 1); }, COMMAND_PAUSE);
+        pendingTimer = setTimeout(function () { runScript(steps, index + 1); }, COMMAND_PAUSE);
       });
     } else if (step.type === 'response') {
       addText(step.text, 'terminal-response');
       newline();
       runScript(steps, index + 1);
     } else if (step.type === 'pause') {
-      setTimeout(function () { runScript(steps, index + 1); }, step.ms);
+      pendingTimer = setTimeout(function () { runScript(steps, index + 1); }, step.ms);
     } else if (step.type === 'done') {
-      cursor.style.display = 'none';
-      showContent();
+      completeAnimation(false);
     }
   }
 
@@ -341,34 +390,23 @@ document.addEventListener('DOMContentLoaded', function () {
     filterPosts();
   });
 
-  // Check if animation has played this session
+  // Play the animation once per session; render instantly on repeat visits
+  // or when the visitor prefers reduced motion. A click or keypress skips it.
   var hasPlayed = sessionStorage.getItem('terminal-played');
+  var reducedMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  if (hasPlayed) {
-    var lines = [
-      { prompt: true, cmd: 'whoareyou' },
-      { text: 'security engineer. poet. curious being.' },
-      { prompt: true, cmd: 'stat jubeen' },
-      { text: 'passionately curious about technology' },
-      { prompt: true, cmd: 'cat /etc/motm' },
-      { text: todaysMessage },
-      { prompt: true, cmd: './posts/filter.sh' },
-      { text: 'loading ' + postTotal + ' posts...' }
-    ];
-
-    lines.forEach(function (line) {
-      if (line.prompt) {
-        addText(prompt, 'terminal-prompt');
-        addText(line.cmd, 'terminal-command');
-      } else {
-        addText(line.text, 'terminal-response');
-      }
-      newline();
-    });
-
-    cursor.style.display = 'none';
-    showContent();
+  if (hasPlayed || reducedMotion) {
+    completeAnimation(true);
   } else {
+    document.addEventListener('click', onSkip);
+    document.addEventListener('keydown', onSkip);
+
+    skipHint = document.createElement('div');
+    skipHint.className = 'terminal-skip-hint';
+    skipHint.textContent = '[ press any key to skip ]';
+    document.getElementById('terminal').appendChild(skipHint);
+
     runScript(script, 0);
     sessionStorage.setItem('terminal-played', '1');
   }

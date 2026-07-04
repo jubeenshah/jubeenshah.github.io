@@ -1,12 +1,11 @@
 ---
-layout: post-terminal
 title: "Cosmos: Ambient Station"
 category: projects
 subcategory: iot
 series: cosmos
 series_order: 9
 spanning: [series]
----  
+---
 ## Functional Block Diagram
 
 

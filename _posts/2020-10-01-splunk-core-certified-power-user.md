@@ -1,7 +1,5 @@
 ---
-layout: post-terminal
 title: "Certified as Splunk Power User 🧑‍🎓"
-summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 category: certs
 subcategory: splunk
 spanning: []

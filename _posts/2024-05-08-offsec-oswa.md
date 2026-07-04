@@ -1,7 +1,5 @@
 ---
-layout: post-terminal
 title: "Certified as OffSec Web Assessor (OSWA) 🧑‍🎓"
-summary: "Any Vendor/Original Equipment Manufacturer pertaining Certifications"
 category: certs
 subcategory: offsec
 spanning: []
