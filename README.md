@@ -50,16 +50,79 @@ file under `assets/images/badges/`) and `desc`. Items without an image render
 as text chips; empty groups stay hidden. Markup lives in
 `_includes/achievements.html`, styling in `assets/achievements.css`.
 
+## Photos
+
+`/photos/` is `feh -t ~/photos/`: a thumbnail grid, one box per photo, the
+file name in the bottom rail, a double border on the selected cell. Arrows or
+`hjkl` move, Enter opens, `x` drops an `exiftool` pane under the grid. Each
+photo page is `feh <file>` followed by `exiftool <file>` and `sha256sum`.
+
+Photos are a collection — one markdown file per photo, no body needed:
+
+```
+_photos/<album>/<slug>.md          front matter only (schema below)
+assets/photos/<album>/<slug>-480.webp   grid thumbnail
+assets/photos/<album>/<slug>-960.webp   phone / tablet view
+assets/photos/<album>/<slug>-1920.jpg   desktop view + OG image
+```
+
+Don't write these by hand. Export JPEGs (Phocus, Lightroom, a scanner) and run:
+
+```sh
+pip install Pillow
+python3 scripts/photos-ingest.py montenegro ~/Export/montenegro/
+python3 scripts/photos-ingest.py roll-07 ~/Scans/roll07/ \
+    --film "Kodak Portra 400" --camera "Holga 120N" --location "Raleigh, NC"
+```
+
+The script resizes (never upscales), strips all metadata from the derivatives
+(no EXIF, so no GPS — only the ICC profile is kept), reads camera/lens/exposure
+from the source once, and writes the front matter. Existing `.md` files are
+kept (captions survive re-runs) unless `--force`. Originals never enter the
+repo; GitHub Pages serves only the derivatives.
+
+```yaml
+---
+title: "Kotor Bay"
+date: 2026-09-14
+album: montenegro        # the grid's filter buttons come from this
+tags: []
+location: "Kotor, Montenegro"
+caption: ""              # shown under the photo as a `# comment`
+camera: "Hasselblad X2D 100C"
+lens: "XCD 80mm f/1.9"
+focal: "80 mm"
+aperture: "f/8"
+shutter: "1/250"
+iso: 64
+film: ""                 # film stock for scans; the script blanks the exposure fields
+image: { path: /assets/photos/montenegro/kotor-bay-1920.jpg, width: 1920, height: 1280, alt: "Kotor Bay" }
+thumb: /assets/photos/montenegro/kotor-bay-480.webp
+srcset: "...-480.webp 480w, ...-960.webp 960w, ...-1920.jpg 1920w"
+color: "#678782"         # dominant colour, painted behind the thumbnail while it loads
+sha256: "<hash of the 1920px file>"
+---
+```
+
+Grid order is newest first. `published: false` hides an entry. `/photos.json`
+is the machine-readable index. Layouts: `photos/index.html` (grid) and
+`_layouts/photo.html` (single); behaviour in `assets/photos.js`, styling in
+`assets/photos.css`.
+
 ## Repo map
 
 ```
 _posts/          the writing
+_photos/         one front-matter file per photo (see Photos)
+scripts/         photos-ingest.py — exports → derivatives + front matter
 _data/           achievements.yml — badge/cert data for the about page
-_layouts/        terminal-home (index), post-terminal, page-terminal, default
+_layouts/        terminal-home (index), post-terminal, page-terminal, photo, default
 _includes/       header / footer
-assets/          terminal.{js,css}, post-terminal.{js,css}, intern-shell.{js,css}, link-preview.{js,css}
+assets/          terminal.{js,css}, post-terminal.{js,css}, photos.{js,css}, intern-shell.{js,css}, link-preview.{js,css}
+assets/photos/   generated derivatives (commit these; originals stay out)
 _bibliography/   references for posts that cite sources (jekyll-scholar)
 posts.json       build-time index powering hover previews and search
+photos.json      build-time index of the gallery
 preview.html     "the intern experience" DOS shell
 ```
 

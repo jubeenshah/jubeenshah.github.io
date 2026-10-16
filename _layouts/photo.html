@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{%- comment -%}
+  Single photo: `feh <file>` renders the image, `exiftool <file>` dumps the
+  front matter, `sha256sum` prints the published derivative's hash (the hook
+  for signed photos later). Prev/next follow grid order (newest first).
+{%- endcomment -%}
+{%- assign photos = site.photos | sort: 'date' | reverse -%}
+{%- assign slug = page.path | split: '/' | last | replace: '.md', '' -%}
+{%- assign file = slug | append: '.jpg' -%}
+{%- assign idx = 0 -%}
+{%- for p in photos -%}
+  {%- if p.url == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign prev_idx = idx | minus: 1 -%}
+{%- assign next_idx = idx | plus: 1 -%}
+{%- if idx > 0 -%}{%- assign prev = photos[prev_idx] -%}{%- endif -%}
+{%- if next_idx < photos.size -%}{%- assign next = photos[next_idx] -%}{%- endif -%}
+{%- assign cell_id = page.album | append: '-' | append: slug -%}
+<article class="post terminal-page ph-page ph-detail tp-page-content" id="ph-page"
+         data-prev="{% if prev %}{{ prev.url | relative_url }}{% endif %}"
+         data-next="{% if next %}{{ next.url | relative_url }}{% endif %}"
+         data-grid="{{ '/photos/' | relative_url }}#ph-{{ cell_id }}">
+  <link rel="stylesheet" href="{{ '/assets/post-terminal.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/photos.css' | relative_url }}">
+
+  <header class="tp-header">
+    <div class="tp-cmd">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos/{{ page.album }}</span>$</span>
+      <span class="t-cmd-text">feh {{ file }}</span>
+    </div>
+  </header>
+
+  <figure class="ph-figure">
+    <a class="ph-full" href="{{ page.image.path | relative_url }}"
+       {% if page.color %}style="background:{{ page.color }};aspect-ratio:{{ page.image.width }}/{{ page.image.height }}"{% endif %}
+       title="open the full-size file">
+      <img src="{{ page.image.path | relative_url }}"
+           {% if page.srcset %}srcset="{{ page.srcset }}" sizes="(max-width: 600px) 95vw, 60vw"{% endif %}
+           width="{{ page.image.width }}" height="{{ page.image.height }}"
+           alt="{{ page.image.alt | default: page.title | escape }}" decoding="async">
+    </a>
+    {%- if page.caption != blank %}
+    <figcaption class="ph-caption"># {{ page.caption }}</figcaption>
+    {%- endif %}
+  </figure>
+
+  <div class="tp-cmd">
+    <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos/{{ page.album }}</span>$</span>
+    <span class="t-cmd-text">exiftool {{ file }}</span>
+  </div>
+<pre class="ph-exiftool"><span class="ph-k">File Name       </span>: {{ file }}
+<span class="ph-k">Directory       </span>: ~/photos/{{ page.album }}
+<span class="ph-k">Image Size      </span>: {{ page.image.width }}x{{ page.image.height }}
+<span class="ph-k">Date/Time       </span>: {{ page.date | date: "%Y:%m:%d" }}
+{%- if page.title != blank %}
+<span class="ph-k">Title           </span>: {{ page.title }}
+{%- endif %}
+{%- if page.location != blank %}
+<span class="ph-k">Location        </span>: {{ page.location }}
+{%- endif %}
+{%- if page.camera != blank %}
+<span class="ph-k">Camera          </span>: {{ page.camera }}
+{%- endif %}
+{%- if page.lens != blank %}
+<span class="ph-k">Lens            </span>: {{ page.lens }}
+{%- endif %}
+{%- if page.film != blank %}
+<span class="ph-k">Film            </span>: {{ page.film }}
+{%- endif %}
+{%- if page.focal != blank %}
+<span class="ph-k">Focal Length    </span>: {{ page.focal }}
+{%- endif %}
+{%- if page.aperture != blank %}
+<span class="ph-k">Aperture        </span>: {{ page.aperture }}
+{%- endif %}
+{%- if page.shutter != blank %}
+<span class="ph-k">Shutter Speed   </span>: {{ page.shutter }}
+{%- endif %}
+{%- if page.iso != blank %}
+<span class="ph-k">ISO             </span>: {{ page.iso }}
+{%- endif %}
+{%- if page.tags and page.tags.size > 0 %}
+<span class="ph-k">Keywords        </span>: {{ page.tags | join: ", " }}
+{%- endif %}
+<span class="ph-k">GPS Position    </span>: <span class="ph-dim">(stripped)</span>
+</pre>
+
+  {%- if page.sha256 != blank %}
+  <div class="tp-cmd">
+    <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos/{{ page.album }}</span>$</span>
+    <span class="t-cmd-text">sha256sum {{ file }}</span>
+  </div>
+  <pre class="ph-exiftool ph-sha"><span class="ph-hash">{{ page.sha256 }}</span>  {{ file }}</pre>
+  {%- endif %}
+
+  <nav class="ph-nav" aria-label="photo navigation">
+    {%- if prev %}
+    <a class="ph-nav-link ph-nav-prev" href="{{ prev.url | relative_url }}" rel="prev">← {{ prev.path | split: '/' | last | replace: '.md', '.jpg' }}</a>
+    {%- else %}
+    <span class="ph-nav-link ph-nav-off">← (first)</span>
+    {%- endif %}
+    <a class="ph-nav-link ph-nav-grid" href="{{ '/photos/' | relative_url }}#ph-{{ cell_id }}">[ feh -t ~/photos/ ]</a>
+    {%- if next %}
+    <a class="ph-nav-link ph-nav-next" href="{{ next.url | relative_url }}" rel="next">{{ next.path | split: '/' | last | replace: '.md', '.jpg' }} →</a>
+    {%- else %}
+    <span class="ph-nav-link ph-nav-off">(last) →</span>
+    {%- endif %}
+  </nav>
+  <div class="ph-hint">←/→ prev/next · q grid</div>
+</article>
+<script src="{{ '/assets/photos.js' | relative_url }}"></script>

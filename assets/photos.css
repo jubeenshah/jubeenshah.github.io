@@ -1,0 +1,325 @@
+/* ===== Photos — `feh -t` thumbnail index + `feh <file>` single view =====
+   Data: _photos/<album>/<slug>.md · Markup: photos/index.html, _layouts/photo.html
+   Script: assets/photos.js · Derivatives: assets/photos/<album>/ (scripts/photos-ingest.py)
+
+   The chrome is the site's terminal (mono type, theme variables, box
+   borders); the photos themselves are never tinted. The selected cell gets a
+   double rule — the CSS reading of ╔═╗ against the ┌─┐ of the others. */
+
+.ph-page.tp-page-content {
+  max-width: none;
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+}
+
+/* visually hidden, kept for text extraction and screen readers */
+.ph-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ----- album filter row (same vocabulary as the home page's tag buttons) ----- */
+.ph-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.2em 0 1em;
+}
+
+.ph-filter {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 13px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ph-filter:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ph-filter.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+/* ----- the grid ----- */
+.ph-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.ph-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: 1px solid var(--text-faint);
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none !important;
+  outline: none;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.ph-cell:visited { color: var(--text); }
+.ph-cell.hidden { display: none; }
+
+.ph-cell:hover {
+  border-color: var(--text-dim);
+}
+
+/* ╔═══╗ — 1px rule, 1px gap, 1px rule; no layout shift */
+.ph-cell.selected,
+.ph-cell:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--bg), 0 0 0 2px var(--accent);
+}
+
+.ph-frame {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+/* outranks `.tp-page-content img` (margins, radius) by specificity */
+.tp-page-content .ph-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* ├───┤ rail with the file name */
+.ph-cap {
+  display: block;
+  border-top: 1px solid var(--text-faint);
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.12s ease, border-color 0.12s ease;
+}
+
+.ph-cell.selected .ph-cap,
+.ph-cell:focus-visible .ph-cap {
+  border-top-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ----- status + hint lines under the grid (feh's info string) ----- */
+.ph-status {
+  margin-top: 1em;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  min-height: 1.6em;
+  overflow-wrap: anywhere;
+}
+
+.ph-status-idx { color: var(--perms); }
+.ph-status-file { color: var(--text); font-weight: bold; }
+.ph-status-sep { color: var(--text-faint); }
+
+.ph-hint {
+  font-size: 12px;
+  color: var(--text-faint);
+  padding-top: 2px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* keyboard hints are noise on touch screens */
+@media (hover: none) and (pointer: coarse) {
+  .ph-hint { display: none; }
+}
+
+/* ----- exif pane (x) ----- */
+.ph-exif {
+  margin-top: 1em;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 0.6em 0.9em;
+  background: rgba(3, 218, 197, 0.03);
+}
+
+.ph-exif[hidden] { display: none; }
+
+.ph-exif .tp-cmd { margin-bottom: 0.4em; }
+
+.ph-exiftool {
+  font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-body);
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0;
+  padding: 0.2em 0 0;
+  margin: 0 0 1.4em;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.ph-exif .ph-exiftool { margin-bottom: 0; }
+
+.ph-k { color: var(--text-dim); }
+.ph-dim { color: var(--text-faint); }
+.ph-hash { color: var(--link); overflow-wrap: anywhere; }
+.ph-sha { white-space: pre-wrap; }
+
+.ph-count {
+  font-size: 15px;
+  padding: 15px 0 0;
+}
+
+.ph-count-out { color: var(--text-dim); margin-left: 0.5em; }
+
+.ph-empty {
+  color: var(--warning);
+  font-size: 13px;
+}
+
+/* ----- single photo ----- */
+.ph-figure {
+  margin: 0 0 1.4em;
+}
+
+.ph-full {
+  display: block;
+  border: 1px solid var(--text-faint);
+  background: var(--bg-alt);
+  max-height: 85vh;
+  overflow: hidden;
+}
+
+.tp-page-content .ph-full img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 0;
+}
+
+.ph-caption {
+  margin-top: 0.6em;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.ph-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  margin-top: 0.4em;
+  padding-top: 0.8em;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.ph-nav-link {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tp-page-content a.ph-nav-link {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.tp-page-content a.ph-nav-link:hover { color: var(--accent); }
+.ph-nav-off { color: var(--text-faint); }
+.ph-nav-grid { color: var(--accent) !important; flex-shrink: 0; }
+
+@media screen and (max-width: 600px) {
+  .ph-grid { gap: 10px; }
+  .ph-cap { font-size: 11px; padding: 3px 6px; }
+  .ph-filter { font-size: 12px; padding: 3px 8px; }
+  .ph-status, .ph-exiftool { font-size: 12px; }
+  .ph-nav-prev, .ph-nav-next { max-width: 34%; }
+}
+
+/* ----- --the-intern-experience: same grid inside the Turbo Vision window ----- */
+body.intern-mode .ph-page.tp-page-content {
+  font-family: inherit;
+}
+
+body.intern-mode .ph-filter {
+  border: 0;
+  padding: 0 1ch;
+  font: inherit;
+  color: var(--fg-default);
+}
+
+body.intern-mode .ph-filter.active {
+  background: var(--bg-selected);
+  color: var(--fg-default);
+}
+
+body.intern-mode .ph-cell {
+  border-color: var(--fg-border-i);
+  background: transparent;
+  color: var(--fg-default);
+}
+
+body.intern-mode .ph-cell.selected,
+body.intern-mode .ph-cell:focus-visible {
+  border-color: var(--fg-hotkey);
+  box-shadow: 0 0 0 1px var(--bg-window), 0 0 0 2px var(--fg-hotkey);
+}
+
+body.intern-mode .ph-cap {
+  border-top-color: var(--fg-border-i);
+  color: var(--fg-default);
+  font: inherit;
+}
+
+body.intern-mode .ph-cell.selected .ph-cap { color: var(--fg-hotkey); border-top-color: var(--fg-hotkey); }
+
+body.intern-mode .ph-status,
+body.intern-mode .ph-hint,
+body.intern-mode .ph-exiftool,
+body.intern-mode .ph-count,
+body.intern-mode .ph-caption {
+  font: inherit;
+  color: var(--fg-default);
+}
+
+body.intern-mode .ph-status-idx,
+body.intern-mode .ph-status-file,
+body.intern-mode .ph-k,
+body.intern-mode .ph-hash { color: var(--fg-hotkey); }
+
+body.intern-mode .ph-exif {
+  border: 1px solid var(--fg-border);
+  background: transparent;
+}
+
+body.intern-mode .ph-full,
+body.intern-mode .ph-nav { border-color: var(--fg-border-i); }
+
+/* grid hidden while the command types (JS adds/removes) */
+.ph-body { transition: opacity 0.3s ease; }
+.ph-body.is-pending { opacity: 0; }

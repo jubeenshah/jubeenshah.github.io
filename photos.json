@@ -1,0 +1,35 @@
+---
+layout: null
+---
+{%- assign photos = site.photos | sort: 'date' | reverse -%}
+{
+  "description": "Photos by Jubeen Shah. Derivatives carry no EXIF; the fields below come from each entry's front matter. sha256 is the hash of the published 1920px file. Rendered at {{ site.url }}/photos/",
+  "total": {{ photos.size }},
+  "photos": [
+    {%- for photo in photos -%}
+    {%- assign slug = photo.path | split: '/' | last | replace: '.md', '' %}
+    {
+      "file": {{ photo.album | append: "/" | append: slug | append: ".jpg" | jsonify }},
+      "title": {{ photo.title | jsonify }},
+      "url": {{ photo.url | absolute_url | jsonify }},
+      "image": {{ photo.image.path | absolute_url | jsonify }},
+      "thumb": {{ photo.thumb | default: photo.image.path | absolute_url | jsonify }},
+      "width": {{ photo.image.width | default: 0 }},
+      "height": {{ photo.image.height | default: 0 }},
+      "date": {{ photo.date | date: "%Y-%m-%d" | jsonify }},
+      "album": {{ photo.album | jsonify }},
+      "tags": {{ photo.tags | jsonify }},
+      "location": {{ photo.location | jsonify }},
+      "caption": {{ photo.caption | jsonify }},
+      "camera": {{ photo.camera | jsonify }},
+      "lens": {{ photo.lens | jsonify }},
+      "film": {{ photo.film | jsonify }},
+      "focal": {{ photo.focal | jsonify }},
+      "aperture": {{ photo.aperture | jsonify }},
+      "shutter": {{ photo.shutter | jsonify }},
+      "iso": {{ photo.iso | jsonify }},
+      "sha256": {{ photo.sha256 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}

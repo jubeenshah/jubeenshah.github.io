@@ -1,0 +1,91 @@
+---
+layout: default
+title: Photos
+permalink: /photos/
+---
+{%- comment -%}
+  feh -t: thumbnail index of every photo in the _photos collection.
+  One box per photo, filename in the bottom rail, double border on the
+  selected cell. Keys (assets/photos.js): arrows or hjkl move, Enter opens,
+  x toggles the exiftool pane, g/G jump. Album buttons filter by front matter.
+  Machine-readable copy: /photos.json
+{%- endcomment -%}
+{%- assign photos = site.photos | sort: 'date' | reverse -%}
+{%- assign albums = photos | map: 'album' | uniq | sort -%}
+<article class="post terminal-page ph-page tp-page-content" id="ph-page" data-total="{{ photos.size }}">
+  <link rel="stylesheet" href="{{ '/assets/post-terminal.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/photos.css' | relative_url }}">
+
+  <header class="tp-header">
+    <div class="tp-cmd">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
+      <span class="t-cmd-text" id="ph-cmd">feh -t --recursive ~/photos/</span>
+    </div>
+  </header>
+
+  {%- if photos.size == 0 %}
+  <p class="ph-empty">feh WARNING: ~/photos/ - no loadable images (run scripts/photos-ingest.py)</p>
+  {%- else %}
+  <div class="ph-body" id="ph-body">
+
+  <div class="ph-filters" id="ph-filters" role="toolbar" aria-label="filter by album">
+    <button type="button" class="ph-filter active" data-album="all">all</button>
+    {%- for album in albums %}
+    <button type="button" class="ph-filter" data-album="{{ album }}">{{ album }}/</button>
+    {%- endfor %}
+  </div>
+
+  <div class="ph-grid" id="ph-grid" role="list" aria-label="photos">
+    {%- for photo in photos %}
+    {%- assign slug = photo.path | split: '/' | last | replace: '.md', '' %}
+    <a class="ph-cell" role="listitem" id="ph-{{ photo.album }}-{{ slug }}"
+       href="{{ photo.url | relative_url }}"
+       data-index="{{ forloop.index0 }}"
+       data-album="{{ photo.album }}"
+       data-file="{{ photo.album }}/{{ slug }}.jpg"
+       data-title="{{ photo.title | escape }}"
+       data-date="{{ photo.date | date: '%Y:%m:%d' }}"
+       data-size="{{ photo.image.width }}x{{ photo.image.height }}"
+       data-camera="{{ photo.camera | escape }}"
+       data-lens="{{ photo.lens | escape }}"
+       data-focal="{{ photo.focal | escape }}"
+       data-aperture="{{ photo.aperture | escape }}"
+       data-shutter="{{ photo.shutter | escape }}"
+       data-iso="{{ photo.iso }}"
+       data-film="{{ photo.film | escape }}"
+       data-location="{{ photo.location | escape }}"
+       data-sha256="{{ photo.sha256 }}">
+      <span class="ph-frame"{% if photo.color %} style="background:{{ photo.color }}"{% endif %}>
+        <img src="{{ photo.thumb | default: photo.image.path | relative_url }}"
+             alt="{{ photo.image.alt | default: photo.title | escape }}"
+             loading="lazy" decoding="async">
+      </span>
+      <span class="ph-cap"><span class="ph-name">{{ slug }}.jpg</span></span>
+    </a>
+    {%- endfor %}
+  </div>
+
+  <div class="ph-status" id="ph-status" aria-live="polite"></div>
+  <div class="ph-hint" id="ph-hint">←→↑↓ or hjkl move · ⏎ open · x exif · g/G first/last</div>
+
+  <div class="ph-exif" id="ph-exif" hidden>
+    <div class="tp-cmd">
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
+      <span class="t-cmd-text" id="ph-exif-cmd">exiftool</span>
+    </div>
+    <pre class="ph-exiftool" id="ph-exif-out"></pre>
+  </div>
+
+  <div class="ph-count">
+    <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
+    <span class="t-cmd-text" id="ph-count-cmd">ls ~/photos/*/*.jpg | wc -l</span>
+    <span class="ph-count-out" id="ph-count">{{ photos.size }}</span>
+  </div>
+
+  </div>
+  {%- endif %}
+
+  <span class="ph-sr">machine-readable copy of this gallery: {{ '/photos.json' | absolute_url }}</span>
+</article>
+<link rel="alternate" type="application/json" href="{{ '/photos.json' | relative_url }}" title="photos (JSON)">
+<script src="{{ '/assets/photos.js' | relative_url }}"></script>
