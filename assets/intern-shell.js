@@ -114,6 +114,11 @@
     if (path === '/disclaimer/' || path === '/disclaimer') return 'https://github.com/jubeenshah/jubeenshah.github.io/blob/main/disclaimer.md';
     if (path === '/credits.html') return 'https://github.com/jubeenshah/jubeenshah.github.io/blob/main/credits.html';
     if (path === '/keyboard.html') return 'https://github.com/jubeenshah/jubeenshah.github.io/blob/main/keyboard.html';
+    if (path === '/photos/' || path === '/photos') return 'https://github.com/jubeenshah/jubeenshah.github.io/blob/main/photos/index.html';
+    if (/^\/photos\/[^/]+\/[^/]+\/?$/.test(path)) {
+      var photo = path.split('/').filter(Boolean);
+      return 'https://github.com/jubeenshah/jubeenshah.github.io/blob/main/_photos/' + photo[1] + '/' + photo[2] + '.md';
+    }
     var parts = path.split('/').filter(Boolean);
     if (parts.length >= 5 && /\.html$/.test(path)) {
       var slug = parts[4].replace(/\.html$/, '');
@@ -190,6 +195,7 @@
     menu.setAttribute('aria-label', 'Primary');
     menu.appendChild(link('/preview.html', 'Posts', 'P'));
     menu.appendChild(link('/about/', 'About', 'A'));
+    menu.appendChild(link('/photos/', 'Photos', 'o'));  // Ph[o]tos
     menu.appendChild(link('/disclaimer/', 'Disclaimer', 'D'));
     menu.appendChild(link('/keyboard.html', 'Help', 'H'));
     var menuDropdown = el('div', 'tv-menu-dropdown');
@@ -246,6 +252,7 @@
     if (key === 'a') return '/about/';
     if (key === 'd') return '/disclaimer/';
     if (key === 'h') return '/keyboard.html';
+    if (key === 'o') return '/photos/';
     return '';
   }
 

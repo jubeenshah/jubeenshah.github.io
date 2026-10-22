@@ -222,6 +222,7 @@
     if (key === 'a') return '/about/';
     if (key === 'd') return '/disclaimer/';
     if (key === 'h') return '/keyboard.html';
+    if (key === 'o') return '/photos/';
     return '';
   }
 
