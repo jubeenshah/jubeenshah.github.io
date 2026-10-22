@@ -323,3 +323,19 @@ body.intern-mode .ph-nav { border-color: var(--fg-border-i); }
 /* grid hidden while the command types (JS adds/removes) */
 .ph-body { transition: opacity 0.3s ease; }
 .ph-body.is-pending { opacity: 0; }
+
+/* song: the YouTube player under a photo (front matter `song:`); 200px is YouTube's minimum */
+.ph-song {
+  display: block;
+  width: min(100%, 356px);
+  height: 200px;
+  border: 1px solid var(--text-faint);
+  margin: 0.4em 0 1.4em;
+}
+
+body.intern-mode .ph-song { border-color: var(--fg-border-i); }
+
+.tp-page-content a.ph-song-link { color: var(--text-dim); text-decoration: none; }
+.tp-page-content a.ph-song-link:hover { color: var(--accent); }
+/* Apple Music's song embed is 175px tall and up to 660px wide */
+.ph-song[src*="embed.music.apple.com"] { width: min(100%, 660px); height: 175px; border-radius: 10px; }

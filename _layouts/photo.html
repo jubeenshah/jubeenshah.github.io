@@ -46,45 +46,70 @@ layout: default
     {%- endif %}
   </figure>
 
+  {%- if page.song.url %}
+  <div class="tp-cmd">
+    <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos/{{ page.album }}</span>$</span>
+    <a class="t-cmd-text ph-song-link" href="{{ page.song.url }}" target="_blank" rel="noopener">music play "{{ page.song.title | default: 'song' }}" &amp;</a>
+  </div>
+  {%- comment -%}
+    `music` is made up: a CLI for the Apple Music player embedded below.
+    Optional player. Many label/official uploads refuse embedding (YouTube error 150), so the link above
+    is the part that always works. YouTube's rules: player visible, at least 200px tall.
+  {%- endcomment %}
+  {%- if page.song.embed %}
+  <iframe class="ph-song" src="{{ page.song.embed }}"
+          title="{{ page.song.title | default: 'song' | escape }}"
+          allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+  {%- endif %}
+  {%- endif %}
+
   <div class="tp-cmd">
     <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos/{{ page.album }}</span>$</span>
     <span class="t-cmd-text">exiftool {{ file }}</span>
   </div>
-<pre class="ph-exiftool"><span class="ph-k">File Name       </span>: {{ file }}
-<span class="ph-k">Directory       </span>: ~/photos/{{ page.album }}
-<span class="ph-k">Image Size      </span>: {{ page.image.width }}x{{ page.image.height }}
-<span class="ph-k">Date/Time       </span>: {{ page.date | date: "%Y:%m:%d" }}
-{%- if page.title != blank %}
-<span class="ph-k">Title           </span>: {{ page.title }}
-{%- endif %}
-{%- if page.location != blank %}
-<span class="ph-k">Location        </span>: {{ page.location }}
-{%- endif %}
+{%- comment -%}
+  Real exiftool output: tag names padded to 32 columns, tags in file order (EXIF, then XMP, then
+  Composite), and "Directory : ." because the file is named without a path. Front matter keeps the
+  photographer's spelling (f/4, 100 mm, 1s); the filters below turn it into exiftool's (4.0, 100.0 mm, 1).
+{%- endcomment -%}
+{%- assign ap = page.aperture | remove: 'f/' -%}{%- unless ap contains '.' -%}{%- assign ap = ap | append: '.0' -%}{%- endunless -%}
+{%- assign fl = page.focal | remove: ' mm' -%}{%- unless fl contains '.' -%}{%- assign fl = fl | append: '.0' -%}{%- endunless -%}
+<pre class="ph-exiftool"><span class="ph-k">File Name                       </span>: {{ file }}
+<span class="ph-k">Directory                       </span>: .
 {%- if page.camera != blank %}
-<span class="ph-k">Camera          </span>: {{ page.camera }}
+<span class="ph-k">Camera Model Name               </span>: {{ page.camera }}
 {%- endif %}
-{%- if page.lens != blank %}
-<span class="ph-k">Lens            </span>: {{ page.lens }}
-{%- endif %}
-{%- if page.film != blank %}
-<span class="ph-k">Film            </span>: {{ page.film }}
+<span class="ph-k">Date/Time Original              </span>: {{ page.date | date: "%Y:%m:%d %H:%M:%S" }}
+{%- if page.iso != blank %}
+<span class="ph-k">ISO                             </span>: {{ page.iso }}
 {%- endif %}
 {%- if page.focal != blank %}
-<span class="ph-k">Focal Length    </span>: {{ page.focal }}
+<span class="ph-k">Focal Length                    </span>: {{ fl }} mm
 {%- endif %}
-{%- if page.aperture != blank %}
-<span class="ph-k">Aperture        </span>: {{ page.aperture }}
+{%- if page.lens != blank %}
+<span class="ph-k">Lens Model                      </span>: {{ page.lens }}
 {%- endif %}
-{%- if page.shutter != blank %}
-<span class="ph-k">Shutter Speed   </span>: {{ page.shutter }}
+{%- if page.film != blank %}
+<span class="ph-k">Film                            </span>: {{ page.film }}
 {%- endif %}
-{%- if page.iso != blank %}
-<span class="ph-k">ISO             </span>: {{ page.iso }}
+{%- if page.title != blank %}
+<span class="ph-k">Title                           </span>: {{ page.title }}
+{%- endif %}
+{%- if page.location != blank %}
+<span class="ph-k">Location                        </span>: {{ page.location }}
 {%- endif %}
 {%- if page.tags and page.tags.size > 0 %}
-<span class="ph-k">Keywords        </span>: {{ page.tags | join: ", " }}
+<span class="ph-k">Keywords                        </span>: {{ page.tags | join: ", " }}
 {%- endif %}
-<span class="ph-k">GPS Position    </span>: <span class="ph-dim">(stripped)</span>
+<span class="ph-k">Image Size                      </span>: {{ page.image.width }}x{{ page.image.height }}
+{%- if page.aperture != blank %}
+<span class="ph-k">Aperture                        </span>: {{ ap }}
+{%- endif %}
+{%- if page.shutter != blank %}
+<span class="ph-k">Shutter Speed                   </span>: {{ page.shutter | remove: 's' }}
+{%- endif %}
+<span class="ph-k">GPS Position                    </span>: <span class="ph-dim">(stripped)</span>
 </pre>
 
   {%- if page.sha256 != blank %}

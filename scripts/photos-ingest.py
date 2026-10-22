@@ -78,6 +78,8 @@ def fmt_shutter(value):
         f = Fraction(value).limit_denominator(8000)
     except (TypeError, ValueError, ZeroDivisionError):
         return str(value)
+    if f <= 0:  # scanners and manual lenses write 0
+        return ""
     if f >= 1:
         return f"{float(f):g}s"
     return f"1/{round(1 / f)}"
@@ -87,7 +89,7 @@ def fmt_aperture(value):
     if value is None:
         return ""
     try:
-        return f"f/{float(value):g}"
+        return f"f/{float(value):g}" if float(value) > 0 else ""
     except (TypeError, ValueError):
         return str(value)
 
@@ -96,7 +98,7 @@ def fmt_focal(value):
     if value is None:
         return ""
     try:
-        return f"{float(value):g} mm"
+        return f"{float(value):g} mm" if float(value) > 0 else ""
     except (TypeError, ValueError):
         return str(value)
 
@@ -127,7 +129,7 @@ def read_exif(im):
     if model:
         # Hasselblad writes "Hasselblad" + "X2D 100C"; some vendors repeat the make
         out["camera"] = model if make.lower() in model.lower() else f"{make} {model}".strip()
-    out["lens"] = clean(ifd.get(TAG["LensModel"]))
+    out["lens"] = clean(ifd.get(TAG["LensModel"])).split("@")[0]  # Hasselblad appends "@<focal>"
     out["focal"] = fmt_focal(ifd.get(TAG["FocalLength"]))
     out["aperture"] = fmt_aperture(ifd.get(TAG["FNumber"]))
     out["shutter"] = fmt_shutter(ifd.get(TAG["ExposureTime"]))
@@ -138,7 +140,7 @@ def read_exif(im):
     taken = clean(ifd.get(TAG["DateTimeOriginal"]))
     if taken:
         try:
-            out["date"] = datetime.strptime(taken[:19], "%Y:%m:%d %H:%M:%S").date()
+            out["date"] = datetime.strptime(taken[:19], "%Y:%m:%d %H:%M:%S")
         except ValueError:
             pass
     return out
@@ -198,7 +200,7 @@ def front_matter(meta):
     lines = [
         "---",
         f"title: {yaml_str(meta['title'])}",
-        f"date: {meta['date'].isoformat()}",
+        f"date: {meta['date']:%Y-%m-%d %H:%M:%S}",  # exiftool's Date/Time Original shows the time
         f"album: {meta['album']}",
         "tags: []",
         f"location: {yaml_str(meta.get('location'))}",
@@ -269,7 +271,7 @@ def main():
 
         meta = {
             "title": titleize(slug),
-            "date": exif.get("date") or datetime.fromtimestamp(src.stat().st_mtime).date(),
+            "date": exif.get("date") or datetime.fromtimestamp(src.stat().st_mtime).replace(microsecond=0),
             "album": album,
             "location": args.location or "",
             "camera": args.camera or exif.get("camera", ""),

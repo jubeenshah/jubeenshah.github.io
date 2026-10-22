@@ -1,7 +1,7 @@
 /* Photos — keyboard + filter behaviour for /photos/ (feh -t) and single photos (feh <file>).
    Markup: photos/index.html, _layouts/photo.html · Styles: assets/photos.css
 
-   Grid:   ←→↑↓ or hjkl move · Enter open · x exif pane · g/G first/last · Esc close pane
+   Grid:   ←→↑↓ or hjkl move · Enter open · e exif pane (feh's key) · g/G first/last · Esc close pane
    Single: ←/→ or p/n prev/next · q or Esc back to the grid (selection restored via #hash)
 
    Letters already claimed by --the-intern-experience (h, p) step aside in that theme;
@@ -112,29 +112,36 @@
     });
   }
 
+  // exiftool pads tag names to 32 columns
   function pad(key) {
-    return (key + '                ').slice(0, 16);
+    return (key + new Array(33).join(' ')).slice(0, 32);
+  }
+
+  // front matter keeps the photographer's spelling (f/4, 100 mm, 1s); exiftool prints 4.0, 100.0 mm, 1
+  function oneDecimal(v) {
+    return v && v.indexOf('.') < 0 ? v + '.0' : v;
   }
 
   function renderExif(cell) {
     if (!cell) return;
     var file = data(cell, 'file');
     exifCmd.textContent = 'exiftool ' + file;
+    var focal = oneDecimal(data(cell, 'focal').replace(' mm', ''));
+    // same tags, order and spelling as _layouts/photo.html; run from ~/photos, so Directory is the album
     var rows = [
       ['File Name', file.split('/').pop()],
-      ['Directory', '~/photos/' + data(cell, 'album')],
-      ['Image Size', data(cell, 'size')],
-      ['Date/Time', data(cell, 'date')],
+      ['Directory', data(cell, 'album')],
+      ['Camera Model Name', data(cell, 'camera')],
+      ['Date/Time Original', data(cell, 'date')],
+      ['ISO', data(cell, 'iso')],
+      ['Focal Length', focal && focal + ' mm'],
+      ['Lens Model', data(cell, 'lens')],
+      ['Film', data(cell, 'film')],
       ['Title', data(cell, 'title')],
       ['Location', data(cell, 'location')],
-      ['Camera', data(cell, 'camera')],
-      ['Lens', data(cell, 'lens')],
-      ['Film', data(cell, 'film')],
-      ['Focal Length', data(cell, 'focal')],
-      ['Aperture', data(cell, 'aperture')],
-      ['Shutter Speed', data(cell, 'shutter')],
-      ['ISO', data(cell, 'iso')],
-      ['SHA256', data(cell, 'sha256')]
+      ['Image Size', data(cell, 'size')],
+      ['Aperture', oneDecimal(data(cell, 'aperture').replace('f/', ''))],
+      ['Shutter Speed', data(cell, 'shutter').replace('s', '')]
     ].filter(function (r) { return r[1]; });
     rows.push(['GPS Position', '(stripped)']);
     exifOut.textContent = '';
@@ -244,7 +251,7 @@
       case 'g': case 'Home': jump(false); break;
       case 'G': case 'End': jump(true); break;
       case 'Enter': if (document.activeElement === document.body || grid.contains(document.activeElement)) open(); else handled = false; break;
-      case 'x': toggleExif(); break;
+      case 'e': toggleExif(); break;
       case 'Escape': if (exifOpen) toggleExif(false); else handled = false; break;
       default: handled = false;
     }

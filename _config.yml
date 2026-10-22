@@ -44,6 +44,10 @@ collections:
     output: true
     permalink: /photos/:path/
 
+# Pages builds on a UTC runner; pin it so local builds render the same dates
+# (photo front matter holds the camera's wall-clock time, shown verbatim by exiftool)
+timezone: UTC
+
 # Build settings
 # NOTE: GitHub Pages must stay on "GitHub Actions" as the build source
 # (Settings → Pages). The legacy "deploy from a branch" builder runs

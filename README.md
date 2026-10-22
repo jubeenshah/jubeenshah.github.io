@@ -54,8 +54,10 @@ as text chips; empty groups stay hidden. Markup lives in
 
 `/photos/` is `feh -t ~/photos/`: a thumbnail grid, one box per photo, the
 file name in the bottom rail, a double border on the selected cell. Arrows or
-`hjkl` move, Enter opens, `x` drops an `exiftool` pane under the grid. Each
-photo page is `feh <file>` followed by `exiftool <file>` and `sha256sum`.
+`hjkl` move, Enter opens, `e` (feh's own exif key) drops an `exiftool` pane
+under the grid. Each photo page is `feh <file>` followed by `exiftool <file>`
+and `sha256sum`. The exiftool output is the real format: 32-column tag names,
+`Directory : .`, `Aperture : 4.0`, not `f/4`.
 
 Photos are a collection — one markdown file per photo, no body needed:
 
@@ -84,7 +86,7 @@ repo; GitHub Pages serves only the derivatives.
 ```yaml
 ---
 title: "Kotor Bay"
-date: 2026-09-14
+date: 2026-09-14 18:02:00  # camera clock; _config.yml pins UTC to keep it
 album: montenegro        # the grid's filter buttons come from this
 tags: []
 location: "Kotor, Montenegro"
@@ -103,6 +105,21 @@ color: "#678782"         # dominant colour, painted behind the thumbnail while i
 sha256: "<hash of the 1920px file>"
 ---
 ```
+
+A photo can carry a song. The page prints `music play "<title>" &` (a made-up
+CLI) linking to `url`, with the `embed` player under it:
+
+```yaml
+song:
+  title: "Anuv Jain - Antariksh"
+  url: "https://music.apple.com/us/album/antariksh/1687717623?i=1687717625"
+  embed: "https://embed.music.apple.com/us/album/antariksh/1687717623?i=1687717625"
+```
+
+Apple Music plays a 30-second preview, or the whole song for a signed-in
+subscriber. Nothing autoplays with sound. Most official YouTube uploads refuse
+embedding (player error 150), so `embed` is optional and the link is the part
+that always works.
 
 Grid order is newest first. `published: false` hides an entry. `/photos.json`
 is the machine-readable index. Layouts: `photos/index.html` (grid) and

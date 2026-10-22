@@ -7,7 +7,7 @@ permalink: /photos/
   feh -t: thumbnail index of every photo in the _photos collection.
   One box per photo, filename in the bottom rail, double border on the
   selected cell. Keys (assets/photos.js): arrows or hjkl move, Enter opens,
-  x toggles the exiftool pane, g/G jump. Album buttons filter by front matter.
+  e toggles the exiftool pane (feh's own exif key), g/G jump. Album buttons filter by front matter.
   Machine-readable copy: /photos.json
 {%- endcomment -%}
 {%- assign photos = site.photos | sort: 'date' | reverse -%}
@@ -24,7 +24,7 @@ permalink: /photos/
   </header>
 
   {%- if photos.size == 0 %}
-  <p class="ph-empty">feh WARNING: ~/photos/ - no loadable images (run scripts/photos-ingest.py)</p>
+  <p class="ph-empty">feh: No loadable images specified.</p>
   {%- else %}
   <div class="ph-body" id="ph-body">
 
@@ -44,7 +44,7 @@ permalink: /photos/
        data-album="{{ photo.album }}"
        data-file="{{ photo.album }}/{{ slug }}.jpg"
        data-title="{{ photo.title | escape }}"
-       data-date="{{ photo.date | date: '%Y:%m:%d' }}"
+       data-date="{{ photo.date | date: '%Y:%m:%d %H:%M:%S' }}"
        data-size="{{ photo.image.width }}x{{ photo.image.height }}"
        data-camera="{{ photo.camera | escape }}"
        data-lens="{{ photo.lens | escape }}"
@@ -66,11 +66,11 @@ permalink: /photos/
   </div>
 
   <div class="ph-status" id="ph-status" aria-live="polite"></div>
-  <div class="ph-hint" id="ph-hint">←→↑↓ or hjkl move · ⏎ open · x exif · g/G first/last</div>
+  <div class="ph-hint" id="ph-hint">←→↑↓ or hjkl move · ⏎ open · e exif · g/G first/last</div>
 
   <div class="ph-exif" id="ph-exif" hidden>
     <div class="tp-cmd">
-      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~</span>$</span>
+      <span class="t-prompt">you@jubeen.sh:<span class="t-path">~/photos</span>$</span>
       <span class="t-cmd-text" id="ph-exif-cmd">exiftool</span>
     </div>
     <pre class="ph-exiftool" id="ph-exif-out"></pre>
