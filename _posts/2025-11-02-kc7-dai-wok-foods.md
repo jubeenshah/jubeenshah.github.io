@@ -7,7 +7,7 @@ spanning: []
 
 ## Dai Wok Foods
 
-![Dai Wok Foods badge](https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/daiwokfoods.png)
+![Dai Wok Foods badge](/assets/images/badges/kc7/dai-wok-foods.svg)
 {: .badge-art}
 
 > This analyst completed the "Dai Wok Foods" module. They demonstrated skills in detecting phishing attempts, analyzing email logs, and using Passive DNS for domain analysis. This proficiency is vital for countering threat actor tactics and protecting organizational assets.

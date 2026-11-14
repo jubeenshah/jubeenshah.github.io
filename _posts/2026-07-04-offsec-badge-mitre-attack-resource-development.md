@@ -7,7 +7,7 @@ spanning: []
 
 ## MITRE ATT&CK · Resource Development
 
-![MITRE ATT&CK · Resource Development badge](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230797)
+![MITRE ATT&CK · Resource Development badge](/assets/images/badges/offsec/badge-mitre-attack-resource-development.svg)
 {: .badge-art}
 
 > The MITRE ATT&CK - Resource Development Learning Path advances skills in identifying and disrupting attackers as they build their infrastructure for an attack. It combines adversarial mindset principles with exercises in techniques like infrastructure acquisition, account compromise, tool development, and capability staging. Learners will tackle topics such as fake domains, compromised servers, custom malware development, and operational planning, gaining both theoretical insights and practical skills to hinder attacker preparations and limit their operational effectiveness.

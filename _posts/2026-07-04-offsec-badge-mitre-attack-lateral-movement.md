@@ -7,7 +7,7 @@ spanning: []
 
 ## MITRE ATT&CK · Lateral Movement
 
-![MITRE ATT&CK · Lateral Movement badge](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230631)
+![MITRE ATT&CK · Lateral Movement badge](/assets/images/badges/offsec/badge-mitre-attack-lateral-movement.svg)
 {: .badge-art}
 
 > The MITRE ATT&CK - Lateral Movement Learning Path advances skills in limiting attacker movement within a network. It combines network security principles with practical exercises in techniques like credential theft, remote service abuse, and software deployment tool exploitation for contained threats. Learners will tackle topics such as pivoting strategies, privilege escalation through alternate credentials, and network segmentation weaknesses, gaining both theoretical insights and practical skills to hinder attacker expansion.
