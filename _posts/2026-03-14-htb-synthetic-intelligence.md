@@ -7,7 +7,7 @@ spanning: []
 
 ## Synthetic Intelligence
 
-![Synthetic Intelligence badge](https://academy.hackthebox.com/storage/badges/5f697320187cf69c66114ff7b0c49b90/logo.png)
+![Synthetic Intelligence badge](/assets/images/badges/htb/synthetic-intelligence.svg)
 {: .badge-art}
 
 > Applications of AI in InfoSec module completed

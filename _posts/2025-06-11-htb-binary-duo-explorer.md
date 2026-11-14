@@ -7,7 +7,7 @@ spanning: []
 
 ## Binary Duo Explorer
 
-![Binary Duo Explorer badge](https://academy.hackthebox.com/storage/badges/0d982edba15037e6d52d54eaa7f0209a/logo.png)
+![Binary Duo Explorer badge](/assets/images/badges/htb/binary-duo-explorer.svg)
 {: .badge-art}
 
 > two years of learning at HTB Academy

@@ -7,7 +7,7 @@ spanning: []
 
 ## Constant Champion
 
-![Constant Champion badge](https://academy.hackthebox.com/storage/badges/8644292aaa052ff2971d3541256ee605/logo.png)
+![Constant Champion badge](/assets/images/badges/htb/constant-champion.svg)
 {: .badge-art}
 
 > 4 weekly streaks in a row

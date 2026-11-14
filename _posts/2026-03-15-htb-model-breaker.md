@@ -7,7 +7,7 @@ spanning: []
 
 ## Model breaker
 
-![Model breaker badge](https://academy.hackthebox.com/storage/badges/7b52e002401857cbb0daeb44dad2b719/logo.png)
+![Model breaker badge](/assets/images/badges/htb/model-breaker.svg)
 {: .badge-art}
 
 > This module provides a comprehensive introduction to the world of red teaming Artificial Intelligence (AI) and systems utilizing Machine Learning (ML) deployments. It covers an overview of common security vulnerabilities in these systems and the types of attacks that can be launched against their components.

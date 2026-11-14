@@ -7,7 +7,7 @@ spanning: []
 
 ## Security Operations Essentials
 
-![Security Operations Essentials badge](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/67172858)
+![Security Operations Essentials badge](/assets/images/badges/offsec/badge-security-operations-essentials.svg)
 {: .badge-art}
 
 > Security Operations Essentials is a course designed for individuals interested in cyber security with a technical background. This course serves as an introduction to the technical skills needed for a cybersecurity career. Security Operations Essentials will teach students about topics like powershell scripting basics, introduction to active directory, and the SOC management processes.

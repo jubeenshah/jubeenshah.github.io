@@ -13,10 +13,12 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="/">--home</a>
-        <a class="page-link" href="{{ "/about" | relative_url }}">--about</a>
-        <a class="page-link" href="{{ "/photos/" | relative_url }}">--photos</a>
-        <a class="page-link" href="{{ "/disclaimer" | relative_url }}">--disclaimer</a>
+        {%- comment -%} .phi-ico is hidden in the intern shell (assets/phi.css) {%- endcomment -%}
+        {%- capture sprite -%}{{ '/assets/phi/sprite.svg' | relative_url }}{%- endcapture %}
+        <a class="page-link" href="/"><span class="phi-ico" data-icon="home"><svg class="phi-static" viewBox="0 0 24 24" aria-hidden="true"><use href="{{ sprite }}#home"/></svg></span>--home</a>
+        <a class="page-link" href="{{ "/about" | relative_url }}"><span class="phi-ico" data-icon="user"><svg class="phi-static" viewBox="0 0 24 24" aria-hidden="true"><use href="{{ sprite }}#user"/></svg></span>--about</a>
+        <a class="page-link" href="{{ "/photos/" | relative_url }}"><span class="phi-ico" data-icon="image"><svg class="phi-static" viewBox="0 0 24 24" aria-hidden="true"><use href="{{ sprite }}#image"/></svg></span>--photos</a>
+        <a class="page-link" href="{{ "/disclaimer" | relative_url }}"><span class="phi-ico" data-icon="policy"><svg class="phi-static" viewBox="0 0 24 24" aria-hidden="true"><use href="{{ sprite }}#policy"/></svg></span>--disclaimer</a>
         <div class="theme-switcher">
           <button class="go-blind-btn" id="go-blind" title="chmod">--dark</button>
           <div class="theme-dropdown">

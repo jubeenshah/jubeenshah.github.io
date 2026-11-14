@@ -7,7 +7,7 @@ spanning: []
 
 ## Balloons Over Iowa
 
-![Balloons Over Iowa badge](https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/balloonsoveriowa.png)
+![Balloons Over Iowa badge](/assets/images/badges/kc7/balloons-over-iowa.svg)
 {: .badge-art}
 
 > This analyst completed the "Balloons Over Iowa" module, investigating a phishing and ransomware attack. They identified command and control connections, detected data exfiltration, analyzed Mimikatz activity, and observed shadow copy deletions, demonstrating their ability to effectively respond to and analyze cyber threats.

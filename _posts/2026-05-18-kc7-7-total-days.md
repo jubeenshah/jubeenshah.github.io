@@ -7,7 +7,7 @@ spanning: []
 
 ## 7 Total Days
 
-![7 Total Days badge](https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/7_total_days.png)
+![7 Total Days badge](/assets/images/badges/kc7/7-total-days.svg)
 {: .badge-art}
 
 > Played KC7 for 7 total days

@@ -7,7 +7,7 @@ spanning: []
 
 ## Valdorian Times
 
-![Valdorian Times badge](https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/valdoria_election.png)
+![Valdorian Times badge](/assets/images/badges/kc7/valdorian-times.svg)
 {: .badge-art}
 
 > This analyst investigated an email phishing attack in Valdoria that uncovered a politically motivated influence campaign. Using Kusto Query Language (KQL), they analyzed employee roles, email communications, and computer process events, revealing evidence of data exfiltration and manipulation. This exercise reinforced skill in querying data and understanding data integrity within a cybersecurity context.

@@ -8,8 +8,8 @@
 #        image (optional artwork; omit for a text chip), desc (hover tooltip,
 #        also exposed to text extraction and proof.json).
 #
-# Artwork sources that hotlink cleanly:
-#   HTB:       og:image on the achievement page (academy.hackthebox.com/storage/badges/…)
+# Artwork: every badge is our own drawing under assets/images/badges/<family>/, generated and wired in by
+# scripts/badges.py (issuer image URLs kept moving). The notes below are where the issuers' own art used to come from:
 #   Accredible/OffSec: api.accredible.com/v1/frontend/credential_website_embed_image/badge/<numeric-id>
 #              (numeric id lives in the page's og:image meta, not the share UUID)
 #   KC7:       badge page img (varies: azurefd / cloudinary / github raw)
@@ -24,11 +24,11 @@
     - name: OSDA
       desc: OffSec Defense Analyst — issued Feb 17, 2023
       url: https://credentials.offsec.com/9a7f472e-06ea-479a-ade1-1046a7d99d88#acc.D8nT6iXZ
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/68721576
+      image: /assets/images/badges/certs/osda.svg
     - name: OSWA
       desc: OffSec Web Assessor — issued May 4, 2024
       url: https://credentials.offsec.com/21eb3286-b66c-4682-9639-66522d636c77#acc.dRvGVY1u
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/103288682
+      image: /assets/images/badges/certs/oswa.svg
   - key: redhat
     label: Red Hat certifications
     color: "#EE0000"
@@ -37,12 +37,15 @@
     - name: RHCE
       desc: Red Hat Certified Engineer, 2021
       url: "/certs/2021/10/08/redhat-rhce.html"
+      image: /assets/images/badges/certs/rhce.svg
     - name: RHCSA
       desc: Red Hat Certified System Administrator, 2021
       url: "/certs/2021/08/03/redhat-rhcsa.html"
+      image: /assets/images/badges/certs/rhcsa.svg
     - name: Accredited Professional
       desc: Red Hat Accredited Professional, 2019
       url: "/certs/2019/05/24/redhat-professional-accredition.html"
+      image: /assets/images/badges/certs/red-hat-accredited-professional.svg
   - key: aws
     label: AWS certifications
     color: "#FF9900"
@@ -51,6 +54,7 @@
     - name: AWS CSA
       desc: AWS Certified Solutions Architect, 2020
       url: "/certs/2020/02/14/aws-csa.html"
+      image: /assets/images/badges/certs/aws-csa.svg
   - key: splunk
     label: Splunk certifications
     color: "#ED0080"
@@ -59,12 +63,15 @@
     - name: Power User
       desc: Splunk Core Certified Power User, 2020
       url: "/certs/2020/10/01/splunk-core-certified-power-user.html"
+      image: /assets/images/badges/certs/splunk-power-user.svg
     - name: Core User
       desc: Splunk Core Certified User, 2019
       url: "/certs/2019/11/01/splunk-core-certified-user.html"
+      image: /assets/images/badges/certs/splunk-core-user.svg
     - name: Fundamentals
       desc: Splunk Fundamentals, 2019
       url: "/certs/2019/06/11/splunk-fundamentals.html"
+      image: /assets/images/badges/certs/splunk-fundamentals.svg
   - key: academic
     label: Degrees & academic programs
     color: "#9980FF"
@@ -74,16 +81,20 @@
       desc: MS Computer Science, cyber security specialization — summa cum laude,
         2020
       url: "/certs/2020/05/09/ncsu-mscs.html"
+      image: /assets/images/badges/academic/mscs-ncsu.svg
     - name: B.Tech IT · MPSTME
       desc: Bachelors in Information Technology — graduated 3rd, 2018
       url: "/certs/2018/08/17/mpstme-btech-it.html"
+      image: /assets/images/badges/academic/btech-it-mpstme.svg
     - name: HBS CORe
       desc: HBS Online Credential of Readiness, 2017
       url: "/certs/2017/12/05/harvard-core.html"
+      image: /assets/images/badges/academic/hbs-core.svg
     - name: BGU ICSML
       desc: Ben-Gurion University — cyber security & machine learning summer program,
         2016
       url: "/certs/2016/07/05/bgu-icsml.html"
+      image: /assets/images/badges/academic/bgu-icsml.svg
 - dir: badges
   groups:
   - key: offsec
@@ -93,15 +104,15 @@
     - name: MITRE ATT&CK · Lateral Movement
       desc: issued Jul 4, 2026
       url: https://credentials.offsec.com/5139e029-6f38-4564-94ad-1547605095ef
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230631
+      image: /assets/images/badges/offsec/badge-mitre-attack-lateral-movement.svg
     - name: MITRE ATT&CK · Resource Development
       desc: issued Jul 4, 2026
       url: https://credentials.offsec.com/1c82fb35-1438-4592-993c-f6d76df46489
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230797
+      image: /assets/images/badges/offsec/badge-mitre-attack-resource-development.svg
     - name: Security Operations Essentials
       desc: issued Jan 31, 2023
       url: https://credentials.offsec.com/da6db634-26d5-47eb-aff9-5afcb9381ee5#acc.CxLNn1Gw
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/67172858
+      image: /assets/images/badges/offsec/badge-security-operations-essentials.svg
   - key: htb
     label: Hack The Box Academy
     color: "#9fef00"
@@ -109,67 +120,67 @@
     - name: Academician
       desc: Introduction to Academy module completed
       url: https://academy.hackthebox.com/achievement/badge/d64c25b3-2b6d-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/academician.png
+      image: /assets/images/badges/htb/academician.svg
     - name: Anonymous Access
       desc: Active Directory LDAP module completed
       url: https://academy.hackthebox.com/achievement/badge/a161e79f-83f1-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/anonymous-access.png
+      image: /assets/images/badges/htb/anonymous-access.svg
     - name: Crawl, walk, run
       desc: Windows Fundamentals module completed
       url: https://academy.hackthebox.com/achievement/badge/dd602f10-89a7-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/crawl-walk-run.png
+      image: /assets/images/badges/htb/crawl-walk-run.svg
     - name: The guardian of Active Directory
       desc: Active Directory BloodHound module completed
       url: https://academy.hackthebox.com/achievement/badge/c8ce4a00-b781-11f0-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/the-guardian-of-active-directory.png
+      image: /assets/images/badges/htb/the-guardian-of-active-directory.svg
     - name: Your white belt training begins
       desc: Introduction to Active Directory module completed
       url: https://academy.hackthebox.com/achievement/badge/957251e4-3667-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/your-white-belt-training-begins.png
+      image: /assets/images/badges/htb/your-white-belt-training-begins.svg
     - name: An apple a day...
       desc: MacOS Fundamentals module completed
       url: https://academy.hackthebox.com/achievement/badge/5b3d487d-88ca-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/an-apple-a-day.png
+      image: /assets/images/badges/htb/an-apple-a-day.svg
     - name: Philomath
       desc: Learning Process module completed
       url: https://academy.hackthebox.com/achievement/badge/501249b1-2c41-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/philomath.png
+      image: /assets/images/badges/htb/philomath.svg
     - name: Superior Intelligence
       desc: Fundamentals of AI module completed
       url: https://academy.hackthebox.com/achievement/badge/53c69e0a-1aa2-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/32da68ec9873b8a5c48b0193bfbcf38b/logo.png
+      image: /assets/images/badges/htb/superior-intelligence.svg
     - name: Synthetic Intelligence
       desc: Applications of AI in InfoSec module completed
       url: https://academy.hackthebox.com/achievement/badge/d54394e1-1fee-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/5f697320187cf69c66114ff7b0c49b90/logo.png
+      image: /assets/images/badges/htb/synthetic-intelligence.svg
     - name: Model breaker
       desc: Introduction to Red Teaming AI module completed
       url: https://academy.hackthebox.com/achievement/badge/087cece4-2084-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/7b52e002401857cbb0daeb44dad2b719/logo.png
+      image: /assets/images/badges/htb/model-breaker.svg
     - name: Prompt phantom
       desc: Prompt Injection Attacks module completed
       url: https://academy.hackthebox.com/achievement/badge/3b13d7ef-3088-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/0abcda60891603412bdaf90e82b1c381/logo.png
+      image: /assets/images/badges/htb/prompt-phantom.svg
     - name: Output Overdrive
       desc: LLM Output Attacks module completed
       url: https://academy.hackthebox.com/achievement/badge/6a7398a3-3140-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/13fad272ca9d954f9019df6da523df7d/logo.png
+      image: /assets/images/badges/htb/output-overdrive.svg
     - name: Unwavering User
       desc: first weekly streak
       url: https://academy.hackthebox.com/achievement/badge/5e8c774a-2b6c-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/7f81e8837d0540d610c5019478c7647a/logo.png
+      image: /assets/images/badges/htb/unwavering-user.svg
     - name: Constant Champion
       desc: 4 weekly streaks in a row
       url: https://academy.hackthebox.com/achievement/badge/c7533251-3caa-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/8644292aaa052ff2971d3541256ee605/logo.png
+      image: /assets/images/badges/htb/constant-champion.svg
     - name: Cyber Rookie 365
       desc: one year of learning at HTB Academy
       url: https://academy.hackthebox.com/achievement/badge/3b6d02d7-a333-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png
+      image: /assets/images/badges/htb/cyber-rookie-365.svg
     - name: Binary Duo Explorer
       desc: two years of learning at HTB Academy
       url: https://academy.hackthebox.com/achievement/badge/805c3cb4-46a2-11f0-bcfd-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/0d982edba15037e6d52d54eaa7f0209a/logo.png
+      image: /assets/images/badges/htb/binary-duo-explorer.svg
   - key: kc7
     label: KC7 — the cyber detective game
     color: "#03dac5"
@@ -177,44 +188,44 @@
     - name: 7 Total Days
       desc: earned May 18, 2026 — played KC7 for 7 total days
       url: https://kc7cyber.com/badges/earned/60697
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/7_total_days.png
+      image: /assets/images/badges/kc7/7-total-days.svg
     - name: Dai Wok Foods
       desc: earned Nov 02, 2025 — phishing detection, email log analysis, passive
         DNS
       url: https://kc7cyber.com/badges/earned/31784
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/daiwokfoods.png
+      image: /assets/images/badges/kc7/dai-wok-foods.svg
     - name: Rap Beef
       desc: earned Oct 27, 2025 — threat detection in a themed scenario
       url: https://kc7cyber.com/badges/earned/30972
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/new_rap_beef_badge.png
+      image: /assets/images/badges/kc7/rap-beef.svg
     - name: Titan Shield
       desc: earned Nov 06, 2024 — Moonstone Sleet & Crimson Sandstorm investigations
       url: https://kc7cyber.com/badges/earned/5507
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/Titan%20Shield%20(1).png
+      image: /assets/images/badges/kc7/titan-shield.svg
     - name: HopsNStuff
       desc: earned Apr 27, 2024 — endpoint analysis, deobfuscating malicious PowerShell
       url: https://kc7cyber.com/badges/earned/1436
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/hopsnstuff.png
+      image: /assets/images/badges/kc7/hopsnstuff.svg
     - name: Krusty Krab
       desc: earned Apr 10, 2024 — phishing & exfiltration investigation with KQL
       url: https://kc7cyber.com/badges/earned/1307
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/krusty.png
+      image: /assets/images/badges/kc7/krusty-krab.svg
     - name: Envolve Labs
       desc: earned Apr 02, 2024 — phishing, credential theft & exfiltration with KQL
       url: https://kc7cyber.com/badges/earned/1033
-      image: https://res.cloudinary.com/dt8l5w5wi/image/upload/v1695782949/td5ndaxes1dfaz2y64we.png
+      image: /assets/images/badges/kc7/envolve-labs.svg
     - name: Castle & Sand
       desc: earned Mar 27, 2024 — ransomware lifecycle investigation with KQL
       url: https://kc7cyber.com/badges/earned/1003
-      image: https://raw.githubusercontent.com/KC7-Foundation/kc7badges/main/castle%26sand/participant/mini.png
+      image: /assets/images/badges/kc7/castle-sand.svg
     - name: Balloons Over Iowa
       desc: earned Mar 22, 2024 — C2, exfiltration, Mimikatz & shadow-copy analysis
       url: https://kc7cyber.com/badges/earned/963
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/balloonsoveriowa.png
+      image: /assets/images/badges/kc7/balloons-over-iowa.svg
     - name: Valdorian Times
       desc: earned Mar 16, 2024 — influence-campaign investigation with KQL
       url: https://kc7cyber.com/badges/earned/914
-      image: https://kc7photos-cfhbcabpaxb2f8fn.z03.azurefd.net/photos/valdoria_election.png
+      image: /assets/images/badges/kc7/valdorian-times.svg
 - dir: pins
   groups:
   - key: offsec
@@ -225,32 +236,32 @@
     - name: Enumeration
       desc: Enumeration Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/101745b0-5537-499f-aac9-490f1b91f3e5
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230623
+      image: /assets/images/badges/offsec/pin-enumeration.svg
     - name: IDOR Attacks
       desc: IDOR Attacks Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/2e8b31de-d9a3-4009-8e9e-bc40e4af6a4b
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230626
+      image: /assets/images/badges/offsec/pin-idor-attacks.svg
     - name: Lateral Movement
       desc: Lateral Movement Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/90254d62-9ee8-4fa8-9f95-e331b0e6e899
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232794
+      image: /assets/images/badges/offsec/pin-lateral-movement.svg
     - name: XXE Attacks
       desc: XXE Attacks Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/f4e16228-85d2-4da1-9540-79c717c280f7
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232797
+      image: /assets/images/badges/offsec/pin-xxe-attacks.svg
     - name: Vulnerability Detection
       desc: Vulnerability Detection Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/e2bbc248-a380-4d06-8527-401c068780ab
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187232800
+      image: /assets/images/badges/offsec/pin-vulnerability-detection.svg
     - name: User Account Management
       desc: User Account Management Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/133b8843-54ef-4715-9076-257282baec66
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230621
+      image: /assets/images/badges/offsec/pin-user-account-management.svg
     - name: SSRF Attacks
       desc: SSRF Attacks Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/b8c72cf1-6635-4c20-b874-8dd1edd4c164
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230717
+      image: /assets/images/badges/offsec/pin-ssrf-attacks.svg
     - name: AD Penetration Testing
       desc: Active Directory Penetration Testing Skill Path — issued Jul 4, 2026
       url: https://credentials.offsec.com/ad055a3f-d1a0-41c2-a59e-d73d0472cc2a
-      image: https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/187230636
+      image: /assets/images/badges/offsec/pin-ad-penetration-testing.svg

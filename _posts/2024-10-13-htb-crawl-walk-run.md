@@ -7,7 +7,7 @@ spanning: []
 
 ## Crawl, walk, run
 
-![Crawl, walk, run badge](https://academy.hackthebox.com/storage/badges/crawl-walk-run.png)
+![Crawl, walk, run badge](/assets/images/badges/htb/crawl-walk-run.svg)
 {: .badge-art}
 
 > This module covers the fundamentals required to work comfortably with the Windows operating system.

@@ -7,7 +7,7 @@ spanning: []
 
 ## An apple a day...
 
-![An apple a day... badge](https://academy.hackthebox.com/storage/badges/an-apple-a-day.png)
+![An apple a day... badge](/assets/images/badges/htb/an-apple-a-day.svg)
 {: .badge-art}
 
 > This module covers the fundamentals required to work comfortably within the macOS operating system and shell.

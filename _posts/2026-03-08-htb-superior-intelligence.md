@@ -7,7 +7,7 @@ spanning: []
 
 ## Superior Intelligence
 
-![Superior Intelligence badge](https://academy.hackthebox.com/storage/badges/32da68ec9873b8a5c48b0193bfbcf38b/logo.png)
+![Superior Intelligence badge](/assets/images/badges/htb/superior-intelligence.svg)
 {: .badge-art}
 
 > This module provides a comprehensive guide to the theoretical foundations of Artificial Intelligence (AI). It covers various learning paradigms, including supervised, unsupervised, and reinforcement learning, providing a solid understanding of key algorithms and concepts.
