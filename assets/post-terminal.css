@@ -324,12 +324,19 @@
   position: relative;
 }
 
+/* The article starts 20vw in (a 60vw column plus 2em padding each side, centred). Start the TOC 1.5rem from the
+   window edge, in line with the progress bar below it, and let it fill the margin up to the content column. */
 .tp-toc {
   position: absolute;
-  left: -16em;
+  left: calc(1.5rem - 20vw);
   top: auto;
-  width: 14em;
+  width: calc(20vw - 4.25rem);
 }
+
+/* TOC links glide to their heading, and the heading stops clear of the sticky header */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.tp-content :is(h1, h2, h3, h4) { scroll-margin-top: 4.5rem; }
 
 /* ===== Progress indicator — fixed in left margin ===== */
 .tp-progress {
@@ -372,10 +379,13 @@
   font-family: ui-monospace, 'Menlo', 'Consolas', monospace;
   font-size: 0.625rem;
   color: var(--text-faint);
-  max-width: calc(30vw - 3em);
+  /* the left margin is 20vw wide: wrap inside it (three lines at most) instead of running under the content */
+  max-width: calc(20vw - 5.5rem);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .toc-header {
