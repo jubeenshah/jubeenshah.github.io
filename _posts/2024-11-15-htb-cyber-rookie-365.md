@@ -7,7 +7,7 @@ spanning: []
 
 ## Cyber Rookie 365
 
-![Cyber Rookie 365 badge](https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png)
+![Cyber Rookie 365 badge](/assets/images/badges/htb/cyber-rookie-365.svg)
 {: .badge-art}
 
 > one year of learning at HTB Academy

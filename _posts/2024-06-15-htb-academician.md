@@ -7,7 +7,7 @@ spanning: []
 
 ## Academician
 
-![Academician badge](https://academy.hackthebox.com/storage/badges/academician.png)
+![Academician badge](/assets/images/badges/htb/academician.svg)
 {: .badge-art}
 
 > Your first stop in Hack The Box Academy to become acquainted with the platform, its features, and its learning process.

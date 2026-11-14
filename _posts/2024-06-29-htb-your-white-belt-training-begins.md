@@ -7,7 +7,7 @@ spanning: []
 
 ## Your white belt training begins
 
-![Your white belt training begins badge](https://academy.hackthebox.com/storage/badges/your-white-belt-training-begins.png)
+![Your white belt training begins badge](/assets/images/badges/htb/your-white-belt-training-begins.svg)
 {: .badge-art}
 
 > Active Directory (AD) is present in the majority of corporate environments. Due to its many features and complexity, it presents a vast attack surface. To be successful as penetration testers and information security professionals, we must have a firm understanding of Active Directory fundamentals, AD structures, functionality, common AD flaws, misconfigurations, and defensive measures.

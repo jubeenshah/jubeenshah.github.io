@@ -7,7 +7,7 @@ spanning: []
 
 ## Prompt phantom
 
-![Prompt phantom badge](https://academy.hackthebox.com/storage/badges/0abcda60891603412bdaf90e82b1c381/logo.png)
+![Prompt phantom badge](/assets/images/badges/htb/prompt-phantom.svg)
 {: .badge-art}
 
 > This module comprehensively introduces one of the most prominent attacks on large language models (LLMs): Prompt Injection. It introduces prompt injection basics and covers detailed attack vectors based on real-world vulnerability reports. Furthermore, the module touches on academic research in the fields of novel prompt injection techniques and jailbreaks.

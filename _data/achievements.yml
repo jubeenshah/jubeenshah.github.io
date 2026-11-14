@@ -9,7 +9,7 @@
 #        also exposed to text extraction and proof.json).
 #
 # Artwork sources that hotlink cleanly:
-#   HTB:       og:image on the achievement page (academy.hackthebox.com/storage/badges/…)
+#   HTB:       our own drawings in assets/images/badges/htb/ (scripts/htb-badges.py); their image URLs kept moving
 #   Accredible/OffSec: api.accredible.com/v1/frontend/credential_website_embed_image/badge/<numeric-id>
 #              (numeric id lives in the page's og:image meta, not the share UUID)
 #   KC7:       badge page img (varies: azurefd / cloudinary / github raw)
@@ -109,67 +109,67 @@
     - name: Academician
       desc: Introduction to Academy module completed
       url: https://academy.hackthebox.com/achievement/badge/d64c25b3-2b6d-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/academician.png
+      image: /assets/images/badges/htb/academician.svg
     - name: Anonymous Access
       desc: Active Directory LDAP module completed
       url: https://academy.hackthebox.com/achievement/badge/a161e79f-83f1-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/anonymous-access.png
+      image: /assets/images/badges/htb/anonymous-access.svg
     - name: Crawl, walk, run
       desc: Windows Fundamentals module completed
       url: https://academy.hackthebox.com/achievement/badge/dd602f10-89a7-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/crawl-walk-run.png
+      image: /assets/images/badges/htb/crawl-walk-run.svg
     - name: The guardian of Active Directory
       desc: Active Directory BloodHound module completed
       url: https://academy.hackthebox.com/achievement/badge/c8ce4a00-b781-11f0-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/the-guardian-of-active-directory.png
+      image: /assets/images/badges/htb/the-guardian-of-active-directory.svg
     - name: Your white belt training begins
       desc: Introduction to Active Directory module completed
       url: https://academy.hackthebox.com/achievement/badge/957251e4-3667-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/your-white-belt-training-begins.png
+      image: /assets/images/badges/htb/your-white-belt-training-begins.svg
     - name: An apple a day...
       desc: MacOS Fundamentals module completed
       url: https://academy.hackthebox.com/achievement/badge/5b3d487d-88ca-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/an-apple-a-day.png
+      image: /assets/images/badges/htb/an-apple-a-day.svg
     - name: Philomath
       desc: Learning Process module completed
       url: https://academy.hackthebox.com/achievement/badge/501249b1-2c41-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/philomath.png
+      image: /assets/images/badges/htb/philomath.svg
     - name: Superior Intelligence
       desc: Fundamentals of AI module completed
       url: https://academy.hackthebox.com/achievement/badge/53c69e0a-1aa2-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/32da68ec9873b8a5c48b0193bfbcf38b/logo.png
+      image: /assets/images/badges/htb/superior-intelligence.svg
     - name: Synthetic Intelligence
       desc: Applications of AI in InfoSec module completed
       url: https://academy.hackthebox.com/achievement/badge/d54394e1-1fee-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/5f697320187cf69c66114ff7b0c49b90/logo.png
+      image: /assets/images/badges/htb/synthetic-intelligence.svg
     - name: Model breaker
       desc: Introduction to Red Teaming AI module completed
       url: https://academy.hackthebox.com/achievement/badge/087cece4-2084-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/7b52e002401857cbb0daeb44dad2b719/logo.png
+      image: /assets/images/badges/htb/model-breaker.svg
     - name: Prompt phantom
       desc: Prompt Injection Attacks module completed
       url: https://academy.hackthebox.com/achievement/badge/3b13d7ef-3088-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/0abcda60891603412bdaf90e82b1c381/logo.png
+      image: /assets/images/badges/htb/prompt-phantom.svg
     - name: Output Overdrive
       desc: LLM Output Attacks module completed
       url: https://academy.hackthebox.com/achievement/badge/6a7398a3-3140-11f1-9254-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/13fad272ca9d954f9019df6da523df7d/logo.png
+      image: /assets/images/badges/htb/output-overdrive.svg
     - name: Unwavering User
       desc: first weekly streak
       url: https://academy.hackthebox.com/achievement/badge/5e8c774a-2b6c-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/7f81e8837d0540d610c5019478c7647a/logo.png
+      image: /assets/images/badges/htb/unwavering-user.svg
     - name: Constant Champion
       desc: 4 weekly streaks in a row
       url: https://academy.hackthebox.com/achievement/badge/c7533251-3caa-11ef-b18d-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/8644292aaa052ff2971d3541256ee605/logo.png
+      image: /assets/images/badges/htb/constant-champion.svg
     - name: Cyber Rookie 365
       desc: one year of learning at HTB Academy
       url: https://academy.hackthebox.com/achievement/badge/3b6d02d7-a333-11ef-864f-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png
+      image: /assets/images/badges/htb/cyber-rookie-365.svg
     - name: Binary Duo Explorer
       desc: two years of learning at HTB Academy
       url: https://academy.hackthebox.com/achievement/badge/805c3cb4-46a2-11f0-bcfd-bea50ffe6cb4
-      image: https://academy.hackthebox.com/storage/badges/0d982edba15037e6d52d54eaa7f0209a/logo.png
+      image: /assets/images/badges/htb/binary-duo-explorer.svg
   - key: kc7
     label: KC7 — the cyber detective game
     color: "#03dac5"

@@ -7,7 +7,7 @@ spanning: []
 
 ## Unwavering User
 
-![Unwavering User badge](https://academy.hackthebox.com/storage/badges/7f81e8837d0540d610c5019478c7647a/logo.png)
+![Unwavering User badge](/assets/images/badges/htb/unwavering-user.svg)
 {: .badge-art}
 
 > first weekly streak

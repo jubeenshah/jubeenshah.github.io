@@ -7,7 +7,7 @@ spanning: []
 
 ## Anonymous Access
 
-![Anonymous Access badge](https://academy.hackthebox.com/storage/badges/anonymous-access.png)
+![Anonymous Access badge](/assets/images/badges/htb/anonymous-access.svg)
 {: .badge-art}
 
 > This module provides an overview of Active Directory (AD), introduces core AD enumeration concepts, and covers enumeration with built-in tools.

@@ -7,7 +7,7 @@ spanning: []
 
 ## Output Overdrive
 
-![Output Overdrive badge](https://academy.hackthebox.com/storage/badges/13fad272ca9d954f9019df6da523df7d/logo.png)
+![Output Overdrive badge](/assets/images/badges/htb/output-overdrive.svg)
 {: .badge-art}
 
 > In this module, we will explore different LLM output vulnerabilities resulting from improper handling of LLM outputs and insecure LLM applications. We will also touch on LLM abuse attacks, such as hate speech campaigns and misinformation generation, with a particular focus on the detection and mitigation of these attacks.

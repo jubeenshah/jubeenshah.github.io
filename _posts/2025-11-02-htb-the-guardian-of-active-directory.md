@@ -7,7 +7,7 @@ spanning: []
 
 ## The guardian of Active Directory
 
-![The guardian of Active Directory badge](https://academy.hackthebox.com/storage/badges/the-guardian-of-active-directory.png)
+![The guardian of Active Directory badge](/assets/images/badges/htb/the-guardian-of-active-directory.svg)
 {: .badge-art}
 
 > This module covers AD enumeration focusing on the BloodHound tool. We will cover various techniques for enumerating key AD objects that will inform our attacks in later modules.
