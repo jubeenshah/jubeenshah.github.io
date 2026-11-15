@@ -3,17 +3,18 @@
 
     python3 scripts/globe-data.py DIR
 
-DIR holds three TopoJSON files (any mirror of the npm packages will do):
+DIR holds four files (any mirror will do):
     land-110m.json, land-50m.json   from world-atlas@2   (Natural Earth, public domain)
     states-10m.json                 from us-atlas@3      (US Census, public domain)
+    ne_50m_admin_1_states_provinces.geojson   from nvkelso/natural-earth-vector v5.1.2 (Natural Earth, public domain)
 
 Only coastlines go in. There are no country borders in the output, on purpose: a land outline is
-uncontested, a political boundary is not. The one internal line is North Carolina's.
+uncontested, a political boundary is not. The only internal lines are two states: Maharashtra and North Carolina.
 Output (all coordinates are [lon, lat] pairs in hundredths of a degree, flattened):
     coast            world coastline as polylines                       (110m)
     dots             a grid of points that fall on land, about 2.2 deg apart
-    regions.NAME     {box, coast, dots}: a finer coastline and denser dots for a zoomed-in view  (50m)
-    nc               North Carolina's outline
+    regions.NAME     {box, coast, dots, state}: a finer coastline and denser dots for a zoomed-in view (50m),
+                     and the outline of the one state the story lands in
 """
 import json, math, pathlib, sys
 SRC = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(__file__).resolve().parent.parent / "assets" / "globe" / "globe.json"
@@ -39,6 +40,14 @@ def rings_of(path, obj, only=None):
         polys = g["arcs"] if g["type"] == "MultiPolygon" else [g["arcs"]]
         rings += [ring(r) for p in polys for r in p]
     return rings
+
+def province(path, code):
+    """GeoJSON -> the rings of one state or province, by ISO 3166-2 code."""
+    for f in json.loads((SRC / path).read_text())["features"]:
+        if f["properties"].get("iso_3166_2") == code:
+            g = f["geometry"]; polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
+            return [[tuple(pt[:2]) for pt in r] for poly in polys for r in poly]
+    raise SystemExit(f"{code} is not in {path}")
 
 def on_land(rings):
     """Even-odd point-in-polygon over every ring; rings carry a bounding box so most are skipped."""
@@ -98,11 +107,12 @@ flat = lambda pts: [round(v * 100) for p in pts for v in p]
 land110, land50 = rings_of("land-110m.json", "land"), rings_of("land-50m.json", "land")
 data = {"coast": [flat(l) for l in polylines(land110)], "dots": flat(grid(on_land(land110), 2.2)), "regions": {}}
 fine = on_land(land50)
+STATES = {"india": province("ne_50m_admin_1_states_provinces.geojson", "IN-MH"), "usa": rings_of("states-10m.json", "states", "37")}   # Maharashtra, North Carolina
 for name, box in REGIONS.items():
-    data["regions"][name] = {"box": list(box), "coast": [flat(l) for l in polylines(land50, box, 0.02)], "dots": flat(grid(fine, 0.75, box))}
-data["nc"] = [flat(l) for l in polylines(rings_of("states-10m.json", "states", "37"), tol=0.01)]
+    data["regions"][name] = {"box": list(box), "coast": [flat(l) for l in polylines(land50, box, 0.02)], "dots": flat(grid(fine, 0.75, box)),
+                             "state": [flat(l) for l in polylines(STATES[name], tol=0.01)]}
 OUT.parent.mkdir(parents=True, exist_ok=True); OUT.write_text(json.dumps(data, separators=(",", ":")))
 count = lambda ls: sum(len(l) // 2 for l in ls)
 print(f"coast {count(data['coast'])} pts in {len(data['coast'])} lines | dots {len(data['dots']) // 2}"
-      + "".join(f" | {n}: coast {count(r['coast'])} pts, dots {len(r['dots']) // 2}" for n, r in data["regions"].items())
-      + f" | nc {count(data['nc'])} pts | {OUT.stat().st_size // 1024} KB")
+      + "".join(f" | {n}: coast {count(r['coast'])} pts, dots {len(r['dots']) // 2}, state {count(r['state'])} pts" for n, r in data["regions"].items())
+      + f" | {OUT.stat().st_size // 1024} KB")
