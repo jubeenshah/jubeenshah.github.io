@@ -1,0 +1,18 @@
+{%- comment -%} The about-page globe: home, the great circle, and where it lands. Places are "name|lat|lon|timezone".
+Without script, or in the intern shell, the old still image shows instead. {%- endcomment -%}
+<style>
+.globe { margin: 1.5rem 0; }
+.globe canvas, .globe-out, .globe-replay { display: none; }
+.globe-live canvas { display: block; width: 100%; touch-action: pan-y; cursor: grab; }
+.globe-live .globe-out { display: block; margin: 0.5rem 0 0; padding: 0; border: 0; background: none; color: var(--text); font-size: 0.8rem; line-height: 1.5; min-height: 6em; white-space: pre; overflow-x: auto; }
+.globe-live .globe-replay { display: inline; padding: 0; border: 0; background: none; color: var(--link); font: inherit; font-size: 0.8rem; cursor: pointer; }
+.globe-live .globe-still, .intern-mode .globe-live > :not(.globe-still) { display: none; }
+.intern-mode .globe-live .globe-still { display: block; }
+</style>
+<figure id="globe" class="globe" data-src="{{ '/assets/globe/globe.json' | relative_url }}" data-home="Mumbai|19.076|72.8777|Asia/Kolkata" data-here="Raleigh, NC|35.7796|-78.6382|America/New_York">
+<canvas role="img" aria-label="A globe that turns from Mumbai to Raleigh, North Carolina, along the great circle between them."></canvas>
+<pre class="globe-out" aria-hidden="true"></pre>
+<button class="globe-replay" type="button">!replay</button>
+<img class="globe-still" src="{{ '/assets/images/how-far-is-india.png' | relative_url }}" alt="Map: about 8,000 miles from Raleigh to India">
+</figure>
+<script src="{{ '/assets/globe.js' | relative_url }}" defer></script>

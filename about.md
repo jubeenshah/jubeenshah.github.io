@@ -10,7 +10,7 @@ permalink: /about/
 
 Last couple of years have been difficult. I've been learning a lot more than I could process. With the OffSec's [OSDA](/certs/2023/02/17/offsec-osda.html), and all the prep work for OSWA (which I failed twice) and dealing with work and the fact that I'm away from my family and dog. I'm but, just a man!
 
-![img.png](/assets/images/how-far-is-india.png)
+{% include globe.html %}
 
 I like day dreaming, adds some flavour. Otherwise, I like to work hard, or at least I haven't heard anyone complain! But, I have heard good things.
 
