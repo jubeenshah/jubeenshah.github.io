@@ -36,9 +36,11 @@
     var reg = function (r, p) {                                             // thin the dense dots toward the region's edge, so it has no square outline
       var all = unit(r.dots), keep = [];
       for (var i = 0; i < all.length; i += 3) if ((i * 7919 % 1000) / 1000 < step(all[i] * p.v[0] + all[i + 1] * p.v[1] + all[i + 2] * p.v[2], 0.925, 0.985)) keep.push(all[i], all[i + 1], all[i + 2]);
-      return { at: p.v, coast: r.coast.map(unit), dots: new Float32Array(keep) };
+      var state = r.state.map(unit), mid = [0, 0, 0];                       // the middle of the state, for keeping labels off it
+      state.forEach(function (a) { for (var i = 0; i < a.length; i++) mid[i % 3] += a[i]; });
+      return { at: p.v, coast: r.coast.map(unit), dots: new Float32Array(keep), state: state, mid: norm(mid) };
     };
-    world = { coast: d.coast.map(unit), dots: unit(d.dots), near: [reg(d.regions.india, HOME), reg(d.regions.usa, HERE)], nc: d.nc.map(unit) };
+    world = { coast: d.coast.map(unit), dots: unit(d.dots), near: [reg(d.regions.india, HOME), reg(d.regions.usa, HERE)] };
   }
 
   /* ---- colours follow the theme ---- */
@@ -96,12 +98,12 @@
     cx.strokeStyle = style; cx.lineWidth = width; cx.stroke();
   }
   function at(v, lift) { var z = dot(v, F), s = R * K * (lift || 1); return [X0 + s * dot(v, E), Y0 - s * dot(v, U), z]; }
-  function pin(p, t, label, colour, show, other) {                        // the label goes on the side away from the other place, clear of the route
+  function pin(p, t, label, colour, show, avoid) {                        // the label goes on the side away from `avoid`: the route, or the state outline
     var q = at(p.v); if (q[2] < 0.05 || show <= 0) return;
     var pulse = (t * 0.8) % 1; cx.globalAlpha = show;
     cx.strokeStyle = 'rgba(' + colour + ',' + (0.7 * (1 - pulse)).toFixed(3) + ')'; cx.lineWidth = 1.5; cx.beginPath(); cx.arc(q[0], q[1], 5 + pulse * 16, 0, TAU); cx.stroke();
     cx.fillStyle = 'rgb(' + colour + ')'; cx.beginPath(); cx.arc(q[0], q[1], 4, 0, TAU); cx.fill();
-    cx.font = '12px ui-monospace, Menlo, Consolas, monospace'; var tw = cx.measureText(label).width, left = (at(other.v)[0] > q[0] || q[0] + tw + 30 > w) && q[0] - tw - 30 > 0;
+    cx.font = '12px ui-monospace, Menlo, Consolas, monospace'; var tw = cx.measureText(label).width, left = (at(avoid)[0] > q[0] || q[0] + tw + 30 > w) && q[0] - tw - 30 > 0;
     cx.strokeStyle = 'rgba(' + colour + ',0.8)'; cx.lineWidth = 1; cx.beginPath(); cx.moveTo(q[0] + (left ? -6 : 6), q[1] - 6); cx.lineTo(q[0] + (left ? -16 : 16), q[1] - 18); cx.lineTo(q[0] + (left ? -22 : 22), q[1] - 18); cx.stroke();
     cx.fillStyle = 'rgba(' + BGC + ',0.7)'; cx.fillRect(left ? q[0] - 30 - tw : q[0] + 24, q[1] - 28, tw + 8, 18);
     cx.fillStyle = 'rgb(' + colour + ')'; cx.textAlign = left ? 'right' : 'left'; cx.fillText(label, q[0] + (left ? -26 : 28), q[1] - 14); cx.textAlign = 'left'; cx.globalAlpha = 1;
@@ -143,10 +145,10 @@
 
     dots(world.dots, Math.min(1.8, 1.15 * Math.sqrt(K)), 0.9, SUN);
     lines(world.coast, 'rgba(' + INK + ',' + (0.30 - 0.12 * step(K, 1.4, 2.6)).toFixed(3) + ')', 1);
-    world.near.forEach(function (r, n) {                                    // the finer layer, only when close and facing it
+    world.near.forEach(function (r) {                                    // the finer layer, only when close and facing it
       var a = step(K, 1.35, 2.5) * step(dot(F, r.at), 0.86, 0.97); if (a < 0.02) return;
       cx.globalAlpha = a; dots(r.dots, 1.3, 0.9, SUN); lines(r.coast, 'rgba(' + INK + ',0.62)', 1.2);
-      if (n === 1) lines(world.nc, 'rgba(' + ACC + ',0.95)', 1.6, 'rgba(' + ACC + ',0.14)');
+      lines(r.state, 'rgba(' + ACC + ',0.95)', 1.6, 'rgba(' + ACC + ',0.14)');           // Maharashtra, North Carolina
       cx.globalAlpha = 1;
     });
 
@@ -160,7 +162,7 @@
       cx.strokeStyle = 'rgba(' + WARM + ',0.95)'; cx.lineWidth = 2; cx.lineCap = 'round'; cx.stroke();
       if (head && s.arc < 1) { cx.fillStyle = 'rgb(' + WARM + ')'; cx.beginPath(); cx.arc(head[0], head[1], 3.5, 0, TAU); cx.fill(); }
     }
-    pin(HOME, ts / 1000, HOME.name, ACC, s.home, HERE); pin(HERE, ts / 1000 + 0.4, HERE.name, WARM, s.here, HOME);
+    pin(HOME, ts / 1000, HOME.name, ACC, s.home, s.arc > 0 ? HERE.v : world.near[0].mid); pin(HERE, ts / 1000 + 0.4, HERE.name, WARM, s.here, HOME.v);
     report(idle ? 4 : t < T.spin ? 0 : t < T.outHome ? 1 : t < T.fly ? 2 : 3, s.arc);
     if (still) { cancelAnimationFrame(raf); raf = 0; }
   }
