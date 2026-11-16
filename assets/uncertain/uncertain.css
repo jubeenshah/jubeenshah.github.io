@@ -1,0 +1,90 @@
+/* "It's a scary uncertain world we live in": the words over the stage. Type and carving come from Project Odyssey
+   (2020): upgrade-lights for display, bilo 200 for reading, panels pressed into the dark. */
+:root { --u-bg: #171f24; --u-ink: #e4e4e4; --u-dim: #8a99a3; --u-cyan: #84c9fb; --u-teal: #03dac5; --u-violet: #bb8cf6; --u-rose: #cf6679; --u-panel: #18242b;
+        --u-plate-left: 52vw; --u-display: upgrade-lights, "Helvetica Neue", Arial, sans-serif; --u-body: bilo, "Helvetica Neue", Arial, sans-serif;
+        --u-mono: ui-monospace, Menlo, Consolas, monospace; }
+html.u-html { background: var(--u-bg); scroll-behavior: auto; }
+.u-body { margin: 0; background: var(--u-bg); color: var(--u-ink); font-family: var(--u-body); font-weight: 300; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+#u-stage { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; z-index: 0; }
+.u-flat #u-stage { display: none; }
+.u-home { position: fixed; top: 16px; left: 16px; z-index: 5; font: 13px var(--u-mono); color: var(--u-cyan); text-decoration: none; opacity: .75; }
+.u-home:hover, .u-home:focus-visible { opacity: 1; text-shadow: 0 4px 6px #000; }
+#u-hud { position: fixed; left: 16px; bottom: 14px; z-index: 5; font: 12px/1.4 var(--u-mono); color: var(--u-cyan); opacity: 0; transition: opacity .4s, color .4s; max-width: calc(100vw - 32px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+#u-hud.on { opacity: .9; }
+#u-hud.dec { color: var(--u-rose); text-shadow: 0 0 12px rgba(207, 102, 121, .6); }
+
+.u-story { position: relative; z-index: 1; }
+.u-beat { position: relative; }
+.u-step { position: relative; min-height: 100vh; }
+.u-step.tall { min-height: 150vh; }
+.u-text { position: sticky; top: 26vh; box-sizing: border-box; width: min(36vw, 32rem); margin-left: 6vw; padding: 0 0 4vh;
+          opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .9s ease; }
+.u-step.is-in .u-text, .u-flat .u-text { opacity: 1; transform: none; }
+.u-wide .u-text, .u-text.u-center { width: min(80vw, 46rem); margin: 0 auto; text-align: center; }
+.u-text p { font-size: clamp(1.05rem, 1.35vw, 1.3rem); line-height: 1.55; letter-spacing: .02em; margin: 0 0 1em; text-shadow: 0 2px 6px #000, 0 0 2px #000; }
+.u-text a { color: var(--u-cyan); text-decoration: none; background: linear-gradient(var(--u-cyan), var(--u-cyan)) 0 100% / 0 1px no-repeat; transition: background-size .3s ease-out; }
+.u-text a:hover, .u-text a:focus-visible { background-size: 100% 1px; }   /* the 2020 underline that slides in from the left */
+.u-meta { font: 12px/1.6 var(--u-mono); color: var(--u-dim); letter-spacing: .04em; margin-bottom: 1.2em; text-shadow: 0 1px 3px #000; }
+.u-meta code { color: var(--u-teal); background: none; border: 0; padding: 0; font-size: 12px; }
+.u-head { font-family: var(--u-display); font-weight: 200; font-size: clamp(2rem, 4vw, 3.4rem); color: var(--u-teal); margin: 0 0 .4em; letter-spacing: .01em; }
+
+/* the essay: bilo 200 in a panel pressed into the page, as the 2020 site did its one paragraph */
+.u-essay { margin: 0; padding: 1.4em 1.6em; border-left: 0; font-style: normal; background: rgba(24, 36, 43, .82); border-radius: 4px; box-shadow: inset 4px 4px 5px #000, inset -1px -1px 0 hsla(0, 0%, 100%, .04);
+           font-family: var(--u-body); font-weight: 200; font-size: clamp(1.15rem, 1.6vw, 1.55rem); line-height: 1.6; letter-spacing: .06em; color: #fff; text-align: left;
+           -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+.u-essay em { font-style: normal; color: var(--u-cyan); }
+.u-essay + .u-essay { margin-top: 1em; }
+.u-essay.big { font-size: clamp(1.4rem, 2.4vw, 2.2rem); }
+
+/* a word carved into the background, 40vh tall */
+.u-ghost { position: sticky; top: 8vh; height: 0; overflow: visible; margin: 0; pointer-events: none; z-index: -1; white-space: nowrap;
+           font-family: var(--u-display); font-weight: 400; font-size: 40vh; line-height: 1; color: rgba(25, 48, 64, .3);
+           text-shadow: 4px 5px 5px hsla(0, 0%, 100%, .05), -4px 4px 5px #000; padding-left: 3vw; opacity: 0; transition: opacity 1.2s; }
+.u-beat.is-on .u-ghost, .u-flat .u-ghost { opacity: 1; }
+
+/* the title */
+.u-title { font-family: var(--u-display); font-weight: 200; font-size: clamp(2.4rem, 6.4vw, 6.2rem); line-height: 1.08; color: var(--u-cyan); margin: 0 0 .3em;
+           text-shadow: 4px 5px 5px hsla(0, 0%, 100%, .05), -4px 4px 5px #000; }
+.u-title s { color: var(--u-dim); text-decoration-color: var(--u-rose); text-decoration-thickness: .06em; }
+.u-kicker { font: 13px/1.6 var(--u-mono) !important; color: var(--u-dim); letter-spacing: .08em; }
+.u-cue { width: 56px; height: 56px; margin: 4vh auto 0; opacity: .8; }
+.u-lottie { width: 100%; aspect-ratio: 1920 / 326; margin-top: 1.5em; opacity: .85; }
+
+/* "Hello I'm J.", typed the way the 2020 site typed it */
+.u-type { font-family: var(--u-display); font-weight: 200; font-size: clamp(2.6rem, 6vw, 5.6rem); color: var(--u-cyan); margin: 0 0 .4em; white-space: nowrap; }
+.u-type span { display: inline-block; overflow: hidden; vertical-align: bottom; width: 0; }
+.u-type b { font-weight: 300; color: var(--u-teal); }
+.u-type::after { content: "|"; color: var(--u-teal); font-weight: 200; animation: u-blink 1s steps(1) infinite; }
+.u-step.is-in .u-type span { animation: u-typed 1.6s steps(14) .3s forwards; }
+@keyframes u-typed { to { width: 6.2em; } }
+@keyframes u-blink { 50% { opacity: 0; } }
+
+/* commit messages, as they went by */
+.u-commits { list-style: none; margin: 0 0 1em; padding: 0; font: 12.5px/1.75 var(--u-mono); color: var(--u-ink); }
+.u-commits li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 1px 3px #000; }
+.u-commits code { color: var(--u-teal); background: none; border: 0; padding: 0 .6em 0 0; font-size: inherit; }
+.u-stream { height: 46vh; overflow: hidden; -webkit-mask-image: linear-gradient(transparent, #000 15%, #000 85%, transparent); mask-image: linear-gradient(transparent, #000 15%, #000 85%, transparent); }
+.u-stream .u-commits { transform: translateY(calc(30vh - var(--p, 0) * 100%)); }
+.u-quote { font-family: var(--u-body); font-weight: 200; font-size: clamp(1.1rem, 1.5vw, 1.4rem); letter-spacing: .04em; color: var(--u-violet); border-left: 2px solid var(--u-violet); padding-left: 1em; margin: 0 0 1em; text-shadow: 0 2px 6px #000; }
+.u-close { font-family: var(--u-display) !important; font-weight: 200; font-size: clamp(2rem, 4.6vw, 4.4rem) !important; color: var(--u-cyan); line-height: 1.2 !important; }
+.u-note { font: 12px/1.6 var(--u-mono) !important; color: var(--u-dim); margin-top: 3em !important; }
+
+/* without the stage: every era as a still, in line */
+.u-still { display: none; }
+.u-flat .u-still { display: block; width: 100%; height: auto; border-radius: 4px; margin: 1em 0; box-shadow: 4px 4px 5px #000; }
+.u-flat .u-step { min-height: 0; padding: 12vh 0; }
+.u-flat .u-text, .u-flat .u-ghost { position: relative; top: 0; }
+.u-flat .u-ghost { font-size: 20vh; height: auto; }
+
+@media (max-width: 760px) {
+  .u-text, .u-wide .u-text, .u-text.u-center { width: auto; margin: 0 16px; top: 54vh; text-align: left; }
+  .u-ghost { font-size: 22vh; top: 6vh; }
+  .u-stream { height: 34vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .u-text { transition: none; transform: none; }
+  .u-type span { width: 6.2em; animation: none !important; }
+  .u-type::after { animation: none; }
+  .u-stream .u-commits { transform: none; }
+  .u-stream { height: auto; -webkit-mask-image: none; mask-image: none; }
+}
